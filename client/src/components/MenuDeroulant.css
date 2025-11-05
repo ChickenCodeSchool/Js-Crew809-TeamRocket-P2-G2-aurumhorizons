@@ -1,5 +1,5 @@
 .menu-deroulant {
-    display: flex;
+    display: inline-flex;
     justify-content: flex-start; 
     align-items: center;
     gap: 3rem; 
@@ -8,7 +8,18 @@
     font-family: 'Montserrat', sans-serif; 
     position: relative;
     z-index: 10;
+      border: 2px solid #c39444;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(198, 148, 68, 0.3);
 }
+.menu-separator {
+    width: 2px; 
+    background-color: #c39444; 
+    height: 1.5rem; 
+    align-self: center; 
+}
+
+
 
 
 .menu-left {
