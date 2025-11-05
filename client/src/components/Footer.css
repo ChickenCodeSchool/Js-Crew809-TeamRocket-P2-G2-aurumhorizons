@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Cinzel", serif;
+}
+
+p,
+a {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: inherit;
+}
+
+.hr-top-footer {
+  width: 95%;
+  height: 0.40em;
+  background-color: #898989;
+  border-radius: 2em;
+}
+
+.h2-footer {
+  font-size: 2em;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  width: 100%;
+  margin-top: 5em;
+}
+
+.separator-footer {
+  width: 95%;
+  height: 0.25em;
+  background-color: #898989;
+  border-radius: 2em;
+}
+
+.container-h2-footer {
+  display: flex;
+  width: 10em;
+}
+
+.container-mid-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1em;
+}
+
+.container-icon-footer {
+  display: flex;
+  gap: 2em;
+  margin-left: 8em;
+}
+
+.icon-footer {
+  width: 3em;
+  transition: width 0.1s ease;
+}
+
+.newsletter-form {
+  display: flex;
+  width: 100%;
+  max-width: 25em;
+  max-height: 5em;
+  margin-right: 14em;
+  border: 1px solid #898989;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.newsletter-input {
+  flex-grow: 1;
+  font-size: 1.2rem;
+  padding: 0.5em;
+  border: none;
+  outline: none;
+}
+
+.newsletter-button {
+  font-size: 1em;
+  padding: 1em 2em;
+  border: none;
+  background-color: #898989;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.newsletter-input::placeholder {
+  font-size: 1em;
+  color: #898989;
+}
+
+.newsletter-button:hover {
+  background-color: #c39444;
+}
+
+.mention-legal {
+  font-size: 1.25em;
+  margin-bottom: 2em;
+}
+
+@media (max-width: 992px) {
+  .container-mid-footer {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    gap: 1em;
+  }
+  .container-icon-footer {
+    margin-left: 0em;
+  }
+  .newsletter-form {
+    margin-right: 0;
+    max-width: 95%;
+    max-height: 5em;
+  }
+
+  .newsletter-input {
+    flex-grow: 1;
+    font-size: 1em;
+    padding: 0.5em;
+  }
+
+  .newsletter-button {
+    font-size: 1em;
+    padding: 1em 2em;
+    color: #ffffff;
+    transition: background-color 0.2s ease;
+  }
+
+  .newsletter-input::placeholder {
+    font-size: 1em;
+    color: #898989;
+  }
+}
