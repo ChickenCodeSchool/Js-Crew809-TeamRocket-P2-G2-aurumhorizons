@@ -1,11 +1,19 @@
+import { Outlet } from "react-router-dom";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar.tsx";
+
 import "./App.css";
-import MenuDeroulant from "./components/MenuDeroulant";
 
 function App() {
   return (
-    <div className="App">
-        <MenuDeroulant />
-    </div>
+    <>
+      <Navbar />
+      <main>
+        {}
+        <Outlet />
+      </main>
+      <Footer />
+    </>
   );
 }
 
