@@ -23,7 +23,7 @@ a {
 .hr-top-footer {
   width: 95%;
   height: 0.40em;
-  background-color: #898989;
+  background: linear-gradient(to top, transparent 10%, #898989 100%);
   border-radius: 2em;
 }
 
@@ -43,7 +43,7 @@ a {
 .separator-footer {
   width: 95%;
   height: 0.25em;
-  background-color: #898989;
+  background: linear-gradient(to top, transparent 0%, #898989 100%);
   border-radius: 2em;
 }
 
@@ -70,6 +70,13 @@ a {
 .icon-footer {
   width: 3em;
   transition: width 0.1s ease;
+  opacity: 1;
+  transition: opacity 0.1s ease;
+}
+
+.icon-footer:hover {
+  transform: scale(0.967);
+  opacity: 0.8;
 }
 
 .newsletter-form {
@@ -99,6 +106,9 @@ a {
   color: #ffffff;
   cursor: pointer;
   transition: background-color 0.2s ease;
+  transition: width 0.1s ease;
+  opacity: 1;
+  transition: opacity 0.1s ease;
 }
 
 .newsletter-input::placeholder {
@@ -108,6 +118,8 @@ a {
 
 .newsletter-button:hover {
   background-color: #c39444;
+  transform: scale(1.05);
+  opacity: 0.8;
 }
 
 .mention-legal {

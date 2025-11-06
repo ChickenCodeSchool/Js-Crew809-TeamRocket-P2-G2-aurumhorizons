@@ -55,7 +55,7 @@ function Footer() {
             <input
               type="email"
               className="newsletter-input"
-              placeholder="Inscrivez-vous a la newletters..."
+              placeholder="Inscrivez-vous à la newletters..."
               required
             />
             <button type="submit" className="newsletter-button">
