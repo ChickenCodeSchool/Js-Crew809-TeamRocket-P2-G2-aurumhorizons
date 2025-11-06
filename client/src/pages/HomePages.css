@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background-video {
+  position: absolute;
+  width: 100vw;
+  height: 100vh; /* ou 30vh */
+  overflow: hidden;
+}
+
+.background-video video {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
