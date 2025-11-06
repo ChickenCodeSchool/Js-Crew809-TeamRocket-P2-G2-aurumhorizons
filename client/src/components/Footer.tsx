@@ -65,7 +65,7 @@ function Footer() {
         </section>
         <hr className="separator-footer" />
         <Link to="/mention-legal" className="mention-legal">
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mention legal
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mentions légales
         </Link>
       </div>
     </>
