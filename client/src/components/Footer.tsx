@@ -29,7 +29,7 @@ function Footer() {
             <input
               type="email"
               className="newsletter-input"
-              placeholder="Inscrivez-vous à la newletters..."
+              placeholder="Sign up for the newsletter..."
               required
             />
             <button type="submit" className="newsletter-button">
@@ -39,7 +39,7 @@ function Footer() {
         </section>
         <hr className="separator-footer" />
         <Link to="/mention-legal" className="mention-legal">
-          Mentions légales
+          Legal notice
         </Link>
       </div>
     </>

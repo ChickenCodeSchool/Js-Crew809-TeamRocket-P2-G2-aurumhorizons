@@ -4,7 +4,8 @@
   align-items: center;
   gap: 3rem;
   padding: 0.55rem 2rem;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.034);
+  backdrop-filter: blur(5px);
   font-family: "Montserrat", sans-serif;
   position: absolute;
   top: 50%;
@@ -32,7 +33,7 @@
   border: none;
   font-size: 1.1rem;
   font-weight: 500;
-  color: #000000;
+  color: #ffffff;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -52,7 +53,7 @@
 
 .arrow.open {
   transform: rotate(180deg);
-  color: #000000;
+  color: #ffffff;
 }
 
 .menu-list {
@@ -104,7 +105,7 @@
 .menu-right .menu-link {
   font-size: 1.1rem;
   font-weight: 500;
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
   font-family: "Cinzel", serif;
   transition: color 0.3s;

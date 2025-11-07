@@ -18,7 +18,7 @@ const MenuDeroulant: React.FC = () => {
     { name: "Philippines", link: "/philippines" },
     { name: "Seychelles", link: "/seychelles" },
     { name: "Iceland", link: "/iceland" },
-    { name: "Voir plus...", link: "" },
+    { name: "See more...", link: "" },
   ];
   const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -40,7 +40,7 @@ const MenuDeroulant: React.FC = () => {
       <div className="menu-left">
         {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
         <button className="menu-button" onClick={toggleMenu}>
-          Nos Experiences
+          Experiences
           <span className={`arrow ${isOpen ? "open" : ""}`}>&#9662;</span>
         </button>
 

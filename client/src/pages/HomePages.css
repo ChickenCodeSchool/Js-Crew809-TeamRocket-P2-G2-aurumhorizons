@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .background-video {
@@ -14,41 +15,33 @@
   position: relative;
 }
 
-.homecards {
-  display: flex;
-  justify-content: center;
-  gap: 150px;
-}
-
-.homecards1 {
-  display: flex;
-  justify-content: center;
-  gap: 150px;
-}
-
 .containercards {
-  margin: 150px;
+  margin: 150px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 85%;
+  gap: 9em;
 }
 
 .cartes {
-  height: 500px;
   width: 352px;
-  margin-bottom: 150px;
-}
-
-.cartes1 {
-  height: 500px;
-  width: 352px;
+  height: 350px;
 }
 
 .texte-video {
   font-size: 30px;
   font-family: "Cinzel", sans-serif;
   font-weight: 500;
+  color: #ffffff;
 }
 
 .texte-video-container {
   position: absolute;
   left: 3%;
   bottom: 60%;
+}
+
+.footer {
+  margin-top: 15em;
 }

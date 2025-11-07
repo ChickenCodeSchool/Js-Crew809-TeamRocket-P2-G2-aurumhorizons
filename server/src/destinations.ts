@@ -4,7 +4,8 @@ export const destinations = [
     name: "Indonesia",
     continent: "Asia",
     average_price: 1800,
-    description: "Volcanoes and dream beaches.",
+    description:
+      "Volcanoes and dream beaches. Explore the terraced rice fields of Bali, dive into the crystal-clear waters of the Gili Islands, and hike Mount Bromo for an unforgettable sunrise.",
     time_zone: "UTC+7 (Jakarta)",
     language: "Indonesian",
     currency: "Indonesian Rupiah (IDR)",
@@ -16,7 +17,8 @@ export const destinations = [
     name: "Egypt",
     continent: "Africa",
     average_price: 1400,
-    description: "Pyramids and ancient history.",
+    description:
+      "Pyramids and ancient history. Travel back in time by visiting the majestic pyramids of Giza, sail the Nile on a felucca, and discover the hidden treasures of the Valley of the Kings in Luxor.",
     time_zone: "UTC+2",
     language: "Arabic",
     currency: "Egyptian Pound (EGP)",
@@ -28,7 +30,8 @@ export const destinations = [
     name: "Maldives",
     continent: "Asia",
     average_price: 3200,
-    description: "Overwater bungalows and blue lagoon.",
+    description:
+      "Overwater bungalows and blue lagoon. A luxury destination par excellence, ideal for honeymoons. Enjoy the pristine white sand, snorkel among the coral reefs, and relax in a world-class spa.",
     time_zone: "UTC+5",
     language: "Dhivehi",
     currency: "Maldivian Rufiyaa (MVR)",
@@ -40,7 +43,8 @@ export const destinations = [
     name: "Philippines",
     continent: "Asia",
     average_price: 1700,
-    description: "Archipelago of 7000 islands.",
+    description:
+      "Archipelago of 7000 islands. Discover the spectacular lagoons of El Nido, the famous Chocolate Hills of Bohol, and world-renowned diving spots. A tropical adventure awaits around every corner.",
     time_zone: "UTC+8",
     language: "Filipino (Tagalog)",
     currency: "Philippine Peso (PHP)",
@@ -52,7 +56,8 @@ export const destinations = [
     name: "Seychelles",
     continent: "Africa",
     average_price: 2800,
-    description: "Granite rocks and idyllic beaches.",
+    description:
+      "Granite rocks and idyllic beaches. Explore the iconic Anse Source d'Argent beach on La Digue, visit the Vallée de Mai to see the unique Coco de Mer, and enjoy the preserved nature in this Indian Ocean eden.",
     time_zone: "UTC+4",
     language: "Seychellois Creole, French, English",
     currency: "Seychellois Rupee (SCR)",
@@ -64,7 +69,8 @@ export const destinations = [
     name: "Iceland",
     continent: "Europe",
     average_price: 2100,
-    description: "Northern lights and geysers.",
+    description:
+      "Northern lights and geysers. The land of ice and fire awaits you. Admire the northern lights in winter, travel the Golden Circle to see Geysir and Gullfoss, and relax in the warm waters of the Blue Lagoon.",
     time_zone: "UTC+0 (GMT)",
     language: "Icelandic",
     currency: "Icelandic Króna (ISK)",
@@ -76,7 +82,8 @@ export const destinations = [
     name: "Japan",
     continent: "Asia",
     average_price: 2500,
-    description: "Mix of tradition and modernity.",
+    description:
+      "Mix of tradition and modernity. Immerse yourself in the hustle and bustle of Tokyo at Shibuya Crossing, find serenity in the temples of Kyoto, and enjoy refined cuisine, from sushi to ramen, during the cherry blossom season.",
     time_zone: "UTC+9",
     language: "Japanese",
     currency: "Yen (JPY)",
@@ -88,7 +95,8 @@ export const destinations = [
     name: "Italy",
     continent: "Europe",
     average_price: 1300,
-    description: "Gastronomy, art, and Roman ruins.",
+    description:
+      "Gastronomy, art, and Roman ruins. Visit the Colosseum in Rome, admire the Renaissance masterpieces in Florence, and savor the 'dolce vita' with authentic pasta and gelato. Each region offers a unique flavor.",
     time_zone: "UTC+1 (CET)",
     language: "Italian",
     currency: "Euro (EUR)",
@@ -100,7 +108,8 @@ export const destinations = [
     name: "Costa Rica",
     continent: "America",
     average_price: 1900,
-    description: 'Exuberant nature and "Pura Vida".',
+    description:
+      "Exuberant nature and 'Pura Vida'. Explore the Monteverde cloud forest, zip-line over the canopy, and observe incredible wildlife, from toucans to sloths. The ecotourism paradise.",
     time_zone: "UTC-6",
     language: "Spanish",
     currency: "Costa Rican Colón (CRC)",
@@ -112,7 +121,8 @@ export const destinations = [
     name: "Greece",
     continent: "Europe",
     average_price: 1500,
-    description: "Cycladic islands and mythology.",
+    description:
+      "Cycladic islands and mythology. Admire the sunsets in Santorini, visit the Acropolis in Athens, the cradle of democracy, and island-hop in the blue waters of the Aegean Sea. History meets relaxation.",
     time_zone: "UTC+2 (EET)",
     language: "Greek",
     currency: "Euro (EUR)",
@@ -124,7 +134,8 @@ export const destinations = [
     name: "Peru",
     continent: "America",
     average_price: 2200,
-    description: "Machu Picchu and Andean mountains.",
+    description:
+      "Machu Picchu and Andean mountains. Discover the lost Inca city of Machu Picchu, explore the colonial city of Cusco, and venture into the Amazon rainforest. A destination rich in culture and breathtaking landscapes.",
     time_zone: "UTC-5",
     language: "Spanish",
     currency: "Peruvian Sol (PEN)",
@@ -136,7 +147,8 @@ export const destinations = [
     name: "Morocco",
     continent: "Africa",
     average_price: 900,
-    description: "Colorful souks and Sahara desert.",
+    description:
+      "Colorful souks and Sahara desert. Get lost in the medina of Marrakech, visit the tanneries of Fes, and spend an unforgettable night under the stars in the Sahara desert after tasting a traditional tagine.",
     time_zone: "UTC+1",
     language: "Arabic, Berber",
     currency: "Moroccan Dirham (MAD)",
@@ -148,7 +160,8 @@ export const destinations = [
     name: "Australia",
     continent: "Oceania",
     average_price: 3500,
-    description: "Surf, kangaroos, and Great Barrier Reef.",
+    description:
+      "Surf, kangaroos, and Great Barrier Reef. Surf the waves at Bondi Beach, dive the Great Barrier Reef, and explore the vastness of the Outback. Don't forget the Sydney Opera House and the country's unique wildlife.",
     time_zone: "UTC+10 (Sydney)",
     language: "English",
     currency: "Australian Dollar (AUD)",
@@ -160,7 +173,8 @@ export const destinations = [
     name: "Canada",
     continent: "America",
     average_price: 2300,
-    description: "Great national parks and Rockies.",
+    description:
+      "Great national parks and Rockies. Hike in Banff National Park, admire the turquoise lakes like Lake Louise, and discover the urban culture of Vancouver or the historic charm of Quebec City. A vast and wild nature.",
     time_zone: "UTC-5 (East) / UTC-8 (West)",
     language: "English, French",
     currency: "Canadian Dollar (CAD)",
@@ -172,7 +186,8 @@ export const destinations = [
     name: "Thailand",
     continent: "Asia",
     average_price: 1600,
-    description: "Golden temples and street food.",
+    description:
+      "Golden temples and street food. Explore the hustle and bustle of Bangkok and its majestic temples, relax on the beaches of Phuket or Koh Samui, and savor the world-renowned street food. The land of smiles awaits you.",
     time_zone: "UTC+7",
     language: "Thai",
     currency: "Baht (THB)",
@@ -184,7 +199,8 @@ export const destinations = [
     name: "New Zealand",
     continent: "Oceania",
     average_price: 3300,
-    description: "Lord of the Rings landscapes.",
+    description:
+      "Lord of the Rings landscapes. Sail through the Milford Sound fjord, discover Maori culture in Rotorua, and get your thrills with bungee jumping in Queenstown. An epic two-island adventure.",
     time_zone: "UTC+12",
     language: "English, Maori",
     currency: "New Zealand Dollar (NZD)",

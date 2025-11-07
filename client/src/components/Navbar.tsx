@@ -12,10 +12,10 @@ const Navbar: React.FC = () => {
       <div className="navbar__links-container">
         <ul className="navbar__links navbar__links--left">
           <li>
-            <a href="/">Accueil</a>
+            <a href="/">Home</a>
           </li>
           <li>
-            <a href="/experience">Expérience</a>
+            <a href="/experience">Experience</a>
           </li>
         </ul>
         <ul className="navbar__links navbar__links--right">
