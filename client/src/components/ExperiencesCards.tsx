@@ -8,7 +8,7 @@ interface ExperiencesCardsProps {
   tourist_season: string;
 }
 
-const DestinationCard: React.FC<ExperiencesCardsProps> = ({
+const ExperiencesCards: React.FC<ExperiencesCardsProps> = ({
   name,
   image,
   continent,
@@ -31,4 +31,4 @@ const DestinationCard: React.FC<ExperiencesCardsProps> = ({
   );
 };
 
-export default DestinationCard;
+export default ExperiencesCards;

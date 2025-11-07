@@ -19,25 +19,27 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
+/* 
 .hr-top-footer {
   width: 95%;
   height: 0.40em;
   background: linear-gradient(to top, transparent 10%, #898989 100%);
   border-radius: 2em;
-}
+  border: none;
+} */
 
-.h2-footer {
-  font-size: 2em;
+.logo-footer {
+  width: 13rem;
+  height: auto;
 }
 
 .footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2em;
+  gap: 1em;
   width: 100%;
-  margin-top: 5em;
+  background-color: #e0c086;
 }
 
 .separator-footer {
@@ -45,11 +47,14 @@ a {
   height: 0.25em;
   background: linear-gradient(to top, transparent 0%, #898989 100%);
   border-radius: 2em;
+  border: none;
 }
 
 .container-h2-footer {
-  display: flex;
+  position: relative;
+  right: 1%;
   width: 10em;
+  margin-top: 1rem;
 }
 
 .container-mid-footer {
@@ -63,10 +68,13 @@ a {
 
 .container-icon-footer {
   display: flex;
-  gap: 2em;
-  margin-left: 8em;
+  gap: 1em;
+  margin-left: 14em;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
 }
-
+/* 
 .icon-footer {
   width: 3em;
   transition: width 0.1s ease;
@@ -77,7 +85,7 @@ a {
 .icon-footer:hover {
   transform: scale(0.967);
   opacity: 0.8;
-}
+} */
 
 .newsletter-form {
   display: flex;
@@ -102,7 +110,7 @@ a {
   font-size: 1em;
   padding: 1em 2em;
   border: none;
-  background-color: #898989;
+  background-color: #000000;
   color: #ffffff;
   cursor: pointer;
   transition: background-color 0.2s ease;
@@ -113,7 +121,7 @@ a {
 
 .newsletter-input::placeholder {
   font-size: 1em;
-  color: #898989;
+  color: #000000;
 }
 
 .newsletter-button:hover {
@@ -123,8 +131,10 @@ a {
 }
 
 .mention-legal {
+  display: flex;
+  justify-content: center;
   font-size: 1.25em;
-  margin-bottom: 2em;
+  margin-bottom: 0.5em;
 }
 
 @media (max-width: 992px) {

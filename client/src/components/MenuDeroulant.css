@@ -32,7 +32,7 @@
   border: none;
   font-size: 1.1rem;
   font-weight: 500;
-  color: #c39444;
+  color: #000000;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -52,20 +52,21 @@
 
 .arrow.open {
   transform: rotate(180deg);
-  color: #e0c086;
+  color: #000000;
 }
 
 .menu-list {
   position: absolute;
   top: 100%;
-  left: -20%;
-  margin-top: 0.5rem;
-  background-color: transparent;
-  border: 1px solid #c39444;
+  left: -11%;
+  margin-top: 1rem;
+  background-color: rgba(255, 255, 255, 0.034);
+  backdrop-filter: blur(5px);
+  /* border: 1px solid #000000; */
   border-radius: 8px;
   list-style: none;
   padding: 0.5rem 0;
-  min-width: 220px;
+  min-width: 200px;
   z-index: 100;
   opacity: 0;
   transform: translateY(-10px);
@@ -83,7 +84,7 @@
 .menu-item {
   display: block;
   padding: 0.6rem 1.2rem;
-  color: #c39444;
+  color: #ffffff;
   text-decoration: none;
   font-weight: 400;
   transition: background 0.3s, color 0.3s;
@@ -103,7 +104,7 @@
 .menu-right .menu-link {
   font-size: 1.1rem;
   font-weight: 500;
-  color: #c39444;
+  color: #000000;
   text-decoration: none;
   font-family: "Cinzel", serif;
   transition: color 0.3s;

@@ -4,15 +4,17 @@
   align-items: center;
   padding: 1rem 2rem;
   box-shadow: 0 1px 8px 1px #e0c086;
-  position: sticky;
+  position: absolute;
   top: 0;
   z-index: 1000;
+  width: 100%;
 }
 
 .navbar__logo img {
   height: 50px;
   width: auto;
   object-fit: contain;
+  cursor: pointer;
 }
 
 .navbar__links-container {

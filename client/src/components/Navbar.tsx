@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
             <a href="/contact">Contact</a>
           </li>
           <li>
-            <a href="tel:0102945634">0102945634</a>
+            <a href="tel:0102945634">01 02 94 56 34</a>
           </li>
         </ul>
       </div>
