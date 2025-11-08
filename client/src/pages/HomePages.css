@@ -16,17 +16,24 @@
 }
 
 .containercards {
-  margin: 150px auto;
+  margin: 6rem auto 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 85%;
-  gap: 9em;
+  width: 90vw;
+  gap: 5em;
 }
 
 .cartes {
-  width: 352px;
-  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25rem;
+}
+
+.PhomePage {
+  margin-top: 0.5em;
+  width: 20rem;
 }
 
 .texte-video {
@@ -43,5 +50,15 @@
 }
 
 .footer {
-  margin-top: 15em;
+  margin-top: 5rem;
+}
+
+@media (max-width: 600px) {
+  .texte-video {
+    font-size: 1.5em;
+  }
+  .PhomePage {
+    text-align: center;
+    width: 17em;
+  }
 }
