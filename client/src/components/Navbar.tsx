@@ -1,6 +1,6 @@
-import type React from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
-import logo from "../assets/images/Logo_Aurum_Horizons-sans-fond.png";
+import logo from "../assets/images/Logo sans fond texte blanc.png";
 
 const Navbar: React.FC = () => {
   return (
@@ -12,18 +12,22 @@ const Navbar: React.FC = () => {
       <div className="navbar__links-container">
         <ul className="navbar__links navbar__links--left">
           <li>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="/experience">Experience</a>
+            <Link to="/inspiration">Inspiration</Link>
+          </li>
+          <li>
+            <Link to="/experience">Experience</Link>
           </li>
         </ul>
         <ul className="navbar__links navbar__links--right">
           <li>
-            <a href="/contact">Contact</a>
+            <Link to="/contact">Contact</Link>
           </li>
           <li>
-            <a href="tel:0102945634">01 02 94 56 34</a>
+            <a href="tel:0102945634">01 02 94 56 34</a>{" "}
+            {/* téléphone reste en <a> */}
           </li>
         </ul>
       </div>
