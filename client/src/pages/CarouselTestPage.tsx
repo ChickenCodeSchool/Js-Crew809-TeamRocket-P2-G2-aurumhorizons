@@ -13,7 +13,7 @@ const CarouselTestPage: React.FC = () => {
   return (
     <div className="carousel-page">
       <div className="text-section">
-        <h1>🏺 Discover Exceptional Experiences</h1>
+        <h1>🇪🇬 Discover Exceptional Experiences</h1>
        <p>
     Explore unique destinations and carefully curated activities designed for discerning travelers. 
     Every journey is crafted to offer the perfect balance of comfort, refinement, and discovery. 
