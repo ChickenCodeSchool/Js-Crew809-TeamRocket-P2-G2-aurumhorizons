@@ -18,7 +18,7 @@ const MenuDeroulant: React.FC = () => {
     { name: "Philippines", link: "/philippines" },
     { name: "Seychelles", link: "/seychelles" },
     { name: "Iceland", link: "/iceland" },
-    { name: "See more...", link: "" },
+    { name: "See more...", link: "/see-more" },
   ];
   const toggleMenu = () => setIsOpen(!isOpen);
 
