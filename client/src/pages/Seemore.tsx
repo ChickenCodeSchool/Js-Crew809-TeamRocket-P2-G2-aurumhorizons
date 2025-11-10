@@ -1,20 +1,20 @@
-import { type ReactNode, useEffect, useState } from "react";
+import { type ReactNode, useEffect, useState, useMemo } from "react";
 import ExperiencesCards from "../components/ExperiencesCards";
 
-import imageForId13 from "../assets/images/imgSeemore/australieseemore.png";
+import imageForId2 from "../assets/images/imgHomepage/EgyptHomePage.png";
+import imageForId4 from "../assets/images/imgHomepage/PhillipinesHomePage.jpg";
 import imageForId1 from "../assets/images/imgHomepage/baliHomePage.png";
+import imageForId6 from "../assets/images/imgHomepage/islandHomePage.png";
+import imageForId3 from "../assets/images/imgHomepage/maldiveHomePage.png";
+import imageForId5 from "../assets/images/imgHomepage/seychelleHomepage.png";
+import imageForId13 from "../assets/images/imgSeemore/australieseemore.png";
 import imageForId14 from "../assets/images/imgSeemore/canadaseemore.png";
 import imageForId9 from "../assets/images/imgSeemore/costaricaseemore.jpg";
-import imageForId2 from "../assets/images/imgHomepage/EgyptHomePage.png";
 import imageForId10 from "../assets/images/imgSeemore/greeceseemore.png";
-import imageForId6 from "../assets/images/imgHomepage/islandHomePage.png";
 import imageForId7 from "../assets/images/imgSeemore/japonseemore.jpg";
-import imageForId3 from "../assets/images/imgHomepage/maldiveHomePage.png";
 import imageForId12 from "../assets/images/imgSeemore/maroccoseemore.jpg";
 import imageForId16 from "../assets/images/imgSeemore/newzealandseemore.png";
 import imageForId11 from "../assets/images/imgSeemore/peruseemore.jpg";
-import imageForId4 from "../assets/images/imgHomepage/PhillipinesHomePage.jpg";
-import imageForId5 from "../assets/images/imgHomepage/seychelleHomepage.png";
 import imageForId15 from "../assets/images/imgSeemore/thailandseemore.jpg";
 import imageForId8 from "../assets/images/imgSeemore/veniseseemore.jpg";
 
@@ -28,6 +28,10 @@ interface Destination {
   id: number;
   name: string;
 }
+
+type GroupedDestinations = {
+  [key: string]: Destination[];
+};
 
 const destinationImageMap: { [key: number]: string } = {
   1: imageForId1,
@@ -59,25 +63,68 @@ const Seemore: React.FC = () => {
       });
   }, []);
 
+  const groupedDestinations = useMemo(() => {
+    return dataDestination1.reduce((acc, destination) => {
+      const { continent } = destination;
+      if (!acc[continent]) {
+        acc[continent] = [];
+      }
+      acc[continent].push(destination);
+      return acc;
+    }, {} as GroupedDestinations);
+  }, [dataDestination1]);
+
   return (
     <>
-      <section className="containercardseemore">
-        {dataDestination1.map((destination: Destination) => {
-          const imageUrl = destinationImageMap[destination.id];
+      <section className="top-container">
+        <article className="topseemore">
+          <h1>See more...</h1>
+          <div className="ptopsee">
+            <p>
+              From the African desert to Asian megacities, from the paradise
+              beaches of Oceania to the dizzying peaks of the Americas, and not
+              forgetting the historical charm of Europe...
+            </p>
+            <p>
+              The world is within your reach. To help you find inspiration and
+              navigate our offerings more easily, we have grouped all our
+              destinations by continent. Explore, dream, and find the journey
+              that's right for you.
+            </p>
+          </div>
+        </article>
+      </section>
+      <section className="seemore-page-container">
+        {Object.keys(groupedDestinations).map((continentName) => (
+          <div key={continentName} className="continent-group-seemore">
+            <h2 className="continent-title-seemore">{continentName}</h2>
+            <div className="containercardseemore">
+              {groupedDestinations[continentName].map(
+                (destination: Destination) => {
+                  const imageUrl = destinationImageMap[destination.id];
 
-          return (
-            <article key={destination.id} className="carteseemore">
-              <ExperiencesCards
-                name={destination.name}
-                image={imageUrl}
-                continent={destination.continent}
-                average_price={destination.average_price}
-                tourist_season={destination.tourist_season}
-              />
-              <p className="PseePage">{destination.description}</p>
-            </article>
-          );
-        })}
+                  return (
+                    <>
+                      <article key={destination.id} className="carteseemore">
+                        <div className="backcardsee">
+                          <h2 className="h2seemore">{destination.name}</h2>
+                          <ExperiencesCards
+                            name={destination.name}
+                            image={imageUrl}
+                            continent={destination.continent}
+                            average_price={destination.average_price}
+                            tourist_season={destination.tourist_season}
+                          />
+                          <p className="PseePage">{destination.description}</p>
+                        </div>
+                      </article>
+                    </>
+                  );
+                },
+              )}
+            </div>
+          </div>
+        ))}
       </section>
     </>
   );
