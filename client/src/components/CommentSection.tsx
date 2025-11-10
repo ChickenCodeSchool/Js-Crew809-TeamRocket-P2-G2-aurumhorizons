@@ -49,7 +49,7 @@ const CommentsSection: FC = () => {
 
   return (
     <section className="comments-section">
-      <h2>Your feedback on our trips</h2>
+      <h2>Your feedback on your trip</h2>
 
       <form onSubmit={handleAddComment} className="comment-form">
         <div className="form-group">
@@ -118,7 +118,7 @@ const CommentsSection: FC = () => {
       )}
 
       {comments.length === 0 ? (
-        <p>Be the first to leave a comment!</p>
+        <p>Leave a comment!</p>
       ) : (
         <ul className="comment-list">
           {comments.map((comment) => (
