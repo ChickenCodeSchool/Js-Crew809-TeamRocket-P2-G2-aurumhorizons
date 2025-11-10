@@ -1,4 +1,4 @@
-import { useState, type FormEvent, type FC } from "react";
+import { type FC, type FormEvent, useState } from "react";
 import "./CommentSection.css";
 
 interface Comment {
