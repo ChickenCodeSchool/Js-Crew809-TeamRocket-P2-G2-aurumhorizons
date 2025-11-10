@@ -12,14 +12,20 @@
 .text-section {
   width: 40%;
   color: #333;
-  padding-right: 2vw;
+  padding: 20px;  
+  background-color: #e0c086;
+  border-radius: 12px;
+  box-sizing: border-box;
+  display: inline-block; 
+  margin-top: 0;
 }
 
 .text-section h1 {
   font-family: 'Cinzel', serif;
   font-weight: 700;
   font-size: 2.2rem;
-  margin-bottom: 1rem;
+  margin: 0 0 1rem 0;
+  color: #c39444;
 }
 
 .text-section p {
