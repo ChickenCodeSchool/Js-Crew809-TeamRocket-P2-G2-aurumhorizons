@@ -1,0 +1,43 @@
+import React from "react";
+import Carousel from "../components/Carousel";
+
+import img1 from "../assets/images/egypt-1.jpg";
+import img2 from "../assets/images/egypt-2.jpg";
+import img3 from "../assets/images/egypt-3.jpg"; 
+import img4 from "../assets/images/egypt-4.jpg";
+
+const egyptImages: string[] = [img1, img2, img3, img4];
+
+const CarouselTestPage: React.FC = () => {
+
+  return (
+    <div className="carousel-page">
+      <div className="text-section">
+        <h1>🏺 Discover Exceptional Experiences</h1>
+       <p>
+    Explore unique destinations and carefully curated activities designed for discerning travelers. 
+    Every journey is crafted to offer the perfect balance of comfort, refinement, and discovery. 
+    Immerse yourself in majestic landscapes, iconic historical sites, and exclusive experiences 
+    created to delight your senses and leave lasting memories.
+  </p>
+  <p>
+    Whether you dream of luxurious safaris in pristine reserves, 
+    intimate cruises along the Nile, or private visits to world-renowned monuments, 
+    our tailor-made trips are designed to exceed your highest expectations. 
+    Enjoy exceptional accommodations, personalized services, and experiences that go beyond the ordinary.
+  </p>
+  <p>
+    Every detail of your journey is orchestrated to create unique and memorable moments, 
+    combining elegance, authenticity, and comfort. Discover the world in a new way, 
+    with attentive guidance and experiences crafted to inspire and amaze.
+  </p>
+      </div>
+
+      <div className="carousel-section">
+        <Carousel images={egyptImages} />
+      </div>
+    </div>
+  );
+};
+
+export default CarouselTestPage;
