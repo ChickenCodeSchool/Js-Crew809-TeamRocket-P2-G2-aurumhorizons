@@ -1,7 +1,5 @@
-import React, { useState } from "react";
-import Carousel from "./Carousel";
+import React, { useState, useEffect } from "react";
 import "./HotelsCarousel.css";
-
 
 import hotel1 from "../assets/images/hotel-egypt-1.jpg.webp";
 import hotel2 from "../assets/images/hotel-egypt-2.jpg.webp";
@@ -36,22 +34,47 @@ const hotels: Hotel[] = [
 
 const HotelsCarousel: React.FC = () => {
   const [index, setIndex] = useState(0);
+  const [fade, setFade] = useState(true);
 
-  const next = () => setIndex((prev) => (prev + 1) % hotels.length);
-  const prev = () => setIndex((prev) => (prev - 1 + hotels.length) % hotels.length);
+  const next = () => {
+    setFade(false);
+    setTimeout(() => {
+      setIndex((prev) => (prev + 1) % hotels.length);
+      setFade(true);
+    }, 400);
+  };
+
+  const prev = () => {
+    setFade(false);
+    setTimeout(() => {
+      setIndex((prev) => (prev - 1 + hotels.length) % hotels.length);
+      setFade(true);
+    }, 400);
+  };
+
+  useEffect(() => {
+    const interval = setInterval(() => next(), 5000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const hotel = hotels[index];
 
   return (
     <div className="hotels-carousel-page">
       <div className="hotels-text-section">
-        <h2>{hotels[index].title}</h2>
-        <p>{hotels[index].description}</p>
+        <h2>{hotel.title}</h2>
+        <p>{hotel.description}</p>
       </div>
 
       <div className="hotels-carousel-section">
-        <Carousel images={hotels.map((h) => h.img)} />
+        <img
+          src={hotel.img}
+          alt={hotel.title}
+          className={`carousel-image ${fade ? "fade-in" : "fade-out"}`}
+        />
         <div className="carousel-buttons">
-          <button onClick={prev}></button>
-          <button onClick={next}></button>
+          <button onClick={prev}>❮</button>
+          <button onClick={next}>❯</button>
         </div>
       </div>
     </div>
@@ -59,4 +82,3 @@ const HotelsCarousel: React.FC = () => {
 };
 
 export default HotelsCarousel;
-
