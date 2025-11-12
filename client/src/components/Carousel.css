@@ -111,3 +111,23 @@
 
 .prev { margin-left: 10px; }
 .next { margin-right: 10px; }
+
+.bottom-text-section {
+  max-width: 86vw; /* ou 1200px si tu veux une largeur fixe */
+  margin: 100px auto; /* centre la section horizontalement */
+  background: #d35b43;
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: justify;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+}
+
+.bottom-text-section p {
+  margin: 0;
+}
+

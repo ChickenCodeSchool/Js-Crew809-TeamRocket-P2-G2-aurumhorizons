@@ -1,0 +1,35 @@
+.hotels-carousel-page {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 86vw; /* même largeur que le texte principal */
+  margin: 80px auto;
+  gap: 40px;
+  flex-wrap: wrap; /* pour mobile */
+}
+
+.hotels-text-section {
+  flex: 1;
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px;
+}
+
+.hotels-text-section h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #c39444;
+}
+
+.hotels-text-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.hotels-carousel-section {
+  flex: 1;
+  min-width: 300px;
+  position: relative;
+}

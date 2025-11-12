@@ -1,5 +1,7 @@
 import React from "react";
 import Carousel from "../components/Carousel";
+import HotelsCarousel from "../components/HotelsCarousel";
+
 
 import img1 from "../assets/images/egypt-1.jpg";
 import img2 from "../assets/images/egypt-2.jpg";
@@ -11,6 +13,7 @@ const egyptImages: string[] = [img1, img2, img3, img4];
 const CarouselTestPage: React.FC = () => {
 
   return (
+    <div>
     <div className="carousel-page">
       <div className="text-section">
         <h1>🇪🇬 Discover Exceptional Experiences</h1>
@@ -36,6 +39,17 @@ const CarouselTestPage: React.FC = () => {
       <div className="carousel-section">
         <Carousel images={egyptImages} />
       </div>
+    </div>
+    <div className="bottom-text-section">
+        <p>
+          Embark on a journey where every detail has been meticulously crafted to create unforgettable memories.
+    From the golden sands of Egypt's deserts to the serene waters of the Nile, each moment invites you to
+    explore history, culture, and luxury in perfect harmony. Imagine waking up to the warm glow of the sunrise
+    over ancient temples, enjoying private guided tours through timeless monuments, and indulging in
+    exquisite cuisine that reflects the richness of the land.
+        </p>
+      </div>
+      <HotelsCarousel />
     </div>
   );
 };
