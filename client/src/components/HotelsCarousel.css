@@ -1,18 +1,18 @@
 .hotels-carousel-page {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 86vw;
+  flex-direction: row;       /* texte à gauche, image à droite */
+  width: 86vw; 
   margin: 80px auto;
-  gap: 40px;
-  flex-wrap: wrap;
+  height: 80vh;              /* hauteur globale du container */
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .hotels-text-section {
-  flex: 1;
+  flex: 0 0 250px;           /* largeur fixe pour le texte très serré */
+  padding: 20px;
   color: #333;
   font-family: 'Montserrat', sans-serif;
-  padding: 20px;
 }
 
 .hotels-text-section h2 {
@@ -29,9 +29,19 @@
 }
 
 .hotels-carousel-section {
-  flex: 1;
-  min-width: 300px;
+  flex: 1 1 auto;            /* prend tout le reste de l’espace */
   position: relative;
+  height: 100%;              /* s’étend sur toute la hauteur du container */
+}
+
+.hotels-carousel-section .carousel {
+  height: 100%;        /* s’étend sur toute la hauteur du container parent */
+}
+
+.hotels-carousel-section .carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;          /* remplit tout l’espace sans déformation */
 }
 
 .hotels-carousel-section .carousel-buttons {

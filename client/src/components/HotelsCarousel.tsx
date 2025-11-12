@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Carousel from "./Carousel";
+import "./HotelsCarousel.css";
 
 
 import hotel1 from "../assets/images/hotel-egypt-1.jpg.webp";
@@ -49,8 +50,8 @@ const HotelsCarousel: React.FC = () => {
       <div className="hotels-carousel-section">
         <Carousel images={hotels.map((h) => h.img)} />
         <div className="carousel-buttons">
-          <button onClick={prev}>❮</button>
-          <button onClick={next}>❯</button>
+          <button onClick={prev}></button>
+          <button onClick={next}></button>
         </div>
       </div>
     </div>
