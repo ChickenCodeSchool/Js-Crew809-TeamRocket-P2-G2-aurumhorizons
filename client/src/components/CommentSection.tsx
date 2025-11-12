@@ -7,7 +7,8 @@ interface Comment {
   message: string;
   rating: number;
   date: string;
-  stayDates: string;
+  stayStartDate: string;
+  stayEndDate: string;
 }
 
 const CommentsSection: FC = () => {
@@ -16,11 +17,13 @@ const CommentsSection: FC = () => {
   const [message, setMessage] = useState("");
   const [rating, setRating] = useState(0);
   const [hoverRating, setHoverRating] = useState(0);
-  const [stayDates, setStayDates] = useState("");
+  const [stayStartDate, setStayStartDate] = useState("");
+  const [stayEndDate, setStayEndDate] = useState("");
 
   const handleAddComment = (e: FormEvent) => {
     e.preventDefault();
-    if (!name || !message || rating === 0 || !stayDates) return;
+    if (!name || !message || rating === 0 || !stayStartDate || !stayEndDate)
+      return;
 
     const newComment: Comment = {
       id: Date.now(),
@@ -28,7 +31,8 @@ const CommentsSection: FC = () => {
       message,
       rating,
       date: new Date().toLocaleDateString(),
-      stayDates,
+      stayStartDate,
+      stayEndDate,
     };
 
     setComments([newComment, ...comments]);
@@ -36,7 +40,8 @@ const CommentsSection: FC = () => {
     setMessage("");
     setRating(0);
     setHoverRating(0);
-    setStayDates("");
+    setStayStartDate("");
+    setStayEndDate("");
   };
 
   const renderStars = (count: number) =>
@@ -53,7 +58,7 @@ const CommentsSection: FC = () => {
 
       <form onSubmit={handleAddComment} className="comment-form">
         <div className="form-group">
-          <label htmlFor="name">Name:</label>
+          <label htmlFor="name">Name :</label>
           <input
             id="name"
             type="text"
@@ -64,7 +69,7 @@ const CommentsSection: FC = () => {
         </div>
 
         <div className="form-group">
-          <label htmlFor="message">Comment:</label>
+          <label htmlFor="message">Comment :</label>
           <textarea
             id="message"
             value={message}
@@ -74,19 +79,29 @@ const CommentsSection: FC = () => {
         </div>
 
         <div className="form-group">
-          <label htmlFor="stayDates">Stay Dates:</label>
+          <label htmlFor="stayStartDate">Stay Start Date :</label>
           <input
-            id="stayDates"
-            type="text"
-            placeholder="e.g. 06/01/2025 - 06/07/2025"
-            value={stayDates}
-            onChange={(e) => setStayDates(e.target.value)}
+            id="stayStartDate"
+            type="date"
+            value={stayStartDate}
+            onChange={(e) => setStayStartDate(e.target.value)}
             required
           />
         </div>
 
         <div className="form-group">
-          <label htmlFor="rating">Rating:</label>
+          <label htmlFor="stayEndDate">Stay End Date :</label>
+          <input
+            id="stayEndDate"
+            type="date"
+            value={stayEndDate}
+            onChange={(e) => setStayEndDate(e.target.value)}
+            required
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="rating">Rating :</label>
           <div id="rating" className="star-rating">
             {[1, 2, 3, 4, 5].map((value) => (
               <button
@@ -118,7 +133,7 @@ const CommentsSection: FC = () => {
       )}
 
       {comments.length === 0 ? (
-        <p>Leave a comment!</p>
+        <p>We would enjoy your comments!</p>
       ) : (
         <ul className="comment-list">
           {comments.map((comment) => (
@@ -127,7 +142,8 @@ const CommentsSection: FC = () => {
                 <strong>{comment.name}</strong> – <em>{comment.date}</em>
               </p>
               <p className="comment-stay-dates">
-                <strong>Stay Dates:</strong> {comment.stayDates}
+                <strong>Stay Dates:</strong> {comment.stayStartDate} to{" "}
+                {comment.stayEndDate}
               </p>
               <p className="comment-rating">{renderStars(comment.rating)}</p>
               <p>{comment.message}</p>

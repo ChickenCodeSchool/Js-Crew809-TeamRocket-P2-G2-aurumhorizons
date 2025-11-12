@@ -37,6 +37,7 @@ h2 {
 }
 
 .form-group {
+  font-family: "Montserrat", sans-serif;
   display: flex;
   flex-direction: column;
 }
@@ -77,8 +78,10 @@ button[type="submit"]:hover {
 }
 
 .average-rating {
+  font-family: "Montserrat", sans-serif;
   margin-top: 20px;
   font-weight: bold;
+  font-size: 18px;
   color: #333;
 }
 
