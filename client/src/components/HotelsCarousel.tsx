@@ -18,19 +18,19 @@ const hotels: Hotel[] = [
     img: hotel1,
     title: "The Nile Serenity",
     description:
-      "An elegant riverside hotel offering luxurious suites with Nile views, exceptional dining, and a serene spa experience."
+      "Located along the Nile River, The Nile Serenity offers spacious suites with breathtaking views of the water. Every detail is designed for comfort and refinement, featuring personalized service and a luxurious spa. Guests can enjoy sunrise boat rides, gourmet dining with local ingredients, and a peaceful atmosphere that invites relaxation and contemplation of Egypt's iconic landscapes."
   },
   {
     img: hotel2,
     title: "Pyramids Horizon Hotel",
     description:
-      "Located near the Giza Pyramids, this hotel blends traditional architecture with modern luxury, providing an unforgettable stay."
+      "Just steps away from the majestic Pyramids of Giza, Pyramids Horizon Hotel blends traditional elegance with modern comfort. Its rooms offer exceptional views of ancient monuments, while the hotel features a refined restaurant, a panoramic lounge, and private excursions. Each stay is designed to immerse travelers in history and culture while enjoying discreet and sophisticated luxury."
   },
   {
     img: hotel3,
     title: "Desert Oasis Retreat",
     description:
-      "Experience tranquility in the desert with spacious villas, personalized service, and breathtaking sunset vistas over golden dunes."
+      "In the heart of the Egyptian desert, Desert Oasis Retreat is a true sanctuary of peace. Secluded villas provide privacy and comfort with terraces overlooking golden dunes and stunning sunsets. The hotel offers exclusive activities such as private safaris, local cooking classes, and spa treatments, creating a unique experience where luxury and nature meet for unforgettable memories."
   }
 ];
 

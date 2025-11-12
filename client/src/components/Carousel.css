@@ -113,8 +113,8 @@
 .next { margin-right: 10px; }
 
 .bottom-text-section {
-  max-width: 86vw; /* ou 1200px si tu veux une largeur fixe */
-  margin: 100px auto; /* centre la section horizontalement */
+  max-width: 86vw;
+  margin: 100px auto;
   background: #d35b43;
   color: #333;
   font-family: 'Montserrat', sans-serif;
