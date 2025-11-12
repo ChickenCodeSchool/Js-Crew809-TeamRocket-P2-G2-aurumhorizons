@@ -103,7 +103,15 @@
 
 .hotel-link-button:hover {
   background-color: #c39444;
-  color: white;
+  color: black;
   transform: scale(1.05);
   box-shadow: 0 0 10px rgba(195, 148, 68, 0.6);
+}
+.section-title {
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  font-size: 2.4rem;
+  color: #e0c086;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
 }

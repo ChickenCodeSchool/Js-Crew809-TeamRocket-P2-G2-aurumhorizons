@@ -64,6 +64,8 @@ const HotelsCarousel: React.FC = () => {
   const hotel = hotels[index];
 
   return (
+    <div className="hotels-section">
+  <h2 className="section-title">Our Exclusive Hotels</h2>
     <div className="hotels-carousel-page">
       <div className="hotels-text-section">
         <h2>{hotel.title}</h2>
@@ -89,6 +91,7 @@ const HotelsCarousel: React.FC = () => {
           <button onClick={next}>❯</button>
         </div>
       </div>
+    </div>
     </div>
   );
 };
