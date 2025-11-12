@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import Carousel from "./Carousel";
-import "./HotelsCarousel.css";
 
+
+import hotel1 from "../assets/images/hotel-egypt-1.jpg.webp";
+import hotel2 from "../assets/images/hotel-egypt-2.jpg.webp";
+import hotel3 from "../assets/images/hotel-egypt-3.jpg.avif";
 
 interface Hotel {
   img: string;
@@ -11,19 +14,22 @@ interface Hotel {
 
 const hotels: Hotel[] = [
   {
-    img: "/assets/images/hotel-1.jpg",
+    img: hotel1,
     title: "The Nile Serenity",
-    description: "An elegant riverside hotel offering luxurious suites with Nile views..."
+    description:
+      "An elegant riverside hotel offering luxurious suites with Nile views, exceptional dining, and a serene spa experience."
   },
   {
-    img: "/assets/images/hotel-2.jpg",
+    img: hotel2,
     title: "Pyramids Horizon Hotel",
-    description: "Located near the Giza Pyramids, this hotel blends traditional architecture..."
+    description:
+      "Located near the Giza Pyramids, this hotel blends traditional architecture with modern luxury, providing an unforgettable stay."
   },
   {
-    img: "/assets/images/hotel-3.jpg",
+    img: hotel3,
     title: "Desert Oasis Retreat",
-    description: "Experience tranquility in the desert with spacious villas..."
+    description:
+      "Experience tranquility in the desert with spacious villas, personalized service, and breathtaking sunset vistas over golden dunes."
   }
 ];
 
@@ -39,8 +45,9 @@ const HotelsCarousel: React.FC = () => {
         <h2>{hotels[index].title}</h2>
         <p>{hotels[index].description}</p>
       </div>
+
       <div className="hotels-carousel-section">
-        <Carousel images={hotels.map(h => h.img)} />
+        <Carousel images={hotels.map((h) => h.img)} />
         <div className="carousel-buttons">
           <button onClick={prev}>❮</button>
           <button onClick={next}>❯</button>
@@ -51,3 +58,4 @@ const HotelsCarousel: React.FC = () => {
 };
 
 export default HotelsCarousel;
+

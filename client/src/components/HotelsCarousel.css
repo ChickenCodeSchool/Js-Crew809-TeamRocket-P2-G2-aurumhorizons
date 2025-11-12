@@ -2,10 +2,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 86vw; /* même largeur que le texte principal */
+  width: 86vw;
   margin: 80px auto;
   gap: 40px;
-  flex-wrap: wrap; /* pour mobile */
+  flex-wrap: wrap;
 }
 
 .hotels-text-section {
@@ -32,4 +32,39 @@
   flex: 1;
   min-width: 300px;
   position: relative;
+}
+
+.hotels-carousel-section .carousel-buttons {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+
+.hotels-carousel-section .carousel-buttons button {
+  pointer-events: auto;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(3px);
+  transition: all 0.3s ease;
+}
+
+.hotels-carousel-section .carousel-buttons button:hover {
+  background: rgba(255, 255, 255, 0.35);
+  transform: scale(1.08);
 }
