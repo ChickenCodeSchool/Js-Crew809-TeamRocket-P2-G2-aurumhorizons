@@ -7,6 +7,7 @@ import App from "./App";
 import HomePages from "./pages/HomePages";
 
 import MentionLegal from "./pages/MentionLegal";
+import Seemore from "./pages/Seemore";
 /* ************************************************************************* */
 
 // Import the main app component
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: "mention-legal",
         element: <MentionLegal />,
+      },
+      {
+        path: "see-more",
+        element: <Seemore />,
       },
     ],
   },
