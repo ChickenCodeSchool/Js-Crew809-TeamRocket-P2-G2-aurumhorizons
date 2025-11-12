@@ -6,7 +6,7 @@
   padding-left: 4vw;
   padding-right: 6vw;  
   box-sizing: border-box;
-  background: #f8f8f8;
+  background: #fff;
   padding-top: 190px;
 }
 
@@ -130,4 +130,3 @@
 .bottom-text-section p {
   margin: 0;
 }
-
