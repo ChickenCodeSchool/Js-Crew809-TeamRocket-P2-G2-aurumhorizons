@@ -153,6 +153,77 @@ button[type="submit"]:hover {
   color: #e0c086;
 }
 
+.comment-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.comment-actions button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 12px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.comment-actions button:hover {
+  background-color: #d3b06c;
+}
+
+.delete-btn {
+  background-color: #d9534f;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c9302c;
+}
+
+.reply-form {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 20px;
+}
+
+.reply-form input,
+.reply-form textarea {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+.reply-form button {
+  align-self: flex-start;
+  background-color: black;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.reply-list {
+  margin-top: 10px;
+  padding-left: 20px;
+  border-left: 2px solid #eee;
+}
+
+.reply-item {
+  margin-top: 10px;
+  background-color: #fafafa;
+  border-radius: 8px;
+  padding: 10px;
+}
+
 @media screen and (max-width: 992px) {
   .comments-section {
     width: 90%;

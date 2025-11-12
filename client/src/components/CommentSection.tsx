@@ -1,5 +1,12 @@
-import { type FC, type FormEvent, useState } from "react";
+import { type FC, type FormEvent, useEffect, useState } from "react";
 import "./CommentSection.css";
+
+interface Reply {
+  id: number;
+  name: string;
+  message: string;
+  date: string;
+}
 
 interface Comment {
   id: number;
@@ -9,16 +16,34 @@ interface Comment {
   date: string;
   stayStartDate: string;
   stayEndDate: string;
+  replies: Reply[];
 }
 
 const CommentsSection: FC = () => {
-  const [comments, setComments] = useState<Comment[]>([]);
+  const [comments, setComments] = useState<Comment[]>(() => {
+    try {
+      const stored = localStorage.getItem("comments");
+      return stored ? JSON.parse(stored) : [];
+    } catch (err) {
+      console.error("Error reading localStorage:", err);
+      return [];
+    }
+  });
+
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const [rating, setRating] = useState(0);
   const [hoverRating, setHoverRating] = useState(0);
   const [stayStartDate, setStayStartDate] = useState("");
   const [stayEndDate, setStayEndDate] = useState("");
+
+  const [replyMessage, setReplyMessage] = useState("");
+  const [replyName, setReplyName] = useState("");
+  const [replyTo, setReplyTo] = useState<number | null>(null);
+
+  useEffect(() => {
+    localStorage.setItem("comments", JSON.stringify(comments));
+  }, [comments]);
 
   const handleAddComment = (e: FormEvent) => {
     e.preventDefault();
@@ -33,6 +58,7 @@ const CommentsSection: FC = () => {
       date: new Date().toLocaleDateString(),
       stayStartDate,
       stayEndDate,
+      replies: [],
     };
 
     setComments([newComment, ...comments]);
@@ -42,6 +68,36 @@ const CommentsSection: FC = () => {
     setHoverRating(0);
     setStayStartDate("");
     setStayEndDate("");
+  };
+
+  const handleDeleteComment = (id: number) => {
+    if (confirm("Are you sure you want to delete this comment?")) {
+      setComments((prev) => prev.filter((c) => c.id !== id));
+    }
+  };
+
+  const handleReplySubmit = (e: FormEvent, commentId: number) => {
+    e.preventDefault();
+    if (!replyName || !replyMessage) return;
+
+    const newReply: Reply = {
+      id: Date.now(),
+      name: replyName,
+      message: replyMessage,
+      date: new Date().toLocaleDateString(),
+    };
+
+    setComments((prev) =>
+      prev.map((comment) =>
+        comment.id === commentId
+          ? { ...comment, replies: [...comment.replies, newReply] }
+          : comment,
+      ),
+    );
+
+    setReplyTo(null);
+    setReplyName("");
+    setReplyMessage("");
   };
 
   const renderStars = (count: number) =>
@@ -107,7 +163,9 @@ const CommentsSection: FC = () => {
               <button
                 key={value}
                 type="button"
-                className={`star ${value <= (hoverRating || rating) ? "filled" : ""}`}
+                className={`star ${
+                  value <= (hoverRating || rating) ? "filled" : ""
+                }`}
                 onClick={() => setRating(value)}
                 onMouseEnter={() => setHoverRating(value)}
                 onMouseLeave={() => setHoverRating(0)}
@@ -147,6 +205,54 @@ const CommentsSection: FC = () => {
               </p>
               <p className="comment-rating">{renderStars(comment.rating)}</p>
               <p>{comment.message}</p>
+
+              <div className="comment-actions">
+                <button type="button" onClick={() => setReplyTo(comment.id)}>
+                  Reply
+                </button>
+                <button
+                  type="button"
+                  className="delete-btn"
+                  onClick={() => handleDeleteComment(comment.id)}
+                >
+                  Delete
+                </button>
+              </div>
+
+              {replyTo === comment.id && (
+                <form
+                  onSubmit={(e) => handleReplySubmit(e, comment.id)}
+                  className="reply-form"
+                >
+                  <input
+                    type="text"
+                    placeholder="Your name"
+                    value={replyName}
+                    onChange={(e) => setReplyName(e.target.value)}
+                    required
+                  />
+                  <textarea
+                    placeholder="Your reply..."
+                    value={replyMessage}
+                    onChange={(e) => setReplyMessage(e.target.value)}
+                    required
+                  />
+                  <button type="submit">Send Reply</button>
+                </form>
+              )}
+
+              {comment.replies.length > 0 && (
+                <ul className="reply-list">
+                  {comment.replies.map((reply) => (
+                    <li key={reply.id} className="reply-item">
+                      <p>
+                        <strong>{reply.name}</strong> – <em>{reply.date}</em>
+                      </p>
+                      <p>{reply.message}</p>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </li>
           ))}
         </ul>
