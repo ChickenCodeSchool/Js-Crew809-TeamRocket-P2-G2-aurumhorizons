@@ -9,6 +9,7 @@
   background-color: #e0c086;
   border-radius: 16px;
   padding: 20px;
+  transition: height 0.8s ease, width 0.6s ease;
 }
 
 .hotels-text-section {
@@ -17,6 +18,7 @@
   overflow-y: auto;
   color: #333;
   font-family: 'Montserrat', sans-serif;
+  transition: all 0.7s ease;
 }
 
 .hotels-text-section h2 {
@@ -24,12 +26,14 @@
   font-size: 2rem;
   margin-bottom: 1rem;
   color: #c39444;
+  transition: opacity 0.5s ease;
 }
 
 .hotels-text-section p {
   font-size: 1.1rem;
   line-height: 1.6;
   text-align: justify;
+  transition: opacity 0.5s ease;
 }
 
 .hotels-carousel-section {
