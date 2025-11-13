@@ -1,19 +1,19 @@
 import { useState } from "react";
 import "./InspirationPage.css";
 
-// Types
-type Activity = "Détente" | "Sportive" | "Culturel" | "Exploration";
+
+type Activity = "Detente" | "Sportive" | "Culturel" | "Exploration";
 type Season = "Spring" | "Summer" | "Autumn" | "Winter";
 
-// Activités
+
 const activities: { name: Activity; image: string }[] = [
-  { name: "Détente", image: "/imgInspiration/Detente.jpeg" },
+  { name: "Detente", image: "/imgInspiration/Detente.jpeg" },
   { name: "Sportive", image: "/imgInspiration/Sport.jpg" },
   { name: "Culturel", image: "/imgInspiration/Culturel.jpg" },
   { name: "Exploration", image: "/imgInspiration/Exploration.jpg" },
 ];
 
-// Saisons
+
 const seasons: { name: Season; image: string }[] = [
   { name: "Spring", image: "/imgInspiration/printemps.jpg" },
   { name: "Summer", image: "/imgInspiration/ete.jpg" },
@@ -21,10 +21,10 @@ const seasons: { name: Season; image: string }[] = [
   { name: "Winter", image: "/imgInspiration/hiver.jpg" },
 ];
 
-// Suggestions
+
 const suggestions: Record<Activity, Record<Season, string>> = {
-  Détente: {
-    Spring: "Grèce",
+  Detente: {
+    Spring: "Grece",
     Summer: "Bali",
     Autumn: "Italie",
     Winter: "Maldives",
@@ -38,20 +38,20 @@ const suggestions: Record<Activity, Record<Season, string>> = {
   Culturel: {
     Spring: "France",
     Summer: "Japon",
-    Autumn: "Égypte",
+    Autumn: "Egypte",
     Winter: "Chine",
   },
   Exploration: {
     Spring: "Islande",
     Summer: "Afrique",
-    Autumn: "Pérou",
-    Winter: "Norvège",
+    Autumn: "Perou",
+    Winter: "Norvege",
   },
 };
 
-// Images des destinations
+
 const destinationImages: Record<string, string> = {
-  Grèce: "/imgDestinations/Grèce.jpg",
+  Grece: "/imgDestinations/Grece.jpg",
   Bali: "/imgDestinations/Bali.jpeg",
   Italie: "/imgDestinations/Italie.jpg",
   Maldives: "/imgDestinations/Maldive.jpg",
@@ -61,12 +61,12 @@ const destinationImages: Record<string, string> = {
   Suisse: "/imgDestinations/Suisse.jpg",
   France: "/imgDestinations/France.jpg",
   Japon: "/imgDestinations/Japon.jpg",
-  Égypte: "/imgDestinations/Égypte.jpeg",
+  Egypte: "/imgDestinations/Egypte.jpeg",
   Chine: "/imgDestinations/Chine.jpeg",
   Islande: "/imgDestinations/Islande.jpg",
   Afrique: "/imgDestinations/Afrique.jpg",
-  Pérou: "/imgDestinations/Pérou.jpeg",
-  Norvège: "/imgDestinations/Norvège.jpg",
+  Pérou: "/imgDestinations/Perou.jpeg",
+  Norvège: "/imgDestinations/Norvege.jpg",
 };
 
 const InspirationPage: React.FC = () => {
