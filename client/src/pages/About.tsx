@@ -1,6 +1,6 @@
-import ScrollingBanner from "../components/ScrollingBanner";
 import img2about from "../assets/images/imgAbout/agenceAbout.png";
 import img1about from "../assets/images/imgAbout/equipeAbout.jpg";
+import ScrollingBanner from "../components/ScrollingBanner";
 
 import "./About.css";
 
