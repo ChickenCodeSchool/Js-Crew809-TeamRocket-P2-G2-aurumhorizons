@@ -7,6 +7,10 @@
   flex-wrap: wrap;
 }
 
+.h1about {
+  margin-top: 2.5em;
+}
+
 .hww-about {
   display: flex;
   flex-direction: column;
@@ -84,6 +88,7 @@
   p {
     margin-top: 3em;
   }
+  margin-bottom: -4em;
 }
 @media (max-width: 1333px) {
   .special-about {

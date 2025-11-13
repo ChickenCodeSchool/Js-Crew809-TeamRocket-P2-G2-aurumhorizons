@@ -1,3 +1,4 @@
+import ScrollingBanner from "../components/ScrollingBanner";
 import img2about from "../assets/images/imgAbout/agenceAbout.png";
 import img1about from "../assets/images/imgAbout/equipeAbout.jpg";
 
@@ -6,6 +7,7 @@ import "./About.css";
 function About() {
   return (
     <>
+      <ScrollingBanner text={"Aurum Horizons"} />
       <h1 className="h1about">About us</h1>
       <section className="top-about">
         <article className="hww-about">
@@ -65,6 +67,7 @@ function About() {
           </div>
           <img src={img2about} alt="a luxury office" />
         </article>
+        <ScrollingBanner text={"Aurum Horizons"} />
       </section>
     </>
   );

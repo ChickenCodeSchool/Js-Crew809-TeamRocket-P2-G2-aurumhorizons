@@ -1,0 +1,36 @@
+.scrolling-banner-container {
+  margin-top: 5em;
+  width: 100vw;
+  overflow: hidden;
+  background-color: transparent;
+  color: #c39444;
+  font-size: 2em;
+  padding: 10px 0;
+  white-space: nowrap;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "cinzel", sans-serif;
+}
+
+.scrolling-banner-content {
+  display: inline-block;
+  animation: scroll-left 15s linear infinite;
+}
+
+.scrolling-banner-content span {
+  padding-right: 50px;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(500%);
+  }
+}
+@media (max-width: 992px) {
+  .scrolling-banner-container {
+    display: none;
+  }
+}
