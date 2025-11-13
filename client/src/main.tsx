@@ -10,6 +10,7 @@ import HomePages from "./pages/HomePages";
 import MentionLegal from "./pages/MentionLegal";
 
 import CarouselPage from "./pages/CarouselTestPage";
+import Seemore from "./pages/Seemore";
 /* ************************************************************************* */
 
 // Import the main app component
@@ -38,7 +39,11 @@ const router = createBrowserRouter([
       },
       {
         path: "egypt",
-        element: <CarouselPage />, // <-- nouvelle page
+        element: <CarouselPage />,
+      },
+      {
+        path: "see-more",
+        element: <Seemore />,
       },
     ],
   },
