@@ -36,7 +36,7 @@ const Navbar: React.FC = () => {
             <a href="/">Home</a>
           </li>
           <li>
-            <a href="/experience">Experiences</a>
+            <a href="/see-more">Experiences</a>
           </li>
         </ul>
         <ul className="navbar__links navbar__links--right">
@@ -44,7 +44,7 @@ const Navbar: React.FC = () => {
             <a href="/contact">Contact</a>
           </li>
           <li>
-            <a href="/about">About</a>
+            <a href="/about">About us</a>
           </li>
           <li>
             <button type="button" className="navbar-user-btn">

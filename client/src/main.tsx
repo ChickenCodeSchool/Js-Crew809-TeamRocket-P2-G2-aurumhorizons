@@ -8,6 +8,7 @@ import HomePages from "./pages/HomePages";
 
 import MentionLegal from "./pages/MentionLegal";
 import Seemore from "./pages/Seemore";
+import About from "./pages/About";
 /* ************************************************************************* */
 
 // Import the main app component
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: "see-more",
         element: <Seemore />,
+      },
+      {
+        path: "about",
+        element: <About />,
       },
     ],
   },

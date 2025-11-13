@@ -136,7 +136,7 @@
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-@media (max-width: 992px) {
+@media (max-width: 635px) {
   .navbar__toggle {
     display: flex;
   }
@@ -159,6 +159,8 @@
 
   .navbar__links-container.open {
     display: flex;
+    width: 15em;
+    margin-left: 10vw;
   }
 
   .navbar__links {
