@@ -1,15 +1,15 @@
-import img1about from "../assets/images/imgAbout/equipeAbout.jpg";
 import img2about from "../assets/images/imgAbout/agenceAbout.png";
+import img1about from "../assets/images/imgAbout/equipeAbout.jpg";
 
 import "./About.css";
 
 function About() {
   return (
     <>
-      <h1>About us</h1>
+      <h1 className="h1about">About us</h1>
       <section className="top-about">
         <article className="hww-about">
-          <h2>How we work</h2>
+          <h2 className="h2about">How we work</h2>
           <p>
             Our approach is one of true craftsmanship. We begin with a
             confidential consultation to deeply understand your unique desires
@@ -34,7 +34,7 @@ function About() {
         </article>
       </section>
       <section className="bottom-about">
-        <h2>Our specialists</h2>
+        <h2 className="h2about">Our specialists</h2>
         <article className="special-about">
           <img
             src={img1about}
@@ -49,7 +49,7 @@ function About() {
             tailor-made planning and your absolute peace of mind.
           </p>
         </article>
-        <h2>Our Office</h2>
+        <h2 className="h2about">Our Office</h2>
         <article className="office-about">
           <div className="txt-office-about">
             <p>
@@ -58,8 +58,10 @@ function About() {
               59100 Roubaix,
               <br />
               France.
+              <br />
+              <br />
+              +33 9 72 10 10 07
             </p>
-            <p>+33 9 72 10 10 07</p>
           </div>
           <img src={img2about} alt="a luxury office" />
         </article>
