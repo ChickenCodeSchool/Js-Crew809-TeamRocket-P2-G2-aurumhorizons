@@ -3,7 +3,7 @@
   flex-direction: row;
   width: 86vw; 
   margin: 80px auto;
-  height: 80vh;
+  height: auto;
   box-sizing: border-box;
   overflow: hidden;
   background-color: #e0c086;
@@ -14,7 +14,6 @@
 .hotels-text-section {
   flex: 0 0 280px;
   padding: 20px;
-  max-height: 100vh;
   overflow-y: auto;
   color: #333;
   font-family: 'Montserrat', sans-serif;
@@ -36,7 +35,7 @@
 .hotels-carousel-section {
   flex: 1 1 auto;
   position: relative;
-  height: 100%;
+  aspect-ratio: 16/9;
 }
 
 .hotels-carousel-section .carousel {
