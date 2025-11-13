@@ -1,37 +1,72 @@
 import { useState } from "react";
 import "./InspirationPage.css";
 
-const activities = ["Détente", "Sportive", "Culturel", "Exploration"] as const;
-const seasons = ["Printemps", "Été", "Automne", "Hiver"] as const;
+// Types
+type Activity = "Détente" | "Sportive" | "Culturel" | "Exploration";
+type Season = "Spring" | "Summer" | "Autumn" | "Winter";
 
-type Activity = (typeof activities)[number];
-type Season = (typeof seasons)[number];
+// Activités
+const activities: { name: Activity; image: string }[] = [
+  { name: "Détente", image: "/imgInspiration/Detente.jpeg" },
+  { name: "Sportive", image: "/imgInspiration/Sport.jpg" },
+  { name: "Culturel", image: "/imgInspiration/Culturel.jpg" },
+  { name: "Exploration", image: "/imgInspiration/Exploration.jpg" },
+];
 
+// Saisons
+const seasons: { name: Season; image: string }[] = [
+  { name: "Spring", image: "/imgInspiration/printemps.jpg" },
+  { name: "Summer", image: "/imgInspiration/ete.jpg" },
+  { name: "Autumn", image: "/imgInspiration/automne.jpg" },
+  { name: "Winter", image: "/imgInspiration/hiver.jpg" },
+];
+
+// Suggestions
 const suggestions: Record<Activity, Record<Season, string>> = {
   Détente: {
-    Printemps: "Grèce",
-    Été: "Bali",
-    Automne: "Italie",
-    Hiver: "Maldives",
+    Spring: "Grèce",
+    Summer: "Bali",
+    Autumn: "Italie",
+    Winter: "Maldives",
   },
   Sportive: {
-    Printemps: "Espagne",
-    Été: "Costa Rica",
-    Automne: "Canada",
-    Hiver: "Suisse",
+    Spring: "Espagne",
+    Summer: "CostaRica",
+    Autumn: "Canada",
+    Winter: "Suisse",
   },
   Culturel: {
-    Printemps: "France",
-    Été: "Japon",
-    Automne: "Égypte",
-    Hiver: "Inde",
+    Spring: "France",
+    Summer: "Japon",
+    Autumn: "Égypte",
+    Winter: "Chine",
   },
   Exploration: {
-    Printemps: "Islande",
-    Été: "Afrique du Sud",
-    Automne: "Pérou",
-    Hiver: "Norvège",
+    Spring: "Islande",
+    Summer: "Afrique",
+    Autumn: "Pérou",
+    Winter: "Norvège",
   },
+};
+
+// Images des destinations
+const destinationImages: Record<string, string> = {
+  Grèce: "/imgDestinations/Grèce.jpg",
+  Bali: "/imgDestinations/Bali.jpeg",
+  Italie: "/imgDestinations/Italie.jpg",
+  Maldives: "/imgDestinations/Maldive.jpg",
+  Espagne: "/imgDestinations/Espagne.jpg",
+  CostaRica: "/imgDestinations/CostaRica.jpg",
+  Canada: "/imgDestinations/Canada.jpg",
+  Suisse: "/imgDestinations/Suisse.jpg",
+  France: "/imgDestinations/France.jpg",
+  Japon: "/imgDestinations/Japon.jpg",
+  Égypte: "/imgDestinations/Égypte.jpeg",
+  Chine: "/imgDestinations/Chine.jpeg",
+  Islande: "/imgDestinations/Islande.jpg",
+  Afrique: "/imgDestinations/Afrique.jpg",
+  Pérou: "/imgDestinations/Pérou.jpeg",
+  Norvège: "/imgDestinations/Norvège.jpg",
 };
 
 const InspirationPage: React.FC = () => {
@@ -39,56 +74,89 @@ const InspirationPage: React.FC = () => {
   const [activity, setActivity] = useState<Activity | null>(null);
   const [season, setSeason] = useState<Season | null>(null);
 
-  const handleActivity = (choice: Activity) => {
-    setActivity(choice);
-    setStep(2);
-  };
-
-  const handleSeason = (choice: Season) => {
-    setSeason(choice);
-    setStep(3);
-  };
-
   return (
     <main className="inspiration">
+      {/* Bouton retour global */}
+      {step > 1 && (
+        <div className="back-button-container">
+          <button
+            type="button"
+            className="back-button"
+            onClick={() => setStep(step - 1)}
+          >
+            ⬅ Back
+          </button>
+        </div>
+      )}
+
+      {/* Étape 1 */}
       {step === 1 && (
         <section className="inspiration-step">
-          <h2>Choisis ton style de voyage</h2>
+          <h2>Choose your travel style</h2>
           <div className="choices">
             {activities.map((act) => (
               <button
-                key={act}
+                key={act.name}
                 type="button"
-                onClick={() => handleActivity(act)}
+                onClick={() => {
+                  setActivity(act.name);
+                  setStep(2);
+                }}
+                style={{ backgroundImage: `url(${act.image})` }}
               >
-                {act}
+                <span className="button-text">{act.name}</span>
               </button>
             ))}
           </div>
         </section>
       )}
 
+      {/* Étape 2 */}
       {step === 2 && (
         <section className="inspiration-step">
-          <h2>Choisis ta saison</h2>
+          <h2>Choose your season</h2>
           <div className="choices">
             {seasons.map((s) => (
-              <button key={s} type="button" onClick={() => handleSeason(s)}>
-                {s}
+              <button
+                key={s.name}
+                type="button"
+                onClick={() => {
+                  setSeason(s.name);
+                  setStep(3);
+                }}
+                style={{ backgroundImage: `url(${s.image})` }}
+              >
+                <span className="button-text">{s.name}</span>
               </button>
             ))}
           </div>
         </section>
       )}
 
+      {/* Étape 3 */}
       {step === 3 && activity && season && (
         <section className="inspiration-step">
-          <h2>Proposition de destination</h2>
-          <p>
-            Pour un voyage <strong>{activity}</strong> en{" "}
-            <strong>{season}</strong>, nous te conseillons :
-            <strong> {suggestions[activity][season]}</strong>.
-          </p>
+          <h2>Destination suggestion</h2>
+          <div className="destination-content">
+            <p>
+              Pour un voyage <strong>{activity}</strong> en{" "}
+              <strong>{season}</strong>, nous te conseillons :
+              <strong> {suggestions[activity][season]}</strong>.
+            </p>
+
+            <img
+              src={destinationImages[suggestions[activity][season]]}
+              alt={suggestions[activity][season]}
+              className="destination-image"
+            />
+
+            <p className="destination-text">
+              <em>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry…
+              </em>
+            </p>
+          </div>
         </section>
       )}
     </main>
