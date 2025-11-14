@@ -73,7 +73,7 @@ const HomePages: React.FC = () => {
                 average_price={destination.average_price}
                 tourist_season={destination.tourist_season}
               />
-              <p>{destination.description}</p>
+              <p className="PhomePage">{destination.description}</p>
             </article>
           );
         })}
