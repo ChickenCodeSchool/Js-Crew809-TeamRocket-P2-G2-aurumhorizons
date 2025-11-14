@@ -1,12 +1,15 @@
-/* * {
+* {
   margin: 0;
 }
 
 .map-container {
   display: flex;
-  width: 100%;
+  justify-content: center;
+  width: 80%;
   height: 100vh;
   margin-top: 10em;
+  margin-bottom: 10em;
+  border: solid 5px #e0c086;
 }
 
 .map {
@@ -18,4 +21,9 @@
   flex: 1;
   height: 100vh;
   overflow-y: auto;
-} */
+}
+
+.section-map {
+  display: flex;
+  justify-content: center;
+}

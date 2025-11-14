@@ -1,20 +1,27 @@
 import type React from "react";
-import Carousel from "../components/Carousel";
-import HotelsCarousel from "../components/HotelsCarousel";
-
 import img1 from "../assets/images/egypt-1.jpg";
 import img2 from "../assets/images/egypt-2.jpg";
 import img3 from "../assets/images/egypt-3.jpg";
 import img4 from "../assets/images/egypt-4.jpg";
+import egypte from "../assets/images/egypte.png";
+import Carousel from "../components/Carousel";
+import CommentsSection from "../components/CommentSection";
+import Gps from "../components/Gps";
+import HotelsCarousel from "../components/HotelsCarousel";
+import "./CarouselTestPage.css";
 
 const egyptImages: string[] = [img1, img2, img3, img4];
 
 const CarouselTestPage: React.FC = () => {
   return (
-    <div>
+    <div className="carouselbody">
       <div className="carousel-page">
         <div className="text-section">
-          <h1>🇪🇬 Discover Exceptional Experiences</h1>
+          <h1>
+            {/* biome-ignore lint/a11y/useAltText: <explanation> */}
+            <img src={egypte} className="flageg" /> Discover Exceptional
+            Experiences
+          </h1>
           <p>
             Explore unique destinations and carefully curated activities
             designed for discerning travelers. Every journey is crafted to offer
@@ -53,7 +60,17 @@ const CarouselTestPage: React.FC = () => {
           indulging in exquisite cuisine that reflects the richness of the land.
         </p>
       </div>
+      <div>
+        <Gps />
+      </div>
       <HotelsCarousel />
+      <div className="containerbutton">
+        <button type="button" className="devisbutton">
+          {" "}
+          demamder devis
+        </button>
+      </div>
+      <CommentsSection />
     </div>
   );
 };
