@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import type React from "react";
+import { useEffect, useState } from "react";
 import "./Carousel.css";
 
 interface CarouselProps {
@@ -24,13 +25,13 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
       setFade(true);
     }, 400);
   };
-
-   useEffect(() => {
+  // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
+  useEffect(() => {
     const interval = setInterval(() => {
       next();
     }, 5000);
 
-    return () => clearInterval(interval); 
+    return () => clearInterval(interval);
   }, [index]);
 
   return (
@@ -41,8 +42,14 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
         className={`carousel-image ${fade ? "fade-in" : "fade-out"}`}
       />
       <div className="carousel-buttons">
-        <button onClick={prev} className="carousel-button prev">❮</button>
-        <button onClick={next} className="carousel-button next">❯</button>
+        {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
+        <button onClick={prev} className="carousel-button prev">
+          ❮
+        </button>
+        {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
+        <button onClick={next} className="carousel-button next">
+          ❯
+        </button>
       </div>
     </div>
   );

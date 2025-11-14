@@ -4,25 +4,24 @@
   justify-content: space-between;
   height: 100vh;
   padding-left: 4vw;
-  padding-right: 6vw;  
+  padding-right: 6vw;
   box-sizing: border-box;
-  background: #fff;
   padding-top: 190px;
 }
 
 .text-section {
   width: 40%;
   color: #333;
-  padding: 20px;  
+  padding: 20px;
   background-color: #e0c086;
   border-radius: 12px;
   box-sizing: border-box;
-  display: inline-block; 
+  display: inline-block;
   margin-top: 0;
 }
 
 .text-section h1 {
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
   font-weight: 700;
   font-size: 2.2rem;
   margin: 0 0 1rem 0;
@@ -30,7 +29,7 @@
 }
 
 .text-section p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 1.1rem;
   line-height: 1.6;
@@ -71,8 +70,12 @@
   transition: opacity 0.6s ease-in-out;
 }
 
-.fade-in { opacity: 1; }
-.fade-out { opacity: 0; }
+.fade-in {
+  opacity: 1;
+}
+.fade-out {
+  opacity: 0;
+}
 
 .carousel-buttons {
   position: absolute;
@@ -88,10 +91,10 @@
 
 .carousel-button {
   pointer-events: auto;
-  background: rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.2);
   color: #fff;
   border: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   border-radius: 50%;
   width: 40px;
@@ -105,19 +108,23 @@
 }
 
 .carousel-button:hover {
-  background: rgba(255,255,255,0.35);
+  background: rgba(255, 255, 255, 0.35);
   transform: scale(1.08);
 }
 
-.prev { margin-left: 10px; }
-.next { margin-right: 10px; }
+.prev {
+  margin-left: 10px;
+}
+.next {
+  margin-right: 10px;
+}
 
 .bottom-text-section {
   max-width: 86vw;
   margin: 100px auto;
   background: #d35b43;
   color: #333;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.1rem;
   line-height: 1.8;
   text-align: justify;
@@ -137,23 +144,23 @@
     padding-left: 3vw;
     padding-right: 4vw;
   }
-  
+
   .text-section {
     width: 42%;
   }
-  
+
   .text-section h1 {
     font-size: 2rem;
   }
-  
+
   .text-section p {
     font-size: 1rem;
   }
-  
+
   .carousel-section {
     width: 53%;
   }
-  
+
   .carousel {
     height: 55vh;
   }
@@ -165,29 +172,29 @@
     padding-left: 3vw;
     padding-right: 3vw;
   }
-  
+
   .text-section {
     width: 44%;
     padding: 18px;
   }
-  
+
   .text-section h1 {
     font-size: 1.85rem;
   }
-  
+
   .text-section p {
     font-size: 0.95rem;
     line-height: 1.5;
   }
-  
+
   .carousel-section {
     width: 52%;
   }
-  
+
   .carousel {
     height: 50vh;
   }
-  
+
   .bottom-text-section {
     max-width: 90vw;
     margin: 80px auto;
@@ -205,40 +212,40 @@
     justify-content: flex-start;
     gap: 30px;
   }
-  
+
   .text-section {
     width: 100%;
     order: 2;
     padding: 20px;
   }
-  
+
   .text-section h1 {
     font-size: 1.75rem;
     text-align: center;
     margin-bottom: 1.2rem;
   }
-  
+
   .text-section p {
     font-size: 0.95rem;
     line-height: 1.6;
   }
-  
+
   .carousel-section {
     width: 100%;
     order: 1;
   }
-  
+
   .carousel {
     height: 50vh;
     max-height: 400px;
   }
-  
+
   .carousel-button {
     width: 38px;
     height: 38px;
     font-size: 1.8rem;
   }
-  
+
   .bottom-text-section {
     max-width: 92vw;
     margin: 60px auto;
@@ -253,46 +260,50 @@
     padding: 100px 4vw 30px;
     gap: 24px;
   }
-  
+
   .text-section {
     padding: 16px;
     border-radius: 10px;
   }
-  
+
   .text-section h1 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
   }
-  
+
   .text-section p {
     font-size: 0.9rem;
     line-height: 1.5;
     margin-bottom: 0.8rem;
   }
-  
+
   .carousel {
     height: 45vh;
     max-height: 350px;
     border-radius: 12px;
   }
-  
+
   .carousel-buttons {
     padding: 0 8px;
   }
-  
+
   .carousel-button {
     width: 34px;
     height: 34px;
     font-size: 1.6rem;
   }
-  
+
   .carousel-button:hover {
     transform: scale(1.05);
   }
-  
-  .prev { margin-left: 6px; }
-  .next { margin-right: 6px; }
-  
+
+  .prev {
+    margin-left: 6px;
+  }
+  .next {
+    margin-right: 6px;
+  }
+
   .bottom-text-section {
     max-width: 94vw;
     margin: 50px auto;
@@ -308,31 +319,31 @@
     padding: 90px 3vw 25px;
     gap: 20px;
   }
-  
+
   .text-section {
     padding: 14px;
   }
-  
+
   .text-section h1 {
     font-size: 1.35rem;
   }
-  
+
   .text-section p {
     font-size: 0.85rem;
     line-height: 1.45;
   }
-  
+
   .carousel {
     height: 40vh;
     max-height: 300px;
   }
-  
+
   .carousel-button {
     width: 32px;
     height: 32px;
     font-size: 1.4rem;
   }
-  
+
   .bottom-text-section {
     margin: 40px auto;
     padding: 18px 20px;
@@ -348,7 +359,7 @@
     padding-top: 100px;
     padding-bottom: 30px;
   }
-  
+
   .carousel {
     height: 70vh;
     max-height: none;
