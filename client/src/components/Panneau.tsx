@@ -28,13 +28,12 @@ function Panneau({
           <p className="jours">Jour 1</p>
           <h2 id="panneautitre">Hurghada</h2>
           <p className="paragraphe">
-            Située sur la côte de la mer Rouge, Hurghada est une station
-            balnéaire égyptienne réputée pour ses plages de sable doré et ses
-            eaux turquoise. C’est un paradis pour les amateurs de plongée et de
-            snorkeling, grâce à ses récifs coralliens spectaculaires et sa vie
-            marine colorée. La ville combine détente, activités nautiques et vie
-            nocturne animée, tout en offrant un aperçu du charme oriental à
-            travers ses souks et ses cafés typiques.
+            Located on the Red Sea coast, Hurghada is an Egyptian resort town
+            renowned for its golden sandy beaches and turquoise waters. It's a
+            paradise for diving and snorkeling enthusiasts, thanks to its
+            spectacular coral reefs and colorful marine life. The town combines
+            relaxation, water sports, and a vibrant nightlife, while offering a
+            glimpse of oriental charm through its souks and traditional cafes.
           </p>
         </article>
         {/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
@@ -42,12 +41,12 @@ function Panneau({
           <p className="jours">Jour 2</p>
           <h2 id="panneautitre">Eden Island Hurghada</h2>
           <p className="paragraphe">
-            Eden Island est une petite île paradisiaque au large d’Hurghada, un
-            lieu exclusif où le luxe rencontre la nature. Ses plages privées,
-            ses eaux cristallines et son atmosphère paisible en font un refuge
-            parfait pour se ressourcer. On y pratique la plongée, le kayak ou
-            simplement le farniente, dans un cadre idyllique à l’écart de
-            l’agitation du continent.
+            Eden Island is a small, idyllic island off the coast of Hurghada, an
+            exclusive place where luxury meets nature. Its private beaches,
+            crystal-clear waters, and peaceful atmosphere make it a perfect
+            retreat for rejuvenation. Here, you can enjoy diving, kayaking, or
+            simply relaxing in an idyllic setting away from the hustle and
+            bustle of the mainland.
           </p>
         </article>
         {/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
@@ -55,12 +54,12 @@ function Panneau({
           <p className="jours">Jour 3</p>
           <h2 id="panneautitre">Louxor</h2>
           <p className="paragraphe">
-            Louxor est un musée à ciel ouvert, situé sur les rives du Nil.
-            Ancienne capitale de l’Égypte pharaonique, elle abrite des trésors
-            archéologiques exceptionnels : le temple de Karnak, la Vallée des
-            Rois et le temple d’Hatchepsout. Louxor fascine par la grandeur de
-            ses monuments et la magie du Nil, offrant un voyage dans le temps au
-            cœur de la civilisation égyptienne.
+            Luxor is an open-air museum, located on the banks of the Nile. The
+            former capital of Pharaonic Egypt, it is home to exceptional
+            archaeological treasures: the Karnak Temple, the Valley of the
+            Kings, and the Temple of Hatshepsut. Luxor fascinates with the
+            grandeur of its monuments and the magic of the Nile, offering a
+            journey back in time to the heart of Egyptian civilization.
           </p>
         </article>
         {/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
@@ -68,12 +67,13 @@ function Panneau({
           <p className="jours">Jour 4</p>
           <h2 id="panneautitre">Le Caire</h2>
           <p className="paragraphe">
-            Capitale vibrante de l’Égypte, Le Caire est une métropole
-            bouillonnante où l’histoire millénaire se mêle à la vie moderne. On
-            y découvre les célèbres pyramides de Gizeh, le Sphinx et le musée
-            égyptien, qui renferme des trésors de l’Antiquité. Entre le tumulte
-            de ses rues, les minarets de ses mosquées et les rives du Nil, Le
-            Caire séduit par son énergie unique et son charme oriental.
+            Cairo, the vibrant capital of Egypt, is a bustling metropolis where
+            millennia of history intertwine with modern life. Here, one can
+            discover the famous pyramids of Giza, the Sphinx, and the Egyptian
+            Museum, which houses treasures from antiquity. Between the hustle
+            and bustle of its streets, the minarets of its mosques, and the
+            banks of the Nile, Cairo captivates with its unique energy and
+            oriental charm.
           </p>
         </article>
         {/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
@@ -81,13 +81,12 @@ function Panneau({
           <p className="jours">Jour 5</p>
           <h2 id="panneautitre">Alexandrie</h2>
           <p className="paragraphe">
-            Fondée par Alexandre le Grand, Alexandrie est la perle de la
-            Méditerranée égyptienne. Cette ville portuaire mêle influences
-            grecques, romaines et arabes, avec des sites emblématiques comme la
-            Bibliotheca Alexandrina, la Citadelle de Qaitbay et les ruines de
-            l’ancienne ville antique. Son ambiance douce et son front de mer
-            bordé de cafés lui confèrent une atmosphère à la fois culturelle et
-            romantique.
+            Founded by Alexander the Great, Alexandria is the pearl of the
+            Egyptian Mediterranean. This port city blends Greek, Roman, and Arab
+            influences, with iconic sites such as the Bibliotheca Alexandrina,
+            the Citadel of Qaitbay, and the ruins of the ancient city. Its
+            gentle ambiance and waterfront lined with cafes create an atmosphere
+            that is both cultural and romantic.
           </p>
         </article>
         {/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
@@ -95,13 +94,12 @@ function Panneau({
           <p className="jours">Jour 6</p>
           <h2 id="panneautitre">Ras Mohamed Nature Reserve</h2>
           <p className="paragraphe">
-            Située à l’extrême sud du Sinaï, la réserve naturelle de Ras Mohamed
-            est un joyau écologique unique. Entre désert aride et mer Rouge
-            étincelante, ce parc protégé abrite une biodiversité exceptionnelle,
-            tant terrestre que marine. Les plongeurs y découvrent des récifs
-            coralliens parmi les plus beaux du monde, tandis que les amateurs de
-            nature peuvent y observer oiseaux, mangroves et paysages désertiques
-            fascinants.
+            Located in the far south of the Sinai Peninsula, the Ras Mohamed
+            Nature Reserve is a unique ecological gem. Between the arid desert
+            and the sparkling Red Sea this protected park is home to exceptional
+            biodiversity, both terrestrial and marine. Divers discover some of
+            the world's most beautiful coral reefs, while nature lovers can
+            observe birds, mangroves, and fascinating desert landscapes.
           </p>
         </article>
       </section>
