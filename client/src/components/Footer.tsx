@@ -7,23 +7,56 @@ function Footer() {
   return (
     <>
       <div className="footer">
-        {/* <hr className="hr-top-footer" /> */}
         <div className="container-h2-footer">
           <img src={logo} className="logo-footer" alt="logo" />
         </div>
         <hr className="separator-footer" />
         <section className="container-mid-footer">
           <div className="container-icon-footer">
-            <img src="../src/assets/images/youtube-circle.svg" alt="youtube" />
-            <img src="../src/assets/images/pinterest.svg" alt="pinterest" />
-            <img
-              src="../src/assets/images/imgFooter/instagram.svg"
-              alt="instagram"
-            />
-            <img
-              src="../src/assets/images/imgFooter/twitter-alt.svg"
-              alt="twitter"
-            />
+            <a
+              href="https://www.youtube.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="../src/assets/images/youtube-circle.svg"
+                alt="youtube"
+                className="icon-footer"
+              />
+            </a>
+            <a
+              href="https://fr.pinterest.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="../src/assets/images/pinterest.svg"
+                alt="pinterest"
+                className="icon-footer"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="../src/assets/images/imgFooter/instagram.svg"
+                alt="instagram"
+                className="icon-footer"
+              />
+            </a>
+            <a
+              href="https://x.com/Accueil"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="../src/assets/images/imgFooter/twitter-alt.svg"
+                alt="twitter"
+                className="icon-footer"
+              />
+            </a>
           </div>
           <form className="newsletter-form">
             <input

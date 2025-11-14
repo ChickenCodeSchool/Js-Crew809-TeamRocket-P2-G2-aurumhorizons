@@ -2,11 +2,12 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router";
-
 import App from "./App";
+import CarouselPage from "./pages/CarouselTestPage";
 import HomePages from "./pages/HomePages";
 import MentionLegal from "./pages/MentionLegal";
-import PageTest from "./pages/PageTest";
+import Seemore from "./pages/Seemore";
+
 /* ************************************************************************* */
 
 // Import the main app component
@@ -34,8 +35,12 @@ const router = createBrowserRouter([
         element: <MentionLegal />,
       },
       {
-        path: "test",
-        element: <PageTest />,
+        path: "egypt",
+        element: <CarouselPage />,
+      },
+      {
+        path: "see-more",
+        element: <Seemore />,
       },
     ],
   },
