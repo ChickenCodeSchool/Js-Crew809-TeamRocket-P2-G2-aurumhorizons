@@ -1,10 +1,8 @@
 import { useState } from "react";
 import "./InspirationPage.css";
 
-
 type Activity = "Detente" | "Sportive" | "Culturel" | "Exploration";
 type Season = "Spring" | "Summer" | "Autumn" | "Winter";
-
 
 const activities: { name: Activity; image: string }[] = [
   { name: "Detente", image: "/imgInspiration/Detente.jpeg" },
@@ -13,14 +11,12 @@ const activities: { name: Activity; image: string }[] = [
   { name: "Exploration", image: "/imgInspiration/Exploration.jpg" },
 ];
 
-
 const seasons: { name: Season; image: string }[] = [
   { name: "Spring", image: "/imgInspiration/printemps.jpg" },
   { name: "Summer", image: "/imgInspiration/ete.jpg" },
   { name: "Autumn", image: "/imgInspiration/automne.jpg" },
   { name: "Winter", image: "/imgInspiration/hiver.jpg" },
 ];
-
 
 const suggestions: Record<Activity, Record<Season, string>> = {
   Detente: {
@@ -49,7 +45,6 @@ const suggestions: Record<Activity, Record<Season, string>> = {
   },
 };
 
-
 const destinationImages: Record<string, string> = {
   Grece: "/imgDestinations/Grece.jpg",
   Bali: "/imgDestinations/Bali.jpeg",
@@ -66,7 +61,7 @@ const destinationImages: Record<string, string> = {
   Islande: "/imgDestinations/Islande.jpg",
   Afrique: "/imgDestinations/Afrique.jpg",
   Pérou: "/imgDestinations/Perou.jpeg",
-  Norvège: "/imgDestinations/Norvege.jpg",
+  Norvège: "/imgDestinations/Norvege.jpeg",
 };
 
 const InspirationPage: React.FC = () => {
