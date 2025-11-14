@@ -5,6 +5,8 @@ import { RouterProvider, createBrowserRouter } from "react-router";
 import App from "./App";
 import CarouselPage from "./pages/CarouselTestPage";
 import HomePages from "./pages/HomePages";
+
+import About from "./pages/About";
 import MentionLegal from "./pages/MentionLegal";
 import Seemore from "./pages/Seemore";
 
@@ -41,6 +43,10 @@ const router = createBrowserRouter([
       {
         path: "see-more",
         element: <Seemore />,
+      },
+      {
+        path: "about",
+        element: <About />,
       },
     ],
   },

@@ -78,7 +78,7 @@ const Seemore: React.FC = () => {
     <>
       <section className="top-container">
         <article className="topseemore">
-          <h1>See more...</h1>
+          <h1>All our destinations</h1>
           <div className="ptopsee">
             <p>
               From the African desert to Asian megacities, from the paradise

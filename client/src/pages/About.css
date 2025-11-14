@@ -1,0 +1,140 @@
+.top-about {
+  margin-top: 5em;
+  gap: 15em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.h1about {
+  margin-top: 2.5em;
+}
+
+.hww-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #7aad8d;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.378);
+  border-radius: 1em;
+  width: 25em;
+  padding: 2em;
+  gap: 2em;
+}
+
+.dwmud {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #e0c086;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.378);
+  border-radius: 1em;
+  width: 25em;
+  height: 20em;
+  padding: 2em;
+  gap: 3em;
+  ul {
+    list-style: none;
+  }
+}
+
+.bottom-about {
+  margin-top: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5em;
+}
+
+.special-about {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #c39444;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.378);
+  border-radius: 1em;
+  padding: 2em;
+  gap: 10em;
+  img {
+    width: 35em;
+    height: 20em;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.378);
+    border-radius: 1em;
+  }
+  p {
+    width: 30em;
+    margin-top: 8em;
+  }
+}
+
+.office-about {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #5669bb;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.378);
+  border-radius: 1em;
+  padding: 2em;
+  gap: 15em;
+  img {
+    width: 25em;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.378);
+    border-radius: 1em;
+  }
+  p {
+    margin-top: 3em;
+  }
+  margin-bottom: -4em;
+}
+@media (max-width: 1333px) {
+  .special-about {
+    justify-content: center;
+    gap: 1em;
+    img {
+      width: 12em;
+      height: 12em;
+    }
+    p {
+      width: 15em;
+      margin-top: 1em;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .h1about {
+    margin-top: 4em;
+  }
+  .top-about {
+    margin: 2em;
+    gap: 1em;
+    p,
+    li {
+      font-size: 0.8em;
+    }
+  }
+  .bottom-about {
+    margin: 2em;
+    gap: 1em;
+    p,
+    li {
+      font-size: 0.8em;
+    }
+  }
+  .office-about {
+    justify-content: center;
+    gap: 1em;
+    img {
+      width: 12em;
+      height: 12em;
+    }
+    p {
+      width: 15em;
+      margin-top: 1em;
+    }
+    margin-bottom: 0;
+  }
+}
