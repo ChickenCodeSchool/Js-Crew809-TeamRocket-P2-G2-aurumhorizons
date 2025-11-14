@@ -5,8 +5,8 @@ import { RouterProvider, createBrowserRouter } from "react-router";
 
 import App from "./App";
 import HomePages from "./pages/HomePages";
-
 import MentionLegal from "./pages/MentionLegal";
+import PageTest from "./pages/PageTest";
 /* ************************************************************************* */
 
 // Import the main app component
@@ -32,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "mention-legal",
         element: <MentionLegal />,
+      },
+      {
+        path: "test",
+        element: <PageTest />,
       },
     ],
   },

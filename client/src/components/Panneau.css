@@ -1,0 +1,19 @@
+.body {
+  background-color: rgb(252, 248, 237);
+  padding-left: 2rem;
+}
+#panneautitre {
+  font-family: "Cinzel", sans-serif;
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  color: #c39444;
+}
+.jours {
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+}
+.paragraphe {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
