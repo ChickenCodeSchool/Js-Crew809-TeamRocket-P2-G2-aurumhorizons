@@ -6,6 +6,9 @@ interface LoginProps {
 }
 
 const Login: React.FC<LoginProps> = ({ onClose }) => {
+    const handleForgotPassword = () => {
+           alert("Redirection vers la récupération du mot de passe...");
+  };
   return (
     <div className="login-modal-overlay" onClick={onClose}>
       <div
@@ -27,6 +30,13 @@ const Login: React.FC<LoginProps> = ({ onClose }) => {
 
           <button type="submit" className="login-btn">
             Se connecter
+          </button>
+            <button
+            type="button"
+            className="forgot-password-btn"
+            onClick={handleForgotPassword}
+          >
+            Mot de passe oublié ?
           </button>
         </form>
       </div>
