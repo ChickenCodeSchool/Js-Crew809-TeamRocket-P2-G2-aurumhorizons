@@ -33,11 +33,14 @@
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.378);
   border-radius: 1em;
   width: 25em;
-  height: 20em;
+  height: 25em;
   padding: 2em;
-  gap: 3em;
+  gap: 2em;
   ul {
-    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+    /* list-style: none; */
   }
 }
 
@@ -52,12 +55,19 @@
 
 .special-about {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   background-color: #c39444;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.378);
   border-radius: 1em;
   padding: 2em;
+  gap: 5em;
+}
+
+.special-aboutTop {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 10em;
   img {
     width: 35em;
@@ -69,6 +79,14 @@
     width: 30em;
     margin-top: 8em;
   }
+}
+
+.special-aboutBottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2em;
 }
 
 .office-about {
