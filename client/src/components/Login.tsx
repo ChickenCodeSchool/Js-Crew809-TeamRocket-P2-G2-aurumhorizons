@@ -123,7 +123,7 @@ const Login: React.FC<LoginProps> = ({ onClose }) => {
   };
 
   const handleForgotPassword = () => {
-    alert("Redirection vers la récupération du mot de passe...");
+    alert("Redirection vers la récupération du mot de passe.");
   };
 
   return (
