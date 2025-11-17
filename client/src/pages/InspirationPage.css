@@ -13,6 +13,7 @@
   animation: fadeIn 0.6s ease;
   text-align: center;
   margin-top: 5rem;
+  position: relative;
 }
 
 @keyframes fadeIn {
@@ -84,6 +85,9 @@
   top: 9rem;
   left: 12rem;
   z-index: 1000;
+  position: absolute;
+  bottom: 1rem; /* en bas */
+  left: 1rem;
 }
 
 .back-button {
@@ -104,6 +108,7 @@
   gap: 2rem;
   margin-top: 2rem;
   text-align: center;
+  position: relative;
 }
 
 .destination-image-placeholder {
