@@ -3,15 +3,18 @@ import { useState } from "react";
 import "./Navbar.css";
 import logo from "../assets/images/AurumHorizonsLogoTransparent.png";
 import UserIcon from "../assets/images/user-icon.png";
+import Login from "./Login";
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [showLoginModal, setShowLoginModal] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   return (
+    <>
     <nav className="navbar">
       <div className="navbar__logo">
         <a href="/">
@@ -47,14 +50,18 @@ const Navbar: React.FC = () => {
             <a href="/about">About us</a>
           </li>
           <li>
-            <button type="button" className="navbar-user-btn">
+            <button type="button" className="navbar-user-btn" onClick={() => setShowLoginModal(true)}>
               <img src={UserIcon} alt="User Icon" />
             </button>
           </li>
         </ul>
       </div>
     </nav>
-  );
+{showLoginModal && (
+<Login onClose={() => setShowLoginModal(false)} />
+)}
+</>
+);
 };
 
 export default Navbar;
