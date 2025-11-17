@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import mathieu from "../assets/images/imgAbout/MathieuViking.png";
 import maxime from "../assets/images/imgAbout/MaximePharaon.png";
 import remi from "../assets/images/imgAbout/RemiSeychelles.png";
@@ -24,7 +24,25 @@ const TeamCarousel = () => {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const itemsPerPage = 3;
+  const [itemsPerPage, setItemsPerPage] = useState(3);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 600) {
+        setItemsPerPage(1);
+      } else if (window.innerWidth < 992) {
+        setItemsPerPage(2);
+      } else {
+        setItemsPerPage(3);
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const nextSlide = () => {
     if (currentIndex < teamMembers.length - itemsPerPage) {

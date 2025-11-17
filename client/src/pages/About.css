@@ -109,7 +109,7 @@
   margin-bottom: -4em;
 }
 @media (max-width: 1333px) {
-  .special-about {
+  .special-aboutTop {
     justify-content: center;
     gap: 1em;
     img {
@@ -120,6 +120,12 @@
       width: 15em;
       margin-top: 1em;
     }
+  }
+}
+
+@media (max-width: 1330px) {
+  .special-aboutBottom h3 {
+    display: none;
   }
 }
 @media (max-width: 992px) {

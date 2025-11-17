@@ -2,15 +2,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
-  width: 100%;
+  gap: 0.5rem;
+  width: 85%;
   max-width: 75rem;
   margin: 0 auto;
+  position: relative;
 }
 
 .carousel-container {
   overflow: hidden;
   width: 100%;
+  padding: 10px 0;
 }
 
 .carousel-track {
@@ -21,16 +23,20 @@
 
 .carousel-card {
   min-width: calc(100% / 3);
-  padding: 0 10px;
+  padding: 0 5px;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .card-content {
   position: relative;
+
   width: 15rem;
   height: 18.75rem;
+  flex-shrink: 0;
+
   border-radius: 1em;
   overflow: hidden;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.125);
@@ -102,14 +108,54 @@
   background: #e0c086;
   color: white;
   border: none;
-  padding: 10px 15px;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
   border-radius: 50%;
   font-size: 1.2rem;
   transition: background 0.3s;
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
 }
 
 .nav-btn:hover {
   background: #7aad8d;
+}
+
+@media (max-width: 1333px) {
+  .carousel-wrapper {
+    display: none;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+
+  .carousel-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .carousel-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .carousel-track {
+    width: auto;
+    transform: none !important;
+  }
+
+  .carousel-card {
+    min-width: 300px;
+    scroll-snap-align: center;
+    padding: 0 10px;
+  }
 }
