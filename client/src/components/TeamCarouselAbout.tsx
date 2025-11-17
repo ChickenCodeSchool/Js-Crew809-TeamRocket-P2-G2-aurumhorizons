@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import mathieu from "../assets/images/imgAbout/MathieuViking.png";
 import maxime from "../assets/images/imgAbout/MaximePharaon.png";
 import remi from "../assets/images/imgAbout/RemiSeychelles.png";
@@ -10,11 +10,11 @@ import "./TeamCarouselAbout.css";
 
 const TeamCarousel = () => {
   const teamMembers = [
-    { id: "mathieu", src: mathieu, name: "Mathieu", destination: "Island" },
-    { id: "remi", src: remi, name: "Rémi", destination: "Seychelles" },
-    { id: "maxime", src: maxime, name: "Maxime", destination: "Egypt" },
     { id: "sofian", src: sofian, name: "Sofian", destination: "Indonesia" },
+    { id: "remi", src: remi, name: "Rémi", destination: "Seychelles" },
     { id: "teddy", src: teddy, name: "Teddy", destination: "Maldives" },
+    { id: "mathieu", src: mathieu, name: "Mathieu", destination: "Island" },
+    { id: "maxime", src: maxime, name: "Maxime", destination: "Egypt" },
     {
       id: "thibaud",
       src: thibaud,

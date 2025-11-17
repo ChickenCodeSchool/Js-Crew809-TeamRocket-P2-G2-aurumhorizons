@@ -54,7 +54,7 @@ function About() {
             </p>
           </div>
           <div className="special-aboutBottom">
-            <h3>Specialists by region</h3>
+            <h3>Travel guide by region</h3>
             <div className="slideImg-about">
               <TeamCarouselAbout />
             </div>
