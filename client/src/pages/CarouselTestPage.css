@@ -1,0 +1,33 @@
+.flageg {
+  height: 30px;
+  width: 30px;
+}
+.devisbutton {
+  margin: 20px;
+  margin-bottom: 50px;
+  padding: 10px 24px;
+  border: 2px solid #c39444;
+  color: #c39444;
+  background-color: transparent;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  border-radius: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+.devisbutton:hover {
+  background-color: #c39444;
+  color: black;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(195, 148, 68, 0.6);
+}
+.containerbutton {
+  display: flex;
+  justify-content: center;
+}
+
+.carouselbody {
+  background-color: none;
+}

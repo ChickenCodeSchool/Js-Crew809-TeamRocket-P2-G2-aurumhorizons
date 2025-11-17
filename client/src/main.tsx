@@ -3,9 +3,15 @@ import { createRoot } from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import App from "./App";
+import CarouselPage from "./pages/CarouselTestPage";
 import HomePages from "./pages/HomePages";
-import InspirationPage from "./pages/InspirationPage"; // 👈 importe ta page
+import InspirationPage from "./pages/InspirationPage";
+
+import About from "./pages/About";
 import MentionLegal from "./pages/MentionLegal";
+import Seemore from "./pages/Seemore";
+
+/* ************************************************************************* */
 
 const router = createBrowserRouter([
   {
@@ -13,7 +19,27 @@ const router = createBrowserRouter([
     children: [
       { path: "/", element: <HomePages /> },
       { path: "mention-legal", element: <MentionLegal /> },
-      { path: "inspiration", element: <InspirationPage /> }, // 👈 nouvelle route
+      { path: "inspiration", element: <InspirationPage /> },
+      {
+        path: "/",
+        element: <HomePages />,
+      },
+      {
+        path: "mention-legal",
+        element: <MentionLegal />,
+      },
+      {
+        path: "egypt",
+        element: <CarouselPage />,
+      },
+      {
+        path: "see-more",
+        element: <Seemore />,
+      },
+      {
+        path: "about",
+        element: <About />,
+      },
     ],
   },
 ]);
