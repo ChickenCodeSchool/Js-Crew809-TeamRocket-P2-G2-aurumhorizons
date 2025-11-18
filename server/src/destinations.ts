@@ -24,6 +24,26 @@ export const destinations = [
     currency: "Egyptian Pound (EGP)",
     tourist_season: "September to April",
     theme: "cultural",
+     hotels: [
+      {
+        img: "/images/hotel-egypt-1.jpg.webp",
+        title: "The Nile Serenity",
+        description: "Located along the Nile River, The Nile Serenity offers spacious suites with breathtaking views of the water.",
+        link: "https://fr.hotels.com/ho324822"
+      },
+      {
+        img: "/images/hotel-egypt-2.jpg.webp",
+        title: "Pyramids Horizon Hotel",
+        description: "Just steps away from the majestic Pyramids of Giza, Pyramids Horizon Hotel blends traditional elegance with modern comfort.",
+        link: "https://fr.hotels.com/ho546722"
+      },
+      {
+        img: "/images/hotel-egypt-3.jpg.avif",
+        title: "Desert Oasis Retreat",
+        description: "In the heart of the Egyptian desert, Desert Oasis Retreat is a true sanctuary of peace.",
+        link: "https://www.stayforlong.fr/hotel"
+      }
+    ]
   },
   {
     id: 3,
