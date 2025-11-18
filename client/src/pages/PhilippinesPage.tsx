@@ -1,10 +1,10 @@
 import type React from "react";
 import { useState } from "react";
+import Philippines from "../assets/images/PhFlag.png";
 import img1 from "../assets/images/egypt-1.jpg";
 import img2 from "../assets/images/egypt-2.jpg";
 import img3 from "../assets/images/egypt-3.jpg";
 import img4 from "../assets/images/egypt-4.jpg";
-import Philippines from "../assets/images/PhFlag.png";
 import Carousel from "../components/Carousel";
 import CommentsSection from "../components/CommentSection";
 import Devis from "../components/Devis";
@@ -28,7 +28,7 @@ const PhilippinesPage: React.FC = () => {
   return (
     <div className="carouselbody">
       <div className="carousel-page">
-        <div className="text-section">
+        <div className="text-sectionPh">
           <h1>
             {/* biome-ignore lint/a11y/useAltText: <explanation> */}
             <img src={Philippines} className="flagPh" /> Discover Exceptional
@@ -61,7 +61,7 @@ const PhilippinesPage: React.FC = () => {
           <Carousel images={egyptImages} />
         </div>
       </div>
-      <div className="bottom-text-section">
+      <div className="bottom-text-section-Philippines">
         <p>
           Embark on a journey where every detail has been meticulously crafted
           to create unforgettable memories. From the pristine white sands of
