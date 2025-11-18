@@ -1,9 +1,6 @@
 import type React from "react";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import "./HotelsCarousel.css";
-import hotel1 from "../assets/images/hotel-egypt-1.jpg.webp";
-import hotel2 from "../assets/images/hotel-egypt-2.jpg.webp";
-import hotel3 from "../assets/images/hotel-egypt-3.jpg.avif";
 
 interface Hotel {
   img: string;
@@ -11,13 +8,12 @@ interface Hotel {
   description: string;
   link: string;
 }
-const hotelImages: { [key: string]: string } = {
-  "The Nile Serenity": hotel1,
-  "Pyramids Horizon Hotel": hotel2,
-  "Desert Oasis Retreat": hotel3,
-};
 
-const HotelsCarousel: React.FC = () => {
+interface HotelsCarouselProps {
+  destinationName: string;
+}
+
+const HotelsCarousel: React.FC<HotelsCarouselProps> = ({ destinationName }) => {
   const [index, setIndex] = useState(0);
   const [fade, setFade] = useState(true);
   const [hotels, setHotels] = useState<Hotel[]>([]);
@@ -27,20 +23,17 @@ const HotelsCarousel: React.FC = () => {
   useEffect(() => {
     const fetchHotels = async () => {
       try {
-        const response = await fetch('http://localhost:3310/api/destinations/name/Egypt');
-
-
-        
+        const response = await fetch(
+          `http://localhost:3310/api/destinations/name/${destinationName}`
+        );
         if (!response.ok) {
           throw new Error('Failed to fetch destinations');
         }
-        
-        const egyptDestination = await response.json();
-        
-        if (egyptDestination?.hotels) {
-          setHotels(egyptDestination.hotels);
+        const destination = await response.json();
+        if (destination?.hotels && destination.hotels.length > 0) {
+          setHotels(destination.hotels);
         } else {
-          setError('No hotels found for Egypt');
+          setError(`No hotels found for ${destinationName}`);
         }
       } catch (err) {
         setError('Error loading hotels');
@@ -49,32 +42,36 @@ const HotelsCarousel: React.FC = () => {
         setLoading(false);
       }
     };
-
+    
+    setLoading(true);
+    setError(null);
+    setIndex(0);
+    
     fetchHotels();
-  }, []);
+  }, [destinationName]);
 
-  const next = () => {
+  const next = useCallback(() => {
     setFade(false);
     setTimeout(() => {
       setIndex((prev) => (prev + 1) % hotels.length);
       setFade(true);
     }, 400);
-  };
+  }, [hotels.length]);
 
-  const prev = () => {
+  const prev = useCallback(() => {
     setFade(false);
     setTimeout(() => {
       setIndex((prev) => (prev - 1 + hotels.length) % hotels.length);
       setFade(true);
     }, 400);
-  };
+  }, [hotels.length]);
 
   useEffect(() => {
     if (hotels.length > 0) {
       const interval = setInterval(() => next(), 5000);
       return () => clearInterval(interval);
     }
-  }, [hotels]);
+  }, [hotels.length, next]);
 
   if (loading) return <div className="loading">Loading hotels...</div>;
   if (error) return <div className="error">{error}</div>;
@@ -84,7 +81,7 @@ const HotelsCarousel: React.FC = () => {
 
   return (
     <div className="hotels-section">
-      <h2 className="section-title">Our Exclusive Hotels</h2>
+      <h2 className="section-title">Our Exclusive Hotels in {destinationName}</h2>
       <div className="hotels-carousel-page">
         <div className="hotels-text-section">
           <h2>{hotel.title}</h2>
@@ -98,16 +95,18 @@ const HotelsCarousel: React.FC = () => {
             Visit Website
           </a>
         </div>
-
         <div className="hotels-carousel-section">
           <img
-            src={hotelImages[hotel.title] || hotel.img}
+            src={hotel.img}
             alt={hotel.title}
             className={`carousel-image ${fade ? "fade-in" : "fade-out"}`}
+            onError={(e) => {
+              e.currentTarget.src = '/images/placeholder-hotel.jpg';
+            }}
           />
           <div className="carousel-buttons">
-            <button type="button" onClick={prev}>❮</button>
-            <button type="button" onClick={next}>❯</button>
+            <button type="button" onClick={prev} aria-label="Previous hotel">❮</button>
+            <button type="button" onClick={next} aria-label="Next hotel">❯</button>
           </div>
         </div>
       </div>
