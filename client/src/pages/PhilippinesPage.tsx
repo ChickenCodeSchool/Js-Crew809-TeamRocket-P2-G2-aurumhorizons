@@ -4,7 +4,7 @@ import img1 from "../assets/images/egypt-1.jpg";
 import img2 from "../assets/images/egypt-2.jpg";
 import img3 from "../assets/images/egypt-3.jpg";
 import img4 from "../assets/images/egypt-4.jpg";
-import egypte from "../assets/images/egypte.png";
+import Philippines from "../assets/images/PhFlag.png";
 import Carousel from "../components/Carousel";
 import CommentsSection from "../components/CommentSection";
 import Devis from "../components/Devis";
@@ -31,7 +31,7 @@ const PhilippinesPage: React.FC = () => {
         <div className="text-section">
           <h1>
             {/* biome-ignore lint/a11y/useAltText: <explanation> */}
-            <img src={egypte} className="flageg" /> Discover Exceptional
+            <img src={Philippines} className="flagPh" /> Discover Exceptional
             Experiences
           </h1>
           <p>
@@ -64,12 +64,13 @@ const PhilippinesPage: React.FC = () => {
       <div className="bottom-text-section">
         <p>
           Embark on a journey where every detail has been meticulously crafted
-          to create unforgettable memories. From the golden sands of Egypt's
-          deserts to the serene waters of the Nile, each moment invites you to
-          explore history, culture, and luxury in perfect harmony. Imagine
-          waking up to the warm glow of the sunrise over ancient temples,
-          enjoying private guided tours through timeless monuments, and
-          indulging in exquisite cuisine that reflects the richness of the land.
+          to create unforgettable memories. From the pristine white sands of
+          Palawan to the emerald green rice terraces of Banaue, each moment
+          invites you to explore nature, adventure, and paradise in perfect
+          harmony. Imagine waking up to the gentle sound of waves lapping
+          against the shore, enjoying private island-hopping excursions through
+          towering limestone cliffs, and indulging in fresh, tropical cuisine
+          that captures the vibrant spirit of the archipelago.
         </p>
       </div>
       <div>
@@ -79,7 +80,7 @@ const PhilippinesPage: React.FC = () => {
       <div className="containerbutton">
         <button type="button" className="devisbutton" onClick={handleOpenDevis}>
           {" "}
-          demander devis{" "}
+          Request a quote{" "}
         </button>
       </div>
       <CommentsSection />
