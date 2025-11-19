@@ -1,9 +1,9 @@
 import "./FormContact.css";
 import { Link } from "react-router";
-
+/*
 type inputProps = {
   label: string;
-};
+};*/
 function FormContact() {
   return (
     <>
