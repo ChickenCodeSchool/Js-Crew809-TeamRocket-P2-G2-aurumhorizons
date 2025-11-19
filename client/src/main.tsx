@@ -37,7 +37,7 @@ const router = createBrowserRouter([
         element: <MentionLegal />,
       },
       {
-        path: "egypt",
+        path: "voyage/:id",
         element: <CarouselPage />,
       },
       {

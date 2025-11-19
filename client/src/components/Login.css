@@ -60,17 +60,20 @@
   color: #e0c086;
 }
 
-.login-form, .signup-form {
+.login-form,
+.signup-form {
   display: flex;
   flex-direction: column;
 }
 
-.login-form label, .signup-form label {
+.login-form label,
+.signup-form label {
   margin-bottom: 0.3rem;
   font-weight: 500;
 }
 
-.login-form input, .signup-form input {
+.login-form input,
+.signup-form input {
   padding: 0.5rem;
   margin-bottom: 1rem;
   border: 1px solid #ccc;
@@ -82,7 +85,8 @@
   box-sizing: border-box;
 }
 
-.login-form input:focus, .signup-form input:focus {
+.login-form input:focus,
+.signup-form input:focus {
   border-color: #e0c086;
 }
 
@@ -139,13 +143,22 @@
   display: block;
 }
 
-
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes scaleIn {
-  from { transform: scale(0.8); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }

@@ -1,6 +1,7 @@
 import type React from "react";
 import "./MenuDeroulant.css";
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router";
 
 interface Destination {
   name: string;
@@ -12,12 +13,12 @@ const MenuDeroulant: React.FC = () => {
   const menuRef = useRef<HTMLDivElement>(null);
 
   const destinations: Destination[] = [
-    { name: "Indonesia", link: "/indonesia" },
-    { name: "Egypt", link: "/egypt" },
-    { name: "Maldives", link: "/maldives" },
-    { name: "Philippines", link: "/philippines" },
-    { name: "Seychelles", link: "/seychelles" },
-    { name: "Iceland", link: "/iceland" },
+    { name: "Indonesia", link: "/voyage/1" },
+    { name: "Egypt", link: "/voyage/2" },
+    { name: "Maldives", link: "/voyage/3" },
+    { name: "Philippines", link: "/voyage/4" },
+    { name: "Seychelles", link: "/voyage/5" },
+    { name: "Iceland", link: "/voyage/6" },
     { name: "See more...", link: "/see-more" },
   ];
   const toggleMenu = () => setIsOpen(!isOpen);
@@ -49,9 +50,9 @@ const MenuDeroulant: React.FC = () => {
             {destinations.map((destination, index) => (
               // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
               <li key={index}>
-                <a href={destination.link} className="menu-item">
+                <Link to={destination.link} className="menu-item">
                   {destination.name}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

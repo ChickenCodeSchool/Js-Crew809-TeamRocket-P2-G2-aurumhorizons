@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import type React from "react";
+import { useState } from "react";
 import "./Login.css";
 
 interface LoginProps {
@@ -7,13 +8,11 @@ interface LoginProps {
 
 const Login: React.FC<LoginProps> = ({ onClose }) => {
   const [isSignup, setIsSignup] = useState(false);
-
   const [loginEmail, setLoginEmail] = useState("");
   const [loginPassword, setLoginPassword] = useState("");
   const [loginEmailError, setLoginEmailError] = useState("");
   const [loginPasswordError, setLoginPasswordError] = useState("");
   const [showLoginPassword, setShowLoginPassword] = useState(false);
-
   const [signupName, setSignupName] = useState("");
   const [signupEmail, setSignupEmail] = useState("");
   const [signupPassword, setSignupPassword] = useState("");
@@ -21,15 +20,16 @@ const Login: React.FC<LoginProps> = ({ onClose }) => {
   const [signupNameError, setSignupNameError] = useState("");
   const [signupEmailError, setSignupEmailError] = useState("");
   const [signupPasswordError, setSignupPasswordError] = useState("");
-  const [signupConfirmPasswordError, setSignupConfirmPasswordError] = useState("");
+  const [signupConfirmPasswordError, setSignupConfirmPasswordError] =
+    useState("");
   const [showSignupPassword, setShowSignupPassword] = useState(false);
-  const [showSignupConfirmPassword, setShowSignupConfirmPassword] = useState(false);
-  const [signupSuccess, setSignupSuccess] = useState("");
-
+  const [showSignupConfirmPassword, setShowSignupConfirmPassword] =
+    useState(false);
+  const [signupSuccess, setSignupSuccess] = useState<string | null>(null);
   const toggleForm = (signup: boolean) => {
     setIsSignup(signup);
     clearErrors();
-    setSignupSuccess("");
+    setSignupSuccess(null);
   };
 
   const clearErrors = () => {
@@ -41,9 +41,10 @@ const Login: React.FC<LoginProps> = ({ onClose }) => {
     setSignupConfirmPasswordError("");
   };
 
-  const validateEmail = (email: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  const validateEmail = (email: string) =>
+    /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
-  const handleLoginSubmit = (e: React.FormEvent) => {
+  const handleLoginSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     let valid = true;
 
@@ -68,13 +69,13 @@ const Login: React.FC<LoginProps> = ({ onClose }) => {
     }
 
     if (valid) {
-      alert("Connexion réussie !");
+      console.log("Connexion réussie !");
       setLoginEmail("");
       setLoginPassword("");
     }
   };
 
-  const handleSignupSubmit = (e: React.FormEvent) => {
+  const handleSignupSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     let valid = true;
 
@@ -113,8 +114,8 @@ const Login: React.FC<LoginProps> = ({ onClose }) => {
     }
 
     if (valid) {
-      alert("Connexion réussie !");
-      setSignupSuccess("");
+      console.log("Inscription réussie !");
+      setSignupSuccess("Compte créé avec succès !");
       setSignupName("");
       setSignupEmail("");
       setSignupPassword("");
@@ -123,68 +124,176 @@ const Login: React.FC<LoginProps> = ({ onClose }) => {
   };
 
   const handleForgotPassword = () => {
-    alert("Redirection vers la récupération du mot de passe.");
+    console.log("Redirection vers la récupération du mot de passe.");
   };
 
+  const toggleLoginPassword = () => setShowLoginPassword(!showLoginPassword);
+  const toggleSignupPassword = () => setShowSignupPassword(!showSignupPassword);
+  const toggleSignupConfirmPassword = () =>
+    setShowSignupConfirmPassword(!showSignupConfirmPassword);
+
   return (
-    <div className="login-modal-overlay" onClick={onClose}>
+    <div
+      className="login-modal-overlay"
+      onClick={onClose}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") onClose();
+      }}
+      // biome-ignore lint/a11y/useSemanticElements: <explanation>
+      role="button"
+      tabIndex={0}
+    >
+      {/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
       <div className="login-modal" onClick={(e) => e.stopPropagation()}>
-        <button className="login-close-btn" onClick={onClose}>✕</button>
+        {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
+        <button
+          className="login-close-btn"
+          onClick={onClose}
+          aria-label="Fermer"
+        >
+          ✕
+        </button>
 
         <div className="form-toggle">
-          <button className={!isSignup ? "active" : ""} onClick={() => toggleForm(false)}>Connexion</button>
-          <button className={isSignup ? "active" : ""} onClick={() => toggleForm(true)}>Créer un compte</button>
+          {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
+          <button
+            className={!isSignup ? "active" : ""}
+            onClick={() => toggleForm(false)}
+          >
+            Connexion
+          </button>
+          {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
+          <button
+            className={isSignup ? "active" : ""}
+            onClick={() => toggleForm(true)}
+          >
+            Créer un compte
+          </button>
         </div>
 
         {!isSignup ? (
           <form className="login-form" onSubmit={handleLoginSubmit}>
-            <label>Email</label>
-            <input type="email" value={loginEmail} onChange={(e) => setLoginEmail(e.target.value)} placeholder="Votre email" />
-            {loginEmailError && <span className="error">{loginEmailError}</span>}
+            <label htmlFor="loginEmail">Email</label>
+            <input
+              id="loginEmail"
+              type="email"
+              value={loginEmail}
+              onChange={(e) => setLoginEmail(e.target.value)}
+              placeholder="Votre email"
+            />
+            {loginEmailError && (
+              <span className="error">{loginEmailError}</span>
+            )}
 
-            <label>Mot de passe</label>
+            <label htmlFor="loginPassword">Mot de passe</label>
             <div className="password-wrapper">
-              <input type={showLoginPassword ? "text" : "password"} value={loginPassword} onChange={(e) => setLoginPassword(e.target.value)} placeholder="Votre mot de passe" />
-              <button type="button" className="toggle-password-btn" onClick={() => setShowLoginPassword(!showLoginPassword)}>
+              <input
+                id="loginPassword"
+                type={showLoginPassword ? "text" : "password"}
+                value={loginPassword}
+                onChange={(e) => setLoginPassword(e.target.value)}
+                placeholder="Votre mot de passe"
+              />
+              <button
+                type="button"
+                className="toggle-password-btn"
+                onClick={toggleLoginPassword}
+              >
                 {showLoginPassword ? "🌑" : "🌞"}
               </button>
             </div>
-            {loginPasswordError && <span className="error">{loginPasswordError}</span>}
+            {loginPasswordError && (
+              <span className="error">{loginPasswordError}</span>
+            )}
 
-            <button type="submit" className="login-btn">Se connecter</button>
-            <button type="button" className="forgot-password-btn" onClick={handleForgotPassword}>Mot de passe oublié ?</button>
+            <button type="submit" className="login-btn">
+              Se connecter
+            </button>
+            <button
+              type="button"
+              className="forgot-password-btn"
+              onClick={handleForgotPassword}
+            >
+              Mot de passe oublié ?
+            </button>
           </form>
         ) : (
           <form className="signup-form" onSubmit={handleSignupSubmit}>
-            {signupSuccess && <div className="success-message">{signupSuccess}</div>}
+            {signupSuccess && (
+              <div className="success-message">{signupSuccess}</div>
+            )}
 
-            <label>Nom</label>
-            <input type="text" value={signupName} onChange={(e) => setSignupName(e.target.value)} placeholder="Votre nom" />
-            {signupNameError && <span className="error">{signupNameError}</span>}
+            <label htmlFor="signupName">Nom</label>
+            <input
+              id="signupName"
+              type="text"
+              value={signupName}
+              onChange={(e) => setSignupName(e.target.value)}
+              placeholder="Votre nom"
+            />
+            {signupNameError && (
+              <span className="error">{signupNameError}</span>
+            )}
 
-            <label>Email</label>
-            <input type="email" value={signupEmail} onChange={(e) => setSignupEmail(e.target.value)} placeholder="Votre email" />
-            {signupEmailError && <span className="error">{signupEmailError}</span>}
+            <label htmlFor="signupEmail">Email</label>
+            <input
+              id="signupEmail"
+              type="email"
+              value={signupEmail}
+              onChange={(e) => setSignupEmail(e.target.value)}
+              placeholder="Votre email"
+            />
+            {signupEmailError && (
+              <span className="error">{signupEmailError}</span>
+            )}
 
-            <label>Mot de passe</label>
+            <label htmlFor="signupPassword">Mot de passe</label>
             <div className="password-wrapper">
-              <input type={showSignupPassword ? "text" : "password"} value={signupPassword} onChange={(e) => setSignupPassword(e.target.value)} placeholder="Votre mot de passe" />
-              <button type="button" className="toggle-password-btn" onClick={() => setShowSignupPassword(!showSignupPassword)}>
+              <input
+                id="signupPassword"
+                type={showSignupPassword ? "text" : "password"}
+                value={signupPassword}
+                onChange={(e) => setSignupPassword(e.target.value)}
+                placeholder="Votre mot de passe"
+              />
+              <button
+                type="button"
+                className="toggle-password-btn"
+                onClick={toggleSignupPassword}
+              >
                 {showSignupPassword ? "🌑" : "🌞"}
               </button>
             </div>
-            {signupPasswordError && <span className="error">{signupPasswordError}</span>}
+            {signupPasswordError && (
+              <span className="error">{signupPasswordError}</span>
+            )}
 
-            <label>Confirmer le mot de passe</label>
+            <label htmlFor="signupConfirmPassword">
+              Confirmer le mot de passe
+            </label>
             <div className="password-wrapper">
-              <input type={showSignupConfirmPassword ? "text" : "password"} value={signupConfirmPassword} onChange={(e) => setSignupConfirmPassword(e.target.value)} placeholder="Confirmer le mot de passe" />
-              <button type="button" className="toggle-password-btn" onClick={() => setShowSignupConfirmPassword(!showSignupConfirmPassword)}>
+              <input
+                id="signupConfirmPassword"
+                type={showSignupConfirmPassword ? "text" : "password"}
+                value={signupConfirmPassword}
+                onChange={(e) => setSignupConfirmPassword(e.target.value)}
+                placeholder="Confirmer le mot de passe"
+              />
+              <button
+                type="button"
+                className="toggle-password-btn"
+                onClick={toggleSignupConfirmPassword}
+              >
                 {showSignupConfirmPassword ? "🌑" : "🌞"}
               </button>
             </div>
-            {signupConfirmPasswordError && <span className="error">{signupConfirmPasswordError}</span>}
+            {signupConfirmPasswordError && (
+              <span className="error">{signupConfirmPasswordError}</span>
+            )}
 
-            <button type="submit" className="login-btn">Créer un compte</button>
+            <button type="submit" className="login-btn">
+              Créer un compte
+            </button>
           </form>
         )}
       </div>

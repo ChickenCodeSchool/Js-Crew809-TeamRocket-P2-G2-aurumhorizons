@@ -1,6 +1,9 @@
 .body {
   background-color: rgb(252, 248, 237);
   padding-left: 2rem;
+  article {
+    padding-bottom: 1.5rem;
+  }
 }
 #panneautitre {
   font-family: "Cinzel", sans-serif;
