@@ -19,7 +19,7 @@
 
 .panneau {
   flex: 1;
-  height: 100vh;
+  height: 98vh;
   overflow-y: auto;
 }
 
