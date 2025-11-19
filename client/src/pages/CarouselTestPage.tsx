@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 // import egypte from "../assets/images/egypte.png";
-// import Carousel from "../components/Carousel";
+import Carousel from "../components/Carousel";
 
 import CommentsSection from "../components/CommentSection";
 import Devis from "../components/Devis";
@@ -66,7 +66,7 @@ const CarouselTestPage: React.FC = () => {
         <div className="carousel-section">
           {/* <Carousel name={infoVoyage.name} /> */}
 
-          {/* <Carousel destinationName="Egypt" /> */}
+          <Carousel destinationName="Egypt" />
         </div>
       </div>
       <div className={`bottom-text-section btn-text-${infoVoyage?.name}`}>

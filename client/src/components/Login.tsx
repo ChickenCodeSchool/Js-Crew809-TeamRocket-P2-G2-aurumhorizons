@@ -8,13 +8,11 @@ interface LoginProps {
 
 const Login: React.FC<LoginProps> = ({ onClose }) => {
   const [isSignup, setIsSignup] = useState(false);
-
   const [loginEmail, setLoginEmail] = useState("");
   const [loginPassword, setLoginPassword] = useState("");
   const [loginEmailError, setLoginEmailError] = useState("");
   const [loginPasswordError, setLoginPasswordError] = useState("");
   const [showLoginPassword, setShowLoginPassword] = useState(false);
-
   const [signupName, setSignupName] = useState("");
   const [signupEmail, setSignupEmail] = useState("");
   const [signupPassword, setSignupPassword] = useState("");
@@ -27,12 +25,11 @@ const Login: React.FC<LoginProps> = ({ onClose }) => {
   const [showSignupPassword, setShowSignupPassword] = useState(false);
   const [showSignupConfirmPassword, setShowSignupConfirmPassword] =
     useState(false);
-  const [signupSuccess, setSignupSuccess] = useState("");
-
+  const [signupSuccess, setSignupSuccess] = useState<string | null>(null);
   const toggleForm = (signup: boolean) => {
     setIsSignup(signup);
     clearErrors();
-    setSignupSuccess("");
+    setSignupSuccess(null);
   };
 
   const clearErrors = () => {
@@ -47,7 +44,7 @@ const Login: React.FC<LoginProps> = ({ onClose }) => {
   const validateEmail = (email: string) =>
     /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
-  const handleLoginSubmit = (e: React.FormEvent) => {
+  const handleLoginSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     let valid = true;
 
@@ -72,13 +69,13 @@ const Login: React.FC<LoginProps> = ({ onClose }) => {
     }
 
     if (valid) {
-      alert("Connexion réussie !");
+      console.log("Connexion réussie !");
       setLoginEmail("");
       setLoginPassword("");
     }
   };
 
-  const handleSignupSubmit = (e: React.FormEvent) => {
+  const handleSignupSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     let valid = true;
 
@@ -117,8 +114,8 @@ const Login: React.FC<LoginProps> = ({ onClose }) => {
     }
 
     if (valid) {
-      alert("Connexion réussie !");
-      setSignupSuccess("");
+      console.log("Inscription réussie !");
+      setSignupSuccess("Compte créé avec succès !");
       setSignupName("");
       setSignupEmail("");
       setSignupPassword("");
@@ -127,31 +124,47 @@ const Login: React.FC<LoginProps> = ({ onClose }) => {
   };
 
   const handleForgotPassword = () => {
-    alert("Redirection vers la récupération du mot de passe.");
+    console.log("Redirection vers la récupération du mot de passe.");
   };
 
+  const toggleLoginPassword = () => setShowLoginPassword(!showLoginPassword);
+  const toggleSignupPassword = () => setShowSignupPassword(!showSignupPassword);
+  const toggleSignupConfirmPassword = () =>
+    setShowSignupConfirmPassword(!showSignupConfirmPassword);
+
   return (
-    // biome-ignore lint/a11y/useKeyWithClickEvents: <explanation>
-    <div className="login-modal-overlay" onClick={onClose}>
+    <div
+      className="login-modal-overlay"
+      onClick={onClose}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") onClose();
+      }}
+      // biome-ignore lint/a11y/useSemanticElements: <explanation>
+      role="button"
+      tabIndex={0}
+    >
       {/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
       <div className="login-modal" onClick={(e) => e.stopPropagation()}>
         {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
-        <button className="login-close-btn" onClick={onClose}>
+        <button
+          className="login-close-btn"
+          onClick={onClose}
+          aria-label="Fermer"
+        >
           ✕
         </button>
 
         <div className="form-toggle">
+          {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
           <button
-            type="button"
-            className={isSignup ? "active" : ""}
+            className={!isSignup ? "active" : ""}
             onClick={() => toggleForm(false)}
           >
             Connexion
           </button>
-
+          {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
           <button
-            type="button"
-            className={!isSignup ? "active" : ""}
+            className={isSignup ? "active" : ""}
             onClick={() => toggleForm(true)}
           >
             Créer un compte
@@ -160,9 +173,9 @@ const Login: React.FC<LoginProps> = ({ onClose }) => {
 
         {!isSignup ? (
           <form className="login-form" onSubmit={handleLoginSubmit}>
-            {/* biome-ignore lint/a11y/noLabelWithoutControl: <explanation> */}
-            <label>Email</label>
+            <label htmlFor="loginEmail">Email</label>
             <input
+              id="loginEmail"
               type="email"
               value={loginEmail}
               onChange={(e) => setLoginEmail(e.target.value)}
@@ -172,10 +185,10 @@ const Login: React.FC<LoginProps> = ({ onClose }) => {
               <span className="error">{loginEmailError}</span>
             )}
 
-            {/* biome-ignore lint/a11y/noLabelWithoutControl: <explanation> */}
-            <label>Mot de passe</label>
+            <label htmlFor="loginPassword">Mot de passe</label>
             <div className="password-wrapper">
               <input
+                id="loginPassword"
                 type={showLoginPassword ? "text" : "password"}
                 value={loginPassword}
                 onChange={(e) => setLoginPassword(e.target.value)}
@@ -184,7 +197,7 @@ const Login: React.FC<LoginProps> = ({ onClose }) => {
               <button
                 type="button"
                 className="toggle-password-btn"
-                onClick={() => setShowLoginPassword(!showLoginPassword)}
+                onClick={toggleLoginPassword}
               >
                 {showLoginPassword ? "🌑" : "🌞"}
               </button>
@@ -210,9 +223,9 @@ const Login: React.FC<LoginProps> = ({ onClose }) => {
               <div className="success-message">{signupSuccess}</div>
             )}
 
-            {/* biome-ignore lint/a11y/noLabelWithoutControl: <explanation> */}
-            <label>Nom</label>
+            <label htmlFor="signupName">Nom</label>
             <input
+              id="signupName"
               type="text"
               value={signupName}
               onChange={(e) => setSignupName(e.target.value)}
@@ -222,9 +235,9 @@ const Login: React.FC<LoginProps> = ({ onClose }) => {
               <span className="error">{signupNameError}</span>
             )}
 
-            {/* biome-ignore lint/a11y/noLabelWithoutControl: <explanation> */}
-            <label>Email</label>
+            <label htmlFor="signupEmail">Email</label>
             <input
+              id="signupEmail"
               type="email"
               value={signupEmail}
               onChange={(e) => setSignupEmail(e.target.value)}
@@ -234,10 +247,10 @@ const Login: React.FC<LoginProps> = ({ onClose }) => {
               <span className="error">{signupEmailError}</span>
             )}
 
-            {/* biome-ignore lint/a11y/noLabelWithoutControl: <explanation> */}
-            <label>Mot de passe</label>
+            <label htmlFor="signupPassword">Mot de passe</label>
             <div className="password-wrapper">
               <input
+                id="signupPassword"
                 type={showSignupPassword ? "text" : "password"}
                 value={signupPassword}
                 onChange={(e) => setSignupPassword(e.target.value)}
@@ -246,7 +259,7 @@ const Login: React.FC<LoginProps> = ({ onClose }) => {
               <button
                 type="button"
                 className="toggle-password-btn"
-                onClick={() => setShowSignupPassword(!showSignupPassword)}
+                onClick={toggleSignupPassword}
               >
                 {showSignupPassword ? "🌑" : "🌞"}
               </button>
@@ -255,10 +268,12 @@ const Login: React.FC<LoginProps> = ({ onClose }) => {
               <span className="error">{signupPasswordError}</span>
             )}
 
-            {/* biome-ignore lint/a11y/noLabelWithoutControl: <explanation> */}
-            <label>Confirmer le mot de passe</label>
+            <label htmlFor="signupConfirmPassword">
+              Confirmer le mot de passe
+            </label>
             <div className="password-wrapper">
               <input
+                id="signupConfirmPassword"
                 type={showSignupConfirmPassword ? "text" : "password"}
                 value={signupConfirmPassword}
                 onChange={(e) => setSignupConfirmPassword(e.target.value)}
@@ -267,9 +282,7 @@ const Login: React.FC<LoginProps> = ({ onClose }) => {
               <button
                 type="button"
                 className="toggle-password-btn"
-                onClick={() =>
-                  setShowSignupConfirmPassword(!showSignupConfirmPassword)
-                }
+                onClick={toggleSignupConfirmPassword}
               >
                 {showSignupConfirmPassword ? "🌑" : "🌞"}
               </button>
