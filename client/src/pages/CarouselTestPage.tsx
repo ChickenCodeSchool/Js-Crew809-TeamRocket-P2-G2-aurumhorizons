@@ -59,7 +59,8 @@ const CarouselTestPage: React.FC = () => {
         </div>
 
         <div className="carousel-section">
-          <Carousel images={egyptImages} />
+          <Carousel destinationName="Egypt" />
+
         </div>
       </div>
       <div className="bottom-text-section">
