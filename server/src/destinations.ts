@@ -11,6 +11,12 @@ export const destinations = [
     currency: "Indonesian Rupiah (IDR)",
     tourist_season: "April to October",
     theme: "exploration",
+    texts: [
+    "bateau",
+    "navire",
+    "barque",
+    "embarcation"
+  ],
     images: [
       "/images/indonesia1.jpg",
       "/images/indonesia2.jpg",
@@ -53,6 +59,12 @@ export const destinations = [
     currency: "Egyptian Pound (EGP)",
     tourist_season: "September to April",
     theme: "cultural",
+    texts: [
+    "bateau",
+    "navire",
+    "barque",
+    "embarcation"
+  ],
     images: [
       "/images/egypt-1.jpg",
       "/images/egypt-2.jpg",
@@ -95,6 +107,12 @@ export const destinations = [
     currency: "Maldivian Rufiyaa (MVR)",
     tourist_season: "December to April",
     theme: "relax",
+    texts: [
+    "bateau",
+    "navire",
+    "barque",
+    "embarcation"
+  ],
     images: ["/images/Maldives1.jpg", "/images/Maldives2.jpg"],
     hotels: [
       {
@@ -132,6 +150,12 @@ export const destinations = [
     currency: "Philippine Peso (PHP)",
     tourist_season: "December to February",
     theme: "exploration",
+    texts: [
+    "bateau",
+    "navire",
+    "barque",
+    "embarcation"
+  ],
     images: [
       "/images/Philippines1.png",
       "/images/Philippines2.png",
@@ -174,6 +198,12 @@ export const destinations = [
     currency: "Seychellois Rupee (SCR)",
     tourist_season: "April to October",
     theme: "relax",
+    texts: [
+    "bateau3",
+    "navire",
+    "barque",
+    "embarcation"
+  ],
     images: [
       "/images/Seychelles1.jpg",
       "/images/Seychelles2.jpg",
@@ -215,6 +245,12 @@ export const destinations = [
     currency: "Icelandic Króna (ISK)",
     tourist_season: "June to August (summer), October to March (lights)",
     theme: "exploration",
+    texts: [
+    "bateau",
+    "navire",
+    "barque",
+    "embarcation"
+  ],
     images: [
       "/images/Iceland1.jpg",
       "/images/Iceland2.jpg",
