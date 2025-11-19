@@ -13,7 +13,6 @@ const Carousel: React.FC<CarouselProps> = ({ destinationName }) => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  // Load images from API
   useEffect(() => {
     const fetchImages = async () => {
       try {
@@ -44,7 +43,7 @@ const Carousel: React.FC<CarouselProps> = ({ destinationName }) => {
     };
 
     fetchImages();
-    setIndex(0); // reset slider when destination changes
+    setIndex(0);
   }, [destinationName]);
 
   const next = useCallback(() => {
@@ -65,7 +64,6 @@ const Carousel: React.FC<CarouselProps> = ({ destinationName }) => {
     }, 400);
   }, [images.length]);
 
-  // Autoplay
   useEffect(() => {
     if (images.length === 0) return;
 
