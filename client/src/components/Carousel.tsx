@@ -1,38 +1,81 @@
 import type React from "react";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import "./Carousel.css";
 
 interface CarouselProps {
-  images: string[];
+  destinationName: string;
 }
 
-const Carousel: React.FC<CarouselProps> = ({ images }) => {
+const Carousel: React.FC<CarouselProps> = ({ destinationName }) => {
+  const [images, setImages] = useState<string[]>([]);
   const [index, setIndex] = useState<number>(0);
   const [fade, setFade] = useState(true);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
-  const next = () => {
-    setFade(false);
-    setTimeout(() => {
-      setIndex((prevIndex) => (prevIndex + 1) % images.length);
-      setFade(true);
-    }, 400);
-  };
-
-  const prev = () => {
-    setFade(false);
-    setTimeout(() => {
-      setIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
-      setFade(true);
-    }, 400);
-  };
-  // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
+  // Load images from API
   useEffect(() => {
-    const interval = setInterval(() => {
-      next();
-    }, 5000);
+    const fetchImages = async () => {
+      try {
+        setLoading(true);
+        setError(null);
 
+        const response = await fetch(
+          `http://localhost:3310/api/destinations/name/${destinationName}`
+        );
+
+        if (!response.ok) {
+          throw new Error("Failed to fetch destination");
+        }
+
+        const destination = await response.json();
+
+        if (destination?.images && destination.images.length > 0) {
+          setImages(destination.images);
+        } else {
+          setError(`No images found for ${destinationName}`);
+        }
+      } catch (err) {
+        setError("Error loading images");
+        console.error("Error fetching destination:", err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchImages();
+    setIndex(0); // reset slider when destination changes
+  }, [destinationName]);
+
+  const next = useCallback(() => {
+    if (images.length === 0) return;
+    setFade(false);
+    setTimeout(() => {
+      setIndex((prev) => (prev + 1) % images.length);
+      setFade(true);
+    }, 400);
+  }, [images.length]);
+
+  const prev = useCallback(() => {
+    if (images.length === 0) return;
+    setFade(false);
+    setTimeout(() => {
+      setIndex((prev) => (prev - 1 + images.length) % images.length);
+      setFade(true);
+    }, 400);
+  }, [images.length]);
+
+  // Autoplay
+  useEffect(() => {
+    if (images.length === 0) return;
+
+    const interval = setInterval(next, 5000);
     return () => clearInterval(interval);
-  }, [index]);
+  }, [images.length, next]);
+
+  if (loading) return <div className="loading">Loading images...</div>;
+  if (error) return <div className="error">{error}</div>;
+  if (images.length === 0) return <div>No images available</div>;
 
   return (
     <div className="carousel">
@@ -40,14 +83,14 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
         src={images[index]}
         alt={`slide-${index}`}
         className={`carousel-image ${fade ? "fade-in" : "fade-out"}`}
+        onError={(e) => (e.currentTarget.src = "/images/placeholder.jpg")}
       />
+
       <div className="carousel-buttons">
-        {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
-        <button onClick={prev} className="carousel-button prev">
+        <button type="button" onClick={prev} className="carousel-button prev">
           ❮
         </button>
-        {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
-        <button onClick={next} className="carousel-button next">
+        <button type="button" onClick={next} className="carousel-button next">
           ❯
         </button>
       </div>
@@ -56,3 +99,4 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
 };
 
 export default Carousel;
+
