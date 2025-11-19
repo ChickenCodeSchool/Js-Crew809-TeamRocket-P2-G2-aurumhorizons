@@ -23,8 +23,8 @@ function Panneau({
   return (
     <>
       <section className="body">
-        {/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
-        <article onClick={() => openPopup1(myRef1)}>
+        {/* biome-ignore lint/a11y/useKeyWithMouseEvents: <explanation> */}
+        <article onMouseOver={() => openPopup1(myRef1)}>
           <p className="jours">Jour 1</p>
           <h2 id="panneautitre">Hurghada</h2>
           <p className="paragraphe">
@@ -36,8 +36,8 @@ function Panneau({
             glimpse of oriental charm through its souks and traditional cafes.
           </p>
         </article>
-        {/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
-        <article onClick={() => openPopup1(myRef2)}>
+        {/* biome-ignore lint/a11y/useKeyWithMouseEvents: <explanation> */}
+        <article onMouseOver={() => openPopup1(myRef2)}>
           <p className="jours">Jour 2</p>
           <h2 id="panneautitre">Eden Island Hurghada</h2>
           <p className="paragraphe">
@@ -49,8 +49,8 @@ function Panneau({
             bustle of the mainland.
           </p>
         </article>
-        {/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
-        <article onClick={() => openPopup1(myRef3)}>
+        {/* biome-ignore lint/a11y/useKeyWithMouseEvents: <explanation> */}
+        <article onMouseOver={() => openPopup1(myRef3)}>
           <p className="jours">Jour 3</p>
           <h2 id="panneautitre">Louxor</h2>
           <p className="paragraphe">
@@ -62,8 +62,8 @@ function Panneau({
             journey back in time to the heart of Egyptian civilization.
           </p>
         </article>
-        {/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
-        <article onClick={() => openPopup1(myRef4)}>
+        {/* biome-ignore lint/a11y/useKeyWithMouseEvents: <explanation> */}
+        <article onMouseOver={() => openPopup1(myRef4)}>
           <p className="jours">Jour 4</p>
           <h2 id="panneautitre">Le Caire</h2>
           <p className="paragraphe">
@@ -76,8 +76,8 @@ function Panneau({
             oriental charm.
           </p>
         </article>
-        {/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
-        <article onClick={() => openPopup1(myRef5)}>
+        {/* biome-ignore lint/a11y/useKeyWithMouseEvents: <explanation> */}
+        <article onMouseOver={() => openPopup1(myRef5)}>
           <p className="jours">Jour 5</p>
           <h2 id="panneautitre">Alexandrie</h2>
           <p className="paragraphe">
@@ -89,8 +89,8 @@ function Panneau({
             that is both cultural and romantic.
           </p>
         </article>
-        {/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
-        <article onClick={() => openPopup1(myRef6)}>
+        {/* biome-ignore lint/a11y/useKeyWithMouseEvents: <explanation> */}
+        <article onMouseOver={() => openPopup1(myRef6)}>
           <p className="jours">Jour 6</p>
           <h2 id="panneautitre">Ras Mohamed Nature Reserve</h2>
           <p className="paragraphe">

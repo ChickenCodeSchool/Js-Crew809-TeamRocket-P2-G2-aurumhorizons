@@ -57,11 +57,6 @@ function Map({
           <Marker
             ref={myRef2}
             position={[27.184452450256146, 33.96789760907389]}
-            eventHandlers={{
-              click: () => {
-                console.log("poulet");
-              },
-            }}
           >
             <Popup>
               Eden Island Hurghada <br />

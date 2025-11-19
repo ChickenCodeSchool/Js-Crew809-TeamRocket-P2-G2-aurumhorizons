@@ -1,10 +1,23 @@
 import type L from "leaflet";
 import { useRef } from "react";
+// import { useEffect} from "react";
+// import { useState } from "react";
 // biome-ignore lint/suspicious/noShadowRestrictedNames: <explanation>
 import Map from "../components/Map.tsx";
 import Panneau from "../components/Panneau.tsx";
 import "leaflet/dist/leaflet.css";
 import "./Gps.css";
+
+// type intermaps = {
+//   id: number;
+//   day: number;
+//   coordonnées: {
+//     lat: number;
+//     lng: number;
+//   };
+//   lieu: string;
+//   description: string;
+// };
 
 function Gps() {
   const arcdetriompheRef = useRef<L.Marker | null>(null);
@@ -18,6 +31,13 @@ function Gps() {
       ref.current.openPopup();
     }
   };
+
+  // const [intermaps, setintermaps] = useState<intermaps[]>([]);
+  // useEffect(() => {
+  //   fetch("http://localhost:3310/api/detailstravel/1")
+  //     .then((res) => res.json())
+  //     .then((resData) => console.log(resData));
+  // }, []);
 
   return (
     <section className="section-map">

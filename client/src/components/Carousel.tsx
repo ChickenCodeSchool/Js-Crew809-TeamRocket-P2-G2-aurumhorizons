@@ -1,5 +1,5 @@
 import type React from "react";
-import { useEffect, useState, useCallback } from "react";
+import { useCallback, useEffect, useState } from "react";
 import "./Carousel.css";
 
 interface CarouselProps {
@@ -20,7 +20,7 @@ const Carousel: React.FC<CarouselProps> = ({ destinationName }) => {
         setError(null);
 
         const response = await fetch(
-          `http://localhost:3310/api/destinations/name/${destinationName}`
+          `http://localhost:3310/api/destinations/name/${destinationName}`,
         );
 
         if (!response.ok) {
@@ -81,6 +81,7 @@ const Carousel: React.FC<CarouselProps> = ({ destinationName }) => {
         src={images[index]}
         alt={`slide-${index}`}
         className={`carousel-image ${fade ? "fade-in" : "fade-out"}`}
+        // biome-ignore lint/suspicious/noAssignInExpressions: <explanation>
         onError={(e) => (e.currentTarget.src = "/images/placeholder.jpg")}
       />
 
@@ -97,4 +98,3 @@ const Carousel: React.FC<CarouselProps> = ({ destinationName }) => {
 };
 
 export default Carousel;
-

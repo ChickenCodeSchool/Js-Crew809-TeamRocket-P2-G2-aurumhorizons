@@ -1,5 +1,5 @@
 import type React from "react";
-import { useEffect, useState, useCallback } from "react";
+import { useCallback, useEffect, useState } from "react";
 import "./HotelsCarousel.css";
 
 interface Hotel {
@@ -24,10 +24,10 @@ const HotelsCarousel: React.FC<HotelsCarouselProps> = ({ destinationName }) => {
     const fetchHotels = async () => {
       try {
         const response = await fetch(
-          `http://localhost:3310/api/destinations/name/${destinationName}`
+          `http://localhost:3310/api/destinations/name/${destinationName}`,
         );
         if (!response.ok) {
-          throw new Error('Failed to fetch destinations');
+          throw new Error("Failed to fetch destinations");
         }
         const destination = await response.json();
         if (destination?.hotels && destination.hotels.length > 0) {
@@ -36,17 +36,17 @@ const HotelsCarousel: React.FC<HotelsCarouselProps> = ({ destinationName }) => {
           setError(`No hotels found for ${destinationName}`);
         }
       } catch (err) {
-        setError('Error loading hotels');
-        console.error('Error fetching destinations:', err);
+        setError("Error loading hotels");
+        console.error("Error fetching destinations:", err);
       } finally {
         setLoading(false);
       }
     };
-    
+
     setLoading(true);
     setError(null);
     setIndex(0);
-    
+
     fetchHotels();
   }, [destinationName]);
 
@@ -81,15 +81,17 @@ const HotelsCarousel: React.FC<HotelsCarouselProps> = ({ destinationName }) => {
 
   return (
     <div className="hotels-section">
-      <h2 className="section-title">Our Exclusive Hotels in {destinationName}</h2>
+      <h2 className="section-title">
+        Our Exclusive Hotels in {destinationName}
+      </h2>
       <div className="hotels-carousel-page">
         <div className="hotels-text-section">
           <h2>{hotel.title}</h2>
           <p>{hotel.description}</p>
-          <a 
-            href={hotel.link} 
-            target="_blank" 
-            rel="noopener noreferrer" 
+          <a
+            href={hotel.link}
+            target="_blank"
+            rel="noopener noreferrer"
             className="hotel-link-button"
           >
             Visit Website
@@ -101,12 +103,16 @@ const HotelsCarousel: React.FC<HotelsCarouselProps> = ({ destinationName }) => {
             alt={hotel.title}
             className={`carousel-image ${fade ? "fade-in" : "fade-out"}`}
             onError={(e) => {
-              e.currentTarget.src = '/images/placeholder-hotel.jpg';
+              e.currentTarget.src = "/images/placeholder-hotel.jpg";
             }}
           />
           <div className="carousel-buttons">
-            <button type="button" onClick={prev} aria-label="Previous hotel">❮</button>
-            <button type="button" onClick={next} aria-label="Next hotel">❯</button>
+            <button type="button" onClick={prev} aria-label="Previous hotel">
+              ❮
+            </button>
+            <button type="button" onClick={next} aria-label="Next hotel">
+              ❯
+            </button>
           </div>
         </div>
       </div>
