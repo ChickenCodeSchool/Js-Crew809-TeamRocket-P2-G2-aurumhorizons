@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
-import egypte from "../assets/images/egypte.png";
+// import egypte from "../assets/images/egypte.png";
 // import Carousel from "../components/Carousel";
+
 import CommentsSection from "../components/CommentSection";
 import Devis from "../components/Devis";
 import Gps from "../components/Gps";
@@ -12,6 +13,8 @@ interface InfoVoyage {
   name: string;
   description: string;
 }
+
+const egypte = "/image/egypte.png";
 
 const CarouselTestPage: React.FC = () => {
   const [showDevis, setShowDevis] = useState(false);
@@ -62,6 +65,8 @@ const CarouselTestPage: React.FC = () => {
 
         <div className="carousel-section">
           {/* <Carousel name={infoVoyage.name} /> */}
+
+          {/* <Carousel destinationName="Egypt" /> */}
         </div>
       </div>
       <div className={`bottom-text-section btn-text-${infoVoyage?.name}`}>
@@ -78,7 +83,7 @@ const CarouselTestPage: React.FC = () => {
       <div>
         <Gps />
       </div>
-      <HotelsCarousel />
+      <HotelsCarousel destinationName="Egypt" />
       <div className="containerbutton">
         <button type="button" className="devisbutton" onClick={handleOpenDevis}>
           {" "}

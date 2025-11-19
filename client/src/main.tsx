@@ -9,7 +9,6 @@ import HomePages from "./pages/HomePages";
 import About from "./pages/About";
 import MentionLegal from "./pages/MentionLegal";
 import Seemore from "./pages/Seemore";
-import Seychelles from "./pages/Seychelles";
 
 /* ************************************************************************* */
 
@@ -48,10 +47,6 @@ const router = createBrowserRouter([
       {
         path: "about",
         element: <About />,
-      },
-      {
-        path: "seychelles",
-        element: <Seychelles />,
       },
     ],
   },

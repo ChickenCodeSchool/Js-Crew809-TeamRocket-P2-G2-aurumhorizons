@@ -47,6 +47,19 @@ router.get("/api/destinations/:id", (req, res) => {
     res.status(404).json({ message: "Destination not found" });
   }
 });
+// ROUTE 3 : Obtenir UNE destination par son nom
+// (GET) http://localhost:3000/api/destinations/name/Egypt
+router.get("/api/destinations/name/:name", (req, res) => {
+  const destination = destinations.find(
+    (d) => d.name.toLowerCase() === req.params.name.toLowerCase(),
+  );
+
+  if (destination) {
+    res.json(destination);
+  } else {
+    res.status(404).json({ message: "Destination not found" });
+  }
+});
 
 router.get("/api/detailstravel/:id", (req, res) => {
   const searchedId = Number.parseInt(req.params.id);
