@@ -7,12 +7,12 @@ import Gps from "../components/Gps";
 import HotelsCarousel from "../components/HotelsCarousel";
 import "./CarouselTestPage.css";
 
-const egyptImages: string[] = [
-  "/image/egypt-1.jpg",
-  "/image/egypt-2.jpg",
-  "/image/egypt-3.jpg",
-  "/image/egypt-4.jpg"
-];
+// const egyptImages: string[] = [
+//   "/image/egypt-1.jpg",
+//   "/image/egypt-2.jpg",
+//   "/image/egypt-3.jpg",
+//   "/image/egypt-4.jpg"
+// ];
 const egypte = "/image/egypte.png";
 
 const CarouselTestPage: React.FC = () => {
