@@ -294,6 +294,42 @@ export const destinations = [
     currency: "Yen (JPY)",
     tourist_season: "March to May (cherry blossoms), September to November",
     theme: "cultural",
+     texts: [
+    "bateau",
+    "navire",
+    "barque",
+    "embarcation"
+  ],
+    images: [
+      "/images/Iceland1.jpg",
+      "/images/Iceland2.jpg",
+      "/images/Iceland3.jpg",
+      "/images/Iceland4.jpg",
+      "/images/Iceland5.jpg",
+    ],
+    hotels: [
+      {
+        img: "/images/IcelandHotel1.jpg",
+        title: "Highland Base - Kerlingarfjöll",
+        description:
+          "The Highland Base Hotel: Iceland really has been the “land of fire and ice” of late, with the recent eruptions on the Reykjanes Peninsula. The Highland Base offers one of Iceland’s vast and mostly frozen interior view. Highland Base in Kerlingarfjöll – a vast reserve of snowdrift-blanketed peaks, glaciers, lava fields and silence – might as well be on the moon. Getting there is a mission. The Nordic minimalist space station, a 28-room hotel and six pod-like lodges occupying the abandoned structures of the pioneers who have gone before.",
+        link: "https://highlandbase.is/",
+      },
+      {
+        img: "/images/IcelandHotel2.jpg",
+        title: "Blue Lagoon Iceland",
+        description:
+          "The Retreat Blue Lagoon Hotel: The Silica Blue Lagoon Hotel takes all the geothermal wonder of the Blue Lagoon and instils it into an uber-luxurious wellness establishment. The sleek and minimalist suites mirror the mossy-covered lava fields outside, while floor-to-ceiling windows welcome in the ethereal light of the Reykjanes Peninsula, inciting the stark grey and subdued black interiors into a heady and otherworldly Icelandic spectrum. Inside, all roads lead to the underground spa, a cavernous space offering the patented Blue Lagoon Ritual, a wellness cleanse using the silica, algae, and array of minerals all found in the geothermal waters.",
+        link: "https://www.bluelagoon.com/accommodation/retreat-hotel",
+      },
+      {
+        img: "/images/IcelandHotel3.jpg",
+        title: "ION Hotels",
+        description:
+          "The ION Adventure Hotel: The ION Adventure Hotel might have one of the most picturesque and otherworldly settings not just Iceland, but the entire Northern Hemisphere. Jutting out from a set of rugged cliffs above a field of jet-black lava, this hotel sits amid swirling sulphurous steam inside the UNESCO-listed Thingvellir National Park. If the setting is a tad dramatic, the interiors are by contrast an oasis of warmth and tranquillity. The elegant design incorporates driftwood and other natural materials from the surrounding landscapes, creating a blend of high-end luxury with low-key Icelandic sensibilities, an homage to the beauty of the scenery outside.",
+        link: "https://ioniceland.is/adventure/",
+      },
+    ],
   },
   {
     id: 8,
@@ -307,6 +343,43 @@ export const destinations = [
     currency: "Euro (EUR)",
     tourist_season: "April to June, September to October",
     theme: "cultural",
+     texts: [
+    "bateau",
+    "navire",
+    "barque",
+    "embarcation"
+  ],
+    images: [
+      "/images/Iceland1.jpg",
+      "/images/Iceland2.jpg",
+      "/images/Iceland3.jpg",
+      "/images/Iceland4.jpg",
+      "/images/Iceland5.jpg",
+    ],
+    hotels: [
+      {
+        img: "/images/IcelandHotel1.jpg",
+        title: "Highland Base - Kerlingarfjöll",
+        description:
+          "The Highland Base Hotel: Iceland really has been the “land of fire and ice” of late, with the recent eruptions on the Reykjanes Peninsula. The Highland Base offers one of Iceland’s vast and mostly frozen interior view. Highland Base in Kerlingarfjöll – a vast reserve of snowdrift-blanketed peaks, glaciers, lava fields and silence – might as well be on the moon. Getting there is a mission. The Nordic minimalist space station, a 28-room hotel and six pod-like lodges occupying the abandoned structures of the pioneers who have gone before.",
+        link: "https://highlandbase.is/",
+      },
+      {
+        img: "/images/IcelandHotel2.jpg",
+        title: "Blue Lagoon Iceland",
+        description:
+          "The Retreat Blue Lagoon Hotel: The Silica Blue Lagoon Hotel takes all the geothermal wonder of the Blue Lagoon and instils it into an uber-luxurious wellness establishment. The sleek and minimalist suites mirror the mossy-covered lava fields outside, while floor-to-ceiling windows welcome in the ethereal light of the Reykjanes Peninsula, inciting the stark grey and subdued black interiors into a heady and otherworldly Icelandic spectrum. Inside, all roads lead to the underground spa, a cavernous space offering the patented Blue Lagoon Ritual, a wellness cleanse using the silica, algae, and array of minerals all found in the geothermal waters.",
+        link: "https://www.bluelagoon.com/accommodation/retreat-hotel",
+      },
+      {
+        img: "/images/IcelandHotel3.jpg",
+        title: "ION Hotels",
+        description:
+          "The ION Adventure Hotel: The ION Adventure Hotel might have one of the most picturesque and otherworldly settings not just Iceland, but the entire Northern Hemisphere. Jutting out from a set of rugged cliffs above a field of jet-black lava, this hotel sits amid swirling sulphurous steam inside the UNESCO-listed Thingvellir National Park. If the setting is a tad dramatic, the interiors are by contrast an oasis of warmth and tranquillity. The elegant design incorporates driftwood and other natural materials from the surrounding landscapes, creating a blend of high-end luxury with low-key Icelandic sensibilities, an homage to the beauty of the scenery outside.",
+        link: "https://ioniceland.is/adventure/",
+      },
+    ],
+    
   },
   {
     id: 9,
@@ -320,6 +393,42 @@ export const destinations = [
     currency: "Costa Rican Colón (CRC)",
     tourist_season: "December to April (dry season)",
     theme: "exploration",
+     texts: [
+    "bateau",
+    "navire",
+    "barque",
+    "embarcation"
+  ],
+    images: [
+      "/images/Iceland1.jpg",
+      "/images/Iceland2.jpg",
+      "/images/Iceland3.jpg",
+      "/images/Iceland4.jpg",
+      "/images/Iceland5.jpg",
+    ],
+    hotels: [
+      {
+        img: "/images/IcelandHotel1.jpg",
+        title: "Highland Base - Kerlingarfjöll",
+        description:
+          "The Highland Base Hotel: Iceland really has been the “land of fire and ice” of late, with the recent eruptions on the Reykjanes Peninsula. The Highland Base offers one of Iceland’s vast and mostly frozen interior view. Highland Base in Kerlingarfjöll – a vast reserve of snowdrift-blanketed peaks, glaciers, lava fields and silence – might as well be on the moon. Getting there is a mission. The Nordic minimalist space station, a 28-room hotel and six pod-like lodges occupying the abandoned structures of the pioneers who have gone before.",
+        link: "https://highlandbase.is/",
+      },
+      {
+        img: "/images/IcelandHotel2.jpg",
+        title: "Blue Lagoon Iceland",
+        description:
+          "The Retreat Blue Lagoon Hotel: The Silica Blue Lagoon Hotel takes all the geothermal wonder of the Blue Lagoon and instils it into an uber-luxurious wellness establishment. The sleek and minimalist suites mirror the mossy-covered lava fields outside, while floor-to-ceiling windows welcome in the ethereal light of the Reykjanes Peninsula, inciting the stark grey and subdued black interiors into a heady and otherworldly Icelandic spectrum. Inside, all roads lead to the underground spa, a cavernous space offering the patented Blue Lagoon Ritual, a wellness cleanse using the silica, algae, and array of minerals all found in the geothermal waters.",
+        link: "https://www.bluelagoon.com/accommodation/retreat-hotel",
+      },
+      {
+        img: "/images/IcelandHotel3.jpg",
+        title: "ION Hotels",
+        description:
+          "The ION Adventure Hotel: The ION Adventure Hotel might have one of the most picturesque and otherworldly settings not just Iceland, but the entire Northern Hemisphere. Jutting out from a set of rugged cliffs above a field of jet-black lava, this hotel sits amid swirling sulphurous steam inside the UNESCO-listed Thingvellir National Park. If the setting is a tad dramatic, the interiors are by contrast an oasis of warmth and tranquillity. The elegant design incorporates driftwood and other natural materials from the surrounding landscapes, creating a blend of high-end luxury with low-key Icelandic sensibilities, an homage to the beauty of the scenery outside.",
+        link: "https://ioniceland.is/adventure/",
+      },
+    ],
   },
   {
     id: 10,
@@ -333,6 +442,42 @@ export const destinations = [
     currency: "Euro (EUR)",
     tourist_season: "May to September",
     theme: "cultural",
+     texts: [
+    "bateau",
+    "navire",
+    "barque",
+    "embarcation"
+  ],
+    images: [
+      "/images/Iceland1.jpg",
+      "/images/Iceland2.jpg",
+      "/images/Iceland3.jpg",
+      "/images/Iceland4.jpg",
+      "/images/Iceland5.jpg",
+    ],
+    hotels: [
+      {
+        img: "/images/IcelandHotel1.jpg",
+        title: "Highland Base - Kerlingarfjöll",
+        description:
+          "The Highland Base Hotel: Iceland really has been the “land of fire and ice” of late, with the recent eruptions on the Reykjanes Peninsula. The Highland Base offers one of Iceland’s vast and mostly frozen interior view. Highland Base in Kerlingarfjöll – a vast reserve of snowdrift-blanketed peaks, glaciers, lava fields and silence – might as well be on the moon. Getting there is a mission. The Nordic minimalist space station, a 28-room hotel and six pod-like lodges occupying the abandoned structures of the pioneers who have gone before.",
+        link: "https://highlandbase.is/",
+      },
+      {
+        img: "/images/IcelandHotel2.jpg",
+        title: "Blue Lagoon Iceland",
+        description:
+          "The Retreat Blue Lagoon Hotel: The Silica Blue Lagoon Hotel takes all the geothermal wonder of the Blue Lagoon and instils it into an uber-luxurious wellness establishment. The sleek and minimalist suites mirror the mossy-covered lava fields outside, while floor-to-ceiling windows welcome in the ethereal light of the Reykjanes Peninsula, inciting the stark grey and subdued black interiors into a heady and otherworldly Icelandic spectrum. Inside, all roads lead to the underground spa, a cavernous space offering the patented Blue Lagoon Ritual, a wellness cleanse using the silica, algae, and array of minerals all found in the geothermal waters.",
+        link: "https://www.bluelagoon.com/accommodation/retreat-hotel",
+      },
+      {
+        img: "/images/IcelandHotel3.jpg",
+        title: "ION Hotels",
+        description:
+          "The ION Adventure Hotel: The ION Adventure Hotel might have one of the most picturesque and otherworldly settings not just Iceland, but the entire Northern Hemisphere. Jutting out from a set of rugged cliffs above a field of jet-black lava, this hotel sits amid swirling sulphurous steam inside the UNESCO-listed Thingvellir National Park. If the setting is a tad dramatic, the interiors are by contrast an oasis of warmth and tranquillity. The elegant design incorporates driftwood and other natural materials from the surrounding landscapes, creating a blend of high-end luxury with low-key Icelandic sensibilities, an homage to the beauty of the scenery outside.",
+        link: "https://ioniceland.is/adventure/",
+      },
+    ],
   },
   {
     id: 11,
@@ -346,6 +491,42 @@ export const destinations = [
     currency: "Peruvian Sol (PEN)",
     tourist_season: "May to September",
     theme: "exploration",
+     texts: [
+    "bateau",
+    "navire",
+    "barque",
+    "embarcation"
+  ],
+    images: [
+      "/images/Iceland1.jpg",
+      "/images/Iceland2.jpg",
+      "/images/Iceland3.jpg",
+      "/images/Iceland4.jpg",
+      "/images/Iceland5.jpg",
+    ],
+    hotels: [
+      {
+        img: "/images/IcelandHotel1.jpg",
+        title: "Highland Base - Kerlingarfjöll",
+        description:
+          "The Highland Base Hotel: Iceland really has been the “land of fire and ice” of late, with the recent eruptions on the Reykjanes Peninsula. The Highland Base offers one of Iceland’s vast and mostly frozen interior view. Highland Base in Kerlingarfjöll – a vast reserve of snowdrift-blanketed peaks, glaciers, lava fields and silence – might as well be on the moon. Getting there is a mission. The Nordic minimalist space station, a 28-room hotel and six pod-like lodges occupying the abandoned structures of the pioneers who have gone before.",
+        link: "https://highlandbase.is/",
+      },
+      {
+        img: "/images/IcelandHotel2.jpg",
+        title: "Blue Lagoon Iceland",
+        description:
+          "The Retreat Blue Lagoon Hotel: The Silica Blue Lagoon Hotel takes all the geothermal wonder of the Blue Lagoon and instils it into an uber-luxurious wellness establishment. The sleek and minimalist suites mirror the mossy-covered lava fields outside, while floor-to-ceiling windows welcome in the ethereal light of the Reykjanes Peninsula, inciting the stark grey and subdued black interiors into a heady and otherworldly Icelandic spectrum. Inside, all roads lead to the underground spa, a cavernous space offering the patented Blue Lagoon Ritual, a wellness cleanse using the silica, algae, and array of minerals all found in the geothermal waters.",
+        link: "https://www.bluelagoon.com/accommodation/retreat-hotel",
+      },
+      {
+        img: "/images/IcelandHotel3.jpg",
+        title: "ION Hotels",
+        description:
+          "The ION Adventure Hotel: The ION Adventure Hotel might have one of the most picturesque and otherworldly settings not just Iceland, but the entire Northern Hemisphere. Jutting out from a set of rugged cliffs above a field of jet-black lava, this hotel sits amid swirling sulphurous steam inside the UNESCO-listed Thingvellir National Park. If the setting is a tad dramatic, the interiors are by contrast an oasis of warmth and tranquillity. The elegant design incorporates driftwood and other natural materials from the surrounding landscapes, creating a blend of high-end luxury with low-key Icelandic sensibilities, an homage to the beauty of the scenery outside.",
+        link: "https://ioniceland.is/adventure/",
+      },
+    ],
   },
   {
     id: 12,
@@ -359,6 +540,42 @@ export const destinations = [
     currency: "Moroccan Dirham (MAD)",
     tourist_season: "March to May, September to November",
     theme: "cultural",
+     texts: [
+    "bateau",
+    "navire",
+    "barque",
+    "embarcation"
+  ],
+    images: [
+      "/images/Iceland1.jpg",
+      "/images/Iceland2.jpg",
+      "/images/Iceland3.jpg",
+      "/images/Iceland4.jpg",
+      "/images/Iceland5.jpg",
+    ],
+    hotels: [
+      {
+        img: "/images/IcelandHotel1.jpg",
+        title: "Highland Base - Kerlingarfjöll",
+        description:
+          "The Highland Base Hotel: Iceland really has been the “land of fire and ice” of late, with the recent eruptions on the Reykjanes Peninsula. The Highland Base offers one of Iceland’s vast and mostly frozen interior view. Highland Base in Kerlingarfjöll – a vast reserve of snowdrift-blanketed peaks, glaciers, lava fields and silence – might as well be on the moon. Getting there is a mission. The Nordic minimalist space station, a 28-room hotel and six pod-like lodges occupying the abandoned structures of the pioneers who have gone before.",
+        link: "https://highlandbase.is/",
+      },
+      {
+        img: "/images/IcelandHotel2.jpg",
+        title: "Blue Lagoon Iceland",
+        description:
+          "The Retreat Blue Lagoon Hotel: The Silica Blue Lagoon Hotel takes all the geothermal wonder of the Blue Lagoon and instils it into an uber-luxurious wellness establishment. The sleek and minimalist suites mirror the mossy-covered lava fields outside, while floor-to-ceiling windows welcome in the ethereal light of the Reykjanes Peninsula, inciting the stark grey and subdued black interiors into a heady and otherworldly Icelandic spectrum. Inside, all roads lead to the underground spa, a cavernous space offering the patented Blue Lagoon Ritual, a wellness cleanse using the silica, algae, and array of minerals all found in the geothermal waters.",
+        link: "https://www.bluelagoon.com/accommodation/retreat-hotel",
+      },
+      {
+        img: "/images/IcelandHotel3.jpg",
+        title: "ION Hotels",
+        description:
+          "The ION Adventure Hotel: The ION Adventure Hotel might have one of the most picturesque and otherworldly settings not just Iceland, but the entire Northern Hemisphere. Jutting out from a set of rugged cliffs above a field of jet-black lava, this hotel sits amid swirling sulphurous steam inside the UNESCO-listed Thingvellir National Park. If the setting is a tad dramatic, the interiors are by contrast an oasis of warmth and tranquillity. The elegant design incorporates driftwood and other natural materials from the surrounding landscapes, creating a blend of high-end luxury with low-key Icelandic sensibilities, an homage to the beauty of the scenery outside.",
+        link: "https://ioniceland.is/adventure/",
+      },
+    ],
   },
   {
     id: 13,
@@ -372,6 +589,42 @@ export const destinations = [
     currency: "Australian Dollar (AUD)",
     tourist_season: "December to February (austral summer)",
     theme: "sporty",
+     texts: [
+    "bateau",
+    "navire",
+    "barque",
+    "embarcation"
+  ],
+    images: [
+      "/images/Iceland1.jpg",
+      "/images/Iceland2.jpg",
+      "/images/Iceland3.jpg",
+      "/images/Iceland4.jpg",
+      "/images/Iceland5.jpg",
+    ],
+    hotels: [
+      {
+        img: "/images/IcelandHotel1.jpg",
+        title: "Highland Base - Kerlingarfjöll",
+        description:
+          "The Highland Base Hotel: Iceland really has been the “land of fire and ice” of late, with the recent eruptions on the Reykjanes Peninsula. The Highland Base offers one of Iceland’s vast and mostly frozen interior view. Highland Base in Kerlingarfjöll – a vast reserve of snowdrift-blanketed peaks, glaciers, lava fields and silence – might as well be on the moon. Getting there is a mission. The Nordic minimalist space station, a 28-room hotel and six pod-like lodges occupying the abandoned structures of the pioneers who have gone before.",
+        link: "https://highlandbase.is/",
+      },
+      {
+        img: "/images/IcelandHotel2.jpg",
+        title: "Blue Lagoon Iceland",
+        description:
+          "The Retreat Blue Lagoon Hotel: The Silica Blue Lagoon Hotel takes all the geothermal wonder of the Blue Lagoon and instils it into an uber-luxurious wellness establishment. The sleek and minimalist suites mirror the mossy-covered lava fields outside, while floor-to-ceiling windows welcome in the ethereal light of the Reykjanes Peninsula, inciting the stark grey and subdued black interiors into a heady and otherworldly Icelandic spectrum. Inside, all roads lead to the underground spa, a cavernous space offering the patented Blue Lagoon Ritual, a wellness cleanse using the silica, algae, and array of minerals all found in the geothermal waters.",
+        link: "https://www.bluelagoon.com/accommodation/retreat-hotel",
+      },
+      {
+        img: "/images/IcelandHotel3.jpg",
+        title: "ION Hotels",
+        description:
+          "The ION Adventure Hotel: The ION Adventure Hotel might have one of the most picturesque and otherworldly settings not just Iceland, but the entire Northern Hemisphere. Jutting out from a set of rugged cliffs above a field of jet-black lava, this hotel sits amid swirling sulphurous steam inside the UNESCO-listed Thingvellir National Park. If the setting is a tad dramatic, the interiors are by contrast an oasis of warmth and tranquillity. The elegant design incorporates driftwood and other natural materials from the surrounding landscapes, creating a blend of high-end luxury with low-key Icelandic sensibilities, an homage to the beauty of the scenery outside.",
+        link: "https://ioniceland.is/adventure/",
+      },
+    ],
   },
   {
     id: 14,
@@ -385,6 +638,42 @@ export const destinations = [
     currency: "Canadian Dollar (CAD)",
     tourist_season: "June to September (summer)",
     theme: "sporty",
+     texts: [
+    "bateau",
+    "navire",
+    "barque",
+    "embarcation"
+  ],
+    images: [
+      "/images/Iceland1.jpg",
+      "/images/Iceland2.jpg",
+      "/images/Iceland3.jpg",
+      "/images/Iceland4.jpg",
+      "/images/Iceland5.jpg",
+    ],
+    hotels: [
+      {
+        img: "/images/IcelandHotel1.jpg",
+        title: "Highland Base - Kerlingarfjöll",
+        description:
+          "The Highland Base Hotel: Iceland really has been the “land of fire and ice” of late, with the recent eruptions on the Reykjanes Peninsula. The Highland Base offers one of Iceland’s vast and mostly frozen interior view. Highland Base in Kerlingarfjöll – a vast reserve of snowdrift-blanketed peaks, glaciers, lava fields and silence – might as well be on the moon. Getting there is a mission. The Nordic minimalist space station, a 28-room hotel and six pod-like lodges occupying the abandoned structures of the pioneers who have gone before.",
+        link: "https://highlandbase.is/",
+      },
+      {
+        img: "/images/IcelandHotel2.jpg",
+        title: "Blue Lagoon Iceland",
+        description:
+          "The Retreat Blue Lagoon Hotel: The Silica Blue Lagoon Hotel takes all the geothermal wonder of the Blue Lagoon and instils it into an uber-luxurious wellness establishment. The sleek and minimalist suites mirror the mossy-covered lava fields outside, while floor-to-ceiling windows welcome in the ethereal light of the Reykjanes Peninsula, inciting the stark grey and subdued black interiors into a heady and otherworldly Icelandic spectrum. Inside, all roads lead to the underground spa, a cavernous space offering the patented Blue Lagoon Ritual, a wellness cleanse using the silica, algae, and array of minerals all found in the geothermal waters.",
+        link: "https://www.bluelagoon.com/accommodation/retreat-hotel",
+      },
+      {
+        img: "/images/IcelandHotel3.jpg",
+        title: "ION Hotels",
+        description:
+          "The ION Adventure Hotel: The ION Adventure Hotel might have one of the most picturesque and otherworldly settings not just Iceland, but the entire Northern Hemisphere. Jutting out from a set of rugged cliffs above a field of jet-black lava, this hotel sits amid swirling sulphurous steam inside the UNESCO-listed Thingvellir National Park. If the setting is a tad dramatic, the interiors are by contrast an oasis of warmth and tranquillity. The elegant design incorporates driftwood and other natural materials from the surrounding landscapes, creating a blend of high-end luxury with low-key Icelandic sensibilities, an homage to the beauty of the scenery outside.",
+        link: "https://ioniceland.is/adventure/",
+      },
+    ],
   },
   {
     id: 15,
@@ -398,6 +687,42 @@ export const destinations = [
     currency: "Baht (THB)",
     tourist_season: "November to February",
     theme: "cultural",
+     texts: [
+    "bateau",
+    "navire",
+    "barque",
+    "embarcation"
+  ],
+    images: [
+      "/images/Iceland1.jpg",
+      "/images/Iceland2.jpg",
+      "/images/Iceland3.jpg",
+      "/images/Iceland4.jpg",
+      "/images/Iceland5.jpg",
+    ],
+    hotels: [
+      {
+        img: "/images/IcelandHotel1.jpg",
+        title: "Highland Base - Kerlingarfjöll",
+        description:
+          "The Highland Base Hotel: Iceland really has been the “land of fire and ice” of late, with the recent eruptions on the Reykjanes Peninsula. The Highland Base offers one of Iceland’s vast and mostly frozen interior view. Highland Base in Kerlingarfjöll – a vast reserve of snowdrift-blanketed peaks, glaciers, lava fields and silence – might as well be on the moon. Getting there is a mission. The Nordic minimalist space station, a 28-room hotel and six pod-like lodges occupying the abandoned structures of the pioneers who have gone before.",
+        link: "https://highlandbase.is/",
+      },
+      {
+        img: "/images/IcelandHotel2.jpg",
+        title: "Blue Lagoon Iceland",
+        description:
+          "The Retreat Blue Lagoon Hotel: The Silica Blue Lagoon Hotel takes all the geothermal wonder of the Blue Lagoon and instils it into an uber-luxurious wellness establishment. The sleek and minimalist suites mirror the mossy-covered lava fields outside, while floor-to-ceiling windows welcome in the ethereal light of the Reykjanes Peninsula, inciting the stark grey and subdued black interiors into a heady and otherworldly Icelandic spectrum. Inside, all roads lead to the underground spa, a cavernous space offering the patented Blue Lagoon Ritual, a wellness cleanse using the silica, algae, and array of minerals all found in the geothermal waters.",
+        link: "https://www.bluelagoon.com/accommodation/retreat-hotel",
+      },
+      {
+        img: "/images/IcelandHotel3.jpg",
+        title: "ION Hotels",
+        description:
+          "The ION Adventure Hotel: The ION Adventure Hotel might have one of the most picturesque and otherworldly settings not just Iceland, but the entire Northern Hemisphere. Jutting out from a set of rugged cliffs above a field of jet-black lava, this hotel sits amid swirling sulphurous steam inside the UNESCO-listed Thingvellir National Park. If the setting is a tad dramatic, the interiors are by contrast an oasis of warmth and tranquillity. The elegant design incorporates driftwood and other natural materials from the surrounding landscapes, creating a blend of high-end luxury with low-key Icelandic sensibilities, an homage to the beauty of the scenery outside.",
+        link: "https://ioniceland.is/adventure/",
+      },
+    ],
   },
   {
     id: 16,
@@ -411,5 +736,41 @@ export const destinations = [
     currency: "New Zealand Dollar (NZD)",
     tourist_season: "December to March (austral summer)",
     theme: "sporty",
+     texts: [
+    "bateau",
+    "navire",
+    "barque",
+    "embarcation"
+  ],
+    images: [
+      "/images/Iceland1.jpg",
+      "/images/Iceland2.jpg",
+      "/images/Iceland3.jpg",
+      "/images/Iceland4.jpg",
+      "/images/Iceland5.jpg",
+    ],
+    hotels: [
+      {
+        img: "/images/IcelandHotel1.jpg",
+        title: "Highland Base - Kerlingarfjöll",
+        description:
+          "The Highland Base Hotel: Iceland really has been the “land of fire and ice” of late, with the recent eruptions on the Reykjanes Peninsula. The Highland Base offers one of Iceland’s vast and mostly frozen interior view. Highland Base in Kerlingarfjöll – a vast reserve of snowdrift-blanketed peaks, glaciers, lava fields and silence – might as well be on the moon. Getting there is a mission. The Nordic minimalist space station, a 28-room hotel and six pod-like lodges occupying the abandoned structures of the pioneers who have gone before.",
+        link: "https://highlandbase.is/",
+      },
+      {
+        img: "/images/IcelandHotel2.jpg",
+        title: "Blue Lagoon Iceland",
+        description:
+          "The Retreat Blue Lagoon Hotel: The Silica Blue Lagoon Hotel takes all the geothermal wonder of the Blue Lagoon and instils it into an uber-luxurious wellness establishment. The sleek and minimalist suites mirror the mossy-covered lava fields outside, while floor-to-ceiling windows welcome in the ethereal light of the Reykjanes Peninsula, inciting the stark grey and subdued black interiors into a heady and otherworldly Icelandic spectrum. Inside, all roads lead to the underground spa, a cavernous space offering the patented Blue Lagoon Ritual, a wellness cleanse using the silica, algae, and array of minerals all found in the geothermal waters.",
+        link: "https://www.bluelagoon.com/accommodation/retreat-hotel",
+      },
+      {
+        img: "/images/IcelandHotel3.jpg",
+        title: "ION Hotels",
+        description:
+          "The ION Adventure Hotel: The ION Adventure Hotel might have one of the most picturesque and otherworldly settings not just Iceland, but the entire Northern Hemisphere. Jutting out from a set of rugged cliffs above a field of jet-black lava, this hotel sits amid swirling sulphurous steam inside the UNESCO-listed Thingvellir National Park. If the setting is a tad dramatic, the interiors are by contrast an oasis of warmth and tranquillity. The elegant design incorporates driftwood and other natural materials from the surrounding landscapes, creating a blend of high-end luxury with low-key Icelandic sensibilities, an homage to the beauty of the scenery outside.",
+        link: "https://ioniceland.is/adventure/",
+      },
+    ],
   },
 ];
