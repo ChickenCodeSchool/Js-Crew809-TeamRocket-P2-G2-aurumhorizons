@@ -1,21 +1,25 @@
-import type React from "react";
-import { useState } from "react";
-import img1 from "../assets/images/egypt-1.jpg";
-import img2 from "../assets/images/egypt-2.jpg";
-import img3 from "../assets/images/egypt-3.jpg";
-import img4 from "../assets/images/egypt-4.jpg";
-import egypt from "../assets/images/egypte.png";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router";
+// import egypte from "../assets/images/egypte.png";
 import Carousel from "../components/Carousel";
+
 import CommentsSection from "../components/CommentSection";
 import Devis from "../components/Devis";
 import Gps from "../components/Gps";
 import HotelsCarousel from "../components/HotelsCarousel";
 import "./CarouselTestPage.css";
 
-const egyptImages: string[] = [img1, img2, img3, img4];
+interface InfoVoyage {
+  name: string;
+  description: string;
+}
+
+const egypte = "/image/egypte.png";
 
 const CarouselTestPage: React.FC = () => {
   const [showDevis, setShowDevis] = useState(false);
+  const [infoVoyage, setInfoVoyage] = useState<InfoVoyage | null>();
+  const { id } = useParams();
 
   const handleOpenDevis = () => {
     setShowDevis(true);
@@ -25,23 +29,25 @@ const CarouselTestPage: React.FC = () => {
     setShowDevis(false);
   };
 
+  useEffect(() => {
+    fetch(`http://localhost:3310/api/destinations/${id}`)
+      .then((res) => res.json())
+      .then((resData) => setInfoVoyage(resData));
+  }, [id]);
+
   return (
     <div className="carouselbody">
       <div className="carousel-page">
         <div className="text-section">
           <h1>
             {/* biome-ignore lint/a11y/useAltText: <explanation> */}
-            <img src={egypt} className="flageg" /> Discover Exceptional
-            Experiences
+            <img
+              src={egypte}
+              className={`flageg  destiImage-${infoVoyage?.name}`}
+            />{" "}
+            Discover Exceptional Experiences
           </h1>
-          <p>
-            Explore unique destinations and carefully curated activities
-            designed for discerning travelers. Every journey is crafted to offer
-            the perfect balance of comfort, refinement, and discovery. Immerse
-            yourself in majestic landscapes, iconic historical sites, and
-            exclusive experiences created to delight your senses and leave
-            lasting memories.
-          </p>
+          <p>{infoVoyage?.description}</p>
           <p>
             Whether you dream of luxurious safaris in pristine reserves,
             intimate cruises along the Nile, or private visits to world-renowned
@@ -58,10 +64,12 @@ const CarouselTestPage: React.FC = () => {
         </div>
 
         <div className="carousel-section">
-          <Carousel images={egyptImages} />
+          {/* <Carousel name={infoVoyage.name} /> */}
+
+          <Carousel destinationName="Egypt" />
         </div>
       </div>
-      <div className="bottom-text-section">
+      <div className={`bottom-text-section btn-text-${infoVoyage?.name}`}>
         <p>
           Embark on a journey where every detail has been meticulously crafted
           to create unforgettable memories. From the golden sands of Egypt's
@@ -75,7 +83,7 @@ const CarouselTestPage: React.FC = () => {
       <div>
         <Gps />
       </div>
-      <HotelsCarousel />
+      <HotelsCarousel destinationName="Egypt" />
       <div className="containerbutton">
         <button type="button" className="devisbutton" onClick={handleOpenDevis}>
           {" "}

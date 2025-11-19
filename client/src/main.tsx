@@ -8,7 +8,6 @@ import HomePages from "./pages/HomePages";
 
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import IndonesieTestPage from "./pages/IndonesieTestPage";
 import MentionLegal from "./pages/MentionLegal";
 import Seemore from "./pages/Seemore";
 /* ************************************************************************* */
@@ -38,7 +37,7 @@ const router = createBrowserRouter([
         element: <MentionLegal />,
       },
       {
-        path: "egypt",
+        path: "voyage/:id",
         element: <CarouselPage />,
       },
       {
@@ -48,10 +47,6 @@ const router = createBrowserRouter([
       {
         path: "about",
         element: <About />,
-      },
-      {
-        path: "indonesia",
-        element: <IndonesieTestPage />,
       },
       {
         path: "contact",

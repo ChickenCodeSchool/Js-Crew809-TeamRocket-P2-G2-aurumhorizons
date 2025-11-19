@@ -1,6 +1,7 @@
 import img2about from "../assets/images/imgAbout/agenceAbout.png";
 import img1about from "../assets/images/imgAbout/equipeAbout.jpg";
 import ScrollingBanner from "../components/ScrollingBanner";
+import TeamCarouselAbout from "../components/TeamCarouselAbout";
 
 import "./About.css";
 
@@ -38,18 +39,26 @@ function About() {
       <section className="bottom-about">
         <h2 className="h2about">Our specialists</h2>
         <article className="special-about">
-          <img
-            src={img1about}
-            alt="an specialist giving some advice to clients"
-          />
-          <p>
-            Our Specialists are true travel architects, defined by their
-            excellence. Selected for their intimate, first-hand knowledge of
-            exclusive destinations, their expertise lies in intuitive listening
-            to discern your desires. Passionate, discreet, and exceptionally
-            connected, they anticipate every detail, ensuring flawless
-            tailor-made planning and your absolute peace of mind.
-          </p>
+          <div className="special-aboutTop">
+            <img
+              src={img1about}
+              alt="an specialist giving some advice to clients"
+            />
+            <p>
+              Our Specialists are true travel architects, defined by their
+              excellence. Selected for their intimate, first-hand knowledge of
+              exclusive destinations, their expertise lies in intuitive
+              listening to discern your desires. Passionate, discreet, and
+              exceptionally connected, they anticipate every detail, ensuring
+              flawless tailor-made planning and your absolute peace of mind.
+            </p>
+          </div>
+          <div className="special-aboutBottom">
+            <h3>Travel guide by region</h3>
+            <div className="slideImg-about">
+              <TeamCarouselAbout />
+            </div>
+          </div>
         </article>
         <h2 className="h2about">Our Office</h2>
         <article className="office-about">
