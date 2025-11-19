@@ -6,9 +6,11 @@ import App from "./App";
 import CarouselPage from "./pages/CarouselTestPage";
 import HomePages from "./pages/HomePages";
 
+import Login from "./components/Login";
 import About from "./pages/About";
 import MentionLegal from "./pages/MentionLegal";
 import Seemore from "./pages/Seemore";
+import UserProfile from "./pages/UserProfile";
 
 /* ************************************************************************* */
 
@@ -47,6 +49,20 @@ const router = createBrowserRouter([
       {
         path: "about",
         element: <About />,
+      },
+      {
+        path: "login",
+        element: (
+          <Login
+            onClose={(): void => {
+              throw new Error("Function not implemented.");
+            }}
+          />
+        ),
+      },
+      {
+        path: "user-profile",
+        element: <UserProfile />,
       },
     ],
   },
