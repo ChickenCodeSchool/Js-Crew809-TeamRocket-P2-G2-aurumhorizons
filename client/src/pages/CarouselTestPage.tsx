@@ -12,9 +12,18 @@ import "./CarouselTestPage.css";
 interface InfoVoyage {
   name: string;
   description: string;
+  texts: string[];
+  images: string[];
+  hotels: Hotel[];
+}
+interface Hotel {
+  img: string;
+  title: string;
+  description: string;
+  link: string;
 }
 
-const egypte = "/image/egypte.png";
+// const egypte = "/image/egypte.png";
 
 const CarouselTestPage: React.FC = () => {
   const [showDevis, setShowDevis] = useState(false);
@@ -29,11 +38,18 @@ const CarouselTestPage: React.FC = () => {
     setShowDevis(false);
   };
 
-  useEffect(() => {
+   useEffect(() => {
+    if (!id) return;
     fetch(`http://localhost:3310/api/destinations/${id}`)
       .then((res) => res.json())
-      .then((resData) => setInfoVoyage(resData));
+      .then((resData) => setInfoVoyage(resData))
+      .catch((err) => console.error("Error fetching destination:", err));
   }, [id]);
+
+  if (!infoVoyage) {
+    return <div>Loading destination...</div>;
+  }
+
 
   return (
     <div className="carouselbody">
@@ -42,48 +58,36 @@ const CarouselTestPage: React.FC = () => {
           <h1>
             {/* biome-ignore lint/a11y/useAltText: <explanation> */}
             <img
-              src={egypte}
-              className={`flageg  destiImage-${infoVoyage?.name}`}
-            />{" "}
+  src={`/images/${infoVoyage?.name.toLowerCase().replace(/ /g, "-")}.png`}
+  className={`flageg destiImage-${infoVoyage?.name}`}
+  alt={`${infoVoyage?.name} flag`}
+/>
+
+
             Discover Exceptional Experiences
           </h1>
-          <p>{infoVoyage?.description}</p>
-          <p>
-            Whether you dream of luxurious safaris in pristine reserves,
-            intimate cruises along the Nile, or private visits to world-renowned
-            monuments, our tailor-made trips are designed to exceed your highest
-            expectations. Enjoy exceptional accommodations, personalized
-            services, and experiences that go beyond the ordinary.
-          </p>
-          <p>
-            Every detail of your journey is orchestrated to create unique and
-            memorable moments, combining elegance, authenticity, and comfort.
-            Discover the world in a new way, with attentive guidance and
-            experiences crafted to inspire and amaze.
-          </p>
+          <p>{infoVoyage?.texts?.[0]}</p>
+          <p>{infoVoyage?.texts?.[1]}</p>
+          <p>{infoVoyage?.texts?.[2]}</p>
         </div>
 
         <div className="carousel-section">
           {/* <Carousel name={infoVoyage.name} /> */}
 
-          <Carousel destinationName="Egypt" />
+          <Carousel images={infoVoyage.images} />
         </div>
       </div>
       <div className={`bottom-text-section btn-text-${infoVoyage?.name}`}>
-        <p>
-          Embark on a journey where every detail has been meticulously crafted
-          to create unforgettable memories. From the golden sands of Egypt's
-          deserts to the serene waters of the Nile, each moment invites you to
-          explore history, culture, and luxury in perfect harmony. Imagine
-          waking up to the warm glow of the sunrise over ancient temples,
-          enjoying private guided tours through timeless monuments, and
-          indulging in exquisite cuisine that reflects the richness of the land.
-        </p>
+        <p>{infoVoyage?.texts?.[3]}</p>
       </div>
       <div>
         <Gps />
       </div>
-      <HotelsCarousel destinationName="Egypt" />
+      {infoVoyage && (
+        <HotelsCarousel hotels={infoVoyage.hotels} destinationName={infoVoyage.name} />
+      )}
+
+
       <div className="containerbutton">
         <button type="button" className="devisbutton" onClick={handleOpenDevis}>
           {" "}
