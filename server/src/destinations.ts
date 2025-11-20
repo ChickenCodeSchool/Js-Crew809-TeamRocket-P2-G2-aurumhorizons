@@ -301,11 +301,10 @@ export const destinations = [
     "embarcation"
   ],
     images: [
-      "/images/Iceland1.jpg",
-      "/images/Iceland2.jpg",
-      "/images/Iceland3.jpg",
-      "/images/Iceland4.jpg",
-      "/images/Iceland5.jpg",
+      "/images/japan1.jpg",
+      "/images/japan2.jpg",
+      "/images/japan3.jpg",
+      "/images/japan4.jpg",
     ],
     hotels: [
       {
@@ -350,11 +349,10 @@ export const destinations = [
     "embarcation"
   ],
     images: [
-      "/images/Iceland1.jpg",
-      "/images/Iceland2.jpg",
-      "/images/Iceland3.jpg",
-      "/images/Iceland4.jpg",
-      "/images/Iceland5.jpg",
+      "/images/italy1.jpg",
+      "/images/italy2.jpg",
+      "/images/italy3.jpg",
+      "/images/italy4.jpg",
     ],
     hotels: [
       {
@@ -400,11 +398,10 @@ export const destinations = [
     "embarcation"
   ],
     images: [
-      "/images/Iceland1.jpg",
-      "/images/Iceland2.jpg",
-      "/images/Iceland3.jpg",
-      "/images/Iceland4.jpg",
-      "/images/Iceland5.jpg",
+      "/images/costaRica1.jpg",
+      "/images/costaRica2.jpg",
+      "/images/costaRica3.jpg",
+      "/images/costaRica4.jpg",
     ],
     hotels: [
       {
@@ -449,11 +446,10 @@ export const destinations = [
     "embarcation"
   ],
     images: [
-      "/images/Iceland1.jpg",
-      "/images/Iceland2.jpg",
-      "/images/Iceland3.jpg",
-      "/images/Iceland4.jpg",
-      "/images/Iceland5.jpg",
+      "/images/greece1.jpg",
+      "/images/greece2.jpg",
+      "/images/greece3.jpg",
+      "/images/greece4.jpg",
     ],
     hotels: [
       {
@@ -498,11 +494,10 @@ export const destinations = [
     "embarcation"
   ],
     images: [
-      "/images/Iceland1.jpg",
-      "/images/Iceland2.jpg",
-      "/images/Iceland3.jpg",
-      "/images/Iceland4.jpg",
-      "/images/Iceland5.jpg",
+      "/images/peru1.jpg",
+      "/images/peru2.jpg",
+      "/images/peru3.jpg",
+      "/images/peru4.jpg",
     ],
     hotels: [
       {
@@ -547,11 +542,10 @@ export const destinations = [
     "embarcation"
   ],
     images: [
-      "/images/Iceland1.jpg",
-      "/images/Iceland2.jpg",
-      "/images/Iceland3.jpg",
-      "/images/Iceland4.jpg",
-      "/images/Iceland5.jpg",
+      "/images/morocco1.jpg",
+      "/images/morocco2.jpg",
+      "/images/morocco3.jpg",
+      "/images/morocco4.jpg",
     ],
     hotels: [
       {
@@ -596,11 +590,10 @@ export const destinations = [
     "embarcation"
   ],
     images: [
-      "/images/Iceland1.jpg",
-      "/images/Iceland2.jpg",
-      "/images/Iceland3.jpg",
-      "/images/Iceland4.jpg",
-      "/images/Iceland5.jpg",
+      "/images/australia1.jpg",
+      "/images/australia2.jpg",
+      "/images/australia3.jpg",
+      "/images/australia4.jpg",
     ],
     hotels: [
       {
@@ -645,11 +638,10 @@ export const destinations = [
     "embarcation"
   ],
     images: [
-      "/images/Iceland1.jpg",
-      "/images/Iceland2.jpg",
-      "/images/Iceland3.jpg",
-      "/images/Iceland4.jpg",
-      "/images/Iceland5.jpg",
+      "/images/canada1.jpg",
+      "/images/canada2.jpg",
+      "/images/canada3.jpg",
+      "/images/canada4.jpg",
     ],
     hotels: [
       {
@@ -694,11 +686,10 @@ export const destinations = [
     "embarcation"
   ],
     images: [
-      "/images/Iceland1.jpg",
-      "/images/Iceland2.jpg",
-      "/images/Iceland3.jpg",
-      "/images/Iceland4.jpg",
-      "/images/Iceland5.jpg",
+      "/images/thailand1.jpg",
+      "/images/thailand2.jpg",
+      "/images/thailand3.jpg",
+      "/images/thailand4.jpg",
     ],
     hotels: [
       {
@@ -743,11 +734,10 @@ export const destinations = [
     "embarcation"
   ],
     images: [
-      "/images/Iceland1.jpg",
-      "/images/Iceland2.jpg",
-      "/images/Iceland3.jpg",
-      "/images/Iceland4.jpg",
-      "/images/Iceland5.jpg",
+      "/images/NewZealand1.jpg",
+      "/images/NewZealand2.jpg",
+      "/images/NewZealand3.jpg",
+      "/images/NewZealand4.jpg",
     ],
     hotels: [
       {
