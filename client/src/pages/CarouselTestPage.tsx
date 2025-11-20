@@ -58,9 +58,12 @@ const CarouselTestPage: React.FC = () => {
           <h1>
             {/* biome-ignore lint/a11y/useAltText: <explanation> */}
             <img
-              src={egypte}
-              className={`flageg  destiImage-${infoVoyage?.name}`}
-            />{" "}
+  src={`/images/${infoVoyage?.name.toLowerCase().replace(/ /g, "-")}.png`}
+  className={`flageg destiImage-${infoVoyage?.name}`}
+  alt={`${infoVoyage?.name} flag`}
+/>
+
+
             Discover Exceptional Experiences
           </h1>
           <p>{infoVoyage?.texts?.[0]}</p>
