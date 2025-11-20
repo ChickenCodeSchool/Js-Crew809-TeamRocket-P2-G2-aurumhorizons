@@ -6,10 +6,13 @@ import App from "./App";
 import CarouselPage from "./pages/CarouselTestPage";
 import HomePages from "./pages/HomePages";
 
+import Login from "./components/Login";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import MentionLegal from "./pages/MentionLegal";
 import Seemore from "./pages/Seemore";
+import UserProfile from "./pages/UserProfile";
+
 /* ************************************************************************* */
 
 // Import the main app component
@@ -45,12 +48,26 @@ const router = createBrowserRouter([
         element: <Seemore />,
       },
       {
+        path: "contact",
+        element: <Contact />,
+      },
+      {
         path: "about",
         element: <About />,
       },
       {
-        path: "contact",
-        element: <Contact />,
+        path: "login",
+        element: (
+          <Login
+            onClose={(): void => {
+              throw new Error("Function not implemented.");
+            }}
+          />
+        ),
+      },
+      {
+        path: "user-profile",
+        element: <UserProfile />,
       },
     ],
   },

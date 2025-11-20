@@ -38,7 +38,7 @@ const CarouselTestPage: React.FC = () => {
     setShowDevis(false);
   };
 
-   useEffect(() => {
+  useEffect(() => {
     if (!id) return;
     fetch(`http://localhost:3310/api/destinations/${id}`)
       .then((res) => res.json())
@@ -50,20 +50,16 @@ const CarouselTestPage: React.FC = () => {
     return <div>Loading destination...</div>;
   }
 
-
   return (
     <div className="carouselbody">
       <div className="carousel-page">
         <div className="text-section">
           <h1>
-            {/* biome-ignore lint/a11y/useAltText: <explanation> */}
             <img
-  src={`/images/${infoVoyage?.name.toLowerCase().replace(/ /g, "-")}.png`}
-  className={`flageg destiImage-${infoVoyage?.name}`}
-  alt={`${infoVoyage?.name} flag`}
-/>
-
-
+              src={`/images/${infoVoyage?.name.toLowerCase().replace(/ /g, "-")}.png`}
+              className={`flageg destiImage-${infoVoyage?.name}`}
+              alt={`${infoVoyage?.name} flag`}
+            />
             Discover Exceptional Experiences
           </h1>
           <p>{infoVoyage?.texts?.[0]}</p>
@@ -84,9 +80,11 @@ const CarouselTestPage: React.FC = () => {
         <Gps />
       </div>
       {infoVoyage && (
-        <HotelsCarousel hotels={infoVoyage.hotels} destinationName={infoVoyage.name} />
+        <HotelsCarousel
+          hotels={infoVoyage.hotels}
+          destinationName={infoVoyage.name}
+        />
       )}
-
 
       <div className="containerbutton">
         <button type="button" className="devisbutton" onClick={handleOpenDevis}>

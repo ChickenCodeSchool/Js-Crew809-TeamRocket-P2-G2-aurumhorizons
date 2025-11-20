@@ -12,11 +12,11 @@ export const destinations = [
     tourist_season: "April to October",
     theme: "exploration",
     texts: [
-    "Elegant retreats nestled among rice terraces, private cruises through the archipelago’s paradise islands, privileged encounters with sacred temples and timeless traditions — every journey we design in Indonesia is an invitation to experience the extraordinary. Refined accommodations, bespoke services, and unforgettable experiences: everything is crafted to offer far more than just a trip",
-    "Every moment becomes a crafted masterpiece, designed to awaken wonder.From the understated elegance of your accommodations to the authenticity of local encounters, every detail of your journey through Indonesia is thoughtfully curated to create unforgettable memories. Discover Bali in a new light, with attentive guidance and experiences designed to inspire, surprise, and move you.",
-    "  ",
-    "Secluded villas nestled among lush rice terraces, private boat journeys through pristine archipelagos, and encounters with sacred temples and vibrant local traditions — every journey in Indonesia is an invitation to experience the extraordinary. Refined accommodations, bespoke services, and unforgettable moments make each trip far beyond the ordinary.From misty volcanoes to turquoise waters, Indonesia reveals a world of stunning landscapes and rich culture. Curated excursions, private island experiences, and immersive stays with local communities transform every journey into a story worth remembering."
-  ],
+      "Elegant retreats nestled among rice terraces, private cruises through the archipelago’s paradise islands, privileged encounters with sacred temples and timeless traditions — every journey we design in Indonesia is an invitation to experience the extraordinary. Refined accommodations, bespoke services, and unforgettable experiences: everything is crafted to offer far more than just a trip",
+      "Every moment becomes a crafted masterpiece, designed to awaken wonder.From the understated elegance of your accommodations to the authenticity of local encounters, every detail of your journey through Indonesia is thoughtfully curated to create unforgettable memories. Discover Bali in a new light, with attentive guidance and experiences designed to inspire, surprise, and move you.",
+      "  ",
+      "Secluded villas nestled among lush rice terraces, private boat journeys through pristine archipelagos, and encounters with sacred temples and vibrant local traditions — every journey in Indonesia is an invitation to experience the extraordinary. Refined accommodations, bespoke services, and unforgettable moments make each trip far beyond the ordinary.From misty volcanoes to turquoise waters, Indonesia reveals a world of stunning landscapes and rich culture. Curated excursions, private island experiences, and immersive stays with local communities transform every journey into a story worth remembering.",
+    ],
     images: [
       "/images/indonesia1.jpg",
       "/images/indonesia2.jpg",
@@ -60,11 +60,11 @@ export const destinations = [
     tourist_season: "September to April",
     theme: "cultural",
     texts: [
-    "From the timeless pyramids of Giza to the tranquil banks of the Nile, Egypt offers journeys steeped in history and wonder. Private cruises, hidden temples, and encounters with ancient traditions transform every moment into an extraordinary experience.",
-    "Explore sun-drenched deserts, wander through bustling bazaars, and discover sacred monuments that have stood for millennia. Egypt invites you to experience a land where history and culture come alive. Curated stays, personalized guides, and immersive adventures make each journey truly unforgettable.",
-    "Marvel at the timeless harmony between Egypt’s vibrant present and its storied past. From intimate encounters with local artisans to serene moments aboard traditional feluccas, each experience reveals a new layer of authenticity. Let the rhythm of everyday life guide you through a land where ancient legacies and modern inspirations intertwine, creating memories that linger long after the journey ends.",
-    "Traverse majestic temples, sail along the river that nourished civilizations, and witness the desert’s shifting light. Egypt beckons with its extraordinary landscapes, timeless rituals, and living heritage. Refined accommodations, bespoke services, and intimate encounters ensure every journey goes far beyond the ordinary.Embrace the captivating contrast of Egypt’s vibrant cities and serene, ancient sanctuaries. Stroll through lively streets filled with color and tradition, then retreat to quiet oases where time seems to pause. With expert guidance, thoughtfully crafted experiences, and exclusive access to remarkable sites, your journey becomes a seamless blend of discovery, comfort, and enchantment."
-  ],
+      "From the timeless pyramids of Giza to the tranquil banks of the Nile, Egypt offers journeys steeped in history and wonder. Private cruises, hidden temples, and encounters with ancient traditions transform every moment into an extraordinary experience.",
+      "Explore sun-drenched deserts, wander through bustling bazaars, and discover sacred monuments that have stood for millennia. Egypt invites you to experience a land where history and culture come alive. Curated stays, personalized guides, and immersive adventures make each journey truly unforgettable.",
+      "Marvel at the timeless harmony between Egypt’s vibrant present and its storied past. From intimate encounters with local artisans to serene moments aboard traditional feluccas, each experience reveals a new layer of authenticity. Let the rhythm of everyday life guide you through a land where ancient legacies and modern inspirations intertwine, creating memories that linger long after the journey ends.",
+      "Traverse majestic temples, sail along the river that nourished civilizations, and witness the desert’s shifting light. Egypt beckons with its extraordinary landscapes, timeless rituals, and living heritage. Refined accommodations, bespoke services, and intimate encounters ensure every journey goes far beyond the ordinary.Embrace the captivating contrast of Egypt’s vibrant cities and serene, ancient sanctuaries. Stroll through lively streets filled with color and tradition, then retreat to quiet oases where time seems to pause. With expert guidance, thoughtfully crafted experiences, and exclusive access to remarkable sites, your journey becomes a seamless blend of discovery, comfort, and enchantment.",
+    ],
     images: [
       "/images/egypt-1.jpg",
       "/images/egypt-2.jpg",
@@ -108,11 +108,11 @@ export const destinations = [
     tourist_season: "December to April",
     theme: "relax",
     texts: [
-    "Overwater villas on crystalline lagoons, private sunset cruises, and encounters with vibrant marine life — every journey in the Maldives is an invitation to experience paradise. Refined accommodations, bespoke services, and unforgettable moments make each trip far beyond the ordinary.",
-    "Hidden atolls, pristine beaches, and turquoise waters that stretch to the horizon — the Maldives reveal a world of serenity and natural beauty. Curated excursions, private island experiences, and luxurious lodgings ensure every journey becomes an unforgettable discovery.",
-    "From secluded sandbanks to the gentle rhythm of ocean breezes, the Maldives offer moments of pure tranquility and wonder. Indulge in personalized escapes, immersive marine adventures, and world-class hospitality that blend seamlessly with the islands’ natural splendor, creating memories that linger long after your return.",
-    "Swim among coral gardens, drift through quiet lagoons, and watch the sun sink over endless horizons. The Maldives beckon with extraordinary landscapes and timeless tranquility. Thoughtfully designed accommodations, personalized services, and immersive experiences transform every moment into something truly remarkable.Savor the gentle sway of palm-lined shores, explore hidden coves, and feel the ocean’s calm embrace. In the Maldives, nature’s beauty unfolds with effortless grace. Exclusive retreats, tailored activities, and serene moments of discovery ensure each journey becomes a celebration of pure island bliss."
-  ],
+      "Overwater villas on crystalline lagoons, private sunset cruises, and encounters with vibrant marine life — every journey in the Maldives is an invitation to experience paradise. Refined accommodations, bespoke services, and unforgettable moments make each trip far beyond the ordinary.",
+      "Hidden atolls, pristine beaches, and turquoise waters that stretch to the horizon — the Maldives reveal a world of serenity and natural beauty. Curated excursions, private island experiences, and luxurious lodgings ensure every journey becomes an unforgettable discovery.",
+      "From secluded sandbanks to the gentle rhythm of ocean breezes, the Maldives offer moments of pure tranquility and wonder. Indulge in personalized escapes, immersive marine adventures, and world-class hospitality that blend seamlessly with the islands’ natural splendor, creating memories that linger long after your return.",
+      "Swim among coral gardens, drift through quiet lagoons, and watch the sun sink over endless horizons. The Maldives beckon with extraordinary landscapes and timeless tranquility. Thoughtfully designed accommodations, personalized services, and immersive experiences transform every moment into something truly remarkable.Savor the gentle sway of palm-lined shores, explore hidden coves, and feel the ocean’s calm embrace. In the Maldives, nature’s beauty unfolds with effortless grace. Exclusive retreats, tailored activities, and serene moments of discovery ensure each journey becomes a celebration of pure island bliss.",
+    ],
     images: ["/images/Maldives1.jpg", "/images/Maldives2.jpg"],
     hotels: [
       {
@@ -151,11 +151,11 @@ export const destinations = [
     tourist_season: "December to February",
     theme: "exploration",
     texts: [
-    "Secluded beachfront villas, private boat journeys through emerald lagoons, and encounters with vibrant island cultures — every journey in the Philippines is an invitation to experience paradise. Refined accommodations, bespoke services, and unforgettable moments make each trip far beyond the ordinary.",
-    "Hidden rice terraces, turquoise waters, and secret coves await those who seek the extraordinary. The Philippines reveal a world of natural beauty and rich traditions. Curated excursions, private island experiences, and luxurious lodgings ensure every journey becomes an unforgettable discovery.",
-    "From misty mountain landscapes to sun-drenched shores, the Philippines offers moments shaped by wonder and authenticity. Immerse yourself in vibrant local communities, explore untouched natural sanctuaries, and enjoy tailored experiences that reveal the archipelago’s incomparable charm. Each journey becomes a seamless blend of adventure, culture, and serene beauty.",
-    "Explore colorful coral reefs, wander through fragrant tropical forests, and watch the sun set over serene islands. The Philippines beckon with their unique landscapes, vibrant culture, and timeless serenity. Thoughtfully designed accommodations, personalized services, and immersive experiences transform every moment into something truly remarkable.Savor the gentle rhythm of island life, discover hidden lagoons framed by limestone cliffs, and feel the warm embrace of crystal-clear waters. In the Philippines, every landscape tells a story of beauty and wonder. Exclusive retreats, curated adventures, and authentic cultural encounters ensure each journey becomes a celebration of the archipelago’s enchanting spirit."
-  ],
+      "Secluded beachfront villas, private boat journeys through emerald lagoons, and encounters with vibrant island cultures — every journey in the Philippines is an invitation to experience paradise. Refined accommodations, bespoke services, and unforgettable moments make each trip far beyond the ordinary.",
+      "Hidden rice terraces, turquoise waters, and secret coves await those who seek the extraordinary. The Philippines reveal a world of natural beauty and rich traditions. Curated excursions, private island experiences, and luxurious lodgings ensure every journey becomes an unforgettable discovery.",
+      "From misty mountain landscapes to sun-drenched shores, the Philippines offers moments shaped by wonder and authenticity. Immerse yourself in vibrant local communities, explore untouched natural sanctuaries, and enjoy tailored experiences that reveal the archipelago’s incomparable charm. Each journey becomes a seamless blend of adventure, culture, and serene beauty.",
+      "Explore colorful coral reefs, wander through fragrant tropical forests, and watch the sun set over serene islands. The Philippines beckon with their unique landscapes, vibrant culture, and timeless serenity. Thoughtfully designed accommodations, personalized services, and immersive experiences transform every moment into something truly remarkable.Savor the gentle rhythm of island life, discover hidden lagoons framed by limestone cliffs, and feel the warm embrace of crystal-clear waters. In the Philippines, every landscape tells a story of beauty and wonder. Exclusive retreats, curated adventures, and authentic cultural encounters ensure each journey becomes a celebration of the archipelago’s enchanting spirit.",
+    ],
     images: [
       "/images/Philippines1.jpg",
       "/images/Philippines2.png",
@@ -199,11 +199,11 @@ export const destinations = [
     tourist_season: "April to October",
     theme: "relax",
     texts: [
-    "Secluded villas on powdery white beaches, private catamaran cruises through turquoise waters, and intimate encounters with vibrant marine life — every journey in the Seychelles is an invitation to experience paradise. Refined accommodations, bespoke services, and unforgettable moments make each trip far beyond the ordinary.",
-    "Hidden coves, lush tropical forests, and granite cliffs rising from the ocean — the Seychelles reveal a world of natural beauty and serenity. Curated excursions, private island experiences, and luxurious lodgings ensure every journey becomes an unforgettable discovery.",
-    "From gentle ocean breezes to secluded nature trails, the Seychelles offer moments shaped by tranquility and wonder. Immerse yourself in pristine landscapes, discover vibrant island traditions, and indulge in personalized experiences crafted to inspire. Each journey becomes a harmonious blend of relaxation, exploration, and unforgettable beauty.",
-    "Explore vibrant coral reefs, wander through fragrant gardens, and watch the sun set over endless horizons. The Seychelles beckon with their extraordinary landscapes and timeless tranquility. Thoughtfully designed accommodations, personalized services, and immersive experiences transform every moment into something truly remarkable.Savor the gentle rhythm of island life, stroll along secluded beaches, and let the soothing waves guide your day. In the Seychelles, every moment is an invitation to connect with nature’s beauty. Exclusive retreats, curated adventures, and intimate encounters with local culture ensure each journey becomes an unforgettable celebration of paradise."
-  ],
+      "Secluded villas on powdery white beaches, private catamaran cruises through turquoise waters, and intimate encounters with vibrant marine life — every journey in the Seychelles is an invitation to experience paradise. Refined accommodations, bespoke services, and unforgettable moments make each trip far beyond the ordinary.",
+      "Hidden coves, lush tropical forests, and granite cliffs rising from the ocean — the Seychelles reveal a world of natural beauty and serenity. Curated excursions, private island experiences, and luxurious lodgings ensure every journey becomes an unforgettable discovery.",
+      "From gentle ocean breezes to secluded nature trails, the Seychelles offer moments shaped by tranquility and wonder. Immerse yourself in pristine landscapes, discover vibrant island traditions, and indulge in personalized experiences crafted to inspire. Each journey becomes a harmonious blend of relaxation, exploration, and unforgettable beauty.",
+      "Explore vibrant coral reefs, wander through fragrant gardens, and watch the sun set over endless horizons. The Seychelles beckon with their extraordinary landscapes and timeless tranquility. Thoughtfully designed accommodations, personalized services, and immersive experiences transform every moment into something truly remarkable.Savor the gentle rhythm of island life, stroll along secluded beaches, and let the soothing waves guide your day. In the Seychelles, every moment is an invitation to connect with nature’s beauty. Exclusive retreats, curated adventures, and intimate encounters with local culture ensure each journey becomes an unforgettable celebration of paradise.",
+    ],
     images: [
       "/images/Seychelles1.jpg",
       "/images/Seychelles2.jpg",
@@ -246,11 +246,11 @@ export const destinations = [
     tourist_season: "June to August (summer), October to March (lights)",
     theme: "exploration",
     texts: [
-    "From steaming geothermal springs to rugged volcanic landscapes, Iceland offers journeys that feel otherworldly. Private excursions across glaciers, secluded stays under the Northern Lights, and encounters with untamed nature transform every moment into an extraordinary experience.",
-    "Hidden fjords, lava fields, and cascading waterfalls — every journey in Iceland invites you to explore the raw beauty of the land. Curated adventures, intimate lodgings, and immersive experiences with local culture make each trip far beyond the ordinary.",
-    "From serene black sand beaches to dramatic mountain peaks, Iceland captivates with its striking contrasts. Witness geothermal marvels, encounter wildlife in pristine wilderness, and savor moments of quiet reflection. Thoughtfully designed itineraries, personalized guidance, and unique experiences ensure every journey becomes a lasting memory of this extraordinary land.",
-    "Traverse black sand beaches, sail along glacial waters, and feel the power of geysers and volcanoes beneath your feet. Iceland beckons with landscapes that defy imagination. Refined accommodations, bespoke services, and unforgettable encounters turn every journey into a story to remember.Marvel at towering cliffs, wander through moss-covered lava fields, and watch the Northern Lights dance across the night sky. In Iceland, every moment reveals the raw beauty of nature. Exclusive lodgings, curated adventures, and immersive experiences with local culture transform each journey into an unforgettable exploration."
-  ],
+      "From steaming geothermal springs to rugged volcanic landscapes, Iceland offers journeys that feel otherworldly. Private excursions across glaciers, secluded stays under the Northern Lights, and encounters with untamed nature transform every moment into an extraordinary experience.",
+      "Hidden fjords, lava fields, and cascading waterfalls — every journey in Iceland invites you to explore the raw beauty of the land. Curated adventures, intimate lodgings, and immersive experiences with local culture make each trip far beyond the ordinary.",
+      "From serene black sand beaches to dramatic mountain peaks, Iceland captivates with its striking contrasts. Witness geothermal marvels, encounter wildlife in pristine wilderness, and savor moments of quiet reflection. Thoughtfully designed itineraries, personalized guidance, and unique experiences ensure every journey becomes a lasting memory of this extraordinary land.",
+      "Traverse black sand beaches, sail along glacial waters, and feel the power of geysers and volcanoes beneath your feet. Iceland beckons with landscapes that defy imagination. Refined accommodations, bespoke services, and unforgettable encounters turn every journey into a story to remember.Marvel at towering cliffs, wander through moss-covered lava fields, and watch the Northern Lights dance across the night sky. In Iceland, every moment reveals the raw beauty of nature. Exclusive lodgings, curated adventures, and immersive experiences with local culture transform each journey into an unforgettable exploration.",
+    ],
     images: [
       "/images/Iceland1.jpg",
       "/images/Iceland2.jpg",
@@ -294,12 +294,12 @@ export const destinations = [
     currency: "Yen (JPY)",
     tourist_season: "March to May (cherry blossoms), September to November",
     theme: "cultural",
-     texts: [
-    "Tranquil ryokans tucked into misty mountain valleys, private lantern-lit cruises along serene rivers, intimate encounters with ancient shrines and enduring traditions — every journey we create in Japan is an invitation to discover the extraordinary. Exquisite accommodations, personalized services, and unforgettable experiences: everything is designed to offer far more than just a visit.",
-    "Elegant retreats hidden among cherry blossom groves, private excursions through the country’s iconic landscapes, privileged encounters with sacred temples and centuries-old rituals — every journey we design in Japan invites you to experience the remarkable. Refined accommodations, bespoke services, and unforgettable moments: everything is crafted to offer far more than a simple trip.",
-    "  ",
-    "Secluded retreats perched on misty hillsides, private journeys through serene bamboo forests, rare encounters with timeless temples and living traditions — every experience we craft in Japan is an invitation to witness the extraordinary. Impeccable accommodations, tailored services, and unforgettable discoveries: everything is designed to offer far more than just a journey.From tranquil tea gardens to bustling city streets, Japan captivates with its seamless blend of tradition and modernity. Immerse yourself in local rituals, wander through sacred shrines, and savor moments of quiet reflection. Curated experiences, personalized guidance, and exclusive stays ensure every journey becomes a lasting memory of this remarkable land."
-  ],
+    texts: [
+      "Tranquil ryokans tucked into misty mountain valleys, private lantern-lit cruises along serene rivers, intimate encounters with ancient shrines and enduring traditions — every journey we create in Japan is an invitation to discover the extraordinary. Exquisite accommodations, personalized services, and unforgettable experiences: everything is designed to offer far more than just a visit.",
+      "Elegant retreats hidden among cherry blossom groves, private excursions through the country’s iconic landscapes, privileged encounters with sacred temples and centuries-old rituals — every journey we design in Japan invites you to experience the remarkable. Refined accommodations, bespoke services, and unforgettable moments: everything is crafted to offer far more than a simple trip.",
+      "  ",
+      "Secluded retreats perched on misty hillsides, private journeys through serene bamboo forests, rare encounters with timeless temples and living traditions — every experience we craft in Japan is an invitation to witness the extraordinary. Impeccable accommodations, tailored services, and unforgettable discoveries: everything is designed to offer far more than just a journey.From tranquil tea gardens to bustling city streets, Japan captivates with its seamless blend of tradition and modernity. Immerse yourself in local rituals, wander through sacred shrines, and savor moments of quiet reflection. Curated experiences, personalized guidance, and exclusive stays ensure every journey becomes a lasting memory of this remarkable land.",
+    ],
     images: [
       "/images/japan1.jpg",
       "/images/japan2.jpg",
@@ -342,12 +342,12 @@ export const destinations = [
     currency: "Euro (EUR)",
     tourist_season: "April to June, September to October",
     theme: "cultural",
-     texts: [
-    "Charming villas nestled among rolling vineyards, private gondola rides through timeless canals, privileged encounters with historic piazzas and centuries-old traditions — every journey we create in Italy is an invitation to experience the extraordinary. Refined accommodations, bespoke services, and unforgettable experiences: everything is crafted to offer far more than just a trip.",
-    "Elegant retreats overlooking sun-drenched Amalfi cliffs, private cruises along the sparkling Mediterranean, intimate encounters with iconic art, ancient ruins, and local rituals — every journey we design in Italy invites you to discover the remarkable. Exquisite accommodations, personalized services, and unforgettable moments: everything is designed to offer far more than a simple visit.",
-    "  ",
-    "Secluded estates perched amidst Tuscan hills, private explorations of charming villages and hidden coastlines, rare encounters with sacred cathedrals and enduring traditions — every experience we craft in Italy is an invitation to witness the extraordinary. Impeccable accommodations, tailored services, and unforgettable discoveries: everything is designed to offer far more than just a journey."
-  ],
+    texts: [
+      "Charming villas nestled among rolling vineyards, private gondola rides through timeless canals, privileged encounters with historic piazzas and centuries-old traditions — every journey we create in Italy is an invitation to experience the extraordinary. Refined accommodations, bespoke services, and unforgettable experiences: everything is crafted to offer far more than just a trip.",
+      "Elegant retreats overlooking sun-drenched Amalfi cliffs, private cruises along the sparkling Mediterranean, intimate encounters with iconic art, ancient ruins, and local rituals — every journey we design in Italy invites you to discover the remarkable. Exquisite accommodations, personalized services, and unforgettable moments: everything is designed to offer far more than a simple visit.",
+      "  ",
+      "Secluded estates perched amidst Tuscan hills, private explorations of charming villages and hidden coastlines, rare encounters with sacred cathedrals and enduring traditions — every experience we craft in Italy is an invitation to witness the extraordinary. Impeccable accommodations, tailored services, and unforgettable discoveries: everything is designed to offer far more than just a journey.",
+    ],
     images: [
       "/images/italy1.jpg",
       "/images/italy2.jpg",
@@ -377,7 +377,6 @@ export const destinations = [
         link: "https://www.booking.com/hotel/it/palazzo-alabardieri.fr.html?aid=301664&label=it-mYdZLqNwhNepAs4zhb8kHAS389980592631%3Apl%3Ata%3Ap1108500%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-38930130%3Alp9055544%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YSNxgVPQVI7AMnn1KDvPMRs&sid=c30fef2de605a604c0dbb57b051be65c&dest_id=-122902&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1763631697&srpvid=73644425f978080e&type=total&ucfs=1&",
       },
     ],
-    
   },
   {
     id: 9,
@@ -391,12 +390,12 @@ export const destinations = [
     currency: "Costa Rican Colón (CRC)",
     tourist_season: "December to April (dry season)",
     theme: "exploration",
-     texts: [
-    "Secluded lodges tucked into lush rainforests, private boat rides along winding rivers, privileged encounters with abundant wildlife and vibrant local traditions — every journey we create in Costa Rica is an invitation to experience the extraordinary. Refined accommodations, bespoke services, and unforgettable experiences: everything is crafted to offer far more than just a trip.",
-    "Elegant retreats perched on misty volcano slopes, private excursions through pristine beaches and tropical jungles, intimate encounters with indigenous cultures and timeless rituals — every journey we design in Costa Rica invites you to discover the remarkable. Exquisite accommodations, personalized services, and unforgettable moments: everything is designed to offer far more than a simple visit.",
-    "  ",
-    "Elegant retreats perched on misty volcano slopes, private excursions through pristine beaches and tropical jungles, intimate encounters with indigenous cultures and timeless rituals — every journey we design in Costa Rica invites you to discover the remarkable. Exquisite accommodations, personalized services, and unforgettable moments: everything is designed to offer far more than a simple visit."
-  ],
+    texts: [
+      "Secluded lodges tucked into lush rainforests, private boat rides along winding rivers, privileged encounters with abundant wildlife and vibrant local traditions — every journey we create in Costa Rica is an invitation to experience the extraordinary. Refined accommodations, bespoke services, and unforgettable experiences: everything is crafted to offer far more than just a trip.",
+      "Elegant retreats perched on misty volcano slopes, private excursions through pristine beaches and tropical jungles, intimate encounters with indigenous cultures and timeless rituals — every journey we design in Costa Rica invites you to discover the remarkable. Exquisite accommodations, personalized services, and unforgettable moments: everything is designed to offer far more than a simple visit.",
+      "  ",
+      "Elegant retreats perched on misty volcano slopes, private excursions through pristine beaches and tropical jungles, intimate encounters with indigenous cultures and timeless rituals — every journey we design in Costa Rica invites you to discover the remarkable. Exquisite accommodations, personalized services, and unforgettable moments: everything is designed to offer far more than a simple visit.",
+    ],
     images: [
       "/images/costaRica1.jpg",
       "/images/costaRica2.jpg",
@@ -439,12 +438,12 @@ export const destinations = [
     currency: "Euro (EUR)",
     tourist_season: "May to September",
     theme: "cultural",
-     texts: [
-    "Secluded villas perched on sun-drenched cliffs, private sails across turquoise waters, privileged encounters with ancient ruins and timeless local traditions — every journey we create in Greece is an invitation to experience the extraordinary. Refined accommodations, bespoke services, and unforgettable experiences: everything is crafted to offer far more than just a trip.",
-    "Elegant retreats tucked into olive groves and whitewashed villages, private excursions through hidden islands and serene beaches, intimate encounters with historic temples and enduring rituals — every journey we design in Greece invites you to discover the remarkable. Exquisite accommodations, personalized services, and unforgettable moments: everything is designed to offer far more than a simple visit.",
-    "  ",
-    "Hidden sanctuaries overlooking the Aegean Sea, private journeys through picturesque villages and rugged landscapes, rare encounters with sacred sites and living traditions — every experience we craft in Greece is an invitation to witness the extraordinary. Impeccable accommodations, tailored services, and unforgettable discoveries: everything is designed to offer far more than just a journey."
-  ],
+    texts: [
+      "Secluded villas perched on sun-drenched cliffs, private sails across turquoise waters, privileged encounters with ancient ruins and timeless local traditions — every journey we create in Greece is an invitation to experience the extraordinary. Refined accommodations, bespoke services, and unforgettable experiences: everything is crafted to offer far more than just a trip.",
+      "Elegant retreats tucked into olive groves and whitewashed villages, private excursions through hidden islands and serene beaches, intimate encounters with historic temples and enduring rituals — every journey we design in Greece invites you to discover the remarkable. Exquisite accommodations, personalized services, and unforgettable moments: everything is designed to offer far more than a simple visit.",
+      "  ",
+      "Hidden sanctuaries overlooking the Aegean Sea, private journeys through picturesque villages and rugged landscapes, rare encounters with sacred sites and living traditions — every experience we craft in Greece is an invitation to witness the extraordinary. Impeccable accommodations, tailored services, and unforgettable discoveries: everything is designed to offer far more than just a journey.",
+    ],
     images: [
       "/images/greece1.jpg",
       "/images/greece2.jpg",
@@ -487,12 +486,12 @@ export const destinations = [
     currency: "Peruvian Sol (PEN)",
     tourist_season: "May to September",
     theme: "exploration",
-     texts: [
-    "Wake up to the mist curling over the Sacred Valley, trace the paths of the Incas, and taste flavors that have lingered for centuries — in Peru, every journey is a dialogue with history and nature. From Andean lodges to boutique city retreats, every detail is designed to reveal a world that goes far beyond the ordinary.",
-    "From the soaring peaks of the Andes to the shimmering waters of Lake Titicaca, Peru unfolds like a living tapestry of culture, color, and ritual. Handcrafted experiences, private encounters with artisans and shamans, and stays in unique lodges ensure that every moment becomes an unforgettable discovery.",
-    "Traverse ancient ruins hidden in lush valleys, wander through vibrant markets, and witness ceremonies that have endured for generations. In Peru, every journey blends adventure, culture, and natural beauty. Thoughtfully curated excursions, personalized guides, and exclusive accommodations make each experience an extraordinary immersion into the heart of this remarkable land.",
-    "Explore hidden trails to ancient terraces, sail past remote Amazonian villages, and feel the heartbeat of centuries-old traditions — Peru invites you to immerse yourself in its extraordinary landscapes and living heritage. Thoughtfully curated lodgings, personalized journeys, and intimate encounters transform every trip into something far richer than a simple visit.From misty mountain passes to winding riverways, Peru reveals moments of wonder at every turn. Discover sacred sites, connect with local communities, and savor the flavors of time-honored cuisine. Exclusive stays, tailored experiences, and immersive cultural encounters ensure each journey becomes a lasting memory of this vibrant and timeless land."
-  ],
+    texts: [
+      "Wake up to the mist curling over the Sacred Valley, trace the paths of the Incas, and taste flavors that have lingered for centuries — in Peru, every journey is a dialogue with history and nature. From Andean lodges to boutique city retreats, every detail is designed to reveal a world that goes far beyond the ordinary.",
+      "From the soaring peaks of the Andes to the shimmering waters of Lake Titicaca, Peru unfolds like a living tapestry of culture, color, and ritual. Handcrafted experiences, private encounters with artisans and shamans, and stays in unique lodges ensure that every moment becomes an unforgettable discovery.",
+      "Traverse ancient ruins hidden in lush valleys, wander through vibrant markets, and witness ceremonies that have endured for generations. In Peru, every journey blends adventure, culture, and natural beauty. Thoughtfully curated excursions, personalized guides, and exclusive accommodations make each experience an extraordinary immersion into the heart of this remarkable land.",
+      "Explore hidden trails to ancient terraces, sail past remote Amazonian villages, and feel the heartbeat of centuries-old traditions — Peru invites you to immerse yourself in its extraordinary landscapes and living heritage. Thoughtfully curated lodgings, personalized journeys, and intimate encounters transform every trip into something far richer than a simple visit.From misty mountain passes to winding riverways, Peru reveals moments of wonder at every turn. Discover sacred sites, connect with local communities, and savor the flavors of time-honored cuisine. Exclusive stays, tailored experiences, and immersive cultural encounters ensure each journey becomes a lasting memory of this vibrant and timeless land.",
+    ],
     images: [
       "/images/peru1.jpg",
       "/images/peru2.jpg",
@@ -535,12 +534,12 @@ export const destinations = [
     currency: "Moroccan Dirham (MAD)",
     tourist_season: "March to May, September to November",
     theme: "cultural",
-     texts: [
-    "From the ochre dunes of the Sahara to the winding alleys of ancient medinas, Morocco offers journeys that awaken the senses. Private camel treks, lantern-lit riads, and encounters with artisans and storytellers create moments that linger long after the journey ends. Every stay, every experience is crafted to offer far more than just a visit.",
-    "Hidden riads tucked behind bustling souks, secret gardens in the heart of imperial cities, and panoramic views over the Atlas Mountains — Morocco invites you to explore its contrasts. Curated experiences, personalized guides, and intimate encounters with local traditions transform every trip into a story worth remembering.",
-    "From sun-drenched kasbahs to serene desert nights under a canopy of stars, Morocco enchants at every turn. Wander through spice-scented markets, discover centuries-old crafts, and savor the rhythms of local life. Thoughtfully designed journeys, exclusive stays, and immersive cultural experiences ensure each visit becomes an unforgettable celebration of Morocco’s rich heritage.",
-    "Traverse golden desert landscapes, sip mint tea in sun-dappled courtyards, and discover centuries-old kasbahs steeped in history. Every journey through Morocco is an invitation to step into a world of color, texture, and timeless rituals. Refined accommodations, bespoke services, and unforgettable discoveries make each experience far beyond the ordinary.Stroll through vibrant souks, wander along winding medina streets, and watch the sunset over the Atlas Mountains. In Morocco, every moment reveals a new layer of beauty and tradition. Exclusive lodgings, curated excursions, and personalized experiences ensure each journey becomes a lasting memory of this enchanting land."
-  ],
+    texts: [
+      "From the ochre dunes of the Sahara to the winding alleys of ancient medinas, Morocco offers journeys that awaken the senses. Private camel treks, lantern-lit riads, and encounters with artisans and storytellers create moments that linger long after the journey ends. Every stay, every experience is crafted to offer far more than just a visit.",
+      "Hidden riads tucked behind bustling souks, secret gardens in the heart of imperial cities, and panoramic views over the Atlas Mountains — Morocco invites you to explore its contrasts. Curated experiences, personalized guides, and intimate encounters with local traditions transform every trip into a story worth remembering.",
+      "From sun-drenched kasbahs to serene desert nights under a canopy of stars, Morocco enchants at every turn. Wander through spice-scented markets, discover centuries-old crafts, and savor the rhythms of local life. Thoughtfully designed journeys, exclusive stays, and immersive cultural experiences ensure each visit becomes an unforgettable celebration of Morocco’s rich heritage.",
+      "Traverse golden desert landscapes, sip mint tea in sun-dappled courtyards, and discover centuries-old kasbahs steeped in history. Every journey through Morocco is an invitation to step into a world of color, texture, and timeless rituals. Refined accommodations, bespoke services, and unforgettable discoveries make each experience far beyond the ordinary.Stroll through vibrant souks, wander along winding medina streets, and watch the sunset over the Atlas Mountains. In Morocco, every moment reveals a new layer of beauty and tradition. Exclusive lodgings, curated excursions, and personalized experiences ensure each journey becomes a lasting memory of this enchanting land.",
+    ],
     images: [
       "/images/morocco1.jpg",
       "/images/morocco2.jpg",
@@ -583,12 +582,12 @@ export const destinations = [
     currency: "Australian Dollar (AUD)",
     tourist_season: "December to February (austral summer)",
     theme: "sporty",
-     texts: [
-    "From the sun-drenched shores of the Great Barrier Reef to the red heart of the Outback, Australia offers journeys that connect you to nature in its most spectacular forms. Private wildlife encounters, coastal retreats, and guided explorations reveal landscapes and traditions that stay with you long after the journey ends.",
-    "Hidden lodges along pristine beaches, private cruises through untouched bays, and intimate experiences with Aboriginal culture — every journey in Australia is a celebration of wonder and discovery. Thoughtfully curated stays, personalized guides, and immersive adventures turn each trip into something truly extraordinary.",
-    "From rugged mountain ranges to sunlit vineyards, Australia captivates with its diversity and raw beauty. Explore remote wilderness, connect with unique wildlife, and experience the rhythms of local life. Exclusive retreats, bespoke excursions, and immersive cultural encounters ensure every journey becomes a lasting memory of this remarkable land.",
-    "Traverse ancient rainforests, wander among towering rock formations, and feel the vastness of the Outback under a starlit sky. Australia invites you to explore its extraordinary landscapes and vibrant cultures. Impeccable accommodations, bespoke services, and unforgettable encounters ensure that every moment goes far beyond the ordinary.Savor the gentle sway of coastal breezes, discover hidden waterfalls, and witness wildlife in its natural habitat. In Australia, every experience is a journey into wonder and discovery. Curated lodgings, personalized adventures, and intimate encounters with local traditions make each trip an unforgettable celebration of the land’s beauty and spirit."
-  ],
+    texts: [
+      "From the sun-drenched shores of the Great Barrier Reef to the red heart of the Outback, Australia offers journeys that connect you to nature in its most spectacular forms. Private wildlife encounters, coastal retreats, and guided explorations reveal landscapes and traditions that stay with you long after the journey ends.",
+      "Hidden lodges along pristine beaches, private cruises through untouched bays, and intimate experiences with Aboriginal culture — every journey in Australia is a celebration of wonder and discovery. Thoughtfully curated stays, personalized guides, and immersive adventures turn each trip into something truly extraordinary.",
+      "From rugged mountain ranges to sunlit vineyards, Australia captivates with its diversity and raw beauty. Explore remote wilderness, connect with unique wildlife, and experience the rhythms of local life. Exclusive retreats, bespoke excursions, and immersive cultural encounters ensure every journey becomes a lasting memory of this remarkable land.",
+      "Traverse ancient rainforests, wander among towering rock formations, and feel the vastness of the Outback under a starlit sky. Australia invites you to explore its extraordinary landscapes and vibrant cultures. Impeccable accommodations, bespoke services, and unforgettable encounters ensure that every moment goes far beyond the ordinary.Savor the gentle sway of coastal breezes, discover hidden waterfalls, and witness wildlife in its natural habitat. In Australia, every experience is a journey into wonder and discovery. Curated lodgings, personalized adventures, and intimate encounters with local traditions make each trip an unforgettable celebration of the land’s beauty and spirit.",
+    ],
     images: [
       "/images/australia1.jpg",
       "/images/australia2.jpg",
@@ -631,12 +630,12 @@ export const destinations = [
     currency: "Canadian Dollar (CAD)",
     tourist_season: "June to September (summer)",
     theme: "sporty",
-     texts: [
-    "From the rugged peaks of the Rockies to the serene waters of pristine lakes, Canada offers journeys that celebrate the grandeur of nature. Private canoe trips, cozy lodges, and encounters with local wildlife create experiences that linger long after the journey ends.",
-    "Hidden cabins nestled in ancient forests, private excursions through sweeping valleys, and intimate encounters with Indigenous traditions — every journey in Canada invites you to connect with landscapes and cultures that feel timeless. Thoughtfully curated stays and personalized experiences transform each trip into something extraordinary.",
-    "From snow-capped mountains to golden autumn forests, Canada captivates with its breathtaking contrasts. Hike along secluded trails, paddle through crystal-clear rivers, and immerse yourself in the rhythms of local life. Exclusive lodgings, tailored adventures, and curated cultural encounters ensure every journey becomes a lasting memory of this extraordinary land.",
-    "Traverse snow-dusted mountains, explore vibrant cities, and discover the magic of vast wildernesses under starlit skies. Canada offers a tapestry of unforgettable landscapes and cultural encounters. Refined accommodations, bespoke services, and immersive adventures make every journey far beyond ordinary travel.Wander through serene forests, glide across mirror-like lakes, and witness wildlife in its natural habitat. In Canada, every moment reveals the harmony of nature and culture. Thoughtfully curated lodgings, personalized excursions, and intimate experiences ensure each journey becomes an unforgettable celebration of this majestic land."
-  ],
+    texts: [
+      "From the rugged peaks of the Rockies to the serene waters of pristine lakes, Canada offers journeys that celebrate the grandeur of nature. Private canoe trips, cozy lodges, and encounters with local wildlife create experiences that linger long after the journey ends.",
+      "Hidden cabins nestled in ancient forests, private excursions through sweeping valleys, and intimate encounters with Indigenous traditions — every journey in Canada invites you to connect with landscapes and cultures that feel timeless. Thoughtfully curated stays and personalized experiences transform each trip into something extraordinary.",
+      "From snow-capped mountains to golden autumn forests, Canada captivates with its breathtaking contrasts. Hike along secluded trails, paddle through crystal-clear rivers, and immerse yourself in the rhythms of local life. Exclusive lodgings, tailored adventures, and curated cultural encounters ensure every journey becomes a lasting memory of this extraordinary land.",
+      "Traverse snow-dusted mountains, explore vibrant cities, and discover the magic of vast wildernesses under starlit skies. Canada offers a tapestry of unforgettable landscapes and cultural encounters. Refined accommodations, bespoke services, and immersive adventures make every journey far beyond ordinary travel.Wander through serene forests, glide across mirror-like lakes, and witness wildlife in its natural habitat. In Canada, every moment reveals the harmony of nature and culture. Thoughtfully curated lodgings, personalized excursions, and intimate experiences ensure each journey becomes an unforgettable celebration of this majestic land.",
+    ],
     images: [
       "/images/canada1.jpg",
       "/images/canada2.jpg",
@@ -679,12 +678,12 @@ export const destinations = [
     currency: "Baht (THB)",
     tourist_season: "November to February",
     theme: "cultural",
-     texts: [
-    "Hidden sanctuaries along emerald rivers, private longtail boat journeys through serene limestone cliffs, and intimate encounters with ancient temples — every journey in Thailand is an invitation to experience wonder. Refined accommodations, bespoke services, and unforgettable moments make each trip far beyond the ordinary.",
-    "From bustling Bangkok markets to tranquil jungle retreats, Thailand reveals a world of vibrant colors, rich flavors, and timeless traditions. Curated experiences, private cultural encounters, and luxurious lodgings transform every journey into an unforgettable discovery.",
-    "From golden beaches to misty mountain landscapes, Thailand captivates with its striking contrasts. Explore hidden villages, savor authentic cuisine, and witness centuries-old rituals come to life. Thoughtfully designed itineraries, personalized guidance, and exclusive stays ensure every journey becomes a lasting memory of this enchanting land.",
-    "Explore hidden beaches, wander through fragrant spice gardens, and witness sacred rituals passed down through generations. Thailand invites you to immerse yourself in landscapes, culture, and traditions that feel both ancient and alive. Every stay and experience is designed to offer far more than just a visit.Savor the gentle rhythm of river life, trek through lush jungles, and discover artisans preserving time-honored crafts. In Thailand, every moment reveals the beauty of its landscapes and the depth of its culture. Exclusive retreats, curated excursions, and personalized experiences transform each journey into an unforgettable celebration of this extraordinary land."
-  ],
+    texts: [
+      "Hidden sanctuaries along emerald rivers, private longtail boat journeys through serene limestone cliffs, and intimate encounters with ancient temples — every journey in Thailand is an invitation to experience wonder. Refined accommodations, bespoke services, and unforgettable moments make each trip far beyond the ordinary.",
+      "From bustling Bangkok markets to tranquil jungle retreats, Thailand reveals a world of vibrant colors, rich flavors, and timeless traditions. Curated experiences, private cultural encounters, and luxurious lodgings transform every journey into an unforgettable discovery.",
+      "From golden beaches to misty mountain landscapes, Thailand captivates with its striking contrasts. Explore hidden villages, savor authentic cuisine, and witness centuries-old rituals come to life. Thoughtfully designed itineraries, personalized guidance, and exclusive stays ensure every journey becomes a lasting memory of this enchanting land.",
+      "Explore hidden beaches, wander through fragrant spice gardens, and witness sacred rituals passed down through generations. Thailand invites you to immerse yourself in landscapes, culture, and traditions that feel both ancient and alive. Every stay and experience is designed to offer far more than just a visit.Savor the gentle rhythm of river life, trek through lush jungles, and discover artisans preserving time-honored crafts. In Thailand, every moment reveals the beauty of its landscapes and the depth of its culture. Exclusive retreats, curated excursions, and personalized experiences transform each journey into an unforgettable celebration of this extraordinary land.",
+    ],
     images: [
       "/images/thailand1.jpg",
       "/images/thailand2.jpg",
@@ -727,12 +726,12 @@ export const destinations = [
     currency: "New Zealand Dollar (NZD)",
     tourist_season: "December to March (austral summer)",
     theme: "sporty",
-     texts: [
-    "From misty fjords to windswept beaches, New Zealand offers journeys that celebrate the raw beauty of nature. Private hikes, secluded lodges, and encounters with Maori culture transform each experience into a story that lingers long after the journey ends.",
-    "Hidden valleys, glacial lakes, and rugged mountain trails — every journey in New Zealand invites you to explore landscapes both dramatic and serene. Thoughtfully curated adventures, personalized guides, and immersive stays ensure every moment is far beyond the ordinary.",
-    "From volcanic plateaus to lush rainforests, New Zealand captivates with its diverse and untamed landscapes. Traverse winding rivers, witness wildlife in its natural habitat, and connect with the enduring traditions of the land. Exclusive lodgings, tailored excursions, and immersive cultural experiences make each journey a lasting memory of this extraordinary country.",
-    "Traverse rolling hills and dense native forests, sail along pristine coastlines, and discover the enduring traditions of the land’s first peoples. New Zealand beckons with unforgettable scenery and experiences. Refined accommodations, bespoke services, and intimate encounters make each journey truly extraordinary.Wander through serene alpine valleys, explore hidden waterfalls, and witness wildlife in its natural habitat. In New Zealand, every moment reveals the harmony of nature and culture. Curated lodgings, personalized adventures, and exclusive experiences ensure each journey becomes an unforgettable celebration of this remarkable land."
-  ],
+    texts: [
+      "From misty fjords to windswept beaches, New Zealand offers journeys that celebrate the raw beauty of nature. Private hikes, secluded lodges, and encounters with Maori culture transform each experience into a story that lingers long after the journey ends.",
+      "Hidden valleys, glacial lakes, and rugged mountain trails — every journey in New Zealand invites you to explore landscapes both dramatic and serene. Thoughtfully curated adventures, personalized guides, and immersive stays ensure every moment is far beyond the ordinary.",
+      "From volcanic plateaus to lush rainforests, New Zealand captivates with its diverse and untamed landscapes. Traverse winding rivers, witness wildlife in its natural habitat, and connect with the enduring traditions of the land. Exclusive lodgings, tailored excursions, and immersive cultural experiences make each journey a lasting memory of this extraordinary country.",
+      "Traverse rolling hills and dense native forests, sail along pristine coastlines, and discover the enduring traditions of the land’s first peoples. New Zealand beckons with unforgettable scenery and experiences. Refined accommodations, bespoke services, and intimate encounters make each journey truly extraordinary.Wander through serene alpine valleys, explore hidden waterfalls, and witness wildlife in its natural habitat. In New Zealand, every moment reveals the harmony of nature and culture. Curated lodgings, personalized adventures, and exclusive experiences ensure each journey becomes an unforgettable celebration of this remarkable land.",
+    ],
     images: [
       "/images/NewZealand1.jpg",
       "/images/NewZealand2.jpg",
