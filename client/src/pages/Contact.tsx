@@ -1,5 +1,5 @@
-import FormContact from "../components/FormContact";
 import ContactAdresse from "../components/ContactAdresse";
+import FormContact from "../components/FormContact";
 import "./Contact.css";
 
 function Contact() {

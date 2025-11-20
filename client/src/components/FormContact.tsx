@@ -52,7 +52,6 @@ function FormContact() {
         <p>You can also Contact Us via</p>
         <div className="fc-contact">
           <div className="fc-mail">
-            {/* biome-ignore lint/a11y/useAltText: <explanation> */}
             <img
               src="./src/assets/images/iconContact/mail.png"
               alt="iconmail"

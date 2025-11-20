@@ -8,7 +8,6 @@ function ContactAdresse() {
     <>
       <form className="ac-form">
         <div className="ac-content">
-          {/* biome-ignore lint/a11y/noLabelWithoutControl: <explanation> */}
           <h2>With our services you can</h2>
           <ul>
             <li>Improuve usability of your porduct</li>
