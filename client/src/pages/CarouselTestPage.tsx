@@ -89,7 +89,7 @@ const CarouselTestPage: React.FC = () => {
       <div className="containerbutton">
         <button type="button" className="devisbutton" onClick={handleOpenDevis}>
           {" "}
-          demander devis{" "}
+          Request a quote{" "}
         </button>
       </div>
       <CommentsSection />
