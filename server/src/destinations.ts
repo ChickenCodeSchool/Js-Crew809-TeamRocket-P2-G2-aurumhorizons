@@ -126,7 +126,7 @@ export const destinations = [
         img: "/images/MaldivesHotel2.jpg",
         title: "The Island Sanctuary",
         description:
-          "Gili Lankanfushi is a haven of tranquility and elegance, known for its rustic-chic overwater bungalows. The resort emphasizes eco-friendly  luxury, providing guests with a unique experience that combines natural beauty with exceptional service. Each villa offers stunning views of the Indian Ocean and direct access to the vibrant coral reefs.",
+          "Gili Lankanfushi is a haven of tranquility and elegance, known for its rustic-chic overwater bungalows. The resort emphasizes eco-friendly  luxury, providing guests with a unique experience that combines natural beauty with exceptional service.",
         link: "https://www.gili-lankanfushi.com/",
       },
       {
@@ -157,7 +157,7 @@ export const destinations = [
     "Explore colorful coral reefs, wander through fragrant tropical forests, and watch the sun set over serene islands. The Philippines beckon with their unique landscapes, vibrant culture, and timeless serenity. Thoughtfully designed accommodations, personalized services, and immersive experiences transform every moment into something truly remarkable."
   ],
     images: [
-      "/images/Philippines1.png",
+      "/images/Philippines1.jpg",
       "/images/Philippines2.png",
       "/images/Philippines3.png",
       "/images/Philippines4.png",
@@ -214,21 +214,21 @@ export const destinations = [
         img: "/images/SeychellesHotel1.avif",
         title: "The Canopy",
         description:
-          "The Canopy By Hilton Seychelles Resort is a contemporary, upscale resort located directly on the pristine Anse La Mouche beach on Mahé Island's west coast. Opened recently, it offers a trendy design that blends contemporary furnishings with subtle Creole inspiration. The resort provides an ideal setting for both adventure and relaxation, featuring direct beach access, three swimming pools (including one for adults), a full-service spa, a 24-hour fitness center, and dedicated kids' and teen clubs. Guests can enjoy multiple dining options, including the Avocet and Tiger Bite restaurants, and the Sega Bar. Accommodation features rooms and suites with floor-to-ceiling windows and private balconies, offering vibrant island, garden, or ocean views.",
+          "The Canopy By Hilton Seychelles Resort is a contemporary, upscale resort located directly on the pristine Anse La Mouche beach on Mahé Island's west coast. Opened recently, it offers a trendy design that blends contemporary furnishings with subtle Creole inspiration. The resort provides an ideal setting for both adventure and relaxation.",
         link: "https://www.expedia.fr/Mahe-Island-Hotel-Canopy-By-Hilton-Seychelles.h97144886.Description-Hotel?chkin=2026-02-24&chkout=2026-02-26&x_pwa=1&rfrr=HSR&pwa_ts=1763474243125&referrerUrl=aHR0cHM6Ly93d3cuZXhwZWRpYS5mci9Ib3RlbC1TZWFyY2g%3D&useRewards=false&rm1=a2&regionId=3127&destination=Mahé%2C+Seychelles&destType=MARKET&selected=97144886&latLong=-4.682669%2C55.480396&mpo=EC&sort=RECOMMENDED&top_dp=790&top_cur=EUR&gclid=CjwKCAiAz_DIBhBJEiwAVH2XwCx-t85F6wPxp01zhj29_UtNSZ7FCl8IzaBR_4JtR8FSEzLIuUflDhoCjuwQAvD_BwE&mctc=10&userIntent=&selectedRoomType=",
       },
       {
         img: "/images/SeychellesHotel2.jpg",
         title: "The Avani+ Barbarons ",
         description:
-          "The Avani+ Barbarons Seychelles Resort is a luxury beachfront retreat situated on the picturesque west coast of Mahé, facing the sunset along Barbarons Beach. Recently renovated, the hotel offers a blend of soft sands, warm ocean, and soulful Seychellois culture, providing a relaxing yet adventurous island escape. The resort features two swimming pools, a full-service AvaniSpa, an AvaniFit gym, and a variety of water sports activities like diving and snorkeling. Dining includes three on-site restaurants and bars, often offering international and local Creole cuisine. Guests can choose from various rooms and suites with views of the garden, lagoon, or the Indian Ocean.",
+          "The Avani+ Barbarons Seychelles Resort is a luxury beachfront retreat situated on the picturesque west coast of Mahé, facing the sunset along Barbarons Beach. Recently renovated, the hotel offers a blend of soft sands, warm ocean, and soulful Seychellois culture, providing a relaxing yet adventurous island escape. ",
         link: "https://secure.minorhotels.com/rooms.aspx?hc=VBAR&bc=AV&checkin=13/02/2026&nights=1&rooms=1&adults=2&roomcode=1H1XK&ratecode=M20OFSBE&utm_content=&MetasearchChannel=GoogleMapResults&language=fr&pnid=96631964&utm_source=DerbySoft&utm_campaign=DerbySoftMetaSearch_GoogleMapResults&utm_term=SeychellesBarbarons&utm_medium=desktop&dsclid=74267459077017600",
       },
       {
         img: "/images/SeychellesHotel3.avif",
         title: "La Belle Tortue ",
         description:
-          "La Belle Tortue is an exclusive, small-scale lodge located on the secluded Silhouette Island, a protected nature reserve accessible by a short boat or helicopter transfer from Mahé. This intimate property offers an authentic Robinson Crusoe experience in a quiet, tranquil setting, surrounded by lush tropical forest and a protected sandy bay. The lodge features a colonial-style architecture and welcomes a limited number of guests, ensuring a highly personalized and warm service. It is renowned for its award-winning gourmet dining experience, focusing on fresh, flavorful French and local cuisine. Accommodation comprises charming rooms, suites, and private villas (some with jacuzzis), all designed with a Creole influence.",
+          "La Belle Tortue is an exclusive, small-scale lodge located on the secluded Silhouette Island, a protected nature reserve accessible by a short boat or helicopter transfer from Mahé. This intimate property offers an authentic Robinson Crusoe experience in a quiet, tranquil setting, surrounded by lush tropical forest and a protected sandy bay.",
         link: "https://direct-book.com/properties/labelletortue?locale=fr&_gads_gcid=731734140&_gads_gclabel=1GYcCOzFp7MBEPzA9dwC&_gha_gcid=100588786&_gha_phid=4b76ab34-1916-4677-8e0a-7b263aebe829&_src=DemandPlus&abw=46&booking_source=cpc&campaign_id=14788230376&cdow=Saturday&checkInDate=2026-01-03&checkOutDate=2026-01-04&country=FR&currency=EUR&device=desktop&gad_campaignid=14788230376&gad_source=6&gclid=CjwKCAiAz_DIBhBJEiwAVH2XwK8yjl2ZxFhVNIBSCVR0mGE-QXma73j2V588giYCjhXmZhwSSgwdzhoCOiEQAvD_BwE&los=1&meta=Google&tsd=default&utm_source=GoogleHotelAds&items[0][adults]=2&items[0][children]=0&items[0][infants]=0&trackPage=yes ",
       },
     ],
@@ -261,23 +261,23 @@ export const destinations = [
     hotels: [
       {
         img: "/images/IcelandHotel1.jpg",
-        title: "Highland Base - Kerlingarfjöll",
+        title: "Highland Base",
         description:
-          "The Highland Base Hotel: Iceland really has been the “land of fire and ice” of late, with the recent eruptions on the Reykjanes Peninsula. The Highland Base offers one of Iceland’s vast and mostly frozen interior view. Highland Base in Kerlingarfjöll – a vast reserve of snowdrift-blanketed peaks, glaciers, lava fields and silence – might as well be on the moon. Getting there is a mission. The Nordic minimalist space station, a 28-room hotel and six pod-like lodges occupying the abandoned structures of the pioneers who have gone before.",
+          "The Highland Base Hotel: Iceland really has been the “land of fire and ice” of late, with the recent eruptions on the Reykjanes Peninsula. The Highland Base offers one of Iceland’s vast and mostly frozen interior view. Highland Base in Kerlingarfjöll – a vast reserve of snowdrift-blanketed peaks, glaciers, lava fields and silence – might as well be on the moon. Getting there is a mission. ",
         link: "https://highlandbase.is/",
       },
       {
         img: "/images/IcelandHotel2.jpg",
         title: "Blue Lagoon Iceland",
         description:
-          "The Retreat Blue Lagoon Hotel: The Silica Blue Lagoon Hotel takes all the geothermal wonder of the Blue Lagoon and instils it into an uber-luxurious wellness establishment. The sleek and minimalist suites mirror the mossy-covered lava fields outside, while floor-to-ceiling windows welcome in the ethereal light of the Reykjanes Peninsula, inciting the stark grey and subdued black interiors into a heady and otherworldly Icelandic spectrum. Inside, all roads lead to the underground spa, a cavernous space offering the patented Blue Lagoon Ritual, a wellness cleanse using the silica, algae, and array of minerals all found in the geothermal waters.",
+          "The Retreat Blue Lagoon Hotel: The Silica Blue Lagoon Hotel takes all the geothermal wonder of the Blue Lagoon and instils it into an uber-luxurious wellness establishment. The sleek and minimalist suites mirror the mossy-covered lava fields outside, while floor-to-ceiling windows welcome in the ethereal light of the Reykjanes Peninsula, inciting the stark grey and subdued black interiors into a heady and otherworldly Icelandic spectrum.",
         link: "https://www.bluelagoon.com/accommodation/retreat-hotel",
       },
       {
         img: "/images/IcelandHotel3.jpg",
         title: "ION Hotels",
         description:
-          "The ION Adventure Hotel: The ION Adventure Hotel might have one of the most picturesque and otherworldly settings not just Iceland, but the entire Northern Hemisphere. Jutting out from a set of rugged cliffs above a field of jet-black lava, this hotel sits amid swirling sulphurous steam inside the UNESCO-listed Thingvellir National Park. If the setting is a tad dramatic, the interiors are by contrast an oasis of warmth and tranquillity. The elegant design incorporates driftwood and other natural materials from the surrounding landscapes, creating a blend of high-end luxury with low-key Icelandic sensibilities, an homage to the beauty of the scenery outside.",
+          "The ION Adventure Hotel: The ION Adventure Hotel might have one of the most picturesque and otherworldly settings not just Iceland, but the entire Northern Hemisphere. Jutting out from a set of rugged cliffs above a field of jet-black lava, this hotel sits amid swirling sulphurous steam inside the UNESCO-listed Thingvellir National Park. If the setting is a tad dramatic, the interiors are by contrast an oasis of warmth and tranquillity.",
         link: "https://ioniceland.is/adventure/",
       },
     ],
