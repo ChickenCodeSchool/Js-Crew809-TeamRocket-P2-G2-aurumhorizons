@@ -1,10 +1,10 @@
 .fc-form {
-  max-width: 520px;
+  max-width: 650px;
   width: 100%;
-  padding: 0;
+  padding: 0 0px 0px 100px;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 8px;
 }
 
 .fc-field-group {
@@ -40,7 +40,7 @@
 
 .fc-field-input:focus {
   border-color: black;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  box-shadow: 0 0 0 3px #e0c086;
 }
 
 .fc-field-area {
@@ -78,4 +78,40 @@
 }
 .fc-terms-label a:hover {
   color: #e0c086;
+}
+
+@media (max-width: 768px) {
+  .fc-form {
+    max-width: 100%;
+    padding: 0 16px;
+  }
+
+  .fc-field-input {
+    font-size: 16px; /* Évite le zoom sur mobile */
+  }
+}
+
+.fc-mail {
+  display: flex;
+}
+
+.fc-phone {
+  display: flex;
+}
+
+.fc-mail-logo {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+.fc-phone-logo {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+.fc-contact {
+  display: flex;
+  gap: 2rem;
 }

@@ -1,5 +1,7 @@
 import FormContact from "../components/FormContact";
+import ContactAdresse from "../components/ContactAdresse";
 import "./Contact.css";
+
 function Contact() {
   return (
     <>
@@ -12,6 +14,7 @@ function Contact() {
       </section>
       <section className="cu-global">
         <FormContact />
+        <ContactAdresse />
       </section>
     </>
   );

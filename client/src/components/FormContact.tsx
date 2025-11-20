@@ -49,7 +49,26 @@ function FormContact() {
         <button type="submit" className="fc-submit-form">
           Send Your Request
         </button>
-        <p>You can also Conact Us via</p>
+        <p>You can also Contact Us via</p>
+        <div className="fc-contact">
+          <div className="fc-mail">
+            {/* biome-ignore lint/a11y/useAltText: <explanation> */}
+            <img
+              src="./src/assets/images/iconContact/mail.png"
+              alt="iconmail"
+              className="fc-mail-logo"
+            />
+            <p>contact.arumhorisons@gmail.com</p>
+          </div>
+          <div className="fc-phone">
+            <img
+              src="./src/assets/images/iconContact/phone.png"
+              alt="iconphone"
+              className="fc-phone-logo"
+            />
+            <p>+91 7648442589</p>
+          </div>
+        </div>
       </form>
     </>
   );
