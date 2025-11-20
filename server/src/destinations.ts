@@ -15,7 +15,7 @@ export const destinations = [
     "Elegant retreats nestled among rice terraces, private cruises through the archipelago’s paradise islands, privileged encounters with sacred temples and timeless traditions — every journey we design in Indonesia is an invitation to experience the extraordinary. Refined accommodations, bespoke services, and unforgettable experiences: everything is crafted to offer far more than just a trip",
     "Every moment becomes a crafted masterpiece, designed to awaken wonder.From the understated elegance of your accommodations to the authenticity of local encounters, every detail of your journey through Indonesia is thoughtfully curated to create unforgettable memories. Discover Bali in a new light, with attentive guidance and experiences designed to inspire, surprise, and move you.",
     "  ",
-    "embarcation"
+    "Secluded villas nestled among lush rice terraces, private boat journeys through pristine archipelagos, and encounters with sacred temples and vibrant local traditions — every journey in Indonesia is an invitation to experience the extraordinary. Refined accommodations, bespoke services, and unforgettable moments make each trip far beyond the ordinary.From misty volcanoes to turquoise waters, Indonesia reveals a world of stunning landscapes and rich culture. Curated excursions, private island experiences, and immersive stays with local communities transform every journey into a story worth remembering."
   ],
     images: [
       "/images/indonesia1.jpg",
