@@ -23,7 +23,7 @@ interface Hotel {
   link: string;
 }
 
-const egypte = "/image/egypte.png";
+// const egypte = "/image/egypte.png";
 
 const CarouselTestPage: React.FC = () => {
   const [showDevis, setShowDevis] = useState(false);
