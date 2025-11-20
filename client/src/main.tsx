@@ -8,6 +8,7 @@ import HomePages from "./pages/HomePages";
 
 import Login from "./components/Login";
 import About from "./pages/About";
+import Contact from "./pages/Contact";
 import MentionLegal from "./pages/MentionLegal";
 import Seemore from "./pages/Seemore";
 import UserProfile from "./pages/UserProfile";
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
       {
         path: "see-more",
         element: <Seemore />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
       },
       {
         path: "about",

@@ -1,0 +1,117 @@
+.fc-form {
+  max-width: 650px;
+  width: 100%;
+  padding: 0 0px 0px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.fc-field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.fc-field-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.fc-field-input {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 15px;
+  color: #1f2937;
+  background-color: #ffffff;
+  border: 1px solid #9ca3af;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.fc-field-input::placeholder {
+  color: #9ca3af;
+}
+
+.fc-field-input:focus {
+  border-color: black;
+  box-shadow: 0 0 0 3px #e0c086;
+}
+
+.fc-field-area {
+  min-height: 120px;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.fc-terms {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.fc-terms-checkbox {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  cursor: pointer;
+  accent-color: #e0c086;
+  flex-shrink: 0;
+}
+
+.fc-terms-label {
+  font-size: 14px;
+  color: black;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.fc-terms-label a {
+  color: black;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+.fc-terms-label a:hover {
+  color: #e0c086;
+}
+
+@media (max-width: 768px) {
+  .fc-form {
+    max-width: 100%;
+    padding: 0 16px;
+  }
+
+  .fc-field-input {
+    font-size: 16px; /* Évite le zoom sur mobile */
+  }
+}
+
+.fc-mail {
+  display: flex;
+}
+
+.fc-phone {
+  display: flex;
+}
+
+.fc-mail-logo {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+.fc-phone-logo {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+.fc-contact {
+  display: flex;
+  gap: 2rem;
+}
