@@ -1,4 +1,5 @@
-import React, { useCallback, useEffect, useState } from "react";
+import type React from "react";
+import { useCallback, useEffect, useState } from "react";
 import "./Carousel.css";
 
 interface CarouselProps {
@@ -41,6 +42,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
         src={images[index]}
         alt={`slide-${index}`}
         className={`carousel-image ${fade ? "fade-in" : "fade-out"}`}
+        // biome-ignore lint/suspicious/noAssignInExpressions: <explanation>
         onError={(e) => (e.currentTarget.src = "/images/placeholder.jpg")}
       />
 
@@ -57,4 +59,3 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
 };
 
 export default Carousel;
-

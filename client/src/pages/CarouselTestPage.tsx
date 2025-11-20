@@ -23,7 +23,7 @@ interface Hotel {
   link: string;
 }
 
-const egypte = "/image/egypte.png";
+// const egypte = "/image/egypte.png";
 
 const CarouselTestPage: React.FC = () => {
   const [showDevis, setShowDevis] = useState(false);
@@ -55,11 +55,11 @@ const CarouselTestPage: React.FC = () => {
       <div className="carousel-page">
         <div className="text-section">
           <h1>
-            {/* biome-ignore lint/a11y/useAltText: <explanation> */}
             <img
-              src={egypte}
-              className={`flageg  destiImage-${infoVoyage?.name}`}
-            />{" "}
+              src={`/images/${infoVoyage?.name.toLowerCase().replace(/ /g, "-")}.png`}
+              className={`flageg destiImage-${infoVoyage?.name}`}
+              alt={`${infoVoyage?.name} flag`}
+            />
             Discover Exceptional Experiences
           </h1>
           <p>{infoVoyage?.texts?.[0]}</p>

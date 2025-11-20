@@ -1,4 +1,5 @@
-import React, { useCallback, useEffect, useState } from "react";
+import type React from "react";
+import { useCallback, useEffect, useState } from "react";
 import "./HotelsCarousel.css";
 
 interface Hotel {
@@ -13,7 +14,10 @@ interface HotelsCarouselProps {
   destinationName?: string;
 }
 
-const HotelsCarousel: React.FC<HotelsCarouselProps> = ({ hotels, destinationName }) => {
+const HotelsCarousel: React.FC<HotelsCarouselProps> = ({
+  hotels,
+  destinationName,
+}) => {
   const [index, setIndex] = useState(0);
   const [fade, setFade] = useState(true);
 
@@ -88,4 +92,3 @@ const HotelsCarousel: React.FC<HotelsCarouselProps> = ({ hotels, destinationName
 };
 
 export default HotelsCarousel;
-
