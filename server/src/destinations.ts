@@ -308,25 +308,25 @@ export const destinations = [
     ],
     hotels: [
       {
-        img: "/images/IcelandHotel1.jpg",
-        title: "Highland Base - Kerlingarfjöll",
+        img: "/images/japanHotel1.webp",
+        title: "Osaka Marriott Miyako Hotel",
         description:
-          "The Highland Base Hotel: Iceland really has been the “land of fire and ice” of late, with the recent eruptions on the Reykjanes Peninsula. The Highland Base offers one of Iceland’s vast and mostly frozen interior view. Highland Base in Kerlingarfjöll – a vast reserve of snowdrift-blanketed peaks, glaciers, lava fields and silence – might as well be on the moon. Getting there is a mission. The Nordic minimalist space station, a 28-room hotel and six pod-like lodges occupying the abandoned structures of the pioneers who have gone before.",
-        link: "https://highlandbase.is/",
+          "Perched high within the iconic Abeno Harukas skyscraper, the Osaka Marriott Miyako Hotel delivers a luxury hotel experience in the heart of Osaka. This five-star property—born from a partnership between Marriott Hotels and Miyako Hotels & Resorts—embodies contemporary elegance while offering breathtaking panoramic views of the city from above.",
+        link: "https://fr.hotels.com/ho445853/osaka-marriott-miyako-hotel-osaka-japon?chkin=2025-12-04&chkout=2025-12-05&x_pwa=1&rfrr=HSR&pwa_ts=1763630572674&referrerUrl=aHR0cHM6Ly9mci5ob3RlbHMuY29tL0hvdGVsLVNlYXJjaA%3D%3D&useRewards=false&rm1=a2&regionId=2697&destination=Osaka%2C%20Osaka%20(préfecture)%2C%20Japon&destType=MARKET&neighborhoodId=179179&latLong=34.693738%2C135.502165&sort=RECOMMENDED&top_dp=283&top_cur=EUR&gclid=CjwKCAiAlfvIBhA6EiwAcErpyTQzI_yjMteqsH7XN4f82Uc5RLcSetro2iZdsOi4MBDPxrJAYorgKRoCoYUQAvD_BwE&semcid=HCOM-FR.UB.GOOGLE.DT-c-FR.HOTEL&semdtl=a112650290240.b1119598234425.g1kwd-25034892.e1c.m1CjwKCAiAlfvIBhA6EiwAcErpyTQzI_yjMteqsH7XN4f82Uc5RLcSetro2iZdsOi4MBDPxrJAYorgKRoCoYUQAvD_BwE.r1f8d383fe841d8e26a968da564ae5f69b1386b079db00c13329cdf273f4937620.c1.j19055544.k12392.d1720887442840.h1b.i1.l1.n1.o1.p1.q1.s1hotel%20osaka.t1.x1.f1.u1.v1.w1&userIntent=&selectedRoomType=314172880&selectedRatePlan=400567631&expediaPropertyId=6963659&searchId=8a5c675d-9769-405b-83c5-2dfe74b9678e",
       },
       {
-        img: "/images/IcelandHotel2.jpg",
-        title: "Blue Lagoon Iceland",
+        img: "/images/japanHotel2.webp",
+        title: "The Hotel Seiryu Kyoto Kiyomizu",
         description:
-          "The Retreat Blue Lagoon Hotel: The Silica Blue Lagoon Hotel takes all the geothermal wonder of the Blue Lagoon and instils it into an uber-luxurious wellness establishment. The sleek and minimalist suites mirror the mossy-covered lava fields outside, while floor-to-ceiling windows welcome in the ethereal light of the Reykjanes Peninsula, inciting the stark grey and subdued black interiors into a heady and otherworldly Icelandic spectrum. Inside, all roads lead to the underground spa, a cavernous space offering the patented Blue Lagoon Ritual, a wellness cleanse using the silica, algae, and array of minerals all found in the geothermal waters.",
-        link: "https://www.bluelagoon.com/accommodation/retreat-hotel",
+          "The hotel is housed in the former Kiyomizu Elementary School, built in 1933, preserving its distinctive architectural features of brick and arches.t enjoys a privileged position near Kiyomizu-dera, the UNESCO-listed temple, as well as the charming slopes of Ninenzaka and Sannenzaka, making it an ideal base for exploring the historic soul of Kyoto.",
+        link: "https://fr.hotels.com/ho1438796096/the-hotel-seiryu-kyoto-kiyomizu-kyoto-japon/?chkin=2025-12-04&chkout=2025-12-05&x_pwa=1&rfrr=HSR&pwa_ts=1763630809025&referrerUrl=aHR0cHM6Ly9mci5ob3RlbHMuY29tL0hvdGVsLVNlYXJjaA%3D%3D&useRewards=false&rm1=a2&regionId=10323&destination=Kyōto%2C+Kyoto+%28préfecture%29%2C+Japon&destType=MARKET&neighborhoodId=6204602&latLong=35.011636%2C135.768029&sort=RECOMMENDED&top_dp=887&top_cur=EUR&userIntent=&selectedRoomType=218548551&selectedRatePlan=387682921&expediaPropertyId=44931128&searchId=237c022e-b60b-4b01-b4e2-e9ab06159156",
       },
       {
-        img: "/images/IcelandHotel3.jpg",
-        title: "ION Hotels",
+        img: "/images/japanHotel3.webp",
+        title: "The Peninsula Tokyo",
         description:
-          "The ION Adventure Hotel: The ION Adventure Hotel might have one of the most picturesque and otherworldly settings not just Iceland, but the entire Northern Hemisphere. Jutting out from a set of rugged cliffs above a field of jet-black lava, this hotel sits amid swirling sulphurous steam inside the UNESCO-listed Thingvellir National Park. If the setting is a tad dramatic, the interiors are by contrast an oasis of warmth and tranquillity. The elegant design incorporates driftwood and other natural materials from the surrounding landscapes, creating a blend of high-end luxury with low-key Icelandic sensibilities, an homage to the beauty of the scenery outside.",
-        link: "https://ioniceland.is/adventure/",
+          "Located at 1-8-1 Yurakucho, Chiyoda-ku, the hotel is just steps from Ginza—one of Tokyo’s premier shopping districts—and offers excellent access to the city’s business and cultural hubs.Its standalone 24-story tower gives the hotel a strong architectural presence.The hotel has versatile meeting and event spaces, including a grand suite with views over the Imperial Palace—ideal for private receptions or ceremonies.",
+        link: "https://fr.hotels.com/ho255753/the-peninsula-tokyo-tokyo-japon/?chkin=2025-12-04&chkout=2025-12-05&x_pwa=1&rfrr=HSR&pwa_ts=1763630985407&referrerUrl=aHR0cHM6Ly9mci5ob3RlbHMuY29tL0hvdGVsLVNlYXJjaA%3D%3D&useRewards=false&rm1=a2&regionId=3593&destination=Tokyo%2C+Tokyo+%28préfecture%29%2C+Japon&destType=MARKET&neighborhoodId=6340535&latLong=35.681143%2C139.767208&sort=RECOMMENDED&top_dp=1950&top_cur=EUR&userIntent=&selectedRoomType=201847659&selectedRatePlan=387805937&expediaPropertyId=1631412&searchId=bb362744-60f3-4928-a185-892b189f8e12",
       },
     ],
   },
@@ -356,25 +356,25 @@ export const destinations = [
     ],
     hotels: [
       {
-        img: "/images/IcelandHotel1.jpg",
-        title: "Highland Base - Kerlingarfjöll",
+        img: "/images/italyHotel1.jpg",
+        title: "CC Palace Hotel",
         description:
-          "The Highland Base Hotel: Iceland really has been the “land of fire and ice” of late, with the recent eruptions on the Reykjanes Peninsula. The Highland Base offers one of Iceland’s vast and mostly frozen interior view. Highland Base in Kerlingarfjöll – a vast reserve of snowdrift-blanketed peaks, glaciers, lava fields and silence – might as well be on the moon. Getting there is a mission. The Nordic minimalist space station, a 28-room hotel and six pod-like lodges occupying the abandoned structures of the pioneers who have gone before.",
-        link: "https://highlandbase.is/",
+          "The CC Palace Hotel is ideally located in the center of Rome. It offers free Wi-Fi, a terrace, a bar, and accommodation with air conditioning. This 4-star hotel provides room service and a 24-hour front desk. The property also offers airport transfers and a bicycle rental service. Each room features a private bathroom equipped with a shower, free toiletries, and a hairdryer. Guests can also enjoy a desk and a flat-screen TV.",
+        link: "https://www.booking.com/hotel/it/cc-palace-roma.fr.html?aid=301664&label=it-mYdZLqNwhNepAs4zhb8kHAS389980592631%3Apl%3Ata%3Ap1108500%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-38930130%3Alp9055544%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YSNxgVPQVI7AMnn1KDvPMRs&sid=c30fef2de605a604c0dbb57b051be65c&dest_id=-126693&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1763631478&srpvid=3f9743b4913c0488&type=total&ucfs=1&",
       },
       {
-        img: "/images/IcelandHotel2.jpg",
-        title: "Blue Lagoon Iceland",
+        img: "/images/itlayHotel3.jpg",
+        title: "Hotel La Gemma",
         description:
-          "The Retreat Blue Lagoon Hotel: The Silica Blue Lagoon Hotel takes all the geothermal wonder of the Blue Lagoon and instils it into an uber-luxurious wellness establishment. The sleek and minimalist suites mirror the mossy-covered lava fields outside, while floor-to-ceiling windows welcome in the ethereal light of the Reykjanes Peninsula, inciting the stark grey and subdued black interiors into a heady and otherworldly Icelandic spectrum. Inside, all roads lead to the underground spa, a cavernous space offering the patented Blue Lagoon Ritual, a wellness cleanse using the silica, algae, and array of minerals all found in the geothermal waters.",
-        link: "https://www.bluelagoon.com/accommodation/retreat-hotel",
+          "The Hotel La Gemma is ideally located in Florence. It offers room service, private parking, and accommodation equipped with air conditioning and free Wi-Fi. The property features a restaurant, a bar, a sauna, and a hot tub. This non-smoking hotel is situated 1.1 km from Palazzo Vecchio. All rooms include a desk, a TV, a private bathroom, bed linen, and towels. The rooms are equipped with a bidet, and some also feature a seating area. A safety deposit box is also available.",
+        link: "https://www.booking.com/hotel/it/la-gemma-firenze.fr.html?aid=301664&label=it-mYdZLqNwhNepAs4zhb8kHAS389980592631%3Apl%3Ata%3Ap1108500%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-38930130%3Alp9055544%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YSNxgVPQVI7AMnn1KDvPMRs&sid=c30fef2de605a604c0dbb57b051be65c&dest_id=-117543&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1763631867&srpvid=777844790c900247&type=total&ucfs=1&",
       },
       {
-        img: "/images/IcelandHotel3.jpg",
-        title: "ION Hotels",
+        img: "/images/italyHotel2.jpg",
+        title: "Palazzo Alabardieri",
         description:
-          "The ION Adventure Hotel: The ION Adventure Hotel might have one of the most picturesque and otherworldly settings not just Iceland, but the entire Northern Hemisphere. Jutting out from a set of rugged cliffs above a field of jet-black lava, this hotel sits amid swirling sulphurous steam inside the UNESCO-listed Thingvellir National Park. If the setting is a tad dramatic, the interiors are by contrast an oasis of warmth and tranquillity. The elegant design incorporates driftwood and other natural materials from the surrounding landscapes, creating a blend of high-end luxury with low-key Icelandic sensibilities, an homage to the beauty of the scenery outside.",
-        link: "https://ioniceland.is/adventure/",
+          "Palazzo Alabardieri is located 600 meters from Piazza del Plebiscito and just a 2-minute walk from the chic boutiques of Via Chiaia. Its multilingual staff is available at all times. The elegant rooms come with free Wi-Fi. All rooms are set within a renovated former cloister and are decorated in different color schemes. They feature air conditioning and a flat-screen satellite TV. Some rooms include a seating area, soft bathrobes, and slippers.",
+        link: "https://www.booking.com/hotel/it/palazzo-alabardieri.fr.html?aid=301664&label=it-mYdZLqNwhNepAs4zhb8kHAS389980592631%3Apl%3Ata%3Ap1108500%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-38930130%3Alp9055544%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YSNxgVPQVI7AMnn1KDvPMRs&sid=c30fef2de605a604c0dbb57b051be65c&dest_id=-122902&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1763631697&srpvid=73644425f978080e&type=total&ucfs=1&",
       },
     ],
     
@@ -405,25 +405,25 @@ export const destinations = [
     ],
     hotels: [
       {
-        img: "/images/IcelandHotel1.jpg",
-        title: "Highland Base - Kerlingarfjöll",
+        img: "/images/costaRicaHotel1.jpg",
+        title: "Arenal Manoa Resort & Hot Springs",
         description:
-          "The Highland Base Hotel: Iceland really has been the “land of fire and ice” of late, with the recent eruptions on the Reykjanes Peninsula. The Highland Base offers one of Iceland’s vast and mostly frozen interior view. Highland Base in Kerlingarfjöll – a vast reserve of snowdrift-blanketed peaks, glaciers, lava fields and silence – might as well be on the moon. Getting there is a mission. The Nordic minimalist space station, a 28-room hotel and six pod-like lodges occupying the abandoned structures of the pioneers who have gone before.",
-        link: "https://highlandbase.is/",
+          "Arenal Manoa Resort & Hot Springs is located in Fortuna, 10 km from La Fortuna Waterfall. The property features a garden, a terrace, a restaurant, and free private parking. This 4-star hotel offers a bar as well as accommodations equipped with air conditioning, free Wi-Fi, and a private bathroom. The hotel overlooks the garden and offers an outdoor swimming pool and a 24-hour front desk.",
+        link: "https://www.booking.com/hotel/cr/arenal-manoa.fr.html?aid=301664&label=cr-wUba2MuHjFmZ8HTBy4Vx8QS154560683000%3Apl%3Ata%3Ap12800%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-52622013%3Alp9055544%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YSNxgVPQVI7AMnn1KDvPMRs&sid=c30fef2de605a604c0dbb57b051be65c&dest_id=-1107229&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1763632272&srpvid=d3574544949a15a9&type=total&ucfs=1&",
       },
       {
-        img: "/images/IcelandHotel2.jpg",
-        title: "Blue Lagoon Iceland",
+        img: "/images/costaRicaHotel2.jpg",
+        title: "Radisson San Jose-Costa Rica",
         description:
-          "The Retreat Blue Lagoon Hotel: The Silica Blue Lagoon Hotel takes all the geothermal wonder of the Blue Lagoon and instils it into an uber-luxurious wellness establishment. The sleek and minimalist suites mirror the mossy-covered lava fields outside, while floor-to-ceiling windows welcome in the ethereal light of the Reykjanes Peninsula, inciting the stark grey and subdued black interiors into a heady and otherworldly Icelandic spectrum. Inside, all roads lead to the underground spa, a cavernous space offering the patented Blue Lagoon Ritual, a wellness cleanse using the silica, algae, and array of minerals all found in the geothermal waters.",
-        link: "https://www.bluelagoon.com/accommodation/retreat-hotel",
+          "The Radisson Hotel San Jose – Costa Rica is an elegant hotel featuring an outdoor swimming pool and a conference center. Each spacious accommodation includes free Wi-Fi.The Radisson Hotel San Jose Costa Rica is located in the center of San José, 800 meters from Central Avenue. Free 24-hour monitored parking is available on site.",
+        link: "https://www.booking.com/hotel/cr/radisson-europa.fr.html?aid=301664&label=cr-wUba2MuHjFmZ8HTBy4Vx8QS154560683000%3Apl%3Ata%3Ap12800%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-52622013%3Alp9055544%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YSNxgVPQVI7AMnn1KDvPMRs&sid=c30fef2de605a604c0dbb57b051be65c&dest_id=-1109108&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1763632438&srpvid=d98445989a95045d&type=total&ucfs=1&",
       },
       {
-        img: "/images/IcelandHotel3.jpg",
-        title: "ION Hotels",
+        img: "/images/costaRicaHotel3.jpg",
+        title: "SecretJaco",
         description:
-          "The ION Adventure Hotel: The ION Adventure Hotel might have one of the most picturesque and otherworldly settings not just Iceland, but the entire Northern Hemisphere. Jutting out from a set of rugged cliffs above a field of jet-black lava, this hotel sits amid swirling sulphurous steam inside the UNESCO-listed Thingvellir National Park. If the setting is a tad dramatic, the interiors are by contrast an oasis of warmth and tranquillity. The elegant design incorporates driftwood and other natural materials from the surrounding landscapes, creating a blend of high-end luxury with low-key Icelandic sensibilities, an homage to the beauty of the scenery outside.",
-        link: "https://ioniceland.is/adventure/",
+          "SecretJaco – Luxury Beach Front Penthouse with Pool & Jacuzzi welcomes you in Jacó, just steps from Jacó Beach. The property features an outdoor swimming pool, a fitness center, a garden, and free private parking. All accommodations at this 5-star hotel offer mountain views. Guests can enjoy a private beach area and a shared lounge.",
+        link: "https://www.booking.com/hotel/cr/secretjaco-luxury-beach-front-penthouse-with-pool-amp-jacuzzi.fr.html?aid=301664&label=cr-wUba2MuHjFmZ8HTBy4Vx8QS154560683000%3Apl%3Ata%3Ap12800%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-52622013%3Alp9055544%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YSNxgVPQVI7AMnn1KDvPMRs&sid=c30fef2de605a604c0dbb57b051be65c&dest_id=-1107579&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1763632592&srpvid=181745e69e750c3b&type=total&ucfs=1&",
       },
     ],
   },
@@ -453,25 +453,25 @@ export const destinations = [
     ],
     hotels: [
       {
-        img: "/images/IcelandHotel1.jpg",
-        title: "Highland Base - Kerlingarfjöll",
+        img: "/images/greeceHotel1.jpg",
+        title: "Gatsby Athens",
         description:
-          "The Highland Base Hotel: Iceland really has been the “land of fire and ice” of late, with the recent eruptions on the Reykjanes Peninsula. The Highland Base offers one of Iceland’s vast and mostly frozen interior view. Highland Base in Kerlingarfjöll – a vast reserve of snowdrift-blanketed peaks, glaciers, lava fields and silence – might as well be on the moon. Getting there is a mission. The Nordic minimalist space station, a 28-room hotel and six pod-like lodges occupying the abandoned structures of the pioneers who have gone before.",
-        link: "https://highlandbase.is/",
+          "Located in Athens, Gatsby Athens features a fitness center, a terrace, a restaurant, and a bar. This 5-star hotel offers concierge services and a tour desk. The property also provides a 24-hour front desk, airport transfers, room service, and free Wi-Fi throughout.A kettle is also provided. Some rooms feature a balcony, while others offer city views. Towels and bed linen are provided.",
+        link: "https://www.booking.com/hotel/gr/gatsby-athens.fr.html?aid=301664&label=gr-3ditGJT7n42IiXWcCUuY%2AgS650650310855%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-73389040%3Alp9055544%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YSNxgVPQVI7AMnn1KDvPMRs&sid=c30fef2de605a604c0dbb57b051be65c&dest_id=-814876&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1763632820&srpvid=a6ad4658e9f70ae1&type=total&ucfs=1&",
       },
       {
-        img: "/images/IcelandHotel2.jpg",
-        title: "Blue Lagoon Iceland",
+        img: "/images/greeceHotel2.jpg",
+        title: "Amazon Mykonos Suites & Spa",
         description:
-          "The Retreat Blue Lagoon Hotel: The Silica Blue Lagoon Hotel takes all the geothermal wonder of the Blue Lagoon and instils it into an uber-luxurious wellness establishment. The sleek and minimalist suites mirror the mossy-covered lava fields outside, while floor-to-ceiling windows welcome in the ethereal light of the Reykjanes Peninsula, inciting the stark grey and subdued black interiors into a heady and otherworldly Icelandic spectrum. Inside, all roads lead to the underground spa, a cavernous space offering the patented Blue Lagoon Ritual, a wellness cleanse using the silica, algae, and array of minerals all found in the geothermal waters.",
-        link: "https://www.bluelagoon.com/accommodation/retreat-hotel",
+          "Amazon Mykonos Suites & Spa welcomes you in Agios Ioannis Mykonos, just 600 meters from Agios Ioannis Beach. The property features a fitness center, a terrace, a restaurant, and free private parking. All accommodations at this 5-star hotel offer sea views. Guests can enjoy access to an outdoor swimming pool and a hot tub. The hotel also provides a 24-hour front desk, airport transfers, room service, and free Wi-Fi throughout the property.",
+        link: "https://www.booking.com/hotel/gr/amzn-mykonos.fr.html?aid=301664&label=gr-3ditGJT7n42IiXWcCUuY%2AgS650650310855%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-73389040%3Alp9055544%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YSNxgVPQVI7AMnn1KDvPMRs&sid=c30fef2de605a604c0dbb57b051be65c&dest_id=1716&dest_type=region&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1763632954&srpvid=7cf4469bb99f0311&type=total&ucfs=1&",
       },
       {
-        img: "/images/IcelandHotel3.jpg",
-        title: "ION Hotels",
+        img: "/images/greeceHotel3.jpg",
+        title: "Acanthus blue",
         description:
-          "The ION Adventure Hotel: The ION Adventure Hotel might have one of the most picturesque and otherworldly settings not just Iceland, but the entire Northern Hemisphere. Jutting out from a set of rugged cliffs above a field of jet-black lava, this hotel sits amid swirling sulphurous steam inside the UNESCO-listed Thingvellir National Park. If the setting is a tad dramatic, the interiors are by contrast an oasis of warmth and tranquillity. The elegant design incorporates driftwood and other natural materials from the surrounding landscapes, creating a blend of high-end luxury with low-key Icelandic sensibilities, an homage to the beauty of the scenery outside.",
-        link: "https://ioniceland.is/adventure/",
+          "Located in Corfu, Acanthus Blue features a garden, a terrace, a restaurant, and a bar. It is situated 1.3 km from the Serbian Museum, 1.4 km from the Ionian University, and 1.6 km from the Municipal Gallery. The property offers a 24-hour front desk, shuttle service, room service, and free Wi-Fi throughout.",
+        link: "https://www.booking.com/hotel/gr/acanthus-blue.fr.html?aid=301664&label=gr-3ditGJT7n42IiXWcCUuY%2AgS650650310855%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-73389040%3Alp9055544%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YSNxgVPQVI7AMnn1KDvPMRs&sid=c30fef2de605a604c0dbb57b051be65c&dest_id=-820069&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1763633062&srpvid=d35746d1780f06c2&type=total&ucfs=1&",
       },
     ],
   },
@@ -501,25 +501,25 @@ export const destinations = [
     ],
     hotels: [
       {
-        img: "/images/IcelandHotel1.jpg",
-        title: "Highland Base - Kerlingarfjöll",
+        img: "/images/peruHotel1.jpg",
+        title: "Pullman Lima Miraflores",
         description:
-          "The Highland Base Hotel: Iceland really has been the “land of fire and ice” of late, with the recent eruptions on the Reykjanes Peninsula. The Highland Base offers one of Iceland’s vast and mostly frozen interior view. Highland Base in Kerlingarfjöll – a vast reserve of snowdrift-blanketed peaks, glaciers, lava fields and silence – might as well be on the moon. Getting there is a mission. The Nordic minimalist space station, a 28-room hotel and six pod-like lodges occupying the abandoned structures of the pioneers who have gone before.",
-        link: "https://highlandbase.is/",
+          "Located in Lima, less than 0.6 km from Playa La Estrella, Pullman Lima Miraflores offers 237 rooms and suites, 6 meeting rooms, 2 restaurants, a fitness center, and a rooftop pool with ocean views. The property is 650 meters from Larcomar, 3.7 km from the National Museum, and 4.3 km from Monterrico Racetrack. It features a 24-hour front desk, as well as room service and currency exchange services.",
+        link: "https://www.booking.com/hotel/pe/pullman-lima-miraflores.fr.html?aid=301664&label=pe-ydrkcPR5Qve2YJsmkt9gOwS154561602878%3Apl%3Ata%3Ap13820%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-521121095%3Alp9055544%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YSNxgVPQVI7AMnn1KDvPMRs&sid=c30fef2de605a604c0dbb57b051be65c&dest_id=-352647&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1763633245&srpvid=417e472ce63c02f4&type=total&ucfs=1&",
       },
       {
-        img: "/images/IcelandHotel2.jpg",
-        title: "Blue Lagoon Iceland",
+        img: "/images/peruHotel2.jpg",
+        title: "Amaru Colonial",
         description:
-          "The Retreat Blue Lagoon Hotel: The Silica Blue Lagoon Hotel takes all the geothermal wonder of the Blue Lagoon and instils it into an uber-luxurious wellness establishment. The sleek and minimalist suites mirror the mossy-covered lava fields outside, while floor-to-ceiling windows welcome in the ethereal light of the Reykjanes Peninsula, inciting the stark grey and subdued black interiors into a heady and otherworldly Icelandic spectrum. Inside, all roads lead to the underground spa, a cavernous space offering the patented Blue Lagoon Ritual, a wellness cleanse using the silica, algae, and array of minerals all found in the geothermal waters.",
-        link: "https://www.bluelagoon.com/accommodation/retreat-hotel",
+          "Amaru Colonial is a colonial-style inn located in the artistic San Blas neighborhood, just two blocks from San Blas Square. Its charming inner courtyard features soft lighting and a colorful flower garden. Each morning, guests can enjoy an American-style breakfast with fresh fruit, juice, and pastries. Additionally, the inn’s central location provides easy access to local restaurants and bars. Shuttle service is available from the airport to the property only, upon request and for an additional charge.",
+        link: "https://www.booking.com/hotel/pe/amaru-hostal-ii.fr.html?aid=301664&label=pe-ydrkcPR5Qve2YJsmkt9gOwS154561602878%3Apl%3Ata%3Ap13820%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-521121095%3Alp9055544%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YSNxgVPQVI7AMnn1KDvPMRs&sid=c30fef2de605a604c0dbb57b051be65c&dest_id=-345275&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=2&hpos=2&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1763633345&srpvid=9e86475d6725005f&type=total&ucfs=1&",
       },
       {
-        img: "/images/IcelandHotel3.jpg",
-        title: "ION Hotels",
+        img: "/images/peruHotel3.jpg",
+        title: "Titicaca island lodge",
         description:
-          "The ION Adventure Hotel: The ION Adventure Hotel might have one of the most picturesque and otherworldly settings not just Iceland, but the entire Northern Hemisphere. Jutting out from a set of rugged cliffs above a field of jet-black lava, this hotel sits amid swirling sulphurous steam inside the UNESCO-listed Thingvellir National Park. If the setting is a tad dramatic, the interiors are by contrast an oasis of warmth and tranquillity. The elegant design incorporates driftwood and other natural materials from the surrounding landscapes, creating a blend of high-end luxury with low-key Icelandic sensibilities, an homage to the beauty of the scenery outside.",
-        link: "https://ioniceland.is/adventure/",
+          "Titicaca Island Lodge Peru welcomes you in Puno, close to Yanamayo Stadium and Deustua Arc. The property features room service, a restaurant, and a terrace. This non-smoking lodge is located 1.3 km from Puma Uta Viewpoint. All accommodations include a private bathroom. Some rooms also feature a balcony, while others offer city views.",
+        link: "https://www.booking.com/hotel/pe/titicaca-island-lodge-peru.fr.html?aid=301664&label=pe-ydrkcPR5Qve2YJsmkt9gOwS154561602878%3Apl%3Ata%3Ap13820%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-521121095%3Alp9055544%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YSNxgVPQVI7AMnn1KDvPMRs&sid=c30fef2de605a604c0dbb57b051be65c&dest_id=-360150&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1763633452&srpvid=e2534794e182037b&type=total&ucfs=1&",
       },
     ],
   },
@@ -549,25 +549,25 @@ export const destinations = [
     ],
     hotels: [
       {
-        img: "/images/IcelandHotel1.jpg",
-        title: "Highland Base - Kerlingarfjöll",
+        img: "/images/moroccoHotel1.jpg",
+        title: "Les Jardins De La Koutoubia",
         description:
-          "The Highland Base Hotel: Iceland really has been the “land of fire and ice” of late, with the recent eruptions on the Reykjanes Peninsula. The Highland Base offers one of Iceland’s vast and mostly frozen interior view. Highland Base in Kerlingarfjöll – a vast reserve of snowdrift-blanketed peaks, glaciers, lava fields and silence – might as well be on the moon. Getting there is a mission. The Nordic minimalist space station, a 28-room hotel and six pod-like lodges occupying the abandoned structures of the pioneers who have gone before.",
-        link: "https://highlandbase.is/",
+          "The luxurious Les Jardins De La Koutoubia hotel is located just a 2-minute walk from the famous Jamaâ El Fna square. It features a Carita spa, a hot tub, and an outdoor swimming pool surrounded by palm trees. All spacious, air-conditioned rooms open onto a terrace and are equipped with a minibar and a TV. Some rooms include an elegant living area. The private bathrooms come with toiletries.",
+        link: "https://www.booking.com/hotel/ma/les-jardins-de-la-koutoubia.fr.html?aid=303948&label=ma-ODZJLe3bY6UtxqPGxB%2ANbwS473116535212%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-301175985052%3Alp9055544%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9Yf5EcukO1MOGLSSAuId8ToA&sid=c30fef2de605a604c0dbb57b051be65c&dest_id=-38833&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1763633676&srpvid=a6ad4802ffc40e89&type=total&ucfs=1&",
       },
       {
-        img: "/images/IcelandHotel2.jpg",
-        title: "Blue Lagoon Iceland",
+        img: "/images/moroccoHotel2.jpg",
+        title: "The View Agadir",
         description:
-          "The Retreat Blue Lagoon Hotel: The Silica Blue Lagoon Hotel takes all the geothermal wonder of the Blue Lagoon and instils it into an uber-luxurious wellness establishment. The sleek and minimalist suites mirror the mossy-covered lava fields outside, while floor-to-ceiling windows welcome in the ethereal light of the Reykjanes Peninsula, inciting the stark grey and subdued black interiors into a heady and otherworldly Icelandic spectrum. Inside, all roads lead to the underground spa, a cavernous space offering the patented Blue Lagoon Ritual, a wellness cleanse using the silica, algae, and array of minerals all found in the geothermal waters.",
-        link: "https://www.bluelagoon.com/accommodation/retreat-hotel",
+          "Located on the seafront, this 5-star hotel offers 6 restaurants, spa treatments, and air-conditioned rooms with a balcony. Both indoor and outdoor swimming pools are available.Featuring modern décor, the rooms at The View Agadir are equipped with a minibar and a flat-screen TV. The private bathrooms include complimentary toiletries, and some rooms offer sea views.",
+        link: "https://www.booking.com/hotel/ma/the-view-agadir-hotel.fr.html?aid=303948&label=ma-ODZJLe3bY6UtxqPGxB%2ANbwS473116535212%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-301175985052%3Alp9055544%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9Yf5EcukO1MOGLSSAuId8ToA&sid=c30fef2de605a604c0dbb57b051be65c&dest_id=-20029&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1763633788&srpvid=e253483c5b1e0b32&type=total&ucfs=1&",
       },
       {
-        img: "/images/IcelandHotel3.jpg",
-        title: "ION Hotels",
+        img: "/images/moroccoHotel3.jpg",
+        title: "Four Seasons Hotel Casablanca",
         description:
-          "The ION Adventure Hotel: The ION Adventure Hotel might have one of the most picturesque and otherworldly settings not just Iceland, but the entire Northern Hemisphere. Jutting out from a set of rugged cliffs above a field of jet-black lava, this hotel sits amid swirling sulphurous steam inside the UNESCO-listed Thingvellir National Park. If the setting is a tad dramatic, the interiors are by contrast an oasis of warmth and tranquillity. The elegant design incorporates driftwood and other natural materials from the surrounding landscapes, creating a blend of high-end luxury with low-key Icelandic sensibilities, an homage to the beauty of the scenery outside.",
-        link: "https://ioniceland.is/adventure/",
+          "Located in Casablanca, next to the Anfa Place Living Resort residential complex, the Four Seasons Hotel Casablanca features a spa and a fitness center. The property also has a restaurant and a hammam open year-round. The Four Seasons Hotel Casablanca is 1.4 km from Aïn Diab Corniche and 3 km from Hassan II Mosque. Mohammed V International Airport is 26 km away.",
+        link: "https://www.booking.com/hotel/ma/four-seasons-casablanca-casablanca.fr.html?aid=303948&label=ma-ODZJLe3bY6UtxqPGxB%2ANbwS473116535212%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-301175985052%3Alp9055544%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9Yf5EcukO1MOGLSSAuId8ToA&sid=c30fef2de605a604c0dbb57b051be65c&dest_id=-28159&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1763633877&srpvid=a0de48680b1c038f&type=total&ucfs=1&",
       },
     ],
   },
@@ -597,25 +597,25 @@ export const destinations = [
     ],
     hotels: [
       {
-        img: "/images/IcelandHotel1.jpg",
-        title: "Highland Base - Kerlingarfjöll",
+        img: "/images/australiaHotel1.jpg",
+        title: "1 Hotel Melbourne",
         description:
-          "The Highland Base Hotel: Iceland really has been the “land of fire and ice” of late, with the recent eruptions on the Reykjanes Peninsula. The Highland Base offers one of Iceland’s vast and mostly frozen interior view. Highland Base in Kerlingarfjöll – a vast reserve of snowdrift-blanketed peaks, glaciers, lava fields and silence – might as well be on the moon. Getting there is a mission. The Nordic minimalist space station, a 28-room hotel and six pod-like lodges occupying the abandoned structures of the pioneers who have gone before.",
-        link: "https://highlandbase.is/",
+          "1 Hotel Melbourne is located in Melbourne, 800 meters from the Melbourne Convention and Exhibition Centre. The property features concierge services, a garden, a bar, non-smoking accommodations, and free Wi-Fi throughout. It also offers a restaurant, a fitness center, an indoor swimming pool, and a sauna. Private parking is available on site.",
+        link: "https://www.booking.com/hotel/au/1-melbourne.fr.html?aid=301664&label=au-8oVcDRWnqAH8TpW0o1g1TAS390613165421%3Apl%3Ata%3Ap114300%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-67343887%3Alp9055544%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YSNxgVPQVI7AMnn1KDvPMRs&sid=c30fef2de605a604c0dbb57b051be65c&dest_id=-1586844&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1763634066&srpvid=549048c7c5e0058e&type=total&ucfs=1&",
       },
       {
-        img: "/images/IcelandHotel2.jpg",
-        title: "Blue Lagoon Iceland",
+        img: "/images/australiaHotel2.jpg",
+        title: "Roar And Snore",
         description:
-          "The Retreat Blue Lagoon Hotel: The Silica Blue Lagoon Hotel takes all the geothermal wonder of the Blue Lagoon and instils it into an uber-luxurious wellness establishment. The sleek and minimalist suites mirror the mossy-covered lava fields outside, while floor-to-ceiling windows welcome in the ethereal light of the Reykjanes Peninsula, inciting the stark grey and subdued black interiors into a heady and otherworldly Icelandic spectrum. Inside, all roads lead to the underground spa, a cavernous space offering the patented Blue Lagoon Ritual, a wellness cleanse using the silica, algae, and array of minerals all found in the geothermal waters.",
-        link: "https://www.bluelagoon.com/accommodation/retreat-hotel",
+          "Roar And Snore is located in Sydney, 700 meters from Athol Beach. The property features a garden, a terrace, non-smoking accommodations, and free Wi-Fi throughout. It is situated 1.5 km from Taronga Zoo, 7.7 km from Luna Park, and 8.7 km from the Sydney Opera House. On-site amenities include evening entertainment and a luggage storage area.",
+        link: "https://www.booking.com/hotel/au/roar-and-snore.fr.html?aid=301664&label=au-8oVcDRWnqAH8TpW0o1g1TAS390613165421%3Apl%3Ata%3Ap114300%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-67343887%3Alp9055544%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YSNxgVPQVI7AMnn1KDvPMRs&sid=c30fef2de605a604c0dbb57b051be65c&dest_id=-1603135&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1763634154&srpvid=e25348f3f6be05c9&type=total&ucfs=1&",
       },
       {
-        img: "/images/IcelandHotel3.jpg",
-        title: "ION Hotels",
+        img: "/images/australiaHotel3.jpg",
+        title: "Emporium Hotel South Bank",
         description:
-          "The ION Adventure Hotel: The ION Adventure Hotel might have one of the most picturesque and otherworldly settings not just Iceland, but the entire Northern Hemisphere. Jutting out from a set of rugged cliffs above a field of jet-black lava, this hotel sits amid swirling sulphurous steam inside the UNESCO-listed Thingvellir National Park. If the setting is a tad dramatic, the interiors are by contrast an oasis of warmth and tranquillity. The elegant design incorporates driftwood and other natural materials from the surrounding landscapes, creating a blend of high-end luxury with low-key Icelandic sensibilities, an homage to the beauty of the scenery outside.",
-        link: "https://ioniceland.is/adventure/",
+          "Featuring a fitness center and river views, Emporium Hotel South Bank is located in Brisbane, 400 meters from South Bank Parklands. The property is close to attractions such as the Brisbane Exhibition Centre. It also offers a spa and a 24-hour front desk.",
+        link: "https://www.booking.com/hotel/au/emporium-south-bank.fr.html?aid=301664&label=au-8oVcDRWnqAH8TpW0o1g1TAS390613165421%3Apl%3Ata%3Ap114300%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-67343887%3Alp9055544%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YSNxgVPQVI7AMnn1KDvPMRs&sid=c30fef2de605a604c0dbb57b051be65c&dest_id=-1561728&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1763634248&srpvid=82e64921a7c409b2&type=total&ucfs=1&",
       },
     ],
   },
@@ -645,25 +645,25 @@ export const destinations = [
     ],
     hotels: [
       {
-        img: "/images/IcelandHotel1.jpg",
-        title: "Highland Base - Kerlingarfjöll",
+        img: "/images/canadaHotel1.jpg",
+        title: "Four Seasons Hotel Montreal",
         description:
-          "The Highland Base Hotel: Iceland really has been the “land of fire and ice” of late, with the recent eruptions on the Reykjanes Peninsula. The Highland Base offers one of Iceland’s vast and mostly frozen interior view. Highland Base in Kerlingarfjöll – a vast reserve of snowdrift-blanketed peaks, glaciers, lava fields and silence – might as well be on the moon. Getting there is a mission. The Nordic minimalist space station, a 28-room hotel and six pod-like lodges occupying the abandoned structures of the pioneers who have gone before.",
-        link: "https://highlandbase.is/",
+          "Four Seasons Hotel Montreal enjoys a prime location in downtown Montreal. The property features a bar and free Wi-Fi. It is situated 300 meters from the Montreal Museum of Fine Arts, 200 meters from Ogilvy Shopping Centre, and 700 meters from Bell Centre. The hotel offers an indoor swimming pool, a hot tub, and room service.",
+        link: "https://www.booking.com/hotel/ca/four-seasons-montreal.fr.html?aid=301664&label=ca-D5Z729W5qTFuhoJxkn1ykgS154562002698%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-67345027%3Alp9055544%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YSNxgVPQVI7AMnn1KDvPMRs&sid=c30fef2de605a604c0dbb57b051be65c&dest_id=-569541&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1763634420&srpvid=a22649780f270428&type=total&ucfs=1&",
       },
       {
-        img: "/images/IcelandHotel2.jpg",
-        title: "Blue Lagoon Iceland",
+        img: "/images/canadaHotel2.jpg",
+        title: "SoHo",
         description:
-          "The Retreat Blue Lagoon Hotel: The Silica Blue Lagoon Hotel takes all the geothermal wonder of the Blue Lagoon and instils it into an uber-luxurious wellness establishment. The sleek and minimalist suites mirror the mossy-covered lava fields outside, while floor-to-ceiling windows welcome in the ethereal light of the Reykjanes Peninsula, inciting the stark grey and subdued black interiors into a heady and otherworldly Icelandic spectrum. Inside, all roads lead to the underground spa, a cavernous space offering the patented Blue Lagoon Ritual, a wellness cleanse using the silica, algae, and array of minerals all found in the geothermal waters.",
-        link: "https://www.bluelagoon.com/accommodation/retreat-hotel",
+          "Refinement, luxury, and personalized services await at SoHo Hotel, an exceptional boutique hotel offering spacious accommodations in the heart of Toronto, just minutes from the area’s top attractions.Equipped with cutting-edge technology in the rooms, including underfloor heating in the bathrooms, the property has everything needed for an unforgettable stay. Guests can enjoy the hotel’s premium fitness center, featuring a lap pool and personal trainers.",
+        link: "https://www.booking.com/hotel/ca/soho-metropolitan.fr.html?aid=301664&label=ca-D5Z729W5qTFuhoJxkn1ykgS154562002698%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-67345027%3Alp9055544%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YSNxgVPQVI7AMnn1KDvPMRs&sid=c30fef2de605a604c0dbb57b051be65c&dest_id=-574890&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1763634513&srpvid=adf649a75b0e069b&type=total&ucfs=1&",
       },
       {
-        img: "/images/IcelandHotel3.jpg",
-        title: "ION Hotels",
+        img: "/images/canadaHotel3.jpg",
+        title: "Rosewood Hotel Georgia",
         description:
-          "The ION Adventure Hotel: The ION Adventure Hotel might have one of the most picturesque and otherworldly settings not just Iceland, but the entire Northern Hemisphere. Jutting out from a set of rugged cliffs above a field of jet-black lava, this hotel sits amid swirling sulphurous steam inside the UNESCO-listed Thingvellir National Park. If the setting is a tad dramatic, the interiors are by contrast an oasis of warmth and tranquillity. The elegant design incorporates driftwood and other natural materials from the surrounding landscapes, creating a blend of high-end luxury with low-key Icelandic sensibilities, an homage to the beauty of the scenery outside.",
-        link: "https://ioniceland.is/adventure/",
+          "Rosewood Hotel Georgia is located across from the Vancouver Art Gallery, just a 5-minute walk from the shops of Robson Street. The hotel offers a saltwater indoor swimming pool perfect for lap swimming, a spa, and 24-hour room service. The rooms feature a flat-screen TV. The spa-style bathrooms include underfloor heating, bathrobes, and slippers. Some rooms also have a spacious living area with comfortable seating.",
+        link: "https://www.booking.com/hotel/ca/rosewood-georgia.fr.html?aid=301664&label=ca-D5Z729W5qTFuhoJxkn1ykgS154562002698%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-67345027%3Alp9055544%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YSNxgVPQVI7AMnn1KDvPMRs&sid=c30fef2de605a604c0dbb57b051be65c&dest_id=-575268&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1763634619&srpvid=e25349db59050fe7&type=total&ucfs=1&",
       },
     ],
   },
@@ -693,25 +693,25 @@ export const destinations = [
     ],
     hotels: [
       {
-        img: "/images/IcelandHotel1.jpg",
-        title: "Highland Base - Kerlingarfjöll",
+        img: "/images/thailandHotel1.jpg",
+        title: "Sindhorn Kempinski",
         description:
-          "The Highland Base Hotel: Iceland really has been the “land of fire and ice” of late, with the recent eruptions on the Reykjanes Peninsula. The Highland Base offers one of Iceland’s vast and mostly frozen interior view. Highland Base in Kerlingarfjöll – a vast reserve of snowdrift-blanketed peaks, glaciers, lava fields and silence – might as well be on the moon. Getting there is a mission. The Nordic minimalist space station, a 28-room hotel and six pod-like lodges occupying the abandoned structures of the pioneers who have gone before.",
-        link: "https://highlandbase.is/",
+          "Sindhorn Kempinski Hotel Bangkok is located in Bangkok, 1.1 km from Lumpini Park. The property features an outdoor swimming pool, a fitness center, a garden, and free private parking. On-site facilities include a shared lounge, a terrace, and a bar. Guests can also enjoy a kids’ club, room service, and currency exchange services.",
+        link: "https://www.booking.com/hotel/th/sindhorn-kempinski-bangkok.fr.html?aid=301664&label=th-AIGgBihaebRDrMg4BBJvqAS553310079730%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-15368050%3Alp9055544%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YSNxgVPQVI7AMnn1KDvPMRs&sid=c30fef2de605a604c0dbb57b051be65c&dest_id=-3414440&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1763634766&srpvid=a1254a25a5dc020b&type=total&ucfs=1&",
       },
       {
-        img: "/images/IcelandHotel2.jpg",
-        title: "Blue Lagoon Iceland",
+        img: "/images/thailandHotel2.jpg",
+        title: "Smile Lanna",
         description:
-          "The Retreat Blue Lagoon Hotel: The Silica Blue Lagoon Hotel takes all the geothermal wonder of the Blue Lagoon and instils it into an uber-luxurious wellness establishment. The sleek and minimalist suites mirror the mossy-covered lava fields outside, while floor-to-ceiling windows welcome in the ethereal light of the Reykjanes Peninsula, inciting the stark grey and subdued black interiors into a heady and otherworldly Icelandic spectrum. Inside, all roads lead to the underground spa, a cavernous space offering the patented Blue Lagoon Ritual, a wellness cleanse using the silica, algae, and array of minerals all found in the geothermal waters.",
-        link: "https://www.bluelagoon.com/accommodation/retreat-hotel",
+          "Smile Lanna Hotel enjoys an ideal location in Chiang Mai. The property offers room service, free private parking, and accommodations with air conditioning and free Wi-Fi. It also features a free shuttle service, a restaurant, and a terrace. Guests can enjoy a year-round outdoor swimming pool, a fitness center, a hot tub, and a garden.",
+        link: "https://www.booking.com/hotel/th/smile-lanna.fr.html?aid=301664&label=th-AIGgBihaebRDrMg4BBJvqAS553310079730%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-15368050%3Alp9055544%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YSNxgVPQVI7AMnn1KDvPMRs&sid=c30fef2de605a604c0dbb57b051be65c&dest_id=-3247115&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=2&hpos=2&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1763634911&srpvid=d3574a5ba77401a6&type=total&ucfs=1&",
       },
       {
-        img: "/images/IcelandHotel3.jpg",
-        title: "ION Hotels",
+        img: "/images/thailandHotel3.jpg",
+        title: "Royal Wing",
         description:
-          "The ION Adventure Hotel: The ION Adventure Hotel might have one of the most picturesque and otherworldly settings not just Iceland, but the entire Northern Hemisphere. Jutting out from a set of rugged cliffs above a field of jet-black lava, this hotel sits amid swirling sulphurous steam inside the UNESCO-listed Thingvellir National Park. If the setting is a tad dramatic, the interiors are by contrast an oasis of warmth and tranquillity. The elegant design incorporates driftwood and other natural materials from the surrounding landscapes, creating a blend of high-end luxury with low-key Icelandic sensibilities, an homage to the beauty of the scenery outside.",
-        link: "https://ioniceland.is/adventure/",
+          "A 10-minute drive to Pattaya Beach, Royal Wing Suites & Spa Pattaya features free Wi-Fi throughout the property. Boasting an outdoor pool, the hotel offers 3 dining options and free public parking on site.The hotel is 800 metres to Wat Khao Phra Bat. It takes 1.15 hours to drive to Suvarnabhumi International Airport",
+        link: "https://www.booking.com/hotel/th/royal-wing-suites-amp-spa.fr.html?aid=301664&label=th-AIGgBihaebRDrMg4BBJvqAS553310079730%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-15368050%3Alp9055544%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YSNxgVPQVI7AMnn1KDvPMRs&sid=c30fef2de605a604c0dbb57b051be65c&dest_id=900050893&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1763635007&srpvid=a2264a9d40cb04d6&type=total&ucfs=1&",
       },
     ],
   },
@@ -741,25 +741,25 @@ export const destinations = [
     ],
     hotels: [
       {
-        img: "/images/IcelandHotel1.jpg",
-        title: "Highland Base - Kerlingarfjöll",
+        img: "/images/newZealandHotel1.jpg",
+        title: "Hotel St Joris I Kloeg Collection",
         description:
-          "The Highland Base Hotel: Iceland really has been the “land of fire and ice” of late, with the recent eruptions on the Reykjanes Peninsula. The Highland Base offers one of Iceland’s vast and mostly frozen interior view. Highland Base in Kerlingarfjöll – a vast reserve of snowdrift-blanketed peaks, glaciers, lava fields and silence – might as well be on the moon. Getting there is a mission. The Nordic minimalist space station, a 28-room hotel and six pod-like lodges occupying the abandoned structures of the pioneers who have gone before.",
-        link: "https://highlandbase.is/",
+          "Hotel St Joris | Kloeg Collection is located in Middelburg and features a terrace. This 4-star hotel offers a garden as well as accommodations with air conditioning, free Wi-Fi, and a private bathroom. Private parking is available on site.The rooms are equipped with a flat-screen TV with cable channels. All accommodations have a shower, and some also include a seating area. Towels and bed linen are provided.",
+        link: "https://www.booking.com/hotel/nl/st-joris.fr.html?aid=324800&label=zeeland-XmHJ8dhMOFmE3%2AfLa5oJygS106223889293%3Apl%3Ata%3Ap1840%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-855435088%3Alp9055544%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YWWSJu-Jvy5f_7np_7cnRK4&sid=c30fef2de605a604c0dbb57b051be65c&dest_id=-2149393&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1763635152&srpvid=816b4ae475920519&type=total&ucfs=1&",
       },
       {
-        img: "/images/IcelandHotel2.jpg",
-        title: "Blue Lagoon Iceland",
+        img: "/images/newZealandHotel2.jpg",
+        title: "Hotel Bommelje",
         description:
-          "The Retreat Blue Lagoon Hotel: The Silica Blue Lagoon Hotel takes all the geothermal wonder of the Blue Lagoon and instils it into an uber-luxurious wellness establishment. The sleek and minimalist suites mirror the mossy-covered lava fields outside, while floor-to-ceiling windows welcome in the ethereal light of the Reykjanes Peninsula, inciting the stark grey and subdued black interiors into a heady and otherworldly Icelandic spectrum. Inside, all roads lead to the underground spa, a cavernous space offering the patented Blue Lagoon Ritual, a wellness cleanse using the silica, algae, and array of minerals all found in the geothermal waters.",
-        link: "https://www.bluelagoon.com/accommodation/retreat-hotel",
+          "Hotel Bommeljé is a family-friendly hotel with a warm and welcoming atmosphere. Free parking is available nearby.The charming rooms feature a private bathroom, free Wi-Fi, and a balcony.From the property, guests can enjoy scenic walks along the beach and through the dunes. The town of Domburg is filled with shops, bars, cafés, and restaurants.",
+        link: "https://www.booking.com/hotel/nl/bommelje.fr.html?aid=324800&label=zeeland-XmHJ8dhMOFmE3%2AfLa5oJygS106223889293%3Apl%3Ata%3Ap1840%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-855435088%3Alp9055544%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YWWSJu-Jvy5f_7np_7cnRK4&sid=c30fef2de605a604c0dbb57b051be65c&dest_id=-2143533&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=2&hpos=2&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1763635285&srpvid=08d54b1fe59c000f&type=total&ucfs=1&",
       },
       {
-        img: "/images/IcelandHotel3.jpg",
-        title: "ION Hotels",
+        img: "/images/newZealandHotel3.jpg",
+        title: "Hotel De Zeeuwse Stromen",
         description:
-          "The ION Adventure Hotel: The ION Adventure Hotel might have one of the most picturesque and otherworldly settings not just Iceland, but the entire Northern Hemisphere. Jutting out from a set of rugged cliffs above a field of jet-black lava, this hotel sits amid swirling sulphurous steam inside the UNESCO-listed Thingvellir National Park. If the setting is a tad dramatic, the interiors are by contrast an oasis of warmth and tranquillity. The elegant design incorporates driftwood and other natural materials from the surrounding landscapes, creating a blend of high-end luxury with low-key Icelandic sensibilities, an homage to the beauty of the scenery outside.",
-        link: "https://ioniceland.is/adventure/",
+          "Please note that there is an elevator in the hotel, but not in the apartments. Rental bikes cost EUR 15 per full day. When travelling with pets, please note that an extra charge of EUR 19.50 per pet, per night applies. Pets are only allowed upon request",
+        link: "https://www.booking.com/hotel/nl/hoteldezeeuwsestromen.fr.html?aid=324800&label=zeeland-XmHJ8dhMOFmE3%2AfLa5oJygS106223889293%3Apl%3Ata%3Ap1840%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-855435088%3Alp9055544%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YWWSJu-Jvy5f_7np_7cnRK4&sid=c30fef2de605a604c0dbb57b051be65c&dest_id=-2152054&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1763635383&srpvid=7cf44b59b84d0450&type=total&ucfs=1&",
       },
     ],
   },
