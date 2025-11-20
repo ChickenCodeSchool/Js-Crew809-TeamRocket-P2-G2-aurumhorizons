@@ -76,7 +76,7 @@ const CarouselTestPage: React.FC = () => {
       <div className={`bottom-text-section btn-text-${infoVoyage?.name}`}>
         <p>{infoVoyage?.texts?.[3]}</p>
       </div>
-      <div>
+      <div className="gps-container">
         <Gps />
       </div>
       {infoVoyage && (
@@ -89,7 +89,7 @@ const CarouselTestPage: React.FC = () => {
       <div className="containerbutton">
         <button type="button" className="devisbutton" onClick={handleOpenDevis}>
           {" "}
-          demander devis{" "}
+          Request a quote{" "}
         </button>
       </div>
       <CommentsSection />

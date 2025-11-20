@@ -20,3 +20,15 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
 }
+@media screen and (max-width: 1050px) {
+  .body {
+    padding: 1em;
+    article {
+      padding: 0;
+    }
+  }
+
+  #panneautitre {
+    font-size: 1.2em;
+  }
+}
