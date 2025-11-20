@@ -130,3 +130,116 @@
   background: white;
   text-align: center;
 }
+
+@media (max-width: 992px) {
+  .user-container {
+    flex-direction: column;
+    margin-top: 5.5rem;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    position: relative;
+  }
+
+  .sidebar ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .sidebar li {
+    margin-bottom: 0;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .documents-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    position: relative;
+  }
+
+  .sidebar ul {
+    flex-direction: column;
+  }
+
+  .sidebar button {
+    font-size: 14px;
+    padding: 10px 5px;
+  }
+
+  .content {
+    padding: 15px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .documents-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .drop-card {
+    padding: 15px;
+  }
+
+  .drop-zone {
+    padding: 20px;
+  }
+
+  .storage-box {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 100%;
+    padding: 0;
+  }
+
+  .sidebar ul {
+    padding: 0;
+    display: block;
+    text-align: center;
+  }
+
+  .sidebar button {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .content {
+    padding: 10px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .drop-zone {
+    padding: 20px;
+    font-size: 14px;
+  }
+
+  .drop-card {
+    padding: 10px;
+  }
+}
