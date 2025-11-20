@@ -7,9 +7,9 @@ import CarouselPage from "./pages/CarouselTestPage";
 import HomePages from "./pages/HomePages";
 
 import About from "./pages/About";
+import Contact from "./pages/Contact";
 import MentionLegal from "./pages/MentionLegal";
 import Seemore from "./pages/Seemore";
-
 /* ************************************************************************* */
 
 // Import the main app component
@@ -47,6 +47,10 @@ const router = createBrowserRouter([
       {
         path: "about",
         element: <About />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
       },
     ],
   },
