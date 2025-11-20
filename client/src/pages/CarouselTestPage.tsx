@@ -38,7 +38,7 @@ const CarouselTestPage: React.FC = () => {
     setShowDevis(false);
   };
 
-   useEffect(() => {
+  useEffect(() => {
     if (!id) return;
     fetch(`http://localhost:3310/api/destinations/${id}`)
       .then((res) => res.json())
@@ -49,7 +49,6 @@ const CarouselTestPage: React.FC = () => {
   if (!infoVoyage) {
     return <div>Loading destination...</div>;
   }
-
 
   return (
     <div className="carouselbody">
@@ -77,13 +76,15 @@ const CarouselTestPage: React.FC = () => {
       <div className={`bottom-text-section btn-text-${infoVoyage?.name}`}>
         <p>{infoVoyage?.texts?.[3]}</p>
       </div>
-      <div>
+      <div className="gps-container">
         <Gps />
       </div>
       {infoVoyage && (
-        <HotelsCarousel hotels={infoVoyage.hotels} destinationName={infoVoyage.name} />
+        <HotelsCarousel
+          hotels={infoVoyage.hotels}
+          destinationName={infoVoyage.name}
+        />
       )}
-
 
       <div className="containerbutton">
         <button type="button" className="devisbutton" onClick={handleOpenDevis}>
