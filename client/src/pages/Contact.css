@@ -1,0 +1,13 @@
+.cu-hero {
+  display: flex;
+  margin: 10rem 0px;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    margin: 0;
+  }
+}
+.cu-global {
+  display: flex;
+  justify-content: center;
+}

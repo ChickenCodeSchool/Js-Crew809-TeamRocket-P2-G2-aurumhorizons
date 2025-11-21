@@ -59,7 +59,8 @@ function Map({
         center={[27.26508400396975, 33.801930148882434]}
         zoom={10}
         scrollWheelZoom={false}
-        style={{ height: "900px", width: "100%" }}
+        // style={{ height: "900px", width: "100%" }}
+        className="sizeGpsMap"
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
