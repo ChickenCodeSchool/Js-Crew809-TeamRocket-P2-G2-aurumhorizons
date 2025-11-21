@@ -32,11 +32,12 @@ a {
   width: 100%;
   padding: 2rem 1rem;
 
-  /* Glassmorphism avec fond identique à la section au-dessus */
-  background-color: rgb(245, 245, 245); /* #e0c086 avec opacité 0.3 */
+  background-color: rgb(245, 245, 245);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-radius: 16px;
+
+  margin-top: 0 !important;
 }
 
 .separator-footer {

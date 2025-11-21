@@ -47,7 +47,8 @@ function Map({
         center={[27.26508400396975, 33.801930148882434]}
         zoom={6}
         scrollWheelZoom={false}
-        style={{ height: "900px", width: "100%" }}
+        // style={{ height: "900px", width: "100%" }}
+        className="sizeGpsMap"
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -57,11 +58,6 @@ function Map({
           <Marker
             ref={myRef2}
             position={[27.184452450256146, 33.96789760907389]}
-            eventHandlers={{
-              click: () => {
-                console.log("poulet");
-              },
-            }}
           >
             <Popup>
               Eden Island Hurghada <br />

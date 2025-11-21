@@ -1,6 +1,9 @@
 .body {
   background-color: rgb(252, 248, 237);
   padding-left: 2rem;
+  article {
+    padding-bottom: 1.5rem;
+  }
 }
 #panneautitre {
   font-family: "Cinzel", sans-serif;
@@ -16,4 +19,16 @@
 .paragraphe {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
+}
+@media screen and (max-width: 1050px) {
+  .body {
+    padding: 1em;
+    article {
+      padding: 0;
+    }
+  }
+
+  #panneautitre {
+    font-size: 1.2em;
+  }
 }

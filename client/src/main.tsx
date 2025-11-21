@@ -7,9 +7,12 @@ import CarouselPage from "./pages/CarouselTestPage";
 import HomePages from "./pages/HomePages";
 import InspirationPage from "./pages/InspirationPage";
 
+import Login from "./components/Login";
 import About from "./pages/About";
+import Contact from "./pages/Contact";
 import MentionLegal from "./pages/MentionLegal";
 import Seemore from "./pages/Seemore";
+import UserProfile from "./pages/UserProfile";
 
 /* ************************************************************************* */
 
@@ -29,7 +32,7 @@ const router = createBrowserRouter([
         element: <MentionLegal />,
       },
       {
-        path: "egypt",
+        path: "voyage/:id",
         element: <CarouselPage />,
       },
       {
@@ -37,8 +40,26 @@ const router = createBrowserRouter([
         element: <Seemore />,
       },
       {
+        path: "contact",
+        element: <Contact />,
+      },
+      {
         path: "about",
         element: <About />,
+      },
+      {
+        path: "login",
+        element: (
+          <Login
+            onClose={(): void => {
+              throw new Error("Function not implemented.");
+            }}
+          />
+        ),
+      },
+      {
+        path: "user-profile",
+        element: <UserProfile />,
       },
     ],
   },
