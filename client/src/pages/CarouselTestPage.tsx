@@ -77,7 +77,7 @@ const CarouselTestPage: React.FC = () => {
         <p>{infoVoyage?.texts?.[3]}</p>
       </div>
       <div className="gps-container">
-        <Gps />
+        <Gps cityId={id} />
       </div>
       {infoVoyage && (
         <HotelsCarousel
