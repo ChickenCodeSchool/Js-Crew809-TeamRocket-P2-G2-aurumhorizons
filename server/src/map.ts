@@ -529,7 +529,7 @@ export const map: Trip[] = [
       {
         id: 6,
         day: 6,
-        coord: { lat: 27.68667, lng: -80.40293 },
+        coord: { lat: 44.13286659851758, lng: 9.728972228591937 },
         lieu: "Cinque Terre – Coastline of Colors",
         description:
           "Morning: Transfer to the Cinque Terre region. Check-in in Vernazza or Monterosso.\n\n" +
