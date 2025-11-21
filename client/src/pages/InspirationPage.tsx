@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./InspirationPage.css";
+import SeasonParticles from "./SeasonParticles";
 
 type Activity = "Detente" | "Sportive" | "Culturel" | "Exploration";
 type Season = "Spring" | "Summer" | "Autumn" | "Winter";
@@ -64,7 +65,6 @@ const destinationImages: Record<string, string> = {
   Norvege: "/imgDestinations/Norvege.jpeg",
 };
 
-// 🔥 Commentaires dynamiques par destination
 const destinationComments: Record<
   string,
   { name: string; image: string; text: string }[]
@@ -270,20 +270,31 @@ const InspirationPage: React.FC = () => {
 
   const destination = activity && season ? suggestions[activity][season] : null;
 
+  const handleBack = () => {
+    if (step === 3) setSeason(null); // reset la saison si on revient de l'étape 3
+    if (step === 2) setActivity(null); // reset l'activité si on revient de l'étape 2
+    setStep(step - 1);
+  };
+
   return (
-    <main className="inspiration">
+    <main className={`inspiration ${season?.toLowerCase() || ""}`}>
+      {/* Animation saison */}
+      <SeasonParticles season={season} />
+
+      {/* Bouton retour global */}
       {step > 1 && (
-        <div className="back-button-container">
-          <button
-            type="button"
-            className="back-button"
-            onClick={() => setStep(step - 1)}
-          >
+        <div
+          className={
+            step === 3 ? "back-button-container-step3" : "back-button-container"
+          }
+        >
+          <button type="button" className="back-button" onClick={handleBack}>
             ⬅ Back
           </button>
         </div>
       )}
 
+      {/* Étape 1 : choix activité */}
       {step === 1 && (
         <section className="inspiration-step">
           <h2>Choose your travel style</h2>
@@ -305,6 +316,7 @@ const InspirationPage: React.FC = () => {
         </section>
       )}
 
+      {/* Étape 2 : choix saison */}
       {step === 2 && (
         <section className="inspiration-step">
           <h2>Choose your season</h2>
@@ -326,30 +338,29 @@ const InspirationPage: React.FC = () => {
         </section>
       )}
 
+      {/* Étape 3 : destination */}
       {step === 3 && destination && (
         <section className="inspiration-step">
           <h2>Destination suggestion</h2>
           <div className="destination-content">
             <p>
               Pour un voyage <strong>{activity}</strong> en{" "}
-              <strong>{season}</strong>, nous te conseillons :
-              <strong> {destination}</strong>.
+              <strong>{season}</strong>, nous te conseillons :{" "}
+              <strong>{destination}</strong>.
             </p>
 
-            <img
-              src={destinationImages[destination]}
-              alt={destination}
-              className="destination-image"
-            />
+            <div className="image-wrapper">
+              <img
+                src={destinationImages[destination]}
+                alt={destination}
+                className="destination-image"
+              />
+            </div>
 
             <p className="destination-text">
-              <em>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry…
-              </em>
+              <em>Lorem Ipsum is simply dummy text…</em>
             </p>
 
-            {/* 🔥 Section commentaires dynamiques */}
             <div className="personas-grid">
               {(destinationComments[destination] || []).map((p) => (
                 <div key={p.name + p.image} className="persona-card">
