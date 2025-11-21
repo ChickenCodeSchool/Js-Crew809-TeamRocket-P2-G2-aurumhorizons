@@ -11,12 +11,7 @@ export const destinations = [
     currency: "Indonesian Rupiah (IDR)",
     tourist_season: "April to October",
     theme: "exploration",
-    texts: [
-    "bateau",
-    "navire",
-    "barque",
-    "embarcation"
-  ],
+    texts: ["bateau", "navire", "barque", "embarcation"],
     images: [
       "/images/indonesia1.jpg",
       "/images/indonesia2.jpg",
@@ -25,21 +20,21 @@ export const destinations = [
     ],
     hotels: [
       {
-        img: "/images/IndonesiaHotel1.jpg",
+        img: "/images/Indoseniahotel1.jpg",
         title: " Sthala, a Tribute Portfolio Hotel",
         description:
           "Perched high above the Wos River, Sthala Ubud is a sanctuary of modern luxury set against a backdrop of wild nature. Far from the immediate hustle and bustle of the city center, it offers spectacular panoramic views of the tropical rainforest.",
         link: "https://www.balibeachresort.com/",
       },
       {
-        img: "/images/IndonesiaHotel2.jpg",
+        img: "/images/Indoseniahotel2.jpg",
         title: "Hotel Vila Ombak ",
         description:
           "As the first international hotel on the island, Vila Ombak is a true institution on Gili Trawangan. It stands out with its famous Lumbung bungalows featuring traditional thatched roofs, offering authentic Indonesian charm combined with modern comfort.",
         link: "https://www.ubudjungleretreat.com/",
       },
       {
-        img: "/images/IndonesiaHotel3.jpg",
+        img: "/Indoseniahotel3.jpg",
         title: "Sadara Resort ",
         description:
           "Unlike the massive hotel complexes typical of Nusa Dua, Sadara Resort focuses on charm and intimacy. This boutique-style property sits directly on the beach of Tanjung Benoa, an area renowned for its calm waters and water sports.",
@@ -59,12 +54,7 @@ export const destinations = [
     currency: "Egyptian Pound (EGP)",
     tourist_season: "September to April",
     theme: "cultural",
-    texts: [
-    "bateau",
-    "navire",
-    "barque",
-    "embarcation"
-  ],
+    texts: ["bateau", "navire", "barque", "embarcation"],
     images: [
       "/images/egypt-1.jpg",
       "/images/egypt-2.jpg",
@@ -107,12 +97,7 @@ export const destinations = [
     currency: "Maldivian Rufiyaa (MVR)",
     tourist_season: "December to April",
     theme: "relax",
-    texts: [
-    "bateau",
-    "navire",
-    "barque",
-    "embarcation"
-  ],
+    texts: ["bateau", "navire", "barque", "embarcation"],
     images: ["/images/Maldives1.jpg", "/images/Maldives2.jpg"],
     hotels: [
       {
@@ -150,12 +135,7 @@ export const destinations = [
     currency: "Philippine Peso (PHP)",
     tourist_season: "December to February",
     theme: "exploration",
-    texts: [
-    "bateau",
-    "navire",
-    "barque",
-    "embarcation"
-  ],
+    texts: ["bateau", "navire", "barque", "embarcation"],
     images: [
       "/images/Philippines1.png",
       "/images/Philippines2.png",
@@ -198,12 +178,7 @@ export const destinations = [
     currency: "Seychellois Rupee (SCR)",
     tourist_season: "April to October",
     theme: "relax",
-    texts: [
-    "bateau3",
-    "navire",
-    "barque",
-    "embarcation"
-  ],
+    texts: ["bateau3", "navire", "barque", "embarcation"],
     images: [
       "/images/Seychelles1.jpg",
       "/images/Seychelles2.jpg",
@@ -211,7 +186,7 @@ export const destinations = [
     ],
     hotels: [
       {
-        img: "/images/SeychellesHotel1.jpg",
+        img: "/images/SeychellesHotel1.avif",
         title: "The Canopy",
         description:
           "The Canopy By Hilton Seychelles Resort is a contemporary, upscale resort located directly on the pristine Anse La Mouche beach on Mahé Island's west coast. Opened recently, it offers a trendy design that blends contemporary furnishings with subtle Creole inspiration. The resort provides an ideal setting for both adventure and relaxation, featuring direct beach access, three swimming pools (including one for adults), a full-service spa, a 24-hour fitness center, and dedicated kids' and teen clubs. Guests can enjoy multiple dining options, including the Avocet and Tiger Bite restaurants, and the Sega Bar. Accommodation features rooms and suites with floor-to-ceiling windows and private balconies, offering vibrant island, garden, or ocean views.",
@@ -225,7 +200,7 @@ export const destinations = [
         link: "https://secure.minorhotels.com/rooms.aspx?hc=VBAR&bc=AV&checkin=13/02/2026&nights=1&rooms=1&adults=2&roomcode=1H1XK&ratecode=M20OFSBE&utm_content=&MetasearchChannel=GoogleMapResults&language=fr&pnid=96631964&utm_source=DerbySoft&utm_campaign=DerbySoftMetaSearch_GoogleMapResults&utm_term=SeychellesBarbarons&utm_medium=desktop&dsclid=74267459077017600",
       },
       {
-        img: "/images/SeychellesHotel3.jpg",
+        img: "/images/SeychellesHotel3.avif",
         title: "La Belle Tortue ",
         description:
           "La Belle Tortue is an exclusive, small-scale lodge located on the secluded Silhouette Island, a protected nature reserve accessible by a short boat or helicopter transfer from Mahé. This intimate property offers an authentic Robinson Crusoe experience in a quiet, tranquil setting, surrounded by lush tropical forest and a protected sandy bay. The lodge features a colonial-style architecture and welcomes a limited number of guests, ensuring a highly personalized and warm service. It is renowned for its award-winning gourmet dining experience, focusing on fresh, flavorful French and local cuisine. Accommodation comprises charming rooms, suites, and private villas (some with jacuzzis), all designed with a Creole influence.",
@@ -245,12 +220,7 @@ export const destinations = [
     currency: "Icelandic Króna (ISK)",
     tourist_season: "June to August (summer), October to March (lights)",
     theme: "exploration",
-    texts: [
-    "bateau",
-    "navire",
-    "barque",
-    "embarcation"
-  ],
+    texts: ["bateau", "navire", "barque", "embarcation"],
     images: [
       "/images/Iceland1.jpg",
       "/images/Iceland2.jpg",
