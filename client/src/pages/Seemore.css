@@ -70,6 +70,7 @@
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.378);
   width: 20em;
   height: 38em;
+  min-height: fit-content;
 }
 
 .h2seemore {
