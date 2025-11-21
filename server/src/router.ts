@@ -22,20 +22,20 @@ router.get("/", (req, res) => {
 });
 
 // ROUTE 1 : Obtenir TOUTES les destinations
-// (GET) http://localhost:3310/api/destinations
+// (GET) http://localhost:3000/api/destinations
 router.get("/api/destinations", (req, res) => {
   res.json(destinations);
 });
 
 // ROUTE 2 : Obtenir tout les détails voyages
-// (GET) http://localhost:3310/api/detailstravel
+// (GET) http://localhost:3000/api/detailstravel
 router.get("/api/detailstravel", (req, res) => {
   res.json(map); // to do destination into map
 });
 
 // ROUTE 1 : Obtenir UNE SEULE destination par son ID
-// (GET) http://localhost:3310/api/destinations/1
-// (GET) http://localhost:3310/api/destinations/5
+// (GET) http://localhost:3000/api/destinations/1
+// (GET) http://localhost:3000/api/destinations/5
 router.get("/api/destinations/:id", (req, res) => {
   const searchedId = Number.parseInt(req.params.id);
   const destination = destinations.find((d) => d.id === searchedId);

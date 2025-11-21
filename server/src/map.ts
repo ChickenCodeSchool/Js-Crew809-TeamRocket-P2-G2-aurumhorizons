@@ -402,4 +402,684 @@ export const map: Trip[] = [
       },
     ],
   },
+  {
+    id: 7,
+    name: "voyage japan",
+    country: "japan",
+    duration: 10,
+    locations: [
+      {
+        id: 1,
+        day: 1,
+        coord: { lat: 35.6762, lng: 139.6503 },
+        lieu: "Welcome to Tokyo Neon & Tradition",
+        description:
+          "Arrival in Tokyo and private transfer to your hotel in Shinjuku.\n\n" +
+          "Check-in at the Century Southern Tower, overlooking the city skyline.\n\n" +
+          "Suggestion : Dinner in Omoide Yokocho to dive into authentic yakitori and lively alleyway vibes.",
+      },
+      {
+        id: 2,
+        day: 2,
+        coord: { lat: 35.7101, lng: 139.8107 },
+        lieu: "Old Town Asakusa & Skytree Views",
+        description:
+          "Morning: Explore Senso-ji Temple, Nakamise Street and traditional craft shops.\n\n" +
+          "Afternoon: Head to Tokyo Skytree for panoramic city views.\n\n" +
+          "Evening: Relax at your hotel or enjoy a night stroll through Shibuya Crossing.",
+      },
+      {
+        id: 3,
+        day: 3,
+        coord: { lat: 35.0116, lng: 135.7681 },
+        lieu: "Kyoto The Cultural Capital",
+        description:
+          "Morning: Shinkansen to Kyoto. Check-in at a ryokan near Gion.\n\n" +
+          "Afternoon: Visit Yasaka Shrine and wander the atmospheric streets where geishas can sometimes be seen.\n\n" +
+          "Evening: Traditional kaiseki dinner at your ryokan.",
+      },
+      {
+        id: 4,
+        day: 4,
+        coord: { lat: 34.9671, lng: 135.7727 },
+        lieu: "Kyoto Temples & Bamboo Forest",
+        description:
+          "Morning: Explore the iconic Fushimi Inari Taisha and its infinite red torii gates.\n\n" +
+          "Afternoon: Transfer to Arashiyama for a peaceful walk through the Bamboo Grove and the Tenryu-ji gardens.\n\n" +
+          "Evening: Optional tea ceremony experience.",
+      },
+      {
+        id: 5,
+        day: 5,
+        coord: { lat: 34.6937, lng: 135.5023 },
+        lieu: "Osaka Street Food Capital",
+        description:
+          "Morning: Train to Osaka. Check-in at your hotel near Namba.\n\n" +
+          "Afternoon: Visit Osaka Castle and its surrounding park.\n\n" +
+          "Evening: Dotonbori food tour — takoyaki, okonomiyaki, neon lights and lively ambiance.",
+      },
+      {
+        id: 6,
+        day: 6,
+        coord: { lat: 34.3914, lng: 132.4519 },
+        lieu: "Miyajima & Hiroshima Islands & Memory",
+        description:
+          "Morning: Day trip to Hiroshima. Visit the Peace Memorial Park and Museum.\n\n" +
+          "Afternoon: Ferry to Miyajima to admire the floating torii of Itsukushima Shrine.\n\n" +
+          "Evening: Return to Osaka or stay overnight on the island for a serene experience.",
+      },
+    ],
+  },
+  {
+    id: 8,
+    name: "voyage italy",
+    country: "italy",
+    duration: 9,
+    locations: [
+      {
+        id: 1,
+        day: 1,
+        coord: { lat: 41.9028, lng: 12.4964 },
+        lieu: "Rome – The Eternal City Awaits",
+        description:
+          "Arrival in Rome and private transfer to your hotel near Piazza Navona.\n\n" +
+          "Check-in and first stroll through the historical center.\n\n" +
+          "Suggestion : Dinner in a traditional trattoria to try authentic carbonara under warm Roman lights.",
+      },
+      {
+        id: 2,
+        day: 2,
+        coord: { lat: 41.8902, lng: 12.4922 },
+        lieu: "Colosseum, Forum & Timeless Rome",
+        description:
+          "Morning: Guided visit of the Colosseum, Roman Forum and Palatine Hill.\n\n" +
+          "Afternoon: Explore the Pantheon and enjoy a gelato near Trevi Fountain.\n\n" +
+          "Evening: Sunset walk along the Tiber River.",
+      },
+      {
+        id: 3,
+        day: 3,
+        coord: { lat: 43.7696, lng: 11.2558 },
+        lieu: "Florence – Cradle of the Renaissance",
+        description:
+          "Morning: Train to Florence. Check-in at your boutique hotel near the Duomo.\n\n" +
+          "Afternoon: Visit the Uffizi Gallery and admire masterpieces by Botticelli and Michelangelo.\n\n" +
+          "Evening: Dinner in the lively San Lorenzo district.",
+      },
+      {
+        id: 4,
+        day: 4,
+        coord: { lat: 43.7735, lng: 11.2551 },
+        lieu: "Florence – Art, Gardens & Tuscan Views",
+        description:
+          "Morning: Climb to Piazzale Michelangelo for a panoramic view of the entire city.\n\n" +
+          "Afternoon: Explore the Pitti Palace and its Boboli Gardens.\n\n" +
+          "Evening: Optional wine tasting experience featuring Tuscan reds.",
+      },
+      {
+        id: 5,
+        day: 5,
+        coord: { lat: 45.4408, lng: 12.3155 },
+        lieu: "Venice – The Floating City",
+        description:
+          "Morning: Train to Venice. Check-in at your hotel in Cannaregio.\n\n" +
+          "Afternoon: Gondola ride along quiet canals and visit St. Mark’s Basilica.\n\n" +
+          "Evening: Enjoy cicchetti (Venetian tapas) in a charming bacaro.",
+      },
+      {
+        id: 6,
+        day: 6,
+        coord: { lat: 27.68667, lng: -80.40293 },
+        lieu: "Cinque Terre – Coastline of Colors",
+        description:
+          "Morning: Transfer to the Cinque Terre region. Check-in in Vernazza or Monterosso.\n\n" +
+          "Afternoon: Coastal hike between the villages, surrounded by sea views and pastel houses.\n\n" +
+          "Evening: Seafood dinner overlooking the Mediterranean.",
+      },
+    ],
+  },
+  {
+    id: 9,
+    name: "voyage costa rica",
+    country: "costa rica",
+    duration: 9,
+    locations: [
+      {
+        id: 1,
+        day: 1,
+        coord: { lat: 9.7489, lng: -83.7534 },
+        lieu: "San José – Welcome to Pura Vida",
+        description:
+          "Arrival in San José and private transfer to your boutique hotel near Barrio Amón.\n\n" +
+          "Take some time to relax and enjoy your first Costa Rican coffee.\n\n" +
+          "Suggestion : Dinner at a local soda to discover traditional casado and fresh tropical juices.",
+      },
+      {
+        id: 2,
+        day: 2,
+        coord: { lat: 10.471, lng: -84.6452 },
+        lieu: "La Fortuna – Arenal Volcano Adventures",
+        description:
+          "Morning: Transfer through lush countryside to La Fortuna.\n\n" +
+          "Afternoon: Visit the famous Arenal Volcano National Park—hiking trails, wildlife and lava fields.\n\n" +
+          "Evening: Relax in natural hot springs surrounded by jungle sounds.",
+      },
+      {
+        id: 3,
+        day: 3,
+        coord: { lat: 10.32, lng: -84.825 },
+        lieu: "La Fortuna – Waterfalls & Forest",
+        description:
+          "Morning: Explore the La Fortuna Waterfall and swim in its crystal-clear pool.\n\n" +
+          "Afternoon: Hanging bridges walk above the rainforest canopy.\n\n" +
+          "Evening: Dinner in town with a view of Arenal lighting up at sunset.",
+      },
+      {
+        id: 4,
+        day: 4,
+        coord: { lat: 10.2683, lng: -84.825 },
+        lieu: "Monteverde – Cloud Forest Magic",
+        description:
+          "Morning: Scenic drive to Monteverde through mountains and rural villages.\n\n" +
+          "Afternoon: Guided walk in the Monteverde Cloud Forest Reserve—spectacular biodiversity and mysterious mist.\n\n" +
+          "Evening: Optional night tour to spot nocturnal animals.",
+      },
+      {
+        id: 5,
+        day: 5,
+        coord: { lat: 9.6302, lng: -84.112 },
+        lieu: "Manuel Antonio – Beaches & Wildlife",
+        description:
+          "Morning: Transfer to the Pacific Coast and check-in at your eco-lodge near Manuel Antonio.\n\n" +
+          "Afternoon: Relax on white-sand beaches or encounter monkeys right at your hotel.\n\n" +
+          "Evening: Sunset on the coast—one of the best in Costa Rica.",
+      },
+      {
+        id: 6,
+        day: 6,
+        coord: { lat: 9.3763, lng: -83.837 },
+        lieu: "Osa Peninsula – The Wild Frontier",
+        description:
+          "Morning: Travel to the Osa Peninsula, home to one of the richest ecosystems on Earth.\n\n" +
+          "Afternoon: Explore the region or embark on a guided tour in Corcovado National Park.\n\n" +
+          "Evening: Dinner at the lodge accompanied by rainforest sounds.",
+      },
+    ],
+  },
+  {
+    id: 10,
+    name: "voyage greece",
+    country: "greece",
+    duration: 9,
+    locations: [
+      {
+        id: 1,
+        day: 1,
+        coord: { lat: 37.9838, lng: 23.7275 },
+        lieu: "Athens – Birthplace of Western Civilization",
+        description:
+          "Arrival in Athens and private transfer to your hotel in Plaka.\n\n" +
+          "Stroll through the old town, with its narrow streets and lively tavernas.\n\n" +
+          "Suggestion : Dinner with a view of the Acropolis illuminated at night.",
+      },
+      {
+        id: 2,
+        day: 2,
+        coord: { lat: 37.9715, lng: 23.7257 },
+        lieu: "Athens – Acropolis & Ancient Wonders",
+        description:
+          "Morning: Visit the Acropolis, Parthenon, and the impressive Acropolis Museum.\n\n" +
+          "Afternoon: Explore the Agora and Anafiotika, a charming Cycladic-style quarter.\n\n" +
+          "Evening: Enjoy Greek mezze and music in a traditional taverna.",
+      },
+      {
+        id: 3,
+        day: 3,
+        coord: { lat: 37.4453, lng: 25.3287 },
+        lieu: "Mykonos – Whitewashed Streets & Windmills",
+        description:
+          "Morning: Ferry to Mykonos. Check-in at your hotel near Mykonos Town.\n\n" +
+          "Afternoon: Wander through its iconic maze of narrow white streets and visit the famous windmills.\n\n" +
+          "Evening: Dinner by the sea in Little Venice.",
+      },
+      {
+        id: 4,
+        day: 4,
+        coord: { lat: 37.4467, lng: 25.3372 },
+        lieu: "Mykonos – Beaches & Island Vibes",
+        description:
+          "Morning: Relax on one of Mykonos' iconic beaches like Psarou or Ornos.\n\n" +
+          "Afternoon: Visit the archaeological island of Delos for a dose of history.\n\n" +
+          "Evening: Sunset cocktail overlooking the Aegean Sea.",
+      },
+      {
+        id: 5,
+        day: 5,
+        coord: { lat: 36.3932, lng: 25.4615 },
+        lieu: "Santorini – Cliffs & Blue Domes",
+        description:
+          "Morning: Ferry to Santorini. Check-in at your hotel in Oia or Fira.\n\n" +
+          "Afternoon: Explore the caldera paths and iconic blue-domed churches.\n\n" +
+          "Evening: Legendary sunset in Oia—one of the most beautiful in the world.",
+      },
+      {
+        id: 6,
+        day: 6,
+        coord: { lat: 36.3609, lng: 25.4317 },
+        lieu: "Santorini – Volcanic Landscapes & Wine",
+        description:
+          "Morning: Boat tour to the volcanic islands and hot springs.\n\n" +
+          "Afternoon: Wine tasting in a local vineyard famous for Assyrtiko wines.\n\n" +
+          "Evening: Dinner on a terrace overlooking the illuminated cliffs.",
+      },
+    ],
+  },
+  {
+    id: 11,
+    name: "voyage peru",
+    country: "peru",
+    duration: 10,
+    locations: [
+      {
+        id: 1,
+        day: 1,
+        coord: { lat: -12.0464, lng: -77.0428 },
+        lieu: "Lima – Gateway to Peru",
+        description:
+          "Arrival in Lima and private transfer to your hotel in Miraflores.\n\n" +
+          "Stroll along the coastal boardwalk and watch surfers riding the Pacific waves.\n\n" +
+          "Suggestion : Dinner in a cevichería to enjoy the freshest ceviche in the country.",
+      },
+      {
+        id: 2,
+        day: 2,
+        coord: { lat: -12.1458, lng: -77.0194 },
+        lieu: "Lima – History & Gastronomy",
+        description:
+          "Morning: Explore Lima’s historic center — Plaza de Armas, cathedral and colorful colonial architecture.\n\n" +
+          "Afternoon: Visit the Larco Museum for an introduction to ancient Peruvian cultures.\n\n" +
+          "Evening: Optional gourmet dinner — Lima is one of the world’s top food capitals.",
+      },
+      {
+        id: 3,
+        day: 3,
+        coord: { lat: -13.532, lng: -71.9675 },
+        lieu: "Cusco – Ancient Capital of the Inca Empire",
+        description:
+          "Morning: Flight to Cusco. Transfer to your hotel in the historic center.\n\n" +
+          "Afternoon: Slow acclimatization walk through narrow stone streets, San Blas district and local markets.\n\n" +
+          "Evening: Enjoy Andean dishes infused with local herbs and spices.",
+      },
+      {
+        id: 4,
+        day: 4,
+        coord: { lat: -13.3389, lng: -72.0969 },
+        lieu: "Sacred Valley – Terraces & Living Culture",
+        description:
+          "Morning: Excursion to the Sacred Valley — visit Pisac ruins and its colorful artisan market.\n\n" +
+          "Afternoon: Explore Ollantaytambo, one of the last living Inca towns with impressive fortresses.\n\n" +
+          "Evening: Spend the night in the valley surrounded by mountains and starry skies.",
+      },
+      {
+        id: 5,
+        day: 5,
+        coord: { lat: -13.1631, lng: -72.5449 },
+        lieu: "Machu Picchu – The Lost City of the Incas",
+        description:
+          "Morning: Scenic train ride to Aguas Calientes, followed by a bus to Machu Picchu.\n\n" +
+          "Afternoon: Guided tour of the iconic citadel — terraces, temples and panoramic viewpoints.\n\n" +
+          "Evening: Optional second entrance for sunset light or relax in the hot springs of Aguas Calientes.",
+      },
+      {
+        id: 6,
+        day: 6,
+        coord: { lat: -15.8402, lng: -70.0219 },
+        lieu: "Lake Titicaca – Islands Above the Clouds",
+        description:
+          "Morning: Transfer to Puno along the scenic Altiplano.\n\n" +
+          "Afternoon: Boat trip to the Uros floating islands made entirely of totora reeds.\n\n" +
+          "Evening: Quiet night by the lake at high altitude — one of the world’s most mystical landscapes.",
+      },
+    ],
+  },
+  {
+    id: 12,
+    name: "voyage morocco",
+    country: "morocco",
+    duration: 9,
+    locations: [
+      {
+        id: 1,
+        day: 1,
+        coord: { lat: 31.6295, lng: -7.9811 },
+        lieu: "Marrakech – The Red City",
+        description:
+          "Arrival in Marrakech and private transfer to your riad in the medina.\n\n" +
+          "Lose yourself in the vibrant souks and admire the colors, scents and crafts.\n\n" +
+          "Suggestion : Dinner on a rooftop overlooking Jemaa el-Fna at sunset.",
+      },
+      {
+        id: 2,
+        day: 2,
+        coord: { lat: 31.6315, lng: -7.9891 },
+        lieu: "Marrakech – Palaces & Gardens",
+        description:
+          "Morning: Visit Bahia Palace and the Saadian Tombs.\n\n" +
+          "Afternoon: Explore the Majorelle Garden and the Yves Saint Laurent Museum.\n\n" +
+          "Evening: Relax in a traditional hammam experience in the medina.",
+      },
+      {
+        id: 3,
+        day: 3,
+        coord: { lat: 31.112, lng: -4.0075 },
+        lieu: "Merzouga – Gateway to the Sahara",
+        description:
+          "Morning: Scenic drive through the High Atlas mountains and Berber villages.\n\n" +
+          "Afternoon: Arrive near Merzouga, where your camel caravan awaits.\n\n" +
+          "Evening: Sunset over the dunes and night in a desert camp under the stars.",
+      },
+      {
+        id: 4,
+        day: 4,
+        coord: { lat: 31.3498, lng: -5.7536 },
+        lieu: "Dades Valley – Canyons & Kasbahs",
+        description:
+          "Morning: Sunrise in the Sahara, followed by transfer toward Tinghir.\n\n" +
+          "Afternoon: Explore the spectacular Todra Gorge and the palm oasis.\n\n" +
+          "Evening: Overnight in a kasbah overlooking the Dades Valley.",
+      },
+      {
+        id: 5,
+        day: 5,
+        coord: { lat: 34.0331, lng: -4.9998 },
+        lieu: "Fès – The Spiritual Heart of Morocco",
+        description:
+          "Morning: Drive to Fès via cedar forests and Middle Atlas villages.\n\n" +
+          "Afternoon: Check-in at your riad and first immersion into the ancient medina.\n\n" +
+          "Evening: Traditional Moroccan dinner with live Andalusian music.",
+      },
+      {
+        id: 6,
+        day: 6,
+        coord: { lat: 34.0433, lng: -4.9997 },
+        lieu: "Fès – Medina & Artisanal Heritage",
+        description:
+          "Morning: Guided tour of Fès el-Bali — tanneries, madrasas, artisan workshops.\n\n" +
+          "Afternoon: Visit the Royal Palace and the Mellah district.\n\n" +
+          "Evening: Tea on a terrace overlooking the labyrinth of rooftops.",
+      },
+    ],
+  },
+  {
+    id: 13,
+    name: "voyage australia",
+    country: "australia",
+    duration: 12,
+    locations: [
+      {
+        id: 1,
+        day: 1,
+        coord: { lat: -33.8688, lng: 151.2093 },
+        lieu: "Sydney – Harbour Lights & Coastal Vibes",
+        description:
+          "Arrival in Sydney and private transfer to your hotel near Circular Quay.\n\n" +
+          "Take a stroll along the harbour and admire the Opera House and Harbour Bridge.\n\n" +
+          "Suggestion : Dinner in The Rocks for your first taste of Australian fusion cuisine.",
+      },
+      {
+        id: 2,
+        day: 2,
+        coord: { lat: -33.8908, lng: 151.2743 },
+        lieu: "Sydney – Bondi Beach & Coastal Walk",
+        description:
+          "Morning: Enjoy Bondi Beach and walk the iconic Bondi–Coogee coastal path.\n\n" +
+          "Afternoon: Visit the Royal Botanic Gardens and relax overlooking the bay.\n\n" +
+          "Evening: Harbour cruise at sunset for incredible skyline views.",
+      },
+      {
+        id: 3,
+        day: 3,
+        coord: { lat: -37.8136, lng: 144.9631 },
+        lieu: "Melbourne – Culture & Coffee Capital",
+        description:
+          "Morning: Flight to Melbourne and check-in near Federation Square.\n\n" +
+          "Afternoon: Discover the famous laneways filled with street art, cafes and boutiques.\n\n" +
+          "Evening: Dinner in the lively neighbourhood of Fitzroy.",
+      },
+      {
+        id: 4,
+        day: 4,
+        coord: { lat: -38.6656, lng: 143.1035 },
+        lieu: "Great Ocean Road – Landscapes & Cliffs",
+        description:
+          "Morning: Day trip along the Great Ocean Road, one of the world’s most scenic drives.\n\n" +
+          "Afternoon: Admire the Twelve Apostles, Loch Ard Gorge and dramatic coastal landscapes.\n\n" +
+          "Evening: Return to Melbourne and enjoy a relaxed night in the city.",
+      },
+      {
+        id: 5,
+        day: 5,
+        coord: { lat: -16.9186, lng: 145.7781 },
+        lieu: "Cairns – Gateway to the Great Barrier Reef",
+        description:
+          "Morning: Flight to Cairns and transfer to your tropical resort.\n\n" +
+          "Afternoon: Explore the Esplanade or relax by the lagoon.\n\n" +
+          "Evening: Dinner featuring fresh seafood and tropical fruits.",
+      },
+      {
+        id: 6,
+        day: 6,
+        coord: { lat: -16.4495, lng: 145.4623 },
+        lieu: "Great Barrier Reef – Coral & Marine Wonders",
+        description:
+          "Morning: Full-day boat trip to the Great Barrier Reef — snorkeling or diving among vibrant coral gardens.\n\n" +
+          "Afternoon: Relax on the deck and enjoy the turquoise waters.\n\n" +
+          "Evening: Return to Cairns and enjoy a peaceful tropical night.",
+      },
+    ],
+  },
+  {
+    id: 14,
+    name: "voyage canada",
+    country: "canada",
+    duration: 10,
+    locations: [
+      {
+        id: 1,
+        day: 1,
+        coord: { lat: 43.6532, lng: -79.3832 },
+        lieu: "Toronto – Urban Energy & Lake Views",
+        description:
+          "Arrival in Toronto and transfer to your hotel near the Harbourfront.\n\n" +
+          "Stroll along Lake Ontario and explore the lively Distillery District.\n\n" +
+          "Suggestion : Dinner at a rooftop restaurant overlooking the CN Tower.",
+      },
+      {
+        id: 2,
+        day: 2,
+        coord: { lat: 43.0896, lng: -79.0849 },
+        lieu: "Niagara Falls – Nature's Power",
+        description:
+          "Morning: Day trip to the spectacular Niagara Falls.\n\n" +
+          "Afternoon: Boat cruise to the base of the falls and walk along the scenic viewpoints.\n\n" +
+          "Evening: Return to Toronto and enjoy the vibrant nightlife or a quiet waterfront dinner.",
+      },
+      {
+        id: 3,
+        day: 3,
+        coord: { lat: 45.5019, lng: -73.5674 },
+        lieu: "Montréal – Culture, Festivals & Flavours",
+        description:
+          "Morning: Train or flight to Montréal. Check-in at your hotel in the Old Port.\n\n" +
+          "Afternoon: Explore cobblestone streets, Notre-Dame Basilica and trendy Mile End.\n\n" +
+          "Evening: Dinner in a classic brasserie — Montréal cuisine is a mix of French and North American influences.",
+      },
+      {
+        id: 4,
+        day: 4,
+        coord: { lat: 46.8139, lng: -71.208 },
+        lieu: "Québec City – History & European Charm",
+        description:
+          "Morning: Scenic drive or train to Québec City.\n\n" +
+          "Afternoon: Visit the fortified Old Québec, Château Frontenac and the Plains of Abraham.\n\n" +
+          "Evening: Cozy dinner in a traditional auberge with Québecois specialties.",
+      },
+      {
+        id: 5,
+        day: 5,
+        coord: { lat: 51.0486, lng: -114.0708 },
+        lieu: "Calgary – Gateway to the Rockies",
+        description:
+          "Morning: Flight to Calgary and transfer to your hotel downtown.\n\n" +
+          "Afternoon: Explore Stephen Avenue, Calgary Tower and the riverside parks.\n\n" +
+          "Evening: Western-style dinner before your adventure into the mountains.",
+      },
+      {
+        id: 6,
+        day: 6,
+        coord: { lat: 51.4254, lng: -116.1773 },
+        lieu: "Banff National Park – Lakes & Mountains",
+        description:
+          "Morning: Drive to Banff and discover emerald Lake Louise.\n\n" +
+          "Afternoon: Explore Moraine Lake and the Valley of the Ten Peaks.\n\n" +
+          "Evening: Relax in the Banff Upper Hot Springs surrounded by alpine scenery.",
+      },
+    ],
+  },
+  {
+    id: 15,
+    name: "voyage thailand",
+    country: "thailand",
+    duration: 10,
+    locations: [
+      {
+        id: 1,
+        day: 1,
+        coord: { lat: 13.7563, lng: 100.5018 },
+        lieu: "Bangkok – The City of Angels",
+        description:
+          "Arrival in Bangkok and private transfer to your hotel along the Chao Phraya River.\n\n" +
+          "First walk through lively streets filled with temples, markets and street food.\n\n" +
+          "Suggestion : Dinner cruise on the river with views of Wat Arun illuminated.",
+      },
+      {
+        id: 2,
+        day: 2,
+        coord: { lat: 13.7515, lng: 100.4928 },
+        lieu: "Bangkok – Temples & Floating Markets",
+        description:
+          "Morning: Visit the Grand Palace, Wat Pho and the reclining Buddha.\n\n" +
+          "Afternoon: Excursion to a floating market to discover traditional Thai life.\n\n" +
+          "Evening: Explore Chinatown and taste legendary street dishes.",
+      },
+      {
+        id: 3,
+        day: 3,
+        coord: { lat: 18.7883, lng: 98.9853 },
+        lieu: "Chiang Mai – Northern Peace & Culture",
+        description:
+          "Morning: Flight to Chiang Mai and check-in at your hotel near the old city.\n\n" +
+          "Afternoon: Explore ancient temples such as Wat Chedi Luang.\n\n" +
+          "Evening: Enjoy the famous Night Bazaar for handicrafts and local food.",
+      },
+      {
+        id: 4,
+        day: 4,
+        coord: { lat: 18.8101, lng: 98.9215 },
+        lieu: "Chiang Mai – Nature & Local Traditions",
+        description:
+          "Morning: Visit Doi Suthep, perched on the mountain with panoramic views.\n\n" +
+          "Afternoon: Ethical elephant sanctuary experience in the jungle.\n\n" +
+          "Evening: Relax with a traditional Thai massage.",
+      },
+      {
+        id: 5,
+        day: 5,
+        coord: { lat: 7.878, lng: 98.3984 },
+        lieu: "Phuket – Tropical Beaches & Island Life",
+        description:
+          "Morning: Flight to Phuket and check-in at your beachfront resort.\n\n" +
+          "Afternoon: Relax on the beach or explore Old Phuket Town.\n\n" +
+          "Evening: Sunset dinner overlooking the Andaman Sea.",
+      },
+      {
+        id: 6,
+        day: 6,
+        coord: { lat: 8.186, lng: 98.759 },
+        lieu: "Phi Phi Islands – Crystal Waters & Cliffs",
+        description:
+          "Morning: Speedboat trip to the Phi Phi Islands — turquoise lagoons and limestone cliffs.\n\n" +
+          "Afternoon: Snorkeling in vibrant coral reefs and relaxing on white-sand beaches.\n\n" +
+          "Evening: Return to Phuket for a calm tropical night.",
+      },
+    ],
+  },
+  {
+    id: 16,
+    name: "voyage new zealand",
+    country: "new zealand",
+    duration: 12,
+    locations: [
+      {
+        id: 1,
+        day: 1,
+        coord: { lat: -36.8485, lng: 174.7633 },
+        lieu: "Auckland – City of Sails",
+        description:
+          "Arrival in Auckland and private transfer to your hotel near the harbour.\n\n" +
+          "Explore the waterfront, Viaduct Basin and bustling Queen Street.\n\n" +
+          "Suggestion : Dinner in the Wynyard Quarter with views of the marina.",
+      },
+      {
+        id: 2,
+        day: 2,
+        coord: { lat: -37.8715, lng: 175.6824 },
+        lieu: "Hobbiton – The Shire Comes Alive",
+        description:
+          "Morning: Scenic drive to Matamata.\n\n" +
+          "Afternoon: Visit the iconic Hobbiton Movie Set — hobbit holes, the Green Dragon Inn and rolling green hills.\n\n" +
+          "Evening: Return to Auckland or continue to Rotorua for the next day.",
+      },
+      {
+        id: 3,
+        day: 3,
+        coord: { lat: -38.1368, lng: 176.2497 },
+        lieu: "Rotorua – Geothermal Wonders & Māori Culture",
+        description:
+          "Morning: Discover geysers, bubbling mud pools and hot springs in Te Puia.\n\n" +
+          "Afternoon: Explore Redwoods Forest or relax in a natural spa.\n\n" +
+          "Evening: Traditional Māori cultural performance with hangi dinner.",
+      },
+      {
+        id: 4,
+        day: 4,
+        coord: { lat: -41.2865, lng: 174.7762 },
+        lieu: "Wellington – Windy City & Creative Hub",
+        description:
+          "Morning: Flight to Wellington.\n\n" +
+          "Afternoon: Visit the national museum Te Papa and stroll through Cuba Street’s creative cafes.\n\n" +
+          "Evening: Dinner on the waterfront overlooking the bay.",
+      },
+      {
+        id: 5,
+        day: 5,
+        coord: { lat: -45.0312, lng: 168.6626 },
+        lieu: "Queenstown – Adventure Capital",
+        description:
+          "Morning: Flight to Queenstown and check-in at your lakeside hotel.\n\n" +
+          "Afternoon: Enjoy Lake Wakatipu or try an adventure activity (jetboat, gondola, luge).\n\n" +
+          "Evening: Dinner with alpine views in the vibrant town centre.",
+      },
+      {
+        id: 6,
+        day: 6,
+        coord: { lat: -44.6705, lng: 167.9237 },
+        lieu: "Milford Sound – Fjords & Waterfalls",
+        description:
+          "Morning: Scenic drive or flight to Milford Sound.\n\n" +
+          "Afternoon: Cruise through the fjord surrounded by towering cliffs, waterfalls and wildlife.\n\n" +
+          "Evening: Return to Queenstown for a peaceful night by the lake.",
+      },
+    ],
+  },
 ];

@@ -23,6 +23,13 @@ function Panneau({
   myRef5,
   myRef6,
 }: PanneauProps) {
+  if (!intermaps) {
+    return (
+      <section className="body">
+        <p>Chargement...</p>
+      </section>
+    );
+  }
   return (
     <>
       <section className="body">

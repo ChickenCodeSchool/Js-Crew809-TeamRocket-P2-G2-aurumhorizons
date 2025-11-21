@@ -53,6 +53,9 @@ function Gps({ cityId }: any) {
     fetch(`http://localhost:3310/api/detailstravel/${cityId}`)
       .then((res) => res.json())
       .then((resData) => {
+        console.log("Données reçues:", resData);
+        console.log("Est un tableau?", Array.isArray(resData));
+        console.log("cityId:", cityId);
         setintermaps(resData);
         setisloading(false);
       });
