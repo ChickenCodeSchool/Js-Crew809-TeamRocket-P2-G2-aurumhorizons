@@ -259,11 +259,13 @@
   .carousel-page {
     padding: 100px 4vw 30px;
     gap: 24px;
+    margin-top: 7.5vh;
   }
 
   .text-section {
     padding: 16px;
     border-radius: 10px;
+    margin-top: 5vh;
   }
 
   .text-section h1 {

@@ -3,12 +3,45 @@
   margin: 10rem 0px;
   flex-direction: column;
   align-items: center;
-  h1 {
-    margin: 0;
-  }
+  text-align: center;
+  padding: 0 1rem;
 }
+
+.cu-hero h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.cu-hero h3 {
+  font-weight: 400;
+  color: #4b5563;
+  max-width: 600px;
+}
+
 .cu-global {
   display: flex;
   justify-content: center;
   margin-bottom: 5em;
+  flex-wrap: wrap;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 992px) {
+  .cu-hero {
+    margin: 10rem 0 3rem 0;
+  }
+
+  .cu-hero h1 {
+    font-size: 2rem;
+  }
+
+  .cu-hero h3 {
+    font-size: 1rem;
+  }
+
+  .cu-global {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
 }

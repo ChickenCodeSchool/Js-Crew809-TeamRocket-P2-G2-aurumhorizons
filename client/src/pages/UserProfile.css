@@ -214,6 +214,10 @@
     padding: 0;
   }
 
+  .storage-box input {
+    width: 85vw;
+  }
+
   .sidebar ul {
     padding: 0;
     display: block;
