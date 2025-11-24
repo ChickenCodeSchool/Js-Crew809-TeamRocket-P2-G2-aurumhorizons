@@ -1,10 +1,12 @@
 import { type ChangeEvent, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./UserProfile.css";
 
 type Section = "personal" | "documents" | "quotes" | "trips";
 
 const UserProfile: React.FC = () => {
   const [activeSection, setActiveSection] = useState<Section>("personal");
+  const navigate = useNavigate();
 
   const handleSectionChange = (section: Section): void => {
     setActiveSection(section);
@@ -14,6 +16,18 @@ const UserProfile: React.FC = () => {
     const { files } = event.target;
     if (!files || files.length === 0) return;
     console.log("Uploaded file:", files[0]);
+  };
+
+  const handleSave = (): void => {
+    alert("Save not yet implemented");
+  };
+
+  const handleDelete = (): void => {
+    alert("Delete my profile not yet implemented");
+  };
+
+  const handleLogout = (): void => {
+    navigate("/");
   };
 
   return (
@@ -60,10 +74,20 @@ const UserProfile: React.FC = () => {
             </button>
           </li>
         </ul>
+
+        <div className="logout-container">
+          <button
+            className="logout-button"
+            onClick={handleLogout}
+            type="button"
+          >
+            Log Out
+          </button>
+        </div>
       </aside>
 
       <main className="content">
-        {activeSection === "personal" ? (
+        {activeSection === "personal" && (
           <section className="section">
             <h2>Personal Information</h2>
             <form className="form-grid">
@@ -71,12 +95,10 @@ const UserProfile: React.FC = () => {
                 First Name
                 <input type="text" />
               </label>
-
               <label>
                 Last Name
                 <input type="text" />
               </label>
-
               <label>
                 Title
                 <select>
@@ -85,41 +107,35 @@ const UserProfile: React.FC = () => {
                   <option value="mrs">Mrs</option>
                 </select>
               </label>
-
               <label>
                 Birth Date
                 <input type="date" />
               </label>
-
               <label>
                 Nationality
                 <input type="text" />
               </label>
-
               <label>
                 Address
                 <input type="text" />
               </label>
-
               <label>
                 Email
                 <input type="email" />
               </label>
-
               <label>
                 Phone Number
                 <input type="tel" />
               </label>
-
               <label>
                 Number of Children
                 <input type="number" min={0} />
               </label>
             </form>
           </section>
-        ) : null}
+        )}
 
-        {activeSection === "documents" ? (
+        {activeSection === "documents" && (
           <section className="section">
             <h2>My Documents</h2>
             <div className="documents-grid">
@@ -139,9 +155,9 @@ const UserProfile: React.FC = () => {
               ))}
             </div>
           </section>
-        ) : null}
+        )}
 
-        {activeSection === "quotes" ? (
+        {activeSection === "quotes" && (
           <section className="section">
             <h2>My Quotes</h2>
             <div className="storage-box">
@@ -149,14 +165,27 @@ const UserProfile: React.FC = () => {
               <input type="file" multiple onChange={handleFileChange} />
             </div>
           </section>
-        ) : null}
+        )}
 
-        {activeSection === "trips" ? (
+        {activeSection === "trips" && (
           <section className="section">
             <h2>Upcoming Trips</h2>
             <p>Your planned trips will appear here.</p>
           </section>
-        ) : null}
+        )}
+
+        <div className="action-buttons">
+          <button className="save-button" onClick={handleSave} type="button">
+            Save
+          </button>
+          <button
+            className="delete-button"
+            onClick={handleDelete}
+            type="button"
+          >
+            Delete my profile
+          </button>
+        </div>
       </main>
     </div>
   );

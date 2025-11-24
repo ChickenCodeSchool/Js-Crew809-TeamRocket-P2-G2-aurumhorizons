@@ -7,13 +7,12 @@
   align-items: center;
   width: 100%;
   padding: 1rem 2rem;
-
   position: absolute;
   top: 0;
   z-index: 1000;
   background: transparent;
   box-shadow: none;
-  font-family: "Cinzel", serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .navbar-content {
