@@ -1,0 +1,343 @@
+.inspiration {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 2rem;
+
+  font-family: "Cinzel", serif;
+  color: #fff;
+  background: linear-gradient(135deg, #e0c086, #e0c086);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Backgrounds par saison */
+.inspiration.spring {
+  background: linear-gradient(135deg, #a8e6cf, #bdde87);
+}
+
+.inspiration.summer {
+  background: linear-gradient(135deg, #ffb347, #ffcc33);
+}
+
+.inspiration.autumn {
+  background: linear-gradient(135deg, #774a00, #edb371);
+}
+
+.inspiration.winter {
+  background: linear-gradient(135deg, #1d77a1, #e0f7fa);
+}
+
+.inspiration-step {
+  animation: fadeIn 0.6s ease;
+  text-align: center;
+  margin-top: 5rem;
+  position: relative;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.choices {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.choices button {
+  position: relative;
+  min-height: 280px;
+  min-width: 500px;
+  padding: 2rem;
+  font-size: 1.4rem;
+  border-radius: 1rem;
+  border: none;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  font-family: "Cinzel", serif;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  /* Ajout de l’ombre et léger glass effect */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.choices button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  transition: all 0.5s ease;
+  border-radius: 1rem;
+}
+
+.button-text {
+  position: relative;
+  z-index: 2;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.choices button:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.35);
+  background-size: 110%;
+}
+
+.choices button:hover::before {
+  background: rgba(0, 0, 0, 0.15); /* overlay plus léger au hover */
+}
+
+.destination-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.destination-image-placeholder {
+  width: 80%;
+  max-width: 600px;
+  height: 200px;
+  background-color: #e0e0e0;
+  color: #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+}
+
+.destination-text {
+  .destination-text {
+    width: 100%;
+    max-width: 600px;
+    font-size: 1.1rem;
+    font-family: "Cinzel", serif;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.destination-image {
+  height: 300px;
+  width: 700px;
+  border-radius: 1rem;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+}
+
+.personas-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.persona-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  width: 280px;
+  text-align: center;
+  color: #fff;
+  font-family: "Cinzel", serif;
+
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25), 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.persona-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.persona-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.persona-name {
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+}
+
+.persona-comment-text {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*Effet visuel des saisons*/
+
+/* Hiver – flocons de neige */
+.winter::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-image: url("/img/flocons.png"); /* flocons blancs répétés */
+  background-size: 50px 50px;
+  animation: snow 10s linear infinite;
+  z-index: 0;
+}
+
+@keyframes snow {
+  0% {
+    background-position: 0 -50px;
+  }
+  100% {
+    background-position: 0 100vh;
+  }
+}
+
+.summer::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(255, 255, 200, 0.6), transparent 70%);
+  border-radius: 50%;
+  animation: sunMove 20s linear infinite alternate;
+  z-index: 0;
+}
+
+@keyframes sunMove {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50px, 20px) rotate(360deg);
+  }
+}
+
+/* Automne – feuilles tombantes */
+.autumn::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-image: url("/img/feuilles.png"); /* feuilles oranges/rouges */
+  background-size: 50px 50px;
+  animation: leavesFall 12s linear infinite;
+  z-index: 0;
+}
+
+@keyframes leavesFall {
+  0% {
+    background-position: 0 -50px;
+  }
+  100% {
+    background-position: 0 100vh;
+  }
+}
+
+/* Printemps – pétales de fleurs */
+.spring::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-image: url("/img/petales.png"); /* pétales roses ou fleurs */
+  background-size: 40px 40px;
+  animation: petalsFall 10s linear infinite;
+  z-index: 0;
+}
+
+@keyframes petalsFall {
+  0% {
+    background-position: 0 -40px;
+  }
+  100% {
+    background-position: 0 100vh;
+  }
+}
+
+/* Bouton Back normal (steps 1 et 2) */
+.back-button-container {
+  position: relative;
+  top: 51rem;
+  right: 30rem;
+  z-index: 1000;
+}
+
+/* Bouton Back en step 3 : sous la carte */
+.back-button-container-step3 {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  margin: 1rem auto 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  z-index: 10;
+  top: 36rem;
+  background-color: transparent;
+}
+
+.back-button {
+  font-size: 15px;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  border: none;
+  padding: 0.4rem 1rem;
+  color: #333;
+  font-family: "Cinzel", serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}

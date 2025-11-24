@@ -1,7 +1,7 @@
 import type React from "react";
 import "./MenuDeroulant.css";
 import { useEffect, useRef, useState } from "react";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 interface Destination {
   name: string;
@@ -21,6 +21,7 @@ const MenuDeroulant: React.FC = () => {
     { name: "Iceland", link: "/voyage/6" },
     { name: "See more...", link: "/see-more" },
   ];
+
   const toggleMenu = () => setIsOpen(!isOpen);
 
   useEffect(() => {
@@ -39,17 +40,15 @@ const MenuDeroulant: React.FC = () => {
     <div className="menu-deroulant" ref={menuRef}>
       {/* Colonne 1 : Nos expériences */}
       <div className="menu-left">
-        {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
-        <button className="menu-button" onClick={toggleMenu}>
+        <button className="menu-button" onClick={toggleMenu} type="button">
           Experiences
           <span className={`arrow ${isOpen ? "open" : ""}`}>&#9662;</span>
         </button>
 
         {isOpen && (
           <ul className="menu-list">
-            {destinations.map((destination, index) => (
-              // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
-              <li key={index}>
+            {destinations.map((destination) => (
+              <li key={destination.name}>
                 <Link to={destination.link} className="menu-item">
                   {destination.name}
                 </Link>
@@ -58,13 +57,14 @@ const MenuDeroulant: React.FC = () => {
           </ul>
         )}
       </div>
-      {/* biome-ignore lint/style/useSelfClosingElements: <explanation> */}
-      <div className="menu-separator"></div>
+
+      <div className="menu-separator" />
+
       {/* Colonne 2 : Inspirations */}
       <div className="menu-right">
-        <a href="/inspirations" className="menu-link">
+        <Link to="/inspiration" className="menu-link">
           Inspirations
-        </a>
+        </Link>
       </div>
     </div>
   );

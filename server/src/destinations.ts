@@ -29,21 +29,21 @@ export const destinations = [
         title: " Sthala, a Tribute Portfolio Hotel",
         description:
           "Perched high above the Wos River, Sthala Ubud is a sanctuary of modern luxury set against a backdrop of wild nature. Far from the immediate hustle and bustle of the city center, it offers spectacular panoramic views of the tropical rainforest.",
-        link: "https://www.balibeachresort.com/",
-      },
-      {
-        img: "/images/Indoseniahotel2.jpg",
-        title: "Hotel Vila Ombak ",
-        description:
-          "As the first international hotel on the island, Vila Ombak is a true institution on Gili Trawangan. It stands out with its famous Lumbung bungalows featuring traditional thatched roofs, offering authentic Indonesian charm combined with modern comfort.",
-        link: "https://www.ubudjungleretreat.com/",
+        link: "https://fr.hotels.com/ho636472/sthala-a-tribute-portfolio-hotel-ubud-bali-ubud-indonesie/",
       },
       {
         img: "/images/Indoseniahotel3.jpg",
+        title: "Hotel Vila Ombak ",
+        description:
+          "As the first international hotel on the island, Vila Ombak is a true institution on Gili Trawangan. It stands out with its famous Lumbung bungalows featuring traditional thatched roofs, offering authentic Indonesian charm combined with modern comfort.",
+        link: "https://www.vilaombak.com/",
+      },
+      {
+        img: "/images/Indoseniahotel2.jpg",
         title: "Sadara Resort ",
         description:
           "Unlike the massive hotel complexes typical of Nusa Dua, Sadara Resort focuses on charm and intimacy. This boutique-style property sits directly on the beach of Tanjung Benoa, an area renowned for its calm waters and water sports.",
-        link: "https://www.jakartacityhotel.com/",
+        link: "https://www.sadararesort.com/",
       },
     ],
   },
