@@ -1,0 +1,33 @@
+.carousel-container {
+  background: transparent;
+  padding: 70px 20px 90px 20px;
+  margin-top: 40px;
+}
+
+.carousel-title {
+  font-size: 32px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.carousel-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  background: white;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-text {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.carousel-author {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #444;
+}

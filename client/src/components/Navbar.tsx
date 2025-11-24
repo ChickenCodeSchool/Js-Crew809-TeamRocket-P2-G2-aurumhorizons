@@ -41,6 +41,9 @@ const Navbar: React.FC = () => {
             <li>
               <a href="/see-more">Experiences</a>
             </li>
+            <li>
+              <a href="/service">Services</a>
+            </li>
           </ul>
           <ul className="navbar__links navbar__links--right">
             <li>
