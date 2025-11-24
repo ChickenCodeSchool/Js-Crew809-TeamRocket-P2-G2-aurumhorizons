@@ -9,6 +9,7 @@ import imageForId1 from "../assets/images/imgHomepage/baliHomePage.png";
 import imageForId6 from "../assets/images/imgHomepage/islandHomePage.png";
 import imageForId3 from "../assets/images/imgHomepage/maldiveHomePage.png";
 import imageForId5 from "../assets/images/imgHomepage/seychelleHomepage.png";
+import ButtonHomePage from "../components/ButtonHomepage.tsx";
 
 import "./HomePages.css";
 
@@ -50,6 +51,9 @@ const HomePages: React.FC = () => {
       <section>
         <div className="background-video">
           <video autoPlay muted loop src={video} />
+          <div>
+            <ButtonHomePage />
+          </div>
         </div>
         <div className="texte-video-container">
           <p className="texte-video">
