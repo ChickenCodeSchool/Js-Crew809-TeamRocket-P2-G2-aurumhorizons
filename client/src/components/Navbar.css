@@ -5,15 +5,24 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   padding: 1rem 2rem;
-  box-shadow: 0 1px 8px 1px #e0c086;
+
   position: absolute;
   top: 0;
   z-index: 1000;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.315);
-  backdrop-filter: blur(5px);
+  background: transparent;
+  box-shadow: none;
   font-family: "Cinzel", serif;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  background: transparent;
 }
 
 .navbar__logo {
@@ -22,7 +31,7 @@
 }
 
 .navbar__logo img {
-  height: 50px;
+  height: 40px;
   width: auto;
   object-fit: contain;
   cursor: pointer;
@@ -59,7 +68,7 @@
 
 .navbar__links a {
   text-decoration: none;
-  color: #ffffff;
+  color: #000000;
   font-weight: 500;
   transition: color 0.2s ease;
   font-family: inherit;
@@ -128,10 +137,12 @@
 .navbar__toggle.open span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
+
 .navbar__toggle.open span:nth-child(2) {
   opacity: 0;
   transform: translateX(20px);
 }
+
 .navbar__toggle.open span:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
 }
@@ -150,11 +161,11 @@
     flex-direction: column;
     align-items: center;
     padding: 0.5rem 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: black;
-    backdrop-filter: blur(5px);
-    border: 2px solid #c39444;
+    box-shadow: none;
+    background-color: transparent;
+    border: 2px solid rgba(224, 192, 134, 0.6);
     border-radius: 2em;
+    backdrop-filter: blur(10px) saturate(1.2);
   }
 
   .navbar__links-container.open {
