@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./Navbar.css";
 import logo from "../assets/images/AurumHorizonsLogoTransparent.png";
 import UserIcon from "../assets/images/user-icon.png";
+import DarkMods from "./DarkMods";
 import Login from "./Login";
 
 const Navbar: React.FC = () => {
@@ -48,6 +49,9 @@ const Navbar: React.FC = () => {
             </li>
             <li>
               <a href="/about">About us</a>
+            </li>
+            <li>
+              <DarkMods />
             </li>
             <li>
               <button
