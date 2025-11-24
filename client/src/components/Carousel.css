@@ -168,7 +168,7 @@
 
 @media (max-width: 1024px) {
   .carousel-page {
-    padding-top: 140px;
+    padding-top: 1vh;
     padding-left: 3vw;
     padding-right: 3vw;
   }
