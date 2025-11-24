@@ -51,6 +51,7 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 5em;
+  margin-bottom: 5em;
 }
 
 .special-about {

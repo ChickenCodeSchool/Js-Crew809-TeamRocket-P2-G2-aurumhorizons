@@ -16,12 +16,13 @@
 }
 
 .containercards {
-  margin: 6rem auto 0;
+  margin: 7em auto 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 90vw;
   gap: 5em;
+  margin-bottom: 5em;
 }
 
 .cartes {
