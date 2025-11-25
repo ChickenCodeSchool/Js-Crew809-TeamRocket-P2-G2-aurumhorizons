@@ -341,3 +341,287 @@
   cursor: pointer;
   transition: all 0.3s ease;
 }
+/*-------------------------TABLETTE-------------------------*/
+@media (max-width: 1050px) {
+  .inspiration {
+    padding: 2vh 3vw;
+    min-height: 100vh;
+  }
+
+  .choices {
+    width: 95vw;
+    gap: 2vh;
+    margin-top: 3vh;
+  }
+
+  .choices button {
+    min-width: 44vw;
+    min-height: 30vh;
+    padding: 2vh;
+    font-size: 2.5vw;
+  }
+
+  .destination-image {
+    width: 85vw;
+    height: 40vh;
+    max-width: none;
+  }
+
+  .destination-content {
+    gap: 3vh;
+  }
+
+  .destination-text .destination-text {
+    width: 90vw;
+    font-size: 2.2vw;
+  }
+
+  .personas-grid {
+    gap: 2vh;
+    margin-top: 4vh;
+  }
+
+  .persona-card {
+    width: 42vw;
+    padding: 2vh;
+  }
+
+  .persona-image {
+    width: 12vh;
+    height: 12vh;
+  }
+
+  .persona-name {
+    font-size: 2.5vw;
+  }
+
+  .persona-comment-text {
+    font-size: 2vw;
+  }
+
+  .back-button-container {
+    top: 80vh;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+  }
+
+  .back-button-container-step3 {
+    top: 5vh;
+    width: 90vw;
+    justify-content: center;
+  }
+
+  .back-button {
+    font-size: 2.5vw;
+    padding: 1.5vh 4vw;
+  }
+}
+/*-------------------------TABLETTE PAYSAGE-------------------------*/
+@media (max-width: 1370px) and (orientation: landscape) {
+  .inspiration {
+    padding: 1vh 2vw;
+    padding-bottom: 10vh;
+  }
+  .choices {
+    width: 80vw;
+    gap: 3vw;
+    margin-top: 5vh;
+  }
+
+  .choices button {
+    min-height: 50vh;
+    min-width: 35vw;
+  }
+  .destination-image {
+    height: 50vh;
+    width: 60vw;
+  }
+
+  .destination-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .destination-text .destination-text {
+    width: 80vw;
+  }
+
+  .back-button-container-step3 {
+    top: 8vh;
+    width: 3vw;
+  }
+
+  .back-button-container {
+    top: 13vh;
+  }
+}
+/*-------------------------MOBILE-------------------------*/
+@media (max-width: 500px) {
+  .inspiration {
+    padding: 2vh 5vw;
+    padding-bottom: 10vh;
+    min-height: 100vh;
+  }
+
+  .choices {
+    grid-template-columns: 1fr;
+    width: 90vw;
+    gap: 2vh;
+    margin-top: 2vh;
+  }
+
+  .choices button {
+    min-width: 100%;
+    min-height: 20vh;
+    padding: 2vh;
+    font-size: 5vw;
+  }
+
+  .destination-image {
+    width: 90vw;
+    height: 30vh;
+  }
+
+  .destination-content {
+    gap: 2vh;
+  }
+
+  .destination-text .destination-text {
+    width: 90vw;
+    font-size: 4vw;
+    line-height: 1.4;
+  }
+
+  .personas-grid {
+    gap: 2vh;
+    margin-top: 3vh;
+    flex-direction: column;
+  }
+
+  .persona-card {
+    width: 85vw;
+    padding: 2vh;
+    margin-bottom: 1vh;
+  }
+
+  .persona-image {
+    width: 10vh;
+    height: 10vh;
+  }
+
+  .persona-name {
+    font-size: 5vw;
+  }
+
+  .persona-comment-text {
+    font-size: 3.5vw;
+  }
+
+  .back-button-container {
+    top: 110vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2vh;
+  }
+
+  .back-button-container-step3 {
+    top: 8vh;
+    right: 6vw;
+    width: 3vw;
+    justify-content: flex-start;
+    margin-bottom: 0;
+  }
+
+  .back-button {
+    font-size: 4.5vw;
+    padding: 1vh 4vw;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  }
+}
+/*-------------------------MOBILE PAYSAGE-------------------------*/
+@media (max-width: 950px) and (orientation: landscape) {
+  .inspiration {
+    padding: 2vh 2vw;
+    padding-bottom: 10vh;
+    min-height: 100vh;
+  }
+
+  .choices {
+    grid-template-columns: repeat(2, 1fr);
+    width: 95vw;
+    gap: 2vw;
+    margin-top: 2vh;
+  }
+
+  .choices button {
+    min-width: auto;
+    min-height: 70vh;
+    padding: 2vh;
+    font-size: 3vw;
+  }
+
+  .destination-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+    margin-top: 1vh;
+  }
+
+  .destination-image {
+    width: 40vw;
+    height: 60vh;
+    margin: 0;
+  }
+
+  .destination-text .destination-text {
+    width: 50vw;
+    font-size: 2.5vw;
+    text-align: left;
+  }
+
+  .personas-grid {
+    gap: 2vw;
+    margin-top: 2vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .persona-card {
+    width: 45vw;
+    padding: 2vh;
+  }
+
+  .persona-image {
+    width: 10vh;
+    height: 10vh;
+  }
+
+  .persona-name {
+    font-size: 3vw;
+  }
+
+  .persona-comment-text {
+    font-size: 2.5vw;
+  }
+  .back-button-container {
+    top: 20vh;
+    left: 8vw;
+  }
+
+  .back-button-container-step3 {
+    top: 18vh;
+    width: 95vw;
+  }
+
+  .back-button {
+    font-size: 3vw;
+    padding: 1vh 3vw;
+  }
+}
