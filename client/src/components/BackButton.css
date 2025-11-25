@@ -16,3 +16,28 @@
   background: #c39444;
   color: white;
 }
+
+@media (max-width: 992px) {
+  .back-btn {
+    font-size: 14px;
+    padding: 8px 18px;
+    z-index: 1001;
+    margin-top: 5em;
+  }
+}
+
+@media (max-width: 768px) {
+  .back-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .back-btn {
+    font-size: 12px;
+    padding: 6px 14px;
+    margin-bottom: 15px;
+  }
+}

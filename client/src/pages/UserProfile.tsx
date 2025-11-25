@@ -1,15 +1,56 @@
-import { type ChangeEvent, useState } from "react";
+import { type ChangeEvent, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./UserProfile.css";
 
 type Section = "personal" | "documents" | "quotes" | "trips";
 
+interface UserProfileData {
+  firstName: string;
+  lastName: string;
+  title: string;
+  birthDate: string;
+  nationality: string;
+  address: string;
+  email: string;
+  phone: string;
+  numberOfChildren: number;
+}
+
 const UserProfile: React.FC = () => {
   const [activeSection, setActiveSection] = useState<Section>("personal");
   const navigate = useNavigate();
 
+  const [profileData, setProfileData] = useState<UserProfileData>({
+    firstName: "",
+    lastName: "",
+    title: "mr",
+    birthDate: "",
+    nationality: "",
+    address: "",
+    email: "",
+    phone: "",
+    numberOfChildren: 0,
+  });
+
+  useEffect(() => {
+    const savedProfile = localStorage.getItem("userProfile");
+    if (savedProfile) {
+      setProfileData(JSON.parse(savedProfile));
+    }
+  }, []);
+
   const handleSectionChange = (section: Section): void => {
     setActiveSection(section);
+  };
+
+  const handleInputChange = (
+    event: ChangeEvent<HTMLInputElement | HTMLSelectElement>,
+  ) => {
+    const { name, value } = event.target;
+    setProfileData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
   };
 
   const handleFileChange = (event: ChangeEvent<HTMLInputElement>): void => {
@@ -19,11 +60,21 @@ const UserProfile: React.FC = () => {
   };
 
   const handleSave = (): void => {
-    alert("Save not yet implemented");
+    localStorage.setItem("userProfile", JSON.stringify(profileData));
+    alert("Profile saved!");
   };
 
   const handleDelete = (): void => {
-    alert("Delete my profile not yet implemented");
+    const confirmed = window.confirm(
+      "Are you sure you want to delete your profile?",
+    );
+    if (confirmed) {
+      localStorage.removeItem("userProfile");
+      alert("Account successfully deleted");
+      navigate("/");
+    } else {
+      navigate("/userprofile");
+    }
   };
 
   const handleLogout = (): void => {
@@ -93,15 +144,29 @@ const UserProfile: React.FC = () => {
             <form className="form-grid">
               <label>
                 First Name
-                <input type="text" />
+                <input
+                  type="text"
+                  name="firstName"
+                  value={profileData.firstName}
+                  onChange={handleInputChange}
+                />
               </label>
               <label>
                 Last Name
-                <input type="text" />
+                <input
+                  type="text"
+                  name="lastName"
+                  value={profileData.lastName}
+                  onChange={handleInputChange}
+                />
               </label>
               <label>
                 Title
-                <select>
+                <select
+                  name="title"
+                  value={profileData.title}
+                  onChange={handleInputChange}
+                >
                   <option value="mr">Mr</option>
                   <option value="ms">Ms</option>
                   <option value="mrs">Mrs</option>
@@ -109,27 +174,58 @@ const UserProfile: React.FC = () => {
               </label>
               <label>
                 Birth Date
-                <input type="date" />
+                <input
+                  type="date"
+                  name="birthDate"
+                  value={profileData.birthDate}
+                  onChange={handleInputChange}
+                />
               </label>
               <label>
                 Nationality
-                <input type="text" />
+                <input
+                  type="text"
+                  name="nationality"
+                  value={profileData.nationality}
+                  onChange={handleInputChange}
+                />
               </label>
               <label>
                 Address
-                <input type="text" />
+                <input
+                  type="text"
+                  name="address"
+                  value={profileData.address}
+                  onChange={handleInputChange}
+                />
               </label>
               <label>
                 Email
-                <input type="email" />
+                <input
+                  type="email"
+                  name="email"
+                  value={profileData.email}
+                  onChange={handleInputChange}
+                />
               </label>
               <label>
                 Phone Number
-                <input type="tel" />
+                <input
+                  type="tel"
+                  name="phone"
+                  value={profileData.phone}
+                  onChange={handleInputChange}
+                />
               </label>
               <label>
                 Number of Children
-                <input type="number" min={0} />
+                <input
+                  type="number"
+                  name="numberOfChildren"
+                  value={profileData.numberOfChildren}
+                  onChange={handleInputChange}
+                  min={0}
+                />
               </label>
             </form>
           </section>

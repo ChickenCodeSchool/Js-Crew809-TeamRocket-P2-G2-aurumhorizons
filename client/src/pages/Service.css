@@ -70,3 +70,62 @@
   background: black;
   transform: translateY(-2px);
 }
+
+@media (max-width: 992px) {
+  .service-title {
+    font-size: 40px;
+  }
+
+  .service-text {
+    padding: 1.5em;
+    font-size: 17px;
+  }
+
+  .service-grid {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-container {
+    margin-top: 6rem;
+  }
+
+  .service-title {
+    font-size: 32px;
+  }
+
+  .service-text {
+    padding: 1em;
+    font-size: 16px;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .luxury-btn {
+    padding: 12px 30px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-title {
+    font-size: 28px;
+  }
+
+  .service-text {
+    font-size: 15px;
+  }
+
+  .service-grid {
+    padding: 0 10px;
+  }
+
+  .luxury-btn {
+    width: 100%;
+    padding: 14px 0;
+  }
+}

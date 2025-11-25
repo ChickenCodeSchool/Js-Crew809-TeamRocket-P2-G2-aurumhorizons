@@ -30,7 +30,7 @@ const ExclusiveEventsServices: React.FC = () => {
     <div className="service-wrapper">
       <div className="service-detail-header">
         <BackButton />
-        <h1 className="service-title">Exclusive Events</h1>
+        <h1 className="services-title">Exclusive Events</h1>
       </div>
 
       <p className="service-desc">

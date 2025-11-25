@@ -30,7 +30,7 @@ const RelaxationServices: React.FC = () => {
     <div className="service-wrapper">
       <div className="service-detail-header">
         <BackButton />
-        <h1 className="service-title">Relaxation Services</h1>
+        <h1 className="services-title">Relaxation Services</h1>
       </div>
 
       <p className="service-desc">

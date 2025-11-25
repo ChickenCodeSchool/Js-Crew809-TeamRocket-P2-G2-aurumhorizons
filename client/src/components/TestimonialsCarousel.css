@@ -1,16 +1,16 @@
-.carousel-container {
+.test-carousel-container {
   background: transparent;
   padding: 70px 20px 90px 20px;
   margin-top: 40px;
 }
 
-.carousel-title {
+.test-carousel-title {
   font-size: 32px;
   margin-bottom: 40px;
   text-transform: uppercase;
 }
 
-.carousel-card {
+.test-carousel-card {
   display: flex;
   flex-direction: column;
   max-width: 600px;
@@ -21,13 +21,65 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-.carousel-text {
+.test-carousel-text {
   font-size: 20px;
   font-style: italic;
 }
 
-.carousel-author {
+.test-carousel-author {
   margin-top: 20px;
   font-weight: bold;
   color: #444;
+}
+
+@media (max-width: 992px) {
+  .test-carousel-title {
+    font-size: 28px;
+  }
+
+  .test-carousel-card {
+    padding: 32px;
+  }
+
+  .test-carousel-text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .test-carousel-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .test-carousel-card {
+    padding: 26px;
+    border-radius: 10px;
+  }
+
+  .test-carousel-text {
+    font-size: 17px;
+  }
+
+  .test-carousel-author {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .test-carousel-container {
+    padding: 50px 15px 70px 15px;
+  }
+
+  .test-carousel-title {
+    font-size: 22px;
+  }
+
+  .test-carousel-card {
+    padding: 22px;
+  }
+
+  .test-carousel-text {
+    font-size: 16px;
+  }
 }

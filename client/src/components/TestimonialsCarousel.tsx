@@ -19,12 +19,12 @@ export const TestimonialsCarousel: React.FC = () => {
   }, []);
 
   return (
-    <div className="carousel-container">
-      <h3 className="carousel-title">What Our Clients Say</h3>
+    <div className="test-carousel-container">
+      <h3 className="test-carousel-title">What Our Clients Say</h3>
 
-      <div className="carousel-card">
-        <p className="carousel-text">“{testimonials[index].text}”</p>
-        <p className="carousel-author">— {testimonials[index].name}</p>
+      <div className="test-carousel-card">
+        <p className="test-carousel-text">“{testimonials[index].text}”</p>
+        <p className="test-carousel-author">— {testimonials[index].name}</p>
       </div>
     </div>
   );
