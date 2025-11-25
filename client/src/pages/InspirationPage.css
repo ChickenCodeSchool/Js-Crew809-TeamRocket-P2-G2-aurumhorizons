@@ -546,6 +546,14 @@
 }
 /*-------------------------MOBILE PAYSAGE-------------------------*/
 @media (max-width: 950px) and (orientation: landscape) {
+  .hide-landscape {
+    display: none !important;
+  }
+
+  .footer.hidden-on-landscape {
+    display: none !important;
+  }
+
   .inspiration {
     padding: 2vh 2vw;
     padding-bottom: 10vh;
