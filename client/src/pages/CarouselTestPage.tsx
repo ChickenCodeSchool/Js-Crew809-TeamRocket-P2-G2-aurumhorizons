@@ -7,6 +7,7 @@ import CommentsSection from "../components/CommentSection";
 import Devis from "../components/Devis";
 import Gps from "../components/Gps";
 import HotelsCarousel from "../components/HotelsCarousel";
+/*import ButtonHomePage from "../components/ButtonHomePage";*/
 import "./CarouselTestPage.css";
 
 interface InfoVoyage {

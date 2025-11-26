@@ -9,7 +9,7 @@ import imageForId1 from "../assets/images/imgHomepage/baliHomePage.png";
 import imageForId6 from "../assets/images/imgHomepage/islandHomePage.png";
 import imageForId3 from "../assets/images/imgHomepage/maldiveHomePage.png";
 import imageForId5 from "../assets/images/imgHomepage/seychelleHomepage.png";
-import ButtonHomePage from "../components/ButtonHomepage.tsx";
+import ButtonHomePage from "../components/ButtonHomePage.tsx";
 
 import "./HomePages.css";
 
