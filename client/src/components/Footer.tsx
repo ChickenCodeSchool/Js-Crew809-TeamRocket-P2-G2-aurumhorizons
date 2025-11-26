@@ -1,12 +1,22 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/images/Logo_Aurum_Horizons-sans-fond.png";
-
 import "./Footer.css";
 
 function Footer() {
+  const location = useLocation();
+
+  const currentPath = location.pathname.toLowerCase();
+  const isInspirationPage =
+    currentPath === "/inspiration" || currentPath === "/inspiration/";
+
+  console.log("Chemin actuel :", location.pathname);
+  console.log("Doit être caché ?", isInspirationPage);
+
   return (
     <>
-      <div className="footer">
+      <div
+        className={`footer ${isInspirationPage ? "hidden-on-landscape" : ""}`}
+      >
         <div className="container-h2-footer">
           <img src={logo} className="logo-footer" alt="logo" />
         </div>
@@ -32,28 +42,6 @@ function Footer() {
               <img
                 src="../src/assets/images/pinterest.svg"
                 alt="pinterest"
-                className="icon-footer"
-              />
-            </a>
-            <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="../src/assets/images/imgFooter/instagram.svg"
-                alt="instagram"
-                className="icon-footer"
-              />
-            </a>
-            <a
-              href="https://x.com/Accueil"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="../src/assets/images/imgFooter/twitter-alt.svg"
-                alt="twitter"
                 className="icon-footer"
               />
             </a>

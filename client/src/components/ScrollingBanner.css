@@ -1,6 +1,6 @@
 .scrolling-banner-container {
   margin-top: 5em;
-  width: 100vw;
+  width: vw;
   overflow: hidden;
   background-color: transparent;
   color: #c39444;
