@@ -1,0 +1,37 @@
+.Button {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: none;
+  border: none;
+  font-size: 2rem;
+  z-index: 1;
+  bottom: 0.5%;
+  cursor: pointer;
+}
+
+.img-button {
+  width: 3rem;
+  animation: bounce-once 1.2s ease-out infinite;
+}
+
+@keyframes bounce-once {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(10px);
+  }
+  40% {
+    transform: translateY(-6px);
+  }
+  60% {
+    transform: translateY(4px);
+  }
+  80% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
