@@ -1,0 +1,65 @@
+@import "https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap";
+
+.lux-card {
+  position: relative;
+  height: 300px;
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.25);
+  transition: transform 0.4s ease;
+}
+
+.lux-card:hover {
+  transform: scale(1.03);
+}
+
+.lux-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.6s ease;
+}
+
+.lux-card:hover .lux-card-img {
+  transform: scale(1.08);
+}
+
+.lux-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.65), transparent);
+}
+
+.lux-card-content {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  color: white;
+}
+
+.lux-card-title {
+  font-size: 26px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.lux-card-btn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  padding: 8px 20px;
+  background: black;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.lux-card-btn:hover {
+  background: #c39444;
+  color: white;
+}

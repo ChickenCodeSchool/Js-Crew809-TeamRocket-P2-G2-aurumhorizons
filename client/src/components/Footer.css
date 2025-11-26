@@ -34,9 +34,8 @@ a {
   background: var(--bg-color);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-radius: 16px;
-
   margin-top: 0 !important;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .separator-footer {

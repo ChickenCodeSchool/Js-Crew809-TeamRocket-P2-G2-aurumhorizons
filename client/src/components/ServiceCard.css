@@ -1,0 +1,72 @@
+.service-card {
+  position: relative;
+  height: 300px;
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.25);
+  transition: transform 0.4s ease;
+}
+
+.service-card:hover {
+  transform: scale(1.03);
+}
+
+.service-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.6s ease;
+}
+
+.service-card:hover .service-card-img {
+  transform: scale(1.08);
+}
+
+.service-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.65), transparent);
+}
+
+.service-card-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  gap: 10px;
+}
+
+.service-card-title {
+  font-size: 36px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.service-card-price {
+  font-size: 26px;
+}
+
+.service-card-btn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  padding: 8px 20px;
+  background: black;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.service-card-btn:hover {
+  background: #c39444;
+  color: white;
+}
