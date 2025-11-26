@@ -81,6 +81,9 @@ const Navbar: FC = () => {
                   <Link to="/inspiration">Inspiration</Link>
                 </li>
                 <li>
+                  <Link to="/service">Services</Link>
+                </li>
+                <li>
                   <Link to="/see-more">Experiences</Link>
                 </li>
               </ul>
