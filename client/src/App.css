@@ -10,11 +10,18 @@ body {
 :root {
   --bg-color: #ffffff;
   --text-color: #222222;
+  --bg-colorcarousselle: #d35b43;
+  --bg-colorpanneau: rgb(247, 237, 210);
+  --text-colorhome: #000000;
 }
 
 [data-theme="dark"] {
-  --bg-color: #505050;
+  --bg-color: #4b4b4b;
+  --bg-colorcarousselle: #e79445;
+  --bg-colorcommentaire: #666666;
+  --bg-colorpanneau: #e0c086;
   --text-color: #000000;
+  --text-colorhome: #ffffff;
 }
 
 /* Style global du body */

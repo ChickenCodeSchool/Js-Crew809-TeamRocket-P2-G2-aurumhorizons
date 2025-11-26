@@ -1,5 +1,5 @@
 .body {
-  background-color: rgb(252, 248, 237);
+  background: var(--bg-colorpanneau);
   padding-left: 2rem;
   article {
     padding-bottom: 1.5rem;

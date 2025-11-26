@@ -31,8 +31,7 @@ a {
   gap: 1em;
   width: 100%;
   padding: 2rem 1rem;
-
-  background-color: rgb(245, 245, 245);
+  background: var(--bg-color);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-radius: 16px;

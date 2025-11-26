@@ -25,10 +25,12 @@ function DarkMods() {
 
   // theme = valeur actuelle , setTheme = fonction pour la mettre a jour
   const [theme, setTheme] = useState<Theme>(getInitialTheme);
+  const [isFlying, setIsFlying] = useState(false);
 
   // applique & sauvegarde le thème
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme); // lie avec le css via l'attribut data-theme
+    document.querySelector("leafletmap")?.classList.add("darkmap");
     localStorage.setItem(STORAGE_KEY, theme);
   }, [theme]);
 
@@ -42,16 +44,45 @@ function DarkMods() {
     return () => mq.removeEventListener("change", handleChange);
   }, []);
 
+  // Gestion du clic avec animation
+  const handleClick = () => {
+    setIsFlying(true);
+    setTimeout(() => {
+      setTheme(theme === "light" ? "dark" : "light");
+      setTimeout(() => setIsFlying(false), 2000);
+    }, 800);
+  };
+
   // et voici le bouton qui change le thème au clic
   return (
     <button
       type="button"
-      className="theme-DarkMods"
+      className={
+        isFlying
+          ? "theme-DarkMods flying btnTheme"
+          : "theme-DarkMods notFlying btnTheme"
+      }
       aria-pressed={theme === "dark"}
       aria-label="Basculer le thème"
-      onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+      onClick={handleClick}
+      disabled={isFlying}
+      style={{
+        overflow: "hidden",
+        borderRadius: "2rem",
+        width: "10rem",
+        height: "3rem",
+        background:
+          theme === "dark"
+            ? "linear-gradient(to right, #4e46e5, #8c52f0ff)"
+            : "linear-gradient(to right, #3b82f6, #06b6d4)",
+        boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
+        border: "none",
+        cursor: isFlying ? "not-allowed" : "pointer",
+        color: theme === "dark" ? "black" : "white",
+        transition: "color 0.3s linear",
+      }}
     >
-      {theme === "light" ? "Dark" : "Light"}
+      <span className="plane">✈</span>
     </button>
   );
 }

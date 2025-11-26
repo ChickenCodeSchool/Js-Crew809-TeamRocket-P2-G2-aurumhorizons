@@ -14,12 +14,12 @@ body {
 h2 {
   font-family: "Cinzel", serif;
   font-size: 1.5rem;
-  color: #333;
+  color: var(--text-color);
   margin-bottom: 20px;
 }
 
 .comments-section {
-  background-color: #fff;
+  background-color: var(--bg-colorcommentaire);
   padding: 30px;
   margin: 0 auto;
   border-radius: 10px;
@@ -44,7 +44,7 @@ h2 {
 
 label {
   font-weight: bold;
-  color: #333;
+  color: var(--text-color);
 }
 
 input,

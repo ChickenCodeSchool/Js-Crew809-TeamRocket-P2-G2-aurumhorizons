@@ -13,3 +13,51 @@
 .theme-DarkMods:hover {
   opacity: 0.8;
 }
+
+.btnTheme {
+  font-size: 28px;
+  padding: 0;
+}
+.plane {
+  display: inline-block;
+  line-height: 3rem;
+  transform: translateX(-50px);
+}
+.notFlying .plane {
+  animation: xx .3s linear both;
+}
+@keyframes xx {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.flying {
+  .plane {
+    animation: fly 2s ease-in-out;
+  }
+}
+@keyframes fly {
+  from {
+    transform: translateX(-50px);
+  }
+  30% {
+    transform: translateX(50px);
+  }
+  50% {
+    transform: translateX(50px) rotate(180deg);
+  }
+  70% {
+    transform: translateX(50px) rotate(180deg);
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-50px) rotate(180deg);
+    opacity: 0;
+  }
+}

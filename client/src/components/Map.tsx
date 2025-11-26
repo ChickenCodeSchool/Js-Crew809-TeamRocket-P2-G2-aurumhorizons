@@ -60,7 +60,7 @@ function Map({
         zoom={10}
         scrollWheelZoom={false}
         // style={{ height: "900px", width: "100%" }}
-        className="sizeGpsMap"
+        className="sizeGpsMap leafletmap"
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
