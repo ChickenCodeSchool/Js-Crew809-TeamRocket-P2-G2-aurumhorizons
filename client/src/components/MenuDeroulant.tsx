@@ -62,7 +62,7 @@ const MenuDeroulant: React.FC = () => {
 
       {/* Colonne 2 : Inspirations */}
       <div className="menu-right">
-        <Link to="/inspiration" className="menu-link">
+        <Link to="/inspiration" className="menu-button">
           Inspirations
         </Link>
       </div>

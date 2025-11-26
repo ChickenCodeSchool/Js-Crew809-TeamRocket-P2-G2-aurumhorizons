@@ -11,7 +11,7 @@
   display: flex;
   height: 100vh;
   font-family: "Montserrat", sans-serif;
-  margin-top: 5.5rem;
+  margin-top: 5rem;
 }
 
 .sidebar {
@@ -131,6 +131,68 @@
   text-align: center;
 }
 
+.logout-container {
+  position: absolute;
+  bottom: 20px;
+  padding: 0 20px;
+}
+
+.logout-button {
+  padding: 12px;
+  background: #c39444;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.logout-button:hover {
+  background: #a97c34;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.save-button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  padding: 12px 25px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.save-button:hover {
+  background-color: #3e8e41;
+}
+
+.delete-button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  padding: 12px 25px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.delete-button:hover {
+  background-color: #d32f2f;
+}
+
 @media (max-width: 992px) {
   .user-container {
     flex-direction: column;
@@ -245,5 +307,18 @@
 
   .drop-card {
     padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logout-container {
+    position: relative;
+    bottom: 0;
+    padding: 10px 0;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    align-items: stretch;
   }
 }
