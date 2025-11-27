@@ -10,7 +10,7 @@
 
 .ac-content {
   padding: 32px 24px;
-  background-color: #f9fafb;
+  background: var(--bg-color);
   border-radius: 12px;
 }
 

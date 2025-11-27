@@ -45,6 +45,28 @@ function Footer() {
                 className="icon-footer"
               />
             </a>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="../src/assets/images/imgFooter/instagram.svg"
+                alt="instagram"
+                className="icon-footer"
+              />
+            </a>
+            <a
+              href="https://x.com/Accueil"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="../src/assets/images/imgFooter/twitter-alt.svg"
+                alt="twitter"
+                className="icon-footer"
+              />
+            </a>
           </div>
           <form className="newsletter-form">
             <input
