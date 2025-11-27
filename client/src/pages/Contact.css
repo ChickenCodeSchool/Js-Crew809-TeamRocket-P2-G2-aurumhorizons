@@ -14,7 +14,7 @@
 
 .cu-hero h3 {
   font-weight: 400;
-  color: #4b5563;
+  color: var(--text-color);
   max-width: 600px;
 }
 

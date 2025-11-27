@@ -121,8 +121,8 @@
 
 .bottom-text-section {
   max-width: 86vw;
-  margin: 50px auto;
-  background: #c39444;
+  margin: 100px auto;
+  background: var(--bg-colorcarousselle);
   color: #333;
   font-family: "Montserrat", sans-serif;
   font-size: 1.1rem;

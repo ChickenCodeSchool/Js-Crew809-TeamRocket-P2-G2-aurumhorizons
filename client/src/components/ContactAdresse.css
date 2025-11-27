@@ -10,14 +10,15 @@
 
 .ac-content {
   padding: 32px 24px;
-  background-color: #f9fafb;
+  background: var(--bg-color);
   border-radius: 12px;
 }
 
-.ac-content h2 {
-  margin-top: 0;
-  font-size: 1.5rem;
-  color: #1f2937;
+.ac-content h3:first-child {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-color);
+  margin: 0 0 28px 0;
 }
 
 .ac-content ul {
@@ -32,7 +33,7 @@
   gap: 12px;
   margin-bottom: 20px;
   font-size: 15px;
-  color: #374151;
+  color: var(--text-color);
   line-height: 1.5;
   position: relative;
   padding-left: 32px;
@@ -77,8 +78,8 @@
 .ac-content h3 {
   font-size: 16px;
   font-weight: 600;
-  color: #1f2937;
-  margin: 10px 0 5px 0;
+  color: var(--text-color);
+  margin: 28px 0 12px 0;
   padding-left: 26px;
   position: relative;
 }
@@ -101,7 +102,7 @@
 
 .cityloc {
   font-size: 13px;
-  color: #6b7280;
+  color: var(--text-color);
   line-height: 1.6;
   margin: 0;
   padding-left: 26px;

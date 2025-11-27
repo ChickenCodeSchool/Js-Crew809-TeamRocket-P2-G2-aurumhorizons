@@ -4,8 +4,8 @@ import "./Navbar.css";
 import logo from "../assets/images/AurumHorizonsLogoTransparent.png";
 import UserIcon from "../assets/images/user-icon-black.png";
 import GlassSurface from "../components/GlassSurface";
+import DarkMods from "./DarkMods";
 import Login from "./Login";
-
 const Navbar: FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showLoginModal, setShowLoginModal] = useState(false);
@@ -89,6 +89,9 @@ const Navbar: FC = () => {
               </ul>
 
               <ul className="navbar__links navbar__links--right">
+                <li>
+                  <DarkMods />
+                </li>
                 <li>
                   <Link to="/contact">Contact</Link>
                 </li>

@@ -6,3 +6,27 @@ body {
   padding-top: 80px;
   font-family: "Source Sans 3", sans-serif;
 }
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #222222;
+  --bg-colorcarousselle: #d35b43;
+  --bg-colorpanneau: rgb(247, 237, 210);
+  --text-colorhome: #000000;
+}
+
+[data-theme="dark"] {
+  --bg-color: #4b4b4b;
+  --bg-colorcarousselle: #e79445;
+  --bg-colorcommentaire: #666666;
+  --bg-colorpanneau: #e0c086;
+  --text-color: #000000;
+  --text-colorhome: #ffffff;
+}
+
+/* Style global du body */
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s, color 0.3s;
+}

@@ -35,6 +35,7 @@
   flex-direction: column;
   align-items: center;
   width: 25rem;
+  color: var(--text-colorhome);
 }
 
 .PhomePage {
