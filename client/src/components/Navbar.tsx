@@ -52,13 +52,13 @@ const Navbar: FC = () => {
 
             <ul className="navbar__links navbar__links--right">
               <li>
+                <DarkMods />
+              </li>
+              <li>
                 <Link to="/contact">Contact</Link>
               </li>
               <li>
                 <a href="/about">About us</a>
-              </li>
-              <li>
-                <DarkMods />
               </li>
               <li>
                 <button
