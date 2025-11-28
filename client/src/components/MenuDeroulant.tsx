@@ -62,7 +62,7 @@ const MenuDeroulant: React.FC = () => {
       <div className="menu-separator" />
 
       <div className="menu-right">
-        <Link to="/inspiration" className="menu-link">
+        <Link to="/inspiration" className="menu-button">
           {t("menu_inspirations")}
         </Link>
       </div>

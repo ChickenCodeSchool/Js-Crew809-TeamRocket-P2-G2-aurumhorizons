@@ -1,14 +1,18 @@
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/images/Logo_Aurum_Horizons-sans-fond.png";
-
 import "./Footer.css";
 
 function Footer() {
   const { t } = useTranslation();
+  const location = useLocation();
+
+  const currentPath = location.pathname.toLowerCase();
+  const isInspirationPage =
+    currentPath === "/inspiration" || currentPath === "/inspiration/";
 
   return (
-    <div className="footer">
+    <div className={`footer ${isInspirationPage ? "hidden-on-landscape" : ""}`}>
       <div className="container-h2-footer">
         <img src={logo} className="logo-footer" alt="logo" />
       </div>

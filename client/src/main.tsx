@@ -12,8 +12,13 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import MentionLegal from "./pages/MentionLegal";
 import Seemore from "./pages/Seemore";
+import Service from "./pages/Service";
 import UserProfile from "./pages/UserProfile";
 import "./pages/i18n";
+import ExclusiveEventsServices from "./pages/service-pages/ExclusiveEventsServices";
+import PrivateTransportServices from "./pages/service-pages/PrivateTransportServices";
+import RelaxationServices from "./pages/service-pages/RelaxationServices";
+import TailoredExperiencesServices from "./pages/service-pages/TailoredExperiencesServices";
 
 /* ************************************************************************* */
 
@@ -47,6 +52,26 @@ const router = createBrowserRouter([
       {
         path: "about",
         element: <About />,
+      },
+      {
+        path: "service",
+        element: <Service />,
+      },
+      {
+        path: "services/relaxation",
+        element: <RelaxationServices />,
+      },
+      {
+        path: "services/private-transport",
+        element: <PrivateTransportServices />,
+      },
+      {
+        path: "services/tailored-experiences",
+        element: <TailoredExperiencesServices />,
+      },
+      {
+        path: "services/exclusive-events",
+        element: <ExclusiveEventsServices />,
       },
       {
         path: "login",

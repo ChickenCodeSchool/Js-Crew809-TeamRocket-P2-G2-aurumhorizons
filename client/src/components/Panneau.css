@@ -13,6 +13,7 @@
   width: 100%;
   padding-left: 2rem;
   box-sizing: border-box;
+  background: var(--bg-colorpanneau);
 }
 
 .body article {
@@ -23,10 +24,10 @@
   border-radius: 5px;
   background-color: #fff;
   overflow: hidden;
-
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 1.5rem;
 }
 
 .body article .popup-trigger {
@@ -69,10 +70,8 @@
   font-weight: 500;
   padding: 0 1rem;
   overflow: hidden;
-
   display: -webkit-box;
   -webkit-box-orient: vertical;
-
   -webkit-line-clamp: 3;
   line-clamp: 3;
 }
@@ -82,23 +81,18 @@
     padding-left: 1em;
     gap: 15px;
   }
-
   .body article {
     height: 160px;
   }
-
   .body article .popup-trigger {
     padding: 0.8em;
   }
-
   #panneautitre {
     font-size: 1.2em;
   }
-
   .jours {
     font-size: 1rem;
   }
-
   .paragraphe {
     font-size: 0.95rem;
     -webkit-line-clamp: 2;
