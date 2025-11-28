@@ -1,39 +1,30 @@
+import { useTranslation } from "react-i18next";
 import "./ContactAdresse.css";
-/*
-type inputProps = {
-  label: string;
-};*/
+
 function ContactAdresse() {
+  const { t } = useTranslation();
+
   return (
     <>
       <form className="ac-form">
         <div className="ac-content">
-          <h2>With our services you can</h2>
+          <h2>{t("contact_title")}</h2>
           <ul>
-            <li>Improuve usability of your porduct</li>
-            <li>
-              Engage users at a higher level and outperform your competition
-            </li>
-            <li>Reduce the onboarding time and improve sales</li>
-            <li>Balance user needs with your business goal</li>
+            <li>{t("contact_point1")}</li>
+            <li>{t("contact_point2")}</li>
+            <li>{t("contact_point3")}</li>
+            <li>{t("contact_point4")}</li>
           </ul>
           <div className="ac-location">
             <div className="ac-usa">
-              {/* biome-ignore lint/a11y/useAltText: <explanation> */}
-              <img src="" />
-              <h3>USA</h3>
-              <p className="cityloc">
-                280 W, 17th street 4th floor, Flat no: 407 New York Ny, 10018
-              </p>
+              <img src="" alt={t("contact_usa")} />
+              <h3>{t("contact_usa")}</h3>
+              <p className="cityloc">{t("contact_usa_address")}</p>
             </div>
             <div className="ac-india">
-              {/* biome-ignore lint/a11y/useAltText: <explanation> */}
-              <img src="" />
-              <h3>India</h3>
-              <p className="cityloc">
-                Plot No 8-2-601/p/15ms Banjara Hilss, Road No 10 Hyderabad,
-                500034
-              </p>
+              <img src="" alt={t("contact_india")} />
+              <h3>{t("contact_india")}</h3>
+              <p className="cityloc">{t("contact_india_address")}</p>
             </div>
           </div>
         </div>

@@ -13,6 +13,7 @@ import Contact from "./pages/Contact";
 import MentionLegal from "./pages/MentionLegal";
 import Seemore from "./pages/Seemore";
 import UserProfile from "./pages/UserProfile";
+import "./pages/i18n";
 
 /* ************************************************************************* */
 

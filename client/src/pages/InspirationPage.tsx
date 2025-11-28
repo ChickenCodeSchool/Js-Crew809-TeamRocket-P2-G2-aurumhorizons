@@ -1,14 +1,15 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import "./InspirationPage.css";
 import SeasonParticles from "./SeasonParticles";
 
-type Activity = "Detente" | "Sportive" | "Culturel" | "Exploration";
+type Activity = "Relaxing" | "Sporty" | "Cultural" | "Exploration";
 type Season = "Spring" | "Summer" | "Autumn" | "Winter";
 
 const activities: { name: Activity; image: string }[] = [
-  { name: "Detente", image: "/imgInspiration/Detente.jpeg" },
-  { name: "Sportive", image: "/imgInspiration/Sport.jpg" },
-  { name: "Culturel", image: "/imgInspiration/Culturel.jpg" },
+  { name: "Relaxing", image: "/imgInspiration/Relaxing.jpeg" },
+  { name: "Sporty", image: "/imgInspiration/Sporty.jpg" },
+  { name: "Cultural", image: "/imgInspiration/Cultural.jpg" },
   { name: "Exploration", image: "/imgInspiration/Exploration.jpg" },
 ];
 
@@ -20,250 +21,251 @@ const seasons: { name: Season; image: string }[] = [
 ];
 
 const suggestions: Record<Activity, Record<Season, string>> = {
-  Detente: {
-    Spring: "Grece",
+  Relaxing: {
+    Spring: "Greece",
     Summer: "Bali",
-    Autumn: "Italie",
+    Autumn: "Italy",
     Winter: "Maldives",
   },
-  Sportive: {
-    Spring: "Espagne",
+  Sporty: {
+    Spring: "Spain",
     Summer: "CostaRica",
     Autumn: "Canada",
-    Winter: "Suisse",
+    Winter: "Switzerland",
   },
-  Culturel: {
+  Cultural: {
     Spring: "France",
-    Summer: "Japon",
-    Autumn: "Egypte",
-    Winter: "Chine",
+    Summer: "Japan",
+    Autumn: "Egypt",
+    Winter: "China",
   },
   Exploration: {
-    Spring: "Islande",
-    Summer: "Afrique",
-    Autumn: "Perou",
-    Winter: "Norvege",
+    Spring: "Iceland",
+    Summer: "Africa",
+    Autumn: "Peru",
+    Winter: "Norway",
   },
 };
 
 const destinationImages: Record<string, string> = {
-  Grece: "/imgDestinations/Grece.jpg",
+  Greece: "/imgDestinations/Grece.jpg",
   Bali: "/imgDestinations/Bali.jpeg",
-  Italie: "/imgDestinations/Italie.jpg",
+  Italy: "/imgDestinations/Italie.jpg",
   Maldives: "/imgDestinations/Maldive.jpg",
-  Espagne: "/imgDestinations/Espagne.jpg",
+  Spain: "/imgDestinations/Espagne.jpg",
   CostaRica: "/imgDestinations/CostaRica.jpg",
   Canada: "/imgDestinations/Canada.jpg",
-  Suisse: "/imgDestinations/Suisse.jpg",
+  Switzerland: "/imgDestinations/Suisse.jpg",
   France: "/imgDestinations/France.jpg",
-  Japon: "/imgDestinations/Japon.jpg",
-  Egypte: "/imgDestinations/Egypte.jpeg",
-  Chine: "/imgDestinations/Chine.jpeg",
-  Islande: "/imgDestinations/Islande.jpg",
-  Afrique: "/imgDestinations/Afrique.jpg",
-  Perou: "/imgDestinations/Perou.jpeg",
-  Norvege: "/imgDestinations/Norvege.jpeg",
+  Japan: "/imgDestinations/Japon.jpg",
+  Egypt: "/imgDestinations/Egypte.jpeg",
+  China: "/imgDestinations/Chine.jpeg",
+  Iceland: "/imgDestinations/Islande.jpg",
+  Africa: "/imgDestinations/Afrique.jpg",
+  Peru: "/imgDestinations/Perou.jpeg",
+  Norway: "/imgDestinations/Norvege.jpeg",
 };
 
 const destinationComments: Record<
   string,
-  { name: string; image: string; text: string }[]
+  { nameKey: string; image: string; textKey: string }[]
 > = {
-  Grece: [
+  Greece: [
     {
-      name: "Sophie",
+      nameKey: "persona_sophie",
       image: "/imgPersonas/Persona1.jpg",
-      text: "Un voyage incroyable en Grèce, paysages et culture locale au top !",
+      textKey: "persona_sophie_greece",
     },
     {
-      name: "Alexandre",
+      nameKey: "persona_alexandre",
       image: "/imgPersonas/Persona2.jpg",
-      text: "La mer Égée est splendide, j’ai adoré les couchers de soleil.",
+      textKey: "persona_alexandre_greece",
     },
   ],
   Bali: [
     {
-      name: "Marc",
+      nameKey: "persona_marc",
       image: "/imgPersonas/Persona1.jpg",
-      text: "Bali est magique, entre temples et plages paradisiaques.",
+      textKey: "persona_marc_bali",
     },
     {
-      name: "Sophie",
+      nameKey: "persona_sophie",
       image: "/imgPersonas/Persona2.jpg",
-      text: "La gastronomie balinaise est une vraie découverte !",
+      textKey: "persona_sophie_bali",
     },
   ],
-  Italie: [
+  Italy: [
     {
-      name: "Alexandre",
+      nameKey: "persona_alexandre",
       image: "/imgPersonas/Persona1.jpg",
-      text: "Rome et Florence, un vrai musée à ciel ouvert.",
+      textKey: "persona_alexandre_italy",
     },
     {
-      name: "Sophie",
+      nameKey: "persona_sophie",
       image: "/imgPersonas/Persona2.jpg",
-      text: "La cuisine italienne est un régal !",
+      textKey: "persona_sophie_italy",
     },
   ],
   Maldives: [
     {
-      name: "Marc",
+      nameKey: "persona_marc",
       image: "/imgPersonas/Persona1.jpg",
-      text: "Les plages des Maldives sont paradisiaques.",
+      textKey: "persona_marc_maldives",
     },
     {
-      name: "Sophie",
+      nameKey: "persona_sophie",
       image: "/imgPersonas/Persona2.jpg",
-      text: "Un séjour détente parfait, j’ai adoré le snorkeling.",
+      textKey: "persona_sophie_maldives",
     },
   ],
-  Espagne: [
+  Spain: [
     {
-      name: "Alexandre",
+      nameKey: "persona_alexandre",
       image: "/imgPersonas/Persona1.jpg",
-      text: "Barcelone et Madrid, deux villes pleines de vie.",
+      textKey: "persona_alexandre_spain",
     },
     {
-      name: "Marc",
+      nameKey: "persona_marc",
       image: "/imgPersonas/Persona2.jpg",
-      text: "Les tapas espagnols sont délicieux !",
+      textKey: "persona_marc_spain",
     },
   ],
   CostaRica: [
     {
-      name: "Sophie",
+      nameKey: "persona_sophie",
       image: "/imgPersonas/Persona1.jpg",
-      text: "La jungle du Costa Rica est impressionnante.",
+      textKey: "persona_sophie_costarica",
     },
     {
-      name: "Marc",
+      nameKey: "persona_marc",
       image: "/imgPersonas/Persona2.jpg",
-      text: "Un paradis pour les amateurs de nature et d’aventure.",
+      textKey: "persona_marc_costarica",
     },
   ],
   Canada: [
     {
-      name: "Alexandre",
+      nameKey: "persona_alexandre",
       image: "/imgPersonas/Persona1.jpg",
-      text: "Les paysages du Canada sont grandioses.",
+      textKey: "persona_alexandre_canada",
     },
     {
-      name: "Sophie",
+      nameKey: "persona_sophie",
       image: "/imgPersonas/Persona2.jpg",
-      text: "J’ai adoré les lacs et les forêts.",
+      textKey: "persona_sophie_canada",
     },
   ],
-  Suisse: [
+  Switzerland: [
     {
-      name: "Marc",
+      nameKey: "persona_marc",
       image: "/imgPersonas/Persona1.jpg",
-      text: "Les Alpes suisses sont magnifiques en hiver.",
+      textKey: "persona_marc_switzerland",
     },
     {
-      name: "Alexandre",
+      nameKey: "persona_alexandre",
       image: "/imgPersonas/Persona2.jpg",
-      text: "Un pays parfait pour le ski et la randonnée.",
+      textKey: "persona_alexandre_switzerland",
     },
   ],
   France: [
     {
-      name: "Sophie",
+      nameKey: "persona_sophie",
       image: "/imgPersonas/Persona1.jpg",
-      text: "Paris est une ville magique.",
+      textKey: "persona_sophie_france",
     },
     {
-      name: "Marc",
+      nameKey: "persona_marc",
       image: "/imgPersonas/Persona2.jpg",
-      text: "La gastronomie française est incomparable.",
+      textKey: "persona_marc_france",
     },
   ],
-  Japon: [
+  Japan: [
     {
-      name: "Alexandre",
+      nameKey: "persona_alexandre",
       image: "/imgPersonas/Persona1.jpg",
-      text: "Le Japon est fascinant, entre tradition et modernité.",
+      textKey: "persona_alexandre_japan",
     },
     {
-      name: "Sophie",
+      nameKey: "persona_sophie",
       image: "/imgPersonas/Persona2.jpg",
-      text: "Kyoto et Tokyo sont des villes incroyables.",
+      textKey: "persona_sophie_japan",
     },
   ],
-  Egypte: [
+  Egypt: [
     {
-      name: "Marc",
+      nameKey: "persona_marc",
       image: "/imgPersonas/Persona1.jpg",
-      text: "Les pyramides d’Égypte sont impressionnantes.",
+      textKey: "persona_marc_egypt",
     },
     {
-      name: "Alexandre",
+      nameKey: "persona_alexandre",
       image: "/imgPersonas/Persona2.jpg",
-      text: "Un voyage dans l’histoire antique.",
+      textKey: "persona_alexandre_egypt",
     },
   ],
-  Chine: [
+  China: [
     {
-      name: "Sophie",
+      nameKey: "persona_sophie",
       image: "/imgPersonas/Persona1.jpg",
-      text: "La Grande Muraille est spectaculaire.",
+      textKey: "persona_sophie_china",
     },
     {
-      name: "Marc",
+      nameKey: "persona_marc",
       image: "/imgPersonas/Persona2.jpg",
-      text: "Un pays riche en culture et traditions.",
+      textKey: "persona_marc_china",
     },
   ],
-  Islande: [
+  Iceland: [
     {
-      name: "Alexandre",
+      nameKey: "persona_alexandre",
       image: "/imgPersonas/Persona1.jpg",
-      text: "Exploration en Islande : geysers, volcans et aurores boréales.",
+      textKey: "persona_alexandre_iceland",
     },
     {
-      name: "Marc",
+      nameKey: "persona_marc",
       image: "/imgPersonas/Persona2.jpg",
-      text: "Un pays sauvage et magnifique.",
+      textKey: "persona_marc_iceland",
     },
   ],
-  Afrique: [
+  Africa: [
     {
-      name: "Sophie",
+      nameKey: "persona_sophie",
       image: "/imgPersonas/Persona1.jpg",
-      text: "Un safari en Afrique est une expérience unique.",
+      textKey: "persona_sophie_africa",
     },
     {
-      name: "Alexandre",
+      nameKey: "persona_alexandre",
       image: "/imgPersonas/Persona2.jpg",
-      text: "La faune et la flore sont incroyables.",
+      textKey: "persona_alexandre_africa",
     },
   ],
-  Perou: [
+  Peru: [
     {
-      name: "Marc",
+      nameKey: "persona_marc",
       image: "/imgPersonas/Persona1.jpg",
-      text: "Le Machu Picchu est une merveille du monde.",
+      textKey: "persona_marc_peru",
     },
     {
-      name: "Sophie",
+      nameKey: "persona_sophie",
       image: "/imgPersonas/Persona2.jpg",
-      text: "Un pays riche en histoire et traditions.",
+      textKey: "persona_sophie_peru",
     },
   ],
-  Norvege: [
+  Norway: [
     {
-      name: "Alexandre",
+      nameKey: "persona_alexandre",
       image: "/imgPersonas/Persona1.jpg",
-      text: "Les fjords norvégiens sont spectaculaires.",
+      textKey: "persona_alexandre_norway",
     },
     {
-      name: "Marc",
+      nameKey: "persona_marc",
       image: "/imgPersonas/Persona2.jpg",
-      text: "Un pays parfait pour les amoureux de nature.",
+      textKey: "persona_marc_norway",
     },
   ],
 };
 
 const InspirationPage: React.FC = () => {
+  const { t } = useTranslation();
   const [step, setStep] = useState(1);
   const [activity, setActivity] = useState<Activity | null>(null);
   const [season, setSeason] = useState<Season | null>(null);
@@ -271,17 +273,15 @@ const InspirationPage: React.FC = () => {
   const destination = activity && season ? suggestions[activity][season] : null;
 
   const handleBack = () => {
-    if (step === 3) setSeason(null); // reset la saison si on revient de l'étape 3
-    if (step === 2) setActivity(null); // reset l'activité si on revient de l'étape 2
+    if (step === 3) setSeason(null);
+    if (step === 2) setActivity(null);
     setStep(step - 1);
   };
 
   return (
-    <main className={`inspiration ${season?.toLowerCase() || ""}`}>
-      {/* Animation saison */}
-      <SeasonParticles season={season} />
+    <main className={`inspiration ${season ? season.toLowerCase() : ""}`}>
+      {season && <SeasonParticles season={season} />}
 
-      {/* Bouton retour global */}
       {step > 1 && (
         <div
           className={
@@ -289,15 +289,14 @@ const InspirationPage: React.FC = () => {
           }
         >
           <button type="button" className="back-button" onClick={handleBack}>
-            ⬅ Back
+            ⬅ {t("inspiration_back")}
           </button>
         </div>
       )}
 
-      {/* Étape 1 : choix activité */}
       {step === 1 && (
         <section className="inspiration-step">
-          <h2>Choose your travel style</h2>
+          <h2>{t("inspiration_choose_activity")}</h2>
           <div className="choices">
             {activities.map((act) => (
               <button
@@ -309,17 +308,18 @@ const InspirationPage: React.FC = () => {
                 }}
                 style={{ backgroundImage: `url(${act.image})` }}
               >
-                <span className="button-text">{act.name}</span>
+                <span className="button-text">
+                  {t(`inspiration_activity_${act.name.toLowerCase()}`)}
+                </span>
               </button>
             ))}
           </div>
         </section>
       )}
 
-      {/* Étape 2 : choix saison */}
       {step === 2 && (
         <section className="inspiration-step">
-          <h2>Choose your season</h2>
+          <h2>{t("inspiration_choose_season")}</h2>
           <div className="choices">
             {seasons.map((s) => (
               <button
@@ -331,22 +331,25 @@ const InspirationPage: React.FC = () => {
                 }}
                 style={{ backgroundImage: `url(${s.image})` }}
               >
-                <span className="button-text">{s.name}</span>
+                <span className="button-text">
+                  {t(`inspiration_season_${s.name.toLowerCase()}`)}
+                </span>
               </button>
             ))}
           </div>
         </section>
       )}
 
-      {/* Étape 3 : destination */}
       {step === 3 && destination && (
         <section className="inspiration-step">
-          <h2>Destination suggestion</h2>
+          <h2>{t("inspiration_destination_suggestion")}</h2>
           <div className="destination-content">
             <p>
-              Pour un voyage <strong>{activity}</strong> en{" "}
-              <strong>{season}</strong>, nous te conseillons :{" "}
-              <strong>{destination}</strong>.
+              {t("inspiration_for_activity_season", {
+                activity: t(`inspiration_activity_${activity?.toLowerCase()}`),
+                season: t(`inspiration_season_${season?.toLowerCase()}`),
+                destination: t(`destination_${destination?.toLowerCase()}`),
+              })}
             </p>
 
             <div className="image-wrapper">
@@ -358,15 +361,19 @@ const InspirationPage: React.FC = () => {
             </div>
 
             <p className="destination-text">
-              <em>Lorem Ipsum is simply dummy text…</em>
+              <em>{t("inspiration_destination_placeholder")}</em>
             </p>
 
             <div className="personas-grid">
               {(destinationComments[destination] || []).map((p) => (
-                <div key={p.name + p.image} className="persona-card">
-                  <img src={p.image} alt={p.name} className="persona-image" />
-                  <h4 className="persona-name">{p.name}</h4>
-                  <p className="persona-comment-text">{p.text}</p>
+                <div key={p.nameKey + p.image} className="persona-card">
+                  <img
+                    src={p.image}
+                    alt={t(p.nameKey)}
+                    className="persona-image"
+                  />
+                  <h4 className="persona-name">{t(p.nameKey)}</h4>
+                  <p className="persona-comment-text">{t(p.textKey)}</p>
                 </div>
               ))}
             </div>

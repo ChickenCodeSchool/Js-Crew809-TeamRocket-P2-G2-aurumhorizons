@@ -1,4 +1,5 @@
 import { type FC, type FormEvent, useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import "./CommentSection.css";
 
 interface Reply {
@@ -20,6 +21,8 @@ interface Comment {
 }
 
 const CommentsSection: FC = () => {
+  const { t } = useTranslation();
+
   const [comments, setComments] = useState<Comment[]>(() => {
     try {
       const stored = localStorage.getItem("comments");
@@ -71,7 +74,7 @@ const CommentsSection: FC = () => {
   };
 
   const handleDeleteComment = (id: number) => {
-    if (confirm("Are you sure you want to delete this comment?")) {
+    if (confirm(t("comments_confirm_delete"))) {
       setComments((prev) => prev.filter((c) => c.id !== id));
     }
   };
@@ -110,32 +113,34 @@ const CommentsSection: FC = () => {
 
   return (
     <section className="comments-section">
-      <h2>Your feedback on your trip</h2>
+      <h2>{t("comments_title")}</h2>
 
       <form onSubmit={handleAddComment} className="comment-form">
         <div className="form-group">
-          <label htmlFor="name">Name :</label>
+          <label htmlFor="name">{t("comments_name")}</label>
           <input
             id="name"
             type="text"
             value={name}
+            placeholder={t("comments_name_placeholder")}
             onChange={(e) => setName(e.target.value)}
             required
           />
         </div>
 
         <div className="form-group">
-          <label htmlFor="message">Comment :</label>
+          <label htmlFor="message">{t("comments_message")}</label>
           <textarea
             id="message"
             value={message}
+            placeholder={t("comments_message_placeholder")}
             onChange={(e) => setMessage(e.target.value)}
             required
           />
         </div>
 
         <div className="form-group">
-          <label htmlFor="stayStartDate">Stay Start Date :</label>
+          <label htmlFor="stayStartDate">{t("comments_stay_start")}</label>
           <input
             id="stayStartDate"
             type="date"
@@ -146,7 +151,7 @@ const CommentsSection: FC = () => {
         </div>
 
         <div className="form-group">
-          <label htmlFor="stayEndDate">Stay End Date :</label>
+          <label htmlFor="stayEndDate">{t("comments_stay_end")}</label>
           <input
             id="stayEndDate"
             type="date"
@@ -157,7 +162,7 @@ const CommentsSection: FC = () => {
         </div>
 
         <div className="form-group">
-          <label htmlFor="rating">Rating :</label>
+          <label htmlFor="rating">{t("comments_rating")}</label>
           <div id="rating" className="star-rating">
             {[1, 2, 3, 4, 5].map((value) => (
               <button
@@ -169,7 +174,7 @@ const CommentsSection: FC = () => {
                 onClick={() => setRating(value)}
                 onMouseEnter={() => setHoverRating(value)}
                 onMouseLeave={() => setHoverRating(0)}
-                aria-label={`${value} star`}
+                aria-label={`${value} ${t("comments_star")}`}
               >
                 ★
               </button>
@@ -177,12 +182,12 @@ const CommentsSection: FC = () => {
           </div>
         </div>
 
-        <button type="submit">Submit</button>
+        <button type="submit">{t("comments_submit")}</button>
       </form>
 
       {comments.length > 0 && (
         <div className="average-rating">
-          <strong>Average rating:</strong>{" "}
+          <strong>{t("comments_average")}:</strong>{" "}
           <span className="stars">
             {renderStars(Math.round(averageRating))}
           </span>{" "}
@@ -191,7 +196,7 @@ const CommentsSection: FC = () => {
       )}
 
       {comments.length === 0 ? (
-        <p>We would enjoy your comments!</p>
+        <p>{t("comments_no_comments")}</p>
       ) : (
         <ul className="comment-list">
           {comments.map((comment) => (
@@ -200,22 +205,22 @@ const CommentsSection: FC = () => {
                 <strong>{comment.name}</strong> – <em>{comment.date}</em>
               </p>
               <p className="comment-stay-dates">
-                <strong>Stay Dates:</strong> {comment.stayStartDate} to{" "}
-                {comment.stayEndDate}
+                <strong>{t("comments_stay_dates")}:</strong>{" "}
+                {comment.stayStartDate} to {comment.stayEndDate}
               </p>
               <p className="comment-rating">{renderStars(comment.rating)}</p>
               <p>{comment.message}</p>
 
               <div className="comment-actions">
                 <button type="button" onClick={() => setReplyTo(comment.id)}>
-                  Reply
+                  {t("comments_reply")}
                 </button>
                 <button
                   type="button"
                   className="delete-btn"
                   onClick={() => handleDeleteComment(comment.id)}
                 >
-                  Delete
+                  {t("comments_delete")}
                 </button>
               </div>
 
@@ -226,18 +231,18 @@ const CommentsSection: FC = () => {
                 >
                   <input
                     type="text"
-                    placeholder="Your name"
+                    placeholder={t("comments_reply_name")}
                     value={replyName}
                     onChange={(e) => setReplyName(e.target.value)}
                     required
                   />
                   <textarea
-                    placeholder="Your reply..."
+                    placeholder={t("comments_reply_message")}
                     value={replyMessage}
                     onChange={(e) => setReplyMessage(e.target.value)}
                     required
                   />
-                  <button type="submit">Send Reply</button>
+                  <button type="submit">{t("comments_send_reply")}</button>
                 </form>
               )}
 

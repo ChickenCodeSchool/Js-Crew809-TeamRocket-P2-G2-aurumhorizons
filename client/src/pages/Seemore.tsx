@@ -1,4 +1,5 @@
-import { type ReactNode, useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { useTranslation } from "react-i18next";
 import ExperiencesCards from "../components/ExperiencesCards";
 
 import imageForId2 from "../assets/images/imgHomepage/EgyptHomePage.png";
@@ -21,19 +22,15 @@ import imageForId8 from "../assets/images/imgSeemore/veniseseemore.jpg";
 import "./Seemore.css";
 
 interface Destination {
-  description: ReactNode;
+  id: number;
+  continent: string;
   tourist_season: string;
   average_price: string;
-  continent: string;
-  id: number;
-  name: string;
 }
 
-type GroupedDestinations = {
-  [key: string]: Destination[];
-};
+type GroupedDestinations = Record<string, Destination[]>;
 
-const destinationImageMap: { [key: number]: string } = {
+const destinationImageMap: Record<number, string> = {
   1: imageForId1,
   2: imageForId2,
   3: imageForId3,
@@ -53,75 +50,82 @@ const destinationImageMap: { [key: number]: string } = {
 };
 
 const Seemore: React.FC = () => {
-  const [dataDestination1, setDataDestination1] = useState<Destination[]>([]);
+  const { t } = useTranslation();
+  const [dataDestination, setDataDestination] = useState<Destination[]>([]);
 
   useEffect(() => {
     fetch("http://localhost:3310/api/destinations")
       .then((res) => res.json())
-      .then((destinationData) => {
-        setDataDestination1(destinationData as Destination[]);
-      });
+      .then((destinationData: Destination[]) =>
+        setDataDestination(destinationData),
+      )
+      .catch(() => setDataDestination([]));
   }, []);
 
   const groupedDestinations = useMemo(() => {
-    return dataDestination1.reduce((acc, destination) => {
+    return dataDestination.reduce((acc: GroupedDestinations, destination) => {
       const { continent } = destination;
-      if (!acc[continent]) {
-        acc[continent] = [];
-      }
+      if (!acc[continent]) acc[continent] = [];
       acc[continent].push(destination);
       return acc;
-    }, {} as GroupedDestinations);
-  }, [dataDestination1]);
+    }, {});
+  }, [dataDestination]);
 
   return (
     <>
+      {/* Top section with title and intro */}
       <section className="top-container">
         <article className="topseemore">
-          <h1>All our destinations</h1>
+          <h1>{t("seemore_title")}</h1>
           <div className="ptopsee">
-            <p>
-              From the African desert to Asian megacities, from the paradise
-              beaches of Oceania to the dizzying peaks of the Americas, and not
-              forgetting the historical charm of Europe...
-            </p>
-            <p>
-              The world is within your reach. To help you find inspiration and
-              navigate our offerings more easily, we have grouped all our
-              destinations by continent. Explore, dream, and find the journey
-              that's right for you.
-            </p>
+            <p>{t("seemore_intro_p1")}</p>
+            <p>{t("seemore_intro_p2")}</p>
           </div>
         </article>
       </section>
+
+      {/* Destinations grouped by continent */}
       <section className="seemore-page-container">
         {Object.keys(groupedDestinations).map((continentName) => (
           <div key={continentName} className="continent-group-seemore">
-            <h2 className="continent-title-seemore">{continentName}</h2>
+            <h2 className="continent-title-seemore">
+              {t(`continents.${continentName}`, continentName)}
+            </h2>
             <div className="containercardseemore">
-              {groupedDestinations[continentName].map(
-                (destination: Destination) => {
-                  const imageUrl = destinationImageMap[destination.id];
+              {groupedDestinations[continentName].map((destination) => {
+                const imageUrl = destinationImageMap[destination.id];
+                const translatedName = t(
+                  `destinations.${destination.id}.name`,
+                  `Destination ${destination.id}`,
+                );
+                const translatedDescription = t(
+                  `destinations.${destination.id}.description`,
+                  "Description not available",
+                );
 
-                  return (
-                    <>
-                      <article key={destination.id} className="carteseemore">
-                        <div className="backcardsee">
-                          <h2 className="h2seemore">{destination.name}</h2>
-                          <ExperiencesCards
-                            name={destination.name}
-                            image={imageUrl}
-                            continent={destination.continent}
-                            average_price={destination.average_price}
-                            tourist_season={destination.tourist_season}
-                          />
-                          <p className="PseePage">{destination.description}</p>
-                        </div>
-                      </article>
-                    </>
-                  );
-                },
-              )}
+                return (
+                  <article key={destination.id} className="carteseemore">
+                    <div className="backcardsee">
+                      <h2 className="h2seemore">{translatedName}</h2>
+
+                      {/* ExperiencesCards sans description */}
+                      <ExperiencesCards
+                        name={translatedName}
+                        image={imageUrl}
+                        continent={t(
+                          `continents.${destination.continent}`,
+                          destination.continent,
+                        )}
+                        average_price={destination.average_price}
+                        tourist_season={destination.tourist_season}
+                      />
+
+                      {/* Description affichée séparément */}
+                      <p className="PseePage">{translatedDescription}</p>
+                    </div>
+                  </article>
+                );
+              })}
             </div>
           </div>
         ))}

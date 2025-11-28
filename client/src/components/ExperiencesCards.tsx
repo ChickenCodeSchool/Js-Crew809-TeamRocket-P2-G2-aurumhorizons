@@ -1,4 +1,5 @@
-import { Link } from "react-router";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import "./ExperiencesCards.css";
 
 interface ExperiencesCardsProps {
@@ -40,6 +41,7 @@ const ExperiencesCards: React.FC<ExperiencesCardsProps> = ({
   average_price,
   tourist_season,
 }) => {
+  const { t } = useTranslation();
   const destinationTrouvee = destinations.find((d) => d.name === name);
   const lien = destinationTrouvee ? destinationTrouvee.link : "#";
 
@@ -52,8 +54,12 @@ const ExperiencesCards: React.FC<ExperiencesCardsProps> = ({
           <h3 className="destination-name">{name}</h3>
           <div className="destination-infos">
             <p>{continent}</p>
-            <p>{average_price} € (avg)</p>
-            <p>Best season: {tourist_season}</p>
+            <p>
+              {average_price} € ({t("experiences_avg")})
+            </p>
+            <p>
+              {t("experiences_best_season")}: {tourist_season}
+            </p>
           </div>
         </div>
       </div>

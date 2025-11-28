@@ -1,0 +1,964 @@
+{
+  "navbar_home": "首页",
+  "navbar_inspiration": "灵感",
+  "navbar_contact": "联系我们",
+  "navbar_about": "关于我们",
+  "navbar_login": "登录",
+  "home_welcome": "与 Aurum Horizons 一起，想去哪儿就去哪儿",
+  "home_experiences": "体验",
+  "carousel_no_images": "没有可用图片",
+  "carousel_slide_alt": "幻灯片",
+  "comments_title": "您的旅程评价",
+  "comments_name": "姓名",
+  "comments_name_placeholder": "输入您的姓名",
+  "comments_message": "评论",
+  "comments_message_placeholder": "写下您的评论...",
+  "comments_stay_start": "入住开始日期",
+  "comments_stay_end": "入住结束日期",
+  "comments_rating": "评分",
+  "comments_star": "星",
+  "comments_submit": "提交",
+  "comments_average": "平均评分",
+  "comments_no_comments": "我们期待您的反馈！",
+  "comments_reply": "回复",
+  "comments_delete": "删除",
+  "comments_confirm_delete": "您确定要删除此评论吗？",
+  "comments_stay_dates": "入住日期",
+  "comments_reply_name": "您的姓名",
+  "comments_reply_message": "您的回复...",
+  "comments_send_reply": "发送回复",
+  "contact_title": "通过我们的服务您可以",
+  "contact_point1": "提升产品的可用性",
+  "contact_point2": "吸引更高层次的用户，超越竞争对手",
+  "contact_point3": "减少上手时间并提高销量",
+  "contact_point4": "平衡用户需求与您的业务目标",
+  "contact_usa": "美国",
+  "contact_usa_address": "280 W, 17th street 4th Floor, Apartment No 407 New York NY, 10018",
+  "contact_india": "印度",
+  "contact_india_address": "Plot No 8-2-601/p/15ms Banjara Hills, Road No 10 Hyderabad, 500034",
+  "devis_title": "称谓",
+  "devis_mr": "先生",
+  "devis_mrs": "女士",
+  "devis_last_name": "姓氏",
+  "devis_first_name": "名字",
+  "devis_email": "电子邮件",
+  "devis_phone": "电话",
+  "devis_adults": "成人",
+  "devis_children": "儿童",
+  "devis_departure_date": "出发日期",
+  "devis_best_time": "最佳联系时间",
+  "devis_comment": "评论",
+  "devis_send": "发送",
+  "devis_close_modal": "关闭窗口",
+  "experiences_best_season": "最佳季节",
+  "experiences_avg": "平均",
+  "footer_newsletter_placeholder": "订阅时事通讯...",
+  "footer_legal_notice": "法律声明",
+  "formcontact_name": "姓名",
+  "formcontact_name_placeholder": "您的姓名",
+  "formcontact_email": "电子邮件",
+  "formcontact_email_placeholder": "输入您的电子邮件",
+  "formcontact_message": "消息",
+  "formcontact_message_placeholder": "输入您的消息",
+  "formcontact_terms_prefix": "我同意",
+  "formcontact_terms_link": "一般条款和条件",
+  "formcontact_send_request": "发送您的请求",
+  "formcontact_also_contact": "您也可以通过以下方式联系我们",
+  "gps_loading": "加载中...",
+  "hotels_no_hotels_available": "没有可用的酒店",
+  "hotels_section_title": "我们在 {{destination}} 的专属酒店",
+  "hotels_visit_website": "访问网站",
+  "hotels_prev": "上一家酒店",
+  "hotels_next": "下一家酒店",
+  "login_title": "登录",
+  "signup_title": "注册",
+  "login_email": "电子邮件",
+  "login_password": "密码",
+  "login_btn": "登录",
+  "signup_name": "姓名",
+  "signup_email": "电子邮件",
+  "signup_password": "密码",
+  "signup_confirm_password": "确认密码",
+  "signup_btn": "注册",
+  "login_email_required": "电子邮件是必需的",
+  "login_invalid_email": "电子邮件无效",
+  "login_password_required": "密码是必需的",
+  "login_password_short": "密码太短",
+  "signup_success": "账户创建成功！",
+  "toggle_password_show": "显示",
+  "toggle_password_hide": "隐藏",
+  "menu_experiences": "体验",
+  "menu_inspirations": "灵感",
+  "destination_indonesia": "印度尼西亚",
+  "destination_egypt": "埃及",
+  "destination_maldives": "马尔代夫",
+  "destination_philippines": "菲律宾",
+  "destination_seychelles": "塞舌尔",
+  "destination_iceland": "冰岛",
+  "destination_see_more": "查看更多...",
+  "day": "天",
+  "loading": "加载中",
+  "banner_welcome": "欢迎访问我们的网站！",
+  "banner_promo": "发现我们的最新优惠！",
+  "indonesia": "印度尼西亚",
+  "seychelles": "塞舌尔",
+  "maldives": "马尔代夫",
+  "iceland": "冰岛",
+  "egypt": "埃及",
+  "philippines": "菲律宾",
+  "aurum_horizons": "Aurum Horizons",
+  "about_us": "关于我们",
+  "how_we_work": "我们的工作方式",
+  "how_we_work_text": "我们的方法是一种真正的匠心工艺。我们从一次保密咨询开始，深入了解您独特的旅行愿望和抱负。我们的旅行工匠利用我们的专业知识和独家网络，为您量身定制 100% 的行程，每个细节都以绝对的精度进行策划。从最初的构思到您的归来，我们管理所有后台物流并提供 24/7 的周到支持。您的唯一任务是沉浸在非凡的体验中。",
+  "discover_difference": "发现我们的不同之处",
+  "efficient_friendly_service": "高效友好的服务",
+  "flexible_hassle_free": "灵活无忧",
+  "passionate_honest_experts": "充满激情和诚实的专家",
+  "value_and_prices": "价值与价格",
+  "unparalleled_support": "无与伦比的支持",
+  "dont_just_take_our_word": "请勿只听信我们的一面之词",
+  "our_specialists": "我们的专家",
+  "specialist_advice_alt": "一位专家正在向顾客提供建议",
+  "specialists_text": "我们的专家是真正的旅行建筑师，以其卓越而著称。他们因对独家目的地拥有亲密的第一手知识而被选中，其专长在于凭直觉倾听您的愿望。他们充满激情、谨慎且人脉广阔，能够预测每一个细节，确保完美的定制计划和您绝对的心安。",
+  "travel_guide_by_region": "区域旅行指南",
+  "our_office": "我们的办公室",
+  "office_address_line1": "2 rue Kellermann,",
+  "office_address_line2": "59100 Roubaix,",
+  "office_address_line3": "法国。",
+  "office_phone": "+33 9 72 10 10 07",
+  "office_alt": "一间豪华办公室",
+  "contact_heading": "联系我们",
+  "contact_subheading": "填写以下表格或在您方便的时候与我们安排会面。",
+  "inspiration_choose_style": "选择您的旅行风格",
+  "activity_relaxing": "休闲",
+  "activity_sporty": "运动",
+  "activity_cultural": "文化",
+  "activity_exploration": "探索",
+  "season_spring": "春季",
+  "season_summer": "夏季",
+  "season_autumn": "秋季",
+  "season_winter": "冬季",
+  "legal_notice_title": "法律声明",
+  "legal_notice_intro": "根据 2004 年 6 月 21 日第 2004-575 号法律关于数字经济信任的规定，特此告知网站 www.aurumhorizons.com 用户有关参与其创建和监督的各方身份。",
+  "legal_notice_site_edition": "网站编辑",
+  "legal_notice_site_description": "本网站（可访问网址 www.aurumhorizons.com，简称“本网站”）由以下机构发布：",
+  "legal_notice_company_info": "Aurum Horizons SAS，一家简易股份公司，资本为 25,000 欧元，在巴黎贸易和公司注册处注册，编号为 987 654 321，注册地址位于 25 Rue de la Paix, 75002 Paris, France。",
+  "legal_notice_vat_info": "欧盟增值税号：FR 00 987654321 电话：+33 1 40 20 30 40 电子邮件：contact@aurumhorizons.com",
+  "legal_notice_hosting": "托管",
+  "legal_notice_hosting_info": "本网站由 OVH SAS 公司托管，该公司位于 2 rue Kellermann, 59100 Roubaix, France。",
+  "legal_notice_hosting_contact": "联系方式：1007（唯一号码）或 +33 9 72 10 10 07",
+  "legal_notice_director": "出版总监",
+  "legal_notice_director_info": "本网站的出版总监是 Éléonore Dubois 女士，以 Aurum Horizons SAS 总裁的身份。",
+  "legal_notice_travel_registration": "旅行社注册",
+  "legal_notice_travel_registration_info": "Aurum Horizons SAS 已在 Atout France 旅行和旅游运营商名录中注册，编号为：IM075100000。",
+  "legal_notice_financial_guarantee": "财务担保：APST - 旅游业团结互助专业协会 (Association Professionnelle de Solidarité du Tourisme), 15 Avenue Carnot, 75017 Paris, France。",
+  "legal_notice_professional_insurance": "专业民事责任保险 (RCP)：Hiscox Assurances, 19 Rue Louis le Grand, 75002 Paris, France。合同编号 RCP0001234。",
+  "legal_notice_contact_us": "联系我们",
+  "legal_notice_contact_intro": "对于有关本网站的任何问题、信息请求，或任何非法内容或活动的报告，用户可以联系编辑者：",
+  "legal_notice_contact_phone": "电话：+33 1 40 20 30 40",
+  "legal_notice_contact_email_prefix": "电子邮件：",
+  "legal_notice_contact_mail": "邮件：Aurum Horizons, 25 Rue de la Paix, 75002 Paris, France",
+  "legal_notice_intellectual_property": "知识产权",
+  "legal_notice_ip_description": "本网站的全部内容（内容、文本、图像、视频、标志、图形）均受法国和国际版权及知识产权法律的约束。所有复制权均予保留，包括可下载文件以及图像和摄影表示。",
+  "legal_notice_ip_reproduction": "未经 Aurum Horizons 事先书面授权，禁止以任何方式或程序复制、再现、修改、出版或改编本网站的全部或部分元素。",
+  "userProfile_sections_personal": "个人信息",
+  "userProfile_sections_documents": "我的文件",
+  "userProfile_sections_quotes": "我的报价",
+  "userProfile_sections_trips": "即将到来的旅行",
+  "userProfile_personal_firstName": "名字",
+  "userProfile_personal_lastName": "姓氏",
+  "userProfile_personal_title": "称谓",
+  "userProfile_personal_mr": "先生",
+  "userProfile_personal_ms": "女士",
+  "userProfile_personal_mrs": "夫人",
+  "userProfile_personal_birthDate": "出生日期",
+  "userProfile_personal_nationality": "国籍",
+  "userProfile_personal_address": "地址",
+  "userProfile_personal_email": "电子邮件",
+  "userProfile_personal_phoneNumber": "电话号码",
+  "userProfile_personal_numberOfChildren": "儿童数量",
+  "userProfile_documents_id": "身份证明文件",
+  "userProfile_documents_visa": "签证",
+  "userProfile_documents_proofOfAddress": "地址证明",
+  "userProfile_documents_bankAccount": "银行账户信息 (RIB)",
+  "userProfile_documents_uploadInstructions": "拖放或点击上传",
+  "userProfile_quotes_title": "我的报价",
+  "userProfile_quotes_instructions": "在此上传并保存您的报价。",
+  "userProfile_trips_title": "即将到来的旅行",
+  "userProfile_trips_instructions": "您计划的旅行将在此处显示。",
+  "seemore_title": "我们所有的目的地",
+  "seemore_intro_p1": "从非洲沙漠到亚洲大都市，从大洋洲的天堂海滩到美洲令人眩晕的山峰，以及欧洲的历史魅力...",
+  "seemore_intro_p2": "世界就在您的指尖。为了帮助您找到灵感并更轻松地浏览我们的优惠，我们已将所有目的地按大洲分组。探索、梦想，找到适合您的旅行。",
+  "destinations": {
+    "1": {
+      "name": "巴厘岛 (Bali)",
+      "description": "一个拥有迷人海滩和郁郁葱葱的稻田的热带天堂。",
+      "continent": "亚洲",
+      "average_price": "1800 €",
+      "tourist_season": "四月至十月"
+    },
+    "2": {
+      "name": "埃及 (Egypt)",
+      "description": "探索古老的金字塔、尼罗河游轮和丰富的历史。",
+      "continent": "非洲",
+      "average_price": "1500 €",
+      "tourist_season": "十月至四月"
+    },
+    "3": {
+      "name": "马尔代夫 (Maldives)",
+      "description": "位于碧绿海水和珊瑚礁上的豪华度假村。",
+      "continent": "亚洲",
+      "average_price": "2500 €",
+      "tourist_season": "十一月至四月"
+    },
+    "4": {
+      "name": "菲律宾 (Philippines)",
+      "description": "拥有充满活力的文化和异国情调的风景的美丽岛屿。",
+      "continent": "亚洲",
+      "average_price": "2000 €",
+      "tourist_season": "十二月至五月"
+    },
+    "5": {
+      "name": "塞舌尔 (Seychelles)",
+      "description": "原始海滩、碧绿海水和独特的野生动物。",
+      "continent": "非洲",
+      "average_price": "2200 €",
+      "tourist_season": "四月至十月"
+    },
+    "6": {
+      "name": "冰岛 (Iceland)",
+      "description": "雄伟的冰川、间歇泉和火山景观。",
+      "continent": "欧洲",
+      "average_price": "2400 €",
+      "tourist_season": "六月至八月"
+    },
+    "7": {
+      "name": "日本 (Japan)",
+      "description": "现代城市与传统寺庙的融合。",
+      "continent": "亚洲",
+      "average_price": "2100 €",
+      "tourist_season": "三月至五月"
+    },
+    "8": {
+      "name": "威尼斯 (Venice)",
+      "description": "浪漫的运河、历史建筑和意大利魅力。",
+      "continent": "欧洲",
+      "average_price": "1700 €",
+      "tourist_season": "四月至六月"
+    },
+    "9": {
+      "name": "哥斯达黎加 (Costa Rica)",
+      "description": "热带雨林、火山和丰富的野生动物探险。",
+      "continent": "美洲",
+      "average_price": "2000 €",
+      "tourist_season": "十二月至四月"
+    },
+    "10": {
+      "name": "希腊 (Greece)",
+      "description": "阳光普照的岛屿、古代遗址和地中海美食。",
+      "continent": "欧洲",
+      "average_price": "1800 €",
+      "tourist_season": "五月至九月"
+    },
+    "11": {
+      "name": "秘鲁 (Peru)",
+      "description": "马丘比丘、安第斯山脉和丰富的文化遗产。",
+      "continent": "美洲",
+      "average_price": "1900 €",
+      "tourist_season": "五月至九月"
+    },
+    "12": {
+      "name": "摩洛哥 (Morocco)",
+      "description": "充满活力的市场、沙漠景观和历史名城。",
+      "continent": "非洲",
+      "average_price": "1600 €",
+      "tourist_season": "三月至五月"
+    },
+    "13": {
+      "name": "澳大利亚 (Australia)",
+      "description": "多样化的野生动物、标志性海滩和内陆探险。",
+      "continent": "大洋洲",
+      "average_price": "2500 €",
+      "tourist_season": "九月至十一月"
+    },
+    "14": {
+      "name": "加拿大 (Canada)",
+      "description": "雄伟的山脉、湖泊和多元文化的城市。",
+      "continent": "美洲",
+      "average_price": "2200 €",
+      "tourist_season": "六月至八月"
+    },
+    "15": {
+      "name": "泰国 (Thailand)",
+      "description": "热带岛屿、充满活力的文化和美味的菜肴。",
+      "continent": "亚洲",
+      "average_price": "2000 €",
+      "tourist_season": "十一月至二月"
+    },
+    "16": {
+      "name": "新西兰 (New Zealand)",
+      "description": "壮观的风景、极限运动和毛利文化。",
+      "continent": "大洋洲",
+      "average_price": "2600 €",
+      "tourist_season": "十二月至二月"
+    }
+  },
+  "inspiration_back": "返回",
+  "inspiration_choose_activity": "选择一项活动",
+  "inspiration_choose_season": "选择一个季节",
+  "inspiration_destination_suggestion": "您的推荐目的地",
+  "inspiration_for_activity_season": "对于 {{season}} 的 {{activity}}，我们推荐 {{destination}}",
+  "inspiration_destination_placeholder": "了解其他人对此目的地的看法",
+  "inspiration_activity_relaxing": "休闲",
+  "inspiration_activity_sporty": "运动",
+  "inspiration_activity_cultural": "文化",
+  "inspiration_activity_exploration": "探索",
+  "inspiration_season_spring": "春季",
+  "inspiration_season_summer": "夏季",
+  "inspiration_season_autumn": "秋季",
+  "inspiration_season_winter": "冬季",
+  "persona_sophie": "索菲",
+  "persona_alexandre": "亚历山大",
+  "persona_marc": "马克",
+  "persona_sophie_greece": "一次令人难以置信的希腊之旅，风景和当地文化非常壮丽！",
+  "persona_alexandre_greece": "爱琴海很美，我喜欢那里的日落。",
+  "persona_marc_bali": "巴厘岛很神奇，有寺庙和田园诗般的海滩。",
+  "persona_sophie_bali": "巴厘岛的美食是一个真正的发现！",
+  "persona_alexandre_italy": "罗马和佛罗伦萨，就像走在一个活生生的博物馆里。",
+  "persona_sophie_italy": "意大利菜简直是神圣的！",
+  "persona_marc_maldives": "马尔代夫的海滩是一个真正的天堂。",
+  "persona_sophie_maldives": "非常适合放松度假和浮潜。",
+  "persona_alexandre_spain": "巴塞罗那和马德里充满了生命和文化。",
+  "persona_marc_spain": "西班牙小吃很美味！",
+  "persona_sophie_costarica": "哥斯达黎加的丛林令人叹为观止。",
+  "persona_marc_costarica": "自然和冒险爱好者的天堂。",
+  "persona_alexandre_canada": "加拿大的风景非常美丽。",
+  "persona_sophie_canada": "我喜欢那里的湖泊和森林。",
+  "persona_marc_switzerland": "瑞士阿尔卑斯山在冬天非常壮观。",
+  "persona_alexandre_switzerland": "非常适合滑雪和徒步旅行的国家。",
+  "persona_sophie_france": "巴黎很神奇。",
+  "persona_marc_france": "法国美食无与伦比。",
+  "persona_alexandre_japan": "日本很迷人，现代与传统并存。",
+  "persona_sophie_japan": "京都和东京令人难以置信。",
+  "persona_marc_egypt": "金字塔令人印象深刻。",
+  "persona_alexandre_egypt": "一次古老历史之旅。",
+  "persona_sophie_china": "长城很壮观。",
+  "persona_marc_china": "一个拥有丰富文化和传统的国家。",
+  "persona_alexandre_iceland": "间歇泉、火山和北极光令人难以置信。",
+  "persona_marc_iceland": "一个狂野而壮丽的国家。",
+  "persona_sophie_africa": "非洲野生动物园是一次独特的体验。",
+  "persona_alexandre_africa": "野生动物和风景令人难以置信。",
+  "persona_marc_peru": "马丘比丘令人叹为观止。",
+  "persona_sophie_peru": "到处都是丰富的文化和历史。",
+  "persona_alexandre_norway": "峡湾很壮观。",
+  "persona_marc_norway": "非常适合自然爱好者。",
+  "userProfile": {
+    "personalInfo": "个人信息",
+    "myDocuments": "我的文件",
+    "myQuotes": "我的报价",
+    "upcomingTrips": "即将到来的旅行",
+    "firstName": "名字",
+    "lastName": "姓氏",
+    "title": "称谓",
+    "mr": "先生",
+    "ms": "女士",
+    "mrs": "夫人",
+    "birthDate": "出生日期",
+    "nationality": "国籍",
+    "address": "地址",
+    "email": "电子邮件",
+    "phoneNumber": "电话号码",
+    "numberOfChildren": "儿童数量",
+    "idDocument": "身份证明文件",
+    "visa": "签证",
+    "proofOfAddress": "地址证明",
+    "bankAccount": "银行账户信息 (RIB)",
+    "dragDropOrClick": "拖放或点击上传",
+    "uploadAndStoreQuotes": "在此上传并保存您的报价。",
+    "plannedTrips": "您计划的旅行将在此处显示。"
+  },
+  "discover_experiences": "探索我们的体验",
+  "loading_destination": "正在加载目的地...",
+  "request_quote": "索取报价",
+  "flag": "旗帜",
+  "no_text_available": "没有可用文本",
+
+  "trips": {
+    "indonesia": {
+      "day1": {
+        "title": "抵达巴厘岛登巴萨",
+        "description": "接送至您的酒店，自由活动或休息。"
+      },
+      "day2": {
+        "title": "乌布和德格拉朗梯田",
+        "description": "探索巴厘岛文化的一天：参观寺庙、稻田和乌布当地市场。"
+      },
+      "day3": {
+        "title": "乌鲁瓦图寺和南部海滩",
+        "description": "日落时分探索悬崖上的乌鲁瓦图寺和巴厘岛南部的著名海滩。"
+      },
+      "day4": {
+        "title": "转移至龙目岛 - 库塔海滩",
+        "description": "乘飞机或渡轮前往龙目岛。在库塔办理入住，探索南部原始海滩。"
+      },
+      "day5": {
+        "title": "探索吉利群岛 (Trawangan, Meno 或 Air)",
+        "description": "浮潜之旅，在以海水清澈闻名的吉利群岛之一放松身心。"
+      },
+      "day6": {
+        "title": "Sendang Gile 和 Tiu Kelep 瀑布",
+        "description": "徒步探索林贾尼火山脚下的壮丽瀑布。"
+      }
+    },
+    "egypt": {
+      "day1": {
+        "title": "抵达赫尔格达和红海",
+        "description": "抵达赫尔格达机场。接送至您的红海沿岸酒店。"
+      },
+      "day2": {
+        "title": "在吉夫顿潜水或浮潜",
+        "description": "一日游，探索吉夫顿岛附近红海的珊瑚礁和海洋生物。"
+      },
+      "day3": {
+        "title": "卢克索：帝王谷和卡尔纳克神庙",
+        "description": "飞往或转至卢克索，参观帝王谷、哈特谢普苏特神庙和巨大的卡尔纳克神庙群。"
+      },
+      "day4": {
+        "title": "开罗：吉萨金字塔和狮身人面像",
+        "description": "飞往开罗。探索古代奇迹：大金字塔和狮身人面像。"
+      },
+      "day5": {
+        "title": "埃及博物馆和汗哈利利市场",
+        "description": "参观收藏图坦卡蒙宝藏的埃及博物馆，随后沉浸在汗哈利利市场中。"
+      },
+      "day6": {
+        "title": "达哈卜和出发",
+        "description": "在达哈卜享用早餐，自由购物，然后前往机场。"
+      }
+    },
+    "maldives": {
+      "day1": {
+        "title": "抵达马累和水上飞机接送",
+        "description": "抵达国际机场，乘坐壮观的水上飞机转至您的度假村。"
+      },
+      "day2": {
+        "title": "放松和海滩时光",
+        "description": "自由活动，享受海滩、水上别墅和酒店设施。"
+      },
+      "day3": {
+        "title": "浮潜和珊瑚",
+        "description": "有导游带领的浮潜之旅，探索环礁五颜六色的珊瑚礁。"
+      },
+      "day4": {
+        "title": "水上运动和皮划艇",
+        "description": "体验水上运动：在碧绿的泻湖中进行立式桨板、皮划艇或风帆冲浪。"
+      },
+      "day5": {
+        "title": "水疗和健康",
+        "description": "享受水疗护理或面朝大海的瑜伽课程，度过放松的一天。"
+      },
+      "day6": {
+        "title": "日落海豚巡游",
+        "description": "傍晚乘船游览，在日落时分观赏海豚。"
+      },
+      "day7": {
+        "title": "离开马尔代夫",
+        "description": "在返回马累机场之前，享用最后的乐园早餐。"
+      }
+    },
+    "philippines": {
+      "day1": {
+        "title": "抵达宿务",
+        "description": "入住酒店并探索周边环境。"
+      },
+      "day2": {
+        "title": "卡瓦山瀑布与溪降探险",
+        "description": "体验刺激的溪降活动并参观著名瀑布。"
+      },
+      "day3": {
+        "title": "薄荷岛与巧克力山",
+        "description": "探索巧克力山与眼镜猴保护区。"
+      },
+      "day4": {
+        "title": "邦劳跳岛游",
+        "description": "乘船游览白沙岛屿与浮潜。"
+      },
+      "day5": {
+        "title": "爱妮岛：潟湖与海滩",
+        "description": "飞往巴拉望并探索标志性潟湖。"
+      },
+      "day6": {
+        "title": "离开菲律宾",
+        "description": "自由活动并搭乘返程航班。"
+      }
+    },
+
+    "seychelles": {
+      "day1": {
+        "title": "抵达马埃岛",
+        "description": "前往酒店休息与放松。"
+      },
+      "day2": {
+        "title": "普拉兰岛与拉齐奥海滩",
+        "description": "参观世界著名的拉齐奥海滩。"
+      },
+      "day3": {
+        "title": "拉迪格岛骑行之旅",
+        "description": "骑自行车探索岛屿与迷人海滩。"
+      },
+      "day4": {
+        "title": "圣安妮海洋公园浮潜",
+        "description": "体验受保护海域的海洋生态。"
+      },
+      "day5": {
+        "title": "莫恩塞舌尔国家公园徒步",
+        "description": "在茂密雨林中进行自然徒步。"
+      },
+      "day6": {
+        "title": "离开塞舌尔",
+        "description": "前往机场搭机返程。"
+      }
+    },
+
+    "iceland": {
+      "day1": {
+        "title": "抵达雷克雅未克",
+        "description": "自由探索冰岛首都。"
+      },
+      "day2": {
+        "title": "黄金圈之旅",
+        "description": "参观辛格维利尔、黄金瀑布与盖歇尔地热区。"
+      },
+      "day3": {
+        "title": "南岸与瀑布",
+        "description": "探索塞里雅兰瀑布、斯科加瀑布与黑沙滩。"
+      },
+      "day4": {
+        "title": "杰古沙龙冰河湖",
+        "description": "欣赏漂浮冰山，可选择搭乘游船。"
+      },
+      "day5": {
+        "title": "蓝湖温泉",
+        "description": "在著名的地热温泉中放松。"
+      },
+      "day6": {
+        "title": "离开冰岛",
+        "description": "自由活动并返程。"
+      }
+    },
+
+    "japan": {
+      "day1": {
+        "title": "抵达东京",
+        "description": "探索这座未来感十足的大都市。"
+      },
+      "day2": {
+        "title": "涩谷、浅草与东京塔",
+        "description": "游览东京最具代表性的区域。"
+      },
+      "day3": {
+        "title": "日光或富士山一日游",
+        "description": "欣赏自然景观与传统寺庙。"
+      },
+      "day4": {
+        "title": "京都：寺庙与竹林",
+        "description": "乘新干线前往京都并参观文化名胜。"
+      },
+      "day5": {
+        "title": "奈良与伏见稻荷大社",
+        "description": "拜访神鹿与标志性的红色鸟居。"
+      },
+      "day6": {
+        "title": "离开日本",
+        "description": "返程或继续旅程。"
+      }
+    },
+
+    "italy": {
+      "day1": {
+        "title": "抵达罗马",
+        "description": "漫步探索永恒之城。"
+      },
+      "day2": {
+        "title": "梵蒂冈与斗兽场",
+        "description": "参观意大利最著名的历史景点。"
+      },
+      "day3": {
+        "title": "佛罗伦萨与托斯卡纳",
+        "description": "艺术、文艺复兴与葡萄园之旅。"
+      },
+      "day4": {
+        "title": "威尼斯",
+        "description": "乘坐贡多拉游览水都。"
+      },
+      "day5": {
+        "title": "五渔村",
+        "description": "探索多彩的海岸小镇。"
+      },
+      "day6": {
+        "title": "离开意大利",
+        "description": "返程航班。"
+      }
+    },
+
+    "costa_rica": {
+      "day1": {
+        "title": "抵达圣何塞",
+        "description": "自由探索哥斯达黎加首都。"
+      },
+      "day2": {
+        "title": "阿雷纳火山",
+        "description": "温泉与热带雨林徒步。"
+      },
+      "day3": {
+        "title": "蒙特维德云雾森林",
+        "description": "吊桥探险与自然观察。"
+      },
+      "day4": {
+        "title": "曼努埃尔安东尼奥",
+        "description": "海滩与国家公园。"
+      },
+      "day5": {
+        "title": "野生动物体验",
+        "description": "观赏猴子、树懒与鸟类。"
+      },
+      "day6": {
+        "title": "离开哥斯达黎加",
+        "description": "返程航班。"
+      }
+    },
+
+    "greece": {
+      "day1": {
+        "title": "抵达雅典",
+        "description": "参观卫城。"
+      },
+      "day2": {
+        "title": "米科诺斯",
+        "description": "白蓝小镇与海滩。"
+      },
+      "day3": {
+        "title": "圣托里尼",
+        "description": "伊亚小镇与日落美景。"
+      },
+      "day4": {
+        "title": "圣托里尼船游",
+        "description": "探索火山口与温泉。"
+      },
+      "day5": {
+        "title": "帕罗斯",
+        "description": "宁静岛屿与传统村庄。"
+      },
+      "day6": {
+        "title": "离开希腊",
+        "description": "返程。"
+      }
+    },
+
+    "peru": {
+      "day1": {
+        "title": "抵达利马",
+        "description": "品尝秘鲁美食与探索城市。"
+      },
+      "day2": {
+        "title": "库斯科",
+        "description": "参观印加帝国古都。"
+      },
+      "day3": {
+        "title": "圣谷",
+        "description": "探索印加遗址与山谷景色。"
+      },
+      "day4": {
+        "title": "马丘比丘",
+        "description": "参观世界著名的失落之城。"
+      },
+      "day5": {
+        "title": "雨林或安第斯山活动",
+        "description": "可选额外探索行程。"
+      },
+      "day6": {
+        "title": "离开秘鲁",
+        "description": "返程。"
+      }
+    },
+
+    "morocco": {
+      "day1": {
+        "title": "抵达马拉喀什",
+        "description": "杰马夫纳广场与老城探索。"
+      },
+      "day2": {
+        "title": "阿特拉斯山脉",
+        "description": "柏柏尔村庄与自然风光。"
+      },
+      "day3": {
+        "title": "沙漠体验",
+        "description": "骑骆驼与沙漠营地过夜。"
+      },
+      "day4": {
+        "title": "索维拉",
+        "description": "海滨城市与古堡。"
+      },
+      "day5": {
+        "title": "集市与宫殿",
+        "description": "巴希亚宫与传统手工艺市场。"
+      },
+      "day6": {
+        "title": "离开摩洛哥",
+        "description": "返程。"
+      }
+    },
+
+    "australia": {
+      "day1": {
+        "title": "抵达悉尼",
+        "description": "在港湾周边散步。"
+      },
+      "day2": {
+        "title": "悉尼歌剧院与邦迪海滩",
+        "description": "参观澳大利亚标志性景点。"
+      },
+      "day3": {
+        "title": "蓝山国家公园",
+        "description": "徒步与观景。"
+      },
+      "day4": {
+        "title": "凯恩斯与大堡礁",
+        "description": "浮潜与海洋探索。"
+      },
+      "day5": {
+        "title": "丹特里雨林",
+        "description": "体验古老雨林的生态。"
+      },
+      "day6": {
+        "title": "离开澳大利亚",
+        "description": "返程航班。"
+      }
+    },
+
+    "canada": {
+      "day1": {
+        "title": "抵达温哥华",
+        "description": "探索史丹利公园。"
+      },
+      "day2": {
+        "title": "卡皮拉诺与松鸡山",
+        "description": "感受自然与冒险。"
+      },
+      "day3": {
+        "title": "落基山脉",
+        "description": "壮丽的湖泊与山脉。"
+      },
+      "day4": {
+        "title": "班夫国家公园",
+        "description": "探索碧绿湖泊与山地景观。"
+      },
+      "day5": {
+        "title": "露易丝湖",
+        "description": "加拿大最具代表性的景点之一。"
+      },
+      "day6": {
+        "title": "离开加拿大",
+        "description": "返程。"
+      }
+    },
+
+    "thailand": {
+      "day1": {
+        "title": "抵达曼谷",
+        "description": "参观寺庙与探索市集。"
+      },
+      "day2": {
+        "title": "大城府",
+        "description": "探索泰国古都遗址。"
+      },
+      "day3": {
+        "title": "清迈",
+        "description": "参观古城与夜市。"
+      },
+      "day4": {
+        "title": "大象保护区",
+        "description": "道德友善的象群互动体验。"
+      },
+      "day5": {
+        "title": "普吉岛",
+        "description": "海滩与跳岛。"
+      },
+      "day6": {
+        "title": "离开泰国",
+        "description": "返程。"
+      }
+    },
+
+    "new_zealand": {
+      "day1": {
+        "title": "抵达奥克兰",
+        "description": "自由探索城市。"
+      },
+      "day2": {
+        "title": "霍比屯",
+        "description": "参观著名的电影拍摄地。"
+      },
+      "day3": {
+        "title": "罗托鲁瓦",
+        "description": "地热奇观与毛利文化体验。"
+      },
+      "day4": {
+        "title": "皇后镇",
+        "description": "冒险之都：湖泊与群山美景。"
+      },
+      "day5": {
+        "title": "米尔福德峡湾",
+        "description": "乘船游览壮丽峡湾。"
+      },
+      "day6": {
+        "title": "离开新西兰",
+        "description": "返程航班。"
+      }
+    }
+  },
+
+  "voyage1": {
+    "title": "印度尼西亚",
+    "texts": [
+      "印度尼西亚是一个拥有丰富文化、热带海滩和茂密丛林的群岛。探索巴厘岛的圣殿，与当地社区会面，并发现这个岛屿天堂的自然奇观。",
+      "从宁静的稻田到熙熙攘攘的市场，印度尼西亚的每个角落都讲述着一个故事。定制旅行、专家导游和沉浸式活动将每次访问变成一次难忘的冒险。",
+      "探索印度尼西亚岛屿的多样性，从原始海滩到隐藏的火山和瀑布。真实的体验将旅行者与自然和文化联系起来。",
+      "豪华度假村、量身定制的服务和文化体验确保每一次印度尼西亚之旅都真正非凡。"
+    ]
+  },
+  "voyage2": {
+    "title": "埃及",
+    "texts": [
+      "从吉萨永恒的金字塔到尼罗河宁静的河岸，埃及提供充满历史和奇迹的旅程。私人游轮、隐藏的寺庙和与古老传统的邂逅，将每一个时刻都变成了非凡的体验。",
+      "探索阳光普照的沙漠，漫步于熙熙攘攘的集市，发现跨越数千年的神圣古迹。埃及邀请您体验一个历史与文化充满生机的国度。定制住宿、个性化导游和沉浸式冒险使每一次旅行都难以忘怀。",
+      "欣赏埃及充满活力的现在与其传奇的过去之间永恒的和谐。从与当地工匠的亲密接触到乘坐传统帆船的平静时刻，每一次体验都揭示了真实性的新层面。",
+      "穿越宏伟的寺庙，航行于滋养文明的河流，沉思沙漠变幻的光线。埃及以其非凡的风景、永恒的仪式和鲜活的遗产令人着迷。精致的住宿、个性化的服务和亲密的邂逅确保了超越寻常的旅程。"
+    ]
+  },
+  "voyage3": {
+    "title": "马尔代夫",
+    "texts": [
+      "马尔代夫提供水晶般清澈的海水、白色沙滩和水上别墅，带来难忘的热带度假体验。",
+      "在色彩缤纷的珊瑚礁中潜水，探索偏远的岛屿，享受与自然和谐相处的豪华度假村。",
+      "在马尔代夫的每一个时刻都是冒险、放松和浪漫的完美结合。",
+      "从私人海滩晚餐到航海冒险，马尔代夫为每一位旅行者提供独特的体验。"
+    ]
+  },
+  "voyage4": {
+    "title": "菲律宾",
+    "texts": [
+      "菲律宾拥有美丽的岛屿、热情的人民和充满活力的文化。",
+      "探索隐藏的泻湖、原始海滩和整个群岛非凡的生物多样性。",
+      "体验正宗的菲律宾传统，品尝当地美食，同时欣赏令人惊叹的风景。",
+      "定制旅行和沉浸式冒险确保每一次菲律宾之旅都令人难忘。"
+    ]
+  },
+  "voyage5": {
+    "title": "塞舌尔",
+    "texts": [
+      "塞舌尔是碧绿海水、花岗岩巨石和异国情调野生动物的天堂。",
+      "通过岛屿间的航行，探索僻静的海滩和保存完好的自然保护区。",
+      "享受与岛屿自然美景完美融合的豪华住宿。",
+      "每一次塞舌尔之旅都提供宁静、冒险和独特的文化体验。"
+    ]
+  },
+  "voyage6": {
+    "title": "冰岛",
+    "texts": [
+      "冰岛以其冰川、火山和地热奇观吸引着人们。",
+      "驾车穿行于风景优美的路线，欣赏北极光，并在天然温泉中放松身心。",
+      "从壮观的风景到古朴的村庄，冰岛是一个充满对比的目的地。",
+      "专家导游和量身定制的冒险确保了身临其境、安全且难忘的体验。"
+    ]
+  },
+  "voyage7": {
+    "title": "日本",
+    "texts": [
+      "日本融合了千年传统与现代科技。从京都的静谧寺庙到东京的繁华街道，每一刻都带来深度文化体验。",
+      "体验茶道艺术，参观古老神社，品尝丰富的日本料理，从街头小吃到米其林餐厅。",
+      "神圣的山岳、温泉与历史村落展现出无与伦比的自然美景与独特的美学感。",
+      "高品质服务、优雅住宿和地道体验让每次日本之旅难以忘怀。"
+    ]
+  },
+
+  "voyage8": {
+    "title": "意大利",
+    "texts": [
+      "意大利以其丰富的文化遗产、浪漫的风景和无与伦比的美食而闻名。从罗马的街道到威尼斯的运河，每个地区都散发独特魅力。",
+      "探索迷人的山间小镇、百年葡萄园和历史名城，尽享当地美食风味。",
+      "从阿尔卑斯山的巅峰到阿马尔菲海岸的美景，意大利呈现出非凡的自然多样性。",
+      "这段旅程将奢华、文化与美食完美融合，带来真正难忘的体验。"
+    ]
+  },
+
+  "voyage9": {
+    "title": "哥斯达黎加",
+    "texts": [
+      "哥斯达黎加是自然的天堂，生物多样性丰富，冒险体验充满刺激。郁郁葱葱的热带雨林、活火山与野生海岸让探险者梦想成真。",
+      "体验完美的放松与探索平衡——雨林徒步、野生动物观察和水上活动尽情享受。",
+      "隐藏的瀑布、温泉和壮丽的国家公园每天都带来新的发现。",
+      "生态旅馆和定制体验保证每次旅行独特且与自然紧密相连。"
+    ]
+  },
+
+  "voyage10": {
+    "title": "希腊",
+    "texts": [
+      "希腊以古老的历史、晶莹的海水和标志性的白色村庄而迷人。雅典、米科诺斯和圣托里尼欢迎游客，呈现神奇景观。",
+      "探索千年遗迹，享受正宗地中海美食，漫步阳光海岸。",
+      "在宏伟的神庙、难忘的落日和隐秘海湾之间，希腊提供宁静而迷人的旅行体验。",
+      "优雅住宿、私人导览和独特文化体验让每次希腊之旅难以忘怀。"
+    ]
+  },
+
+  "voyage11": {
+    "title": "秘鲁",
+    "texts": [
+      "秘鲁以古代文明、雄伟安第斯山和丰富文化吸引游客。马丘比丘是世界上最壮观的景点之一。",
+      "探索殖民城市、传统市场及多样化景观，从高原到亚马逊雨林。",
+      "与保持数百年传统的当地社区进行独特交流。",
+      "定制行程、热情导游和非凡住宿让秘鲁之旅成为深度文化与精神体验。"
+    ]
+  },
+
+  "voyage12": {
+    "title": "摩洛哥",
+    "texts": [
+      "摩洛哥带你走进金色沙漠、雄伟山脉和多彩的麦地那。从马拉喀什的热闹集市到撒哈拉沙漠的沙丘，每个角落都充满迷人氛围。",
+      "品尝传统美食，欣赏手工艺品，探索百年建筑。",
+      "在奢华里亚德、隐秘绿洲和壮丽沙漠景观之间，摩洛哥提供温暖而难忘的沉浸体验。",
+      "独特体验——如沙漠晚餐或日落骑骆驼——让旅行真正神奇。"
+    ]
+  },
+
+  "voyage13": {
+    "title": "澳大利亚",
+    "texts": [
+      "澳大利亚以独特景观著称：珊瑚礁、红色沙漠、热带雨林及现代城市。是一个充满魅力与多样性的目的地。",
+      "探索大堡礁，近距离接触袋鼠和考拉，或深入壮丽的内陆探险。",
+      "著名海滩、原住民文化与令人惊叹的自然景观让旅程丰富多彩。",
+      "豪华住宿与定制冒险体验让澳大利亚之行难忘而独特。"
+    ]
+  },
+
+  "voyage14": {
+    "title": "加拿大",
+    "texts": [
+      "加拿大是自然爱好者的天堂——辽阔湖泊、茂密森林和巍峨群山。热爱自然的人梦想目的地。",
+      "观赏极光，在清澈湖泊中划船，探索温哥华、蒙特利尔和魁北克等迷人城市。",
+      "丰富的野生动物、国家公园和文化传统让每天都有新的发现。",
+      "温馨住宿和沉浸式体验让加拿大之旅真实而充满活力。"
+    ]
+  },
+
+  "voyage15": {
+    "title": "新西兰",
+    "texts": [
+      "新西兰以如画的风景闻名：雄伟峡湾、白雪覆盖的山脉、原始海滩和广阔绿谷。",
+      "探索毛利文化，体验壮丽自然景观，参观奥克兰和皇后镇等活力城市。",
+      "独特体验包括峡湾游船、海洋生物观察和震撼的空中全景飞行。",
+      "热情待客、一流住宿和量身定制冒险让每次新西兰之旅真正难忘。"
+    ]
+  }
+}

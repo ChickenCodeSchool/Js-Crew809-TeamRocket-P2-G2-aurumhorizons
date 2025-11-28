@@ -1,0 +1,952 @@
+{
+  "navbar_home": "Inicio",
+  "navbar_inspiration": "Inspiración",
+  "navbar_contact": "Contacto",
+  "navbar_about": "Acerca de",
+  "navbar_login": "Iniciar Sesión",
+  "home_welcome": "Viaja a donde quieras con Aurum Horizons",
+  "home_experiences": "Experiencias",
+  "carousel_no_images": "No hay imágenes disponibles",
+  "carousel_slide_alt": "Diapositiva",
+  "comments_title": "Tus opiniones sobre tu viaje",
+  "comments_name": "Nombre",
+  "comments_name_placeholder": "Introduce tu nombre",
+  "comments_message": "Comentario",
+  "comments_message_placeholder": "Escribe tu comentario...",
+  "comments_stay_start": "Fecha de inicio de la estancia",
+  "comments_stay_end": "Fecha de fin de la estancia",
+  "comments_rating": "Valoración",
+  "comments_star": "estrella",
+  "comments_submit": "Enviar",
+  "comments_average": "Valoración Media",
+  "comments_no_comments": "¡Nos encantaría escuchar tu opinión!",
+  "comments_reply": "Responder",
+  "comments_delete": "Eliminar",
+  "comments_confirm_delete": "¿Estás seguro de que quieres eliminar este comentario?",
+  "comments_stay_dates": "Fechas de la estancia",
+  "comments_reply_name": "Tu nombre",
+  "comments_reply_message": "Tu respuesta...",
+  "comments_send_reply": "Enviar Respuesta",
+  "contact_title": "Con nuestros servicios puedes",
+  "contact_point1": "Mejorar la usabilidad de tu producto",
+  "contact_point2": "Atraer usuarios a un nivel superior y superar a tus competidores",
+  "contact_point3": "Reducir el tiempo de incorporación y mejorar las ventas",
+  "contact_point4": "Equilibrar las necesidades del usuario con tus objetivos de negocio",
+  "contact_usa": "EE. UU.",
+  "contact_usa_address": "280 W, 17th street 4th Floor, Apartment No 407 New York NY, 10018",
+  "contact_india": "India",
+  "contact_india_address": "Plot No 8-2-601/p/15ms Banjara Hills, Road No 10 Hyderabad, 500034",
+  "devis_title": "Título",
+  "devis_mr": "Sr.",
+  "devis_mrs": "Sra.",
+  "devis_last_name": "Apellido",
+  "devis_first_name": "Nombre",
+  "devis_email": "Correo electrónico",
+  "devis_phone": "Teléfono",
+  "devis_adults": "Adultos",
+  "devis_children": "Niños",
+  "devis_departure_date": "Fecha de Salida",
+  "devis_best_time": "Mejor hora para contactarle",
+  "devis_comment": "Comentario",
+  "devis_send": "Enviar",
+  "devis_close_modal": "Cerrar ventana",
+  "experiences_best_season": "Mejor estación",
+  "experiences_avg": "media",
+  "footer_newsletter_placeholder": "Suscribirse al boletín...",
+  "footer_legal_notice": "Aviso Legal",
+  "formcontact_name": "Nombre",
+  "formcontact_name_placeholder": "Tu nombre",
+  "formcontact_email": "Correo electrónico",
+  "formcontact_email_placeholder": "Introduce tu correo electrónico",
+  "formcontact_message": "Mensaje",
+  "formcontact_message_placeholder": "Introduce tu mensaje",
+  "formcontact_terms_prefix": "Acepto",
+  "formcontact_terms_link": "Los Términos y Condiciones Generales",
+  "formcontact_send_request": "Enviar tu solicitud",
+  "formcontact_also_contact": "También puedes contactarnos a través de",
+  "gps_loading": "Cargando...",
+  "hotels_no_hotels_available": "No hay hoteles disponibles",
+  "hotels_section_title": "Nuestros hoteles exclusivos en {{destination}}",
+  "hotels_visit_website": "Visitar sitio web",
+  "hotels_prev": "Hotel anterior",
+  "hotels_next": "Hotel siguiente",
+  "login_title": "Iniciar Sesión",
+  "signup_title": "Registrarse",
+  "login_email": "Correo electrónico",
+  "login_password": "Contraseña",
+  "login_btn": "Iniciar sesión",
+  "signup_name": "Nombre",
+  "signup_email": "Correo electrónico",
+  "signup_password": "Contraseña",
+  "signup_confirm_password": "Confirmar Contraseña",
+  "signup_btn": "Registrarse",
+  "login_email_required": "Se requiere correo electrónico",
+  "login_invalid_email": "Correo electrónico no válido",
+  "login_password_required": "Se requiere contraseña",
+  "login_password_short": "La contraseña es demasiado corta",
+  "signup_success": "Cuenta creada con éxito!",
+  "toggle_password_show": "Mostrar",
+  "toggle_password_hide": "Ocultar",
+  "menu_experiences": "Experiencias",
+  "menu_inspirations": "Inspiraciones",
+  "destination_indonesia": "Indonesia",
+  "destination_egypt": "Egipto",
+  "destination_maldives": "Maldivas",
+  "destination_philippines": "Filipinas",
+  "destination_seychelles": "Seychelles",
+  "destination_iceland": "Islandia",
+  "destination_see_more": "Ver más...",
+  "day": "Día",
+  "loading": "Cargando",
+  "banner_welcome": "¡Bienvenido a nuestro sitio!",
+  "banner_promo": "¡Descubre nuestras últimas ofertas!",
+  "indonesia": "Indonesia",
+  "seychelles": "Seychelles",
+  "maldives": "Maldivas",
+  "iceland": "Islandia",
+  "egypt": "Egipto",
+  "philippines": "Filipinas",
+  "aurum_horizons": "Aurum Horizons",
+  "about_us": "Acerca de Nosotros",
+  "how_we_work": "Cómo Trabajamos",
+  "how_we_work_text": "Nuestro enfoque es el de una verdadera artesanía. Comenzamos con una consulta confidencial para comprender profundamente tus deseos y aspiraciones de viaje únicos. Aprovechando nuestra experiencia y red exclusiva, nuestros artesanos de viajes crean un itinerario 100% a medida, donde cada detalle está orquestado con precisión absoluta. Desde la concepción inicial hasta tu regreso, gestionamos toda la logística de fondo y brindamos soporte discreto 24/7. Tu única tarea es sumergirte en lo excepcional.",
+  "discover_difference": "Descubre Lo Que Nos Hace Diferentes",
+  "efficient_friendly_service": "Servicio Eficiente y Amigable",
+  "flexible_hassle_free": "Flexible y Sin Complicaciones",
+  "passionate_honest_experts": "Expertos Apasionados y Honestos",
+  "value_and_prices": "Valor y Precios",
+  "unparalleled_support": "Soporte Inigualable",
+  "dont_just_take_our_word": "No Sólo Confíes en Nuestra Palabra",
+  "our_specialists": "Nuestros Especialistas",
+  "specialist_advice_alt": "un especialista dando consejos a los clientes",
+  "specialists_text": "Nuestros especialistas son verdaderos arquitectos de viajes, definidos por su excelencia. Seleccionados por su conocimiento íntimo y de primera mano de destinos exclusivos, su experiencia radica en escuchar intuitivamente tus deseos. Apasionados, discretos y excepcionalmente bien conectados, anticipan cada detalle, asegurando una planificación a medida impecable y tu tranquilidad absoluta.",
+  "travel_guide_by_region": "Guía de Viaje por Región",
+  "our_office": "Nuestra Oficina",
+  "office_address_line1": "2 rue Kellermann,",
+  "office_address_line2": "59100 Roubaix,",
+  "office_address_line3": "Francia.",
+  "office_phone": "+33 9 72 10 10 07",
+  "office_alt": "una oficina de lujo",
+  "contact_heading": "Contáctanos",
+  "contact_subheading": "Rellena el formulario a continuación o programa una reunión con nosotros cuando te convenga.",
+  "inspiration_choose_style": "Elige tu estilo de viaje",
+  "activity_relaxing": "Relajante",
+  "activity_sporty": "Deportivo",
+  "activity_cultural": "Cultural",
+  "activity_exploration": "Exploración",
+  "season_spring": "Primavera",
+  "season_summer": "Verano",
+  "season_autumn": "Otoño",
+  "season_winter": "Invierno",
+  "legal_notice_title": "AVISO LEGAL",
+  "legal_notice_intro": "De conformidad con lo dispuesto en la Ley n° 2004-575 del 21 de junio de 2004 para la Confianza en la Economía Digital, se informa a los usuarios del sitio web www.aurumhorizons.com de la identidad de las distintas partes que intervienen en su realización y seguimiento.",
+  "legal_notice_site_edition": "Edición del Sitio Web",
+  "legal_notice_site_description": "Este sitio, accesible en la URL www.aurumhorizons.com (el 'Sitio'), es publicado por:",
+  "legal_notice_company_info": "Aurum Horizons SAS, sociedad por acciones simplificada con un capital de 25.000 euros, inscrita en el Registro Mercantil de París con el número 987 654 321, cuyo domicilio social se encuentra en 25 Rue de la Paix, 75002 París, Francia.",
+  "legal_notice_vat_info": "Número de IVA intracomunitario: FR 00 987654321 Teléfono: +33 1 40 20 30 40 Correo electrónico: contact@aurumhorizons.com",
+  "legal_notice_hosting": "Alojamiento",
+  "legal_notice_hosting_info": "El Sitio está alojado por la empresa OVH SAS, ubicada en 2 rue Kellermann, 59100 Roubaix, Francia.",
+  "legal_notice_hosting_contact": "Contacto: 1007 (número único) o +33 9 72 10 10 07",
+  "legal_notice_director": "Director de Publicación",
+  "legal_notice_director_info": "La Directora de Publicación del Sitio es la Sra. Éléonore Dubois, en su calidad de Presidenta de Aurum Horizons SAS.",
+  "legal_notice_travel_registration": "Registro de Agencia de Viajes",
+  "legal_notice_travel_registration_info": "Aurum Horizons SAS está registrada en el registro Atout France de operadores de viajes y turismo con el número: IM075100000.",
+  "legal_notice_financial_guarantee": "Garantía financiera: APST - Association Professionnelle de Solidarité du Tourisme, 15 Avenue Carnot, 75017 París, Francia.",
+  "legal_notice_professional_insurance": "Seguro de Responsabilidad Civil Profesional (RCP): Hiscox Assurances, 19 Rue Louis le Grand, 75002 París, Francia. Contrato n° RCP0001234.",
+  "legal_notice_contact_us": "Contáctanos",
+  "legal_notice_contact_intro": "Para cualquier pregunta o solicitud de información sobre el sitio, o cualquier informe de contenido o actividad ilegal, el usuario puede contactar al editor:",
+  "legal_notice_contact_phone": "Por teléfono: +33 1 40 20 30 40",
+  "legal_notice_contact_email_prefix": "Por correo electrónico: ",
+  "legal_notice_contact_mail": "Por correo: Aurum Horizons, 25 Rue de la Paix, 75002 París, Francia",
+  "legal_notice_intellectual_property": "Propiedad Intelectual",
+  "legal_notice_ip_description": "La totalidad de este sitio (contenido, textos, imágenes, videos, logotipos, gráficos) está sujeta a la legislación francesa e internacional sobre derechos de autor y propiedad intelectual. Todos los derechos de reproducción están reservados, incluidos los documentos descargables y las representaciones iconográficas y fotográficas.",
+  "legal_notice_ip_reproduction": "Cualquier reproducción, representación, modificación, publicación o adaptación de la totalidad o parte de los elementos del sitio, por cualquier medio o proceso, está prohibida sin la autorización previa por escrito de Aurum Horizons.",
+  "userProfile_sections_personal": "Información Personal",
+  "userProfile_sections_documents": "Mis Documentos",
+  "userProfile_sections_quotes": "Mis Presupuestos",
+  "userProfile_sections_trips": "Próximos Viajes",
+  "userProfile_personal_firstName": "Nombre",
+  "userProfile_personal_lastName": "Apellido",
+  "userProfile_personal_title": "Título",
+  "userProfile_personal_mr": "Sr.",
+  "userProfile_personal_ms": "Sra. (Señorita)",
+  "userProfile_personal_mrs": "Sra. (Señora)",
+  "userProfile_personal_birthDate": "Fecha de Nacimiento",
+  "userProfile_personal_nationality": "Nacionalidad",
+  "userProfile_personal_address": "Dirección",
+  "userProfile_personal_email": "Correo electrónico",
+  "userProfile_personal_phoneNumber": "Número de Teléfono",
+  "userProfile_personal_numberOfChildren": "Número de Niños",
+  "userProfile_documents_id": "Documento de Identidad",
+  "userProfile_documents_visa": "Visa",
+  "userProfile_documents_proofOfAddress": "Comprobante de Domicilio",
+  "userProfile_documents_bankAccount": "Datos Bancarios (RIB)",
+  "userProfile_documents_uploadInstructions": "Arrastrar y Soltar o Clic para subir",
+  "userProfile_quotes_title": "Mis Presupuestos",
+  "userProfile_quotes_instructions": "Sube y guarda tus presupuestos aquí.",
+  "userProfile_trips_title": "Próximos Viajes",
+  "userProfile_trips_instructions": "Tus viajes planificados aparecerán aquí.",
+  "seemore_title": "Todos Nuestros Destinos",
+  "seemore_intro_p1": "Desde el desierto africano hasta las megalópolis asiáticas, desde las playas paradisíacas de Oceanía hasta los picos vertiginosos de América, sin olvidar el encanto histórico de Europa...",
+  "seemore_intro_p2": "El mundo está a tu alcance. Para ayudarte a encontrar inspiración y navegar por nuestras ofertas más fácilmente, hemos agrupado todos nuestros destinos por continente. Explora, sueña y encuentra el viaje que te conviene.",
+  "destinations": {
+    "1": {
+      "name": "Bali",
+      "description": "Un paraíso tropical con impresionantes playas y exuberantes arrozales.",
+      "continent": "Asia",
+      "average_price": "1800 €",
+      "tourist_season": "Abril a Octubre"
+    },
+    "2": {
+      "name": "Egipto",
+      "description": "Explora antiguas pirámides, cruceros por el Nilo y una rica historia.",
+      "continent": "África",
+      "average_price": "1500 €",
+      "tourist_season": "Octubre a Abril"
+    },
+    "3": {
+      "name": "Maldivas",
+      "description": "Resorts de lujo sobre aguas turquesas y arrecifes de coral.",
+      "continent": "Asia",
+      "average_price": "2500 €",
+      "tourist_season": "Noviembre a Abril"
+    },
+    "4": {
+      "name": "Filipinas",
+      "description": "Hermosas islas con una cultura vibrante y paisajes exóticos.",
+      "continent": "Asia",
+      "average_price": "2000 €",
+      "tourist_season": "Diciembre a Mayo"
+    },
+    "5": {
+      "name": "Seychelles",
+      "description": "Playas vírgenes, aguas turquesas y vida salvaje única.",
+      "continent": "África",
+      "average_price": "2200 €",
+      "tourist_season": "Abril a Octubre"
+    },
+    "6": {
+      "name": "Islandia",
+      "description": "Glaciares majestuosos, géiseres y paisajes volcánicos.",
+      "continent": "Europa",
+      "average_price": "2400 €",
+      "tourist_season": "Junio a Agosto"
+    },
+    "7": {
+      "name": "Japón",
+      "description": "Una mezcla de ciudades modernas y templos tradicionales.",
+      "continent": "Asia",
+      "average_price": "2100 €",
+      "tourist_season": "Marzo a Mayo"
+    },
+    "8": {
+      "name": "Venecia",
+      "description": "Canales románticos, arquitectura histórica y encanto italiano.",
+      "continent": "Europa",
+      "average_price": "1700 €",
+      "tourist_season": "Abril a Junio"
+    },
+    "9": {
+      "name": "Costa Rica",
+      "description": "Selvas tropicales, volcanes y abundantes aventuras con vida salvaje.",
+      "continent": "América",
+      "average_price": "2000 €",
+      "tourist_season": "Diciembre a Abril"
+    },
+    "10": {
+      "name": "Grecia",
+      "description": "Islas bañadas por el sol, ruinas antiguas y cocina mediterránea.",
+      "continent": "Europa",
+      "average_price": "1800 €",
+      "tourist_season": "Mayo a Septiembre"
+    },
+    "11": {
+      "name": "Perú",
+      "description": "Machu Picchu, la cordillera de los Andes y un rico patrimonio cultural.",
+      "continent": "América",
+      "average_price": "1900 €",
+      "tourist_season": "Mayo a Septiembre"
+    },
+    "12": {
+      "name": "Marruecos",
+      "description": "Mercados vibrantes, paisajes desérticos y ciudades históricas.",
+      "continent": "África",
+      "average_price": "1600 €",
+      "tourist_season": "Marzo a Mayo"
+    },
+    "13": {
+      "name": "Australia",
+      "description": "Diversidad de vida salvaje, playas icónicas y aventura en el interior.",
+      "continent": "Oceanía",
+      "average_price": "2500 €",
+      "tourist_season": "Septiembre a Noviembre"
+    },
+    "14": {
+      "name": "Canadá",
+      "description": "Majestuosas montañas, lagos y ciudades multiculturales.",
+      "continent": "América",
+      "average_price": "2200 €",
+      "tourist_season": "Junio a Agosto"
+    },
+    "15": {
+      "name": "Tailandia",
+      "description": "Islas tropicales, cultura vibrante y deliciosa gastronomía.",
+      "continent": "Asia",
+      "average_price": "2000 €",
+      "tourist_season": "Noviembre a Febrero"
+    },
+    "16": {
+      "name": "Nueva Zelanda",
+      "description": "Paisajes espectaculares, deportes de aventura y cultura maorí.",
+      "continent": "Oceanía",
+      "average_price": "2600 €",
+      "tourist_season": "Diciembre a Febrero"
+    }
+  },
+  "inspiration_back": "Volver",
+  "inspiration_choose_activity": "Elige una actividad",
+  "inspiration_choose_season": "Elige una estación",
+  "inspiration_destination_suggestion": "Tu Destino Sugerido",
+  "inspiration_for_activity_season": "Para {{activity}} en {{season}}, sugerimos {{destination}}",
+  "inspiration_destination_placeholder": "Descubre lo que otros piensan de este destino",
+  "inspiration_activity_relaxing": "Relajante",
+  "inspiration_activity_sporty": "Deportivo",
+  "inspiration_activity_cultural": "Cultural",
+  "inspiration_activity_exploration": "Exploración",
+  "inspiration_season_spring": "Primavera",
+  "inspiration_season_summer": "Verano",
+  "inspiration_season_autumn": "Otoño",
+  "inspiration_season_winter": "Invierno",
+  "persona_sophie": "Sophie",
+  "persona_alexandre": "Alexandre",
+  "persona_marc": "Marc",
+  "persona_sophie_greece": "¡Un viaje increíble a Grecia, los paisajes y la cultura local fueron magníficos!",
+  "persona_alexandre_greece": "El mar Egeo es espléndido, me encantaron los atardeceres.",
+  "persona_marc_bali": "Bali es mágico, con sus templos y playas idílicas.",
+  "persona_sophie_bali": "¡La cocina balinesa es un verdadero descubrimiento!",
+  "persona_alexandre_italy": "Roma y Florencia, es como caminar por un museo viviente.",
+  "persona_sophie_italy": "¡La cocina italiana es simplemente divina!",
+  "persona_marc_maldives": "Las playas de las Maldivas son un verdadero paraíso.",
+  "persona_sophie_maldives": "Perfecto para unas vacaciones relajantes y hacer snorkel.",
+  "persona_alexandre_spain": "Barcelona y Madrid están llenas de vida y cultura.",
+  "persona_marc_spain": "¡Las tapas españolas son deliciosas!",
+  "persona_sophie_costarica": "La selva costarricense es impresionante.",
+  "persona_marc_costarica": "Un paraíso para los amantes de la naturaleza y la aventura.",
+  "persona_alexandre_canada": "Los paisajes de Canadá son magníficos.",
+  "persona_sophie_canada": "Me encantaron los lagos y los bosques.",
+  "persona_marc_switzerland": "Los Alpes suizos son espectaculares en invierno.",
+  "persona_alexandre_switzerland": "País perfecto para esquiar y hacer senderismo.",
+  "persona_sophie_france": "París es mágica.",
+  "persona_marc_france": "La cocina francesa es incomparable.",
+  "persona_alexandre_japan": "Japón es fascinante, modernidad y tradición juntas.",
+  "persona_sophie_japan": "Kioto y Tokio son increíbles.",
+  "persona_marc_egypt": "Las pirámides son impresionantes.",
+  "persona_alexandre_egypt": "Un viaje a la historia antigua.",
+  "persona_sophie_china": "La Gran Muralla es espectacular.",
+  "persona_marc_china": "Un país rico en cultura y tradiciones.",
+  "persona_alexandre_iceland": "Géiseres, volcanes y auroras boreales son increíbles.",
+  "persona_marc_iceland": "Un país salvaje y magnífico.",
+  "persona_sophie_africa": "Los safaris africanos son una experiencia única.",
+  "persona_alexandre_africa": "La vida salvaje y los paisajes son increíbles.",
+  "persona_marc_peru": "Machu Picchu es impresionante.",
+  "persona_sophie_peru": "Rica cultura e historia por todas partes.",
+  "persona_alexandre_norway": "Los fiordos son espectaculares.",
+  "persona_marc_norway": "Perfecto para los amantes de la naturaleza.",
+  "userProfile": {
+    "personalInfo": "Información Personal",
+    "myDocuments": "Mis Documentos",
+    "myQuotes": "Mis Presupuestos",
+    "upcomingTrips": "Próximos Viajes",
+    "firstName": "Nombre",
+    "lastName": "Apellido",
+    "title": "Título",
+    "mr": "Sr.",
+    "ms": "Sra. (Señorita)",
+    "mrs": "Sra. (Señora)",
+    "birthDate": "Fecha de Nacimiento",
+    "nationality": "Nacionalidad",
+    "address": "Dirección",
+    "email": "Correo electrónico",
+    "phoneNumber": "Número de Teléfono",
+    "numberOfChildren": "Número de Niños",
+    "idDocument": "Documento de Identidad",
+    "visa": "Visa",
+    "proofOfAddress": "Comprobante de Domicilio",
+    "bankAccount": "Datos Bancarios (RIB)",
+    "dragDropOrClick": "Arrastrar y Soltar o Clic para subir",
+    "uploadAndStoreQuotes": "Sube y guarda tus presupuestos aquí.",
+    "plannedTrips": "Tus viajes planificados aparecerán aquí."
+  },
+  "discover_experiences": "Descubre Nuestras Experiencias",
+  "loading_destination": "Cargando destino...",
+  "request_quote": "Solicitar un Presupuesto",
+  "flag": "bandera",
+  "no_text_available": "No hay texto disponible",
+
+  "trips": {
+    "indonesia": {
+      "day1": {
+        "title": "Llegada a Denpasar, Bali",
+        "description": "Traslado a tu hotel y tiempo libre para explorar los alrededores o relajarte."
+      },
+      "day2": {
+        "title": "Ubud y Arrozales de Tegalalang",
+        "description": "Día dedicado a la cultura balinesa: visita a templos, terrazas de arroz y el mercado local de Ubud."
+      },
+      "day3": {
+        "title": "Templo de Uluwatu y Playas del Sur",
+        "description": "Descubrimiento del templo de Uluwatu, ubicado en un acantilado, al atardecer y las famosas playas del sur de Bali."
+      },
+      "day4": {
+        "title": "Traslado a Lombok - Playas de Kuta",
+        "description": "Vuelo o ferry a la isla de Lombok. Alojamiento en Kuta y descubrimiento de las playas vírgenes del sur."
+      },
+      "day5": {
+        "title": "Exploración de las Islas Gili (Trawangan, Meno o Air)",
+        "description": "Excursión de snorkel y relax en una de las Islas Gili, famosas por sus aguas cristalinas."
+      },
+      "day6": {
+        "title": "Cascadas de Sendang Gile y Tiu Kelep",
+        "description": "Caminata para descubrir las magníficas cascadas al pie del Monte Rinjani."
+      }
+    },
+    "egypt": {
+      "day1": {
+        "title": "Llegada a Hurgada y el Mar Rojo",
+        "description": "Llegada al aeropuerto de Hurgada. Traslado a tu hotel a orillas del Mar Rojo."
+      },
+      "day2": {
+        "title": "Buceo o Snorkel en Giftun",
+        "description": "Excursión de un día para explorar los arrecifes de coral y la vida marina del Mar Rojo cerca de las Islas Giftun."
+      },
+      "day3": {
+        "title": "Lúxor: Valle de los Reyes y Templo de Karnak",
+        "description": "Vuelo o traslado a Lúxor para visitar el Valle de los Reyes, el templo de Hatshepsut y el inmenso complejo de Karnak."
+      },
+      "day4": {
+        "title": "El Cairo: Pirámides de Guiza y Esfinge",
+        "description": "Vuelo a El Cairo. Descubrimiento de las maravillas antiguas: las Grandes Pirámides y la Esfinge."
+      },
+      "day5": {
+        "title": "Museo Egipcio y Khan el-Khalili",
+        "description": "Visita al Museo Egipcio, que alberga los tesoros de Tutankamón, seguida de una inmersión en el zoco Khan el-Khalili."
+      },
+      "day6": {
+        "title": "Dahab y Regreso",
+        "description": "Desayuno en Dahab, tiempo libre para las últimas compras antes del traslado al aeropuerto."
+      }
+    },
+    "maldives": {
+      "day1": {
+        "title": "Llegada a Malé y Traslado en Hidroavión",
+        "description": "Llegada al aeropuerto internacional y espectacular traslado en hidroavión a tu complejo hotelero."
+      },
+      "day2": {
+        "title": "Relax y Tiempo de Playa",
+        "description": "Día libre para disfrutar de la playa, la villa sobre el agua y las comodidades del hotel."
+      },
+      "day3": {
+        "title": "Snorkel y Corales",
+        "description": "Excursión guiada de snorkel para explorar los coloridos arrecifes de coral del atolón."
+      },
+      "day4": {
+        "title": "Deportes Acuáticos y Kayak",
+        "description": "Introducción a los deportes acuáticos: paddle surf, kayak o windsurf en la laguna turquesa."
+      },
+      "day5": {
+        "title": "Spa y Bienestar",
+        "description": "Día dedicado a la relajación con un tratamiento de spa o una sesión de yoga frente al océano."
+      },
+      "day6": {
+        "title": "Crucero al Atardecer con Delfines",
+        "description": "Crucero al final del día para observar delfines al atardecer."
+      },
+      "day7": {
+        "title": "Salida de Maldivas",
+        "description": "Último desayuno paradisíaco antes del traslado de regreso al aeropuerto de Malé."
+      }
+    },
+    "philippines": {
+      "day1": {
+        "title": "Llegada a Manila",
+        "description": "¡Bienvenido a Filipinas! Traslado al hotel y tiempo libre para explorar las animadas calles de Manila."
+      },
+      "day2": {
+        "title": "Vuelo a Palawan – El Nido",
+        "description": "Vuelo doméstico a la impresionante isla de Palawan. Relájate en la playa o disfruta de la laguna tranquila."
+      },
+      "day3": {
+        "title": "Island Hopping – Tour A",
+        "description": "Explora las famosas lagunas de El Nido: Big Lagoon, Secret Lagoon y playas de arena blanca."
+      },
+      "day4": {
+        "title": "Island Hopping – Tour C",
+        "description": "Descubre Hidden Beach, Helicopter Island y algunos de los mejores lugares para hacer snorkel."
+      },
+      "day5": {
+        "title": "Vuelo a Cebú – Cataratas Kawasan",
+        "description": "Viaje a Cebú y disfruta de las refrescantes aguas turquesas de las cataratas Kawasan, con opción de canyoning."
+      },
+      "day6": {
+        "title": "Tiburones Ballena & Chocolate Hills",
+        "description": "Visita a Oslob para observar tiburones ballena y ferry a Bohol para descubrir las Chocolate Hills."
+      }
+    },
+    "seychelles": {
+      "day1": {
+        "title": "Llegada a Mahé",
+        "description": "Traslado al hotel y primeros momentos en este paraíso del océano Índico."
+      },
+      "day2": {
+        "title": "Playas de Mahé",
+        "description": "Día de relax en Beau Vallon o exploración de los paisajes naturales de la isla."
+      },
+      "day3": {
+        "title": "Ferry a Praslin – Vallée de Mai",
+        "description": "Descubre la Vallée de Mai, Patrimonio de la UNESCO y hogar del famoso Coco de Mer."
+      },
+      "day4": {
+        "title": "Anse Lazio",
+        "description": "Día completo en una de las playas más hermosas del mundo: Anse Lazio."
+      },
+      "day5": {
+        "title": "La Digue – Anse Source d’Argent",
+        "description": "Paseo en bicicleta por La Digue y visita a la icónica playa de Anse Source d’Argent."
+      },
+      "day6": {
+        "title": "Regreso a Mahé",
+        "description": "Último día para disfrutar del mar, la gastronomía o las compras antes del viaje de regreso."
+      }
+    },
+    "iceland": {
+      "day1": {
+        "title": "Llegada a Reikiavik",
+        "description": "Instalación en el hotel y paseo por las coloridas calles de la capital islandesa."
+      },
+      "day2": {
+        "title": "Círculo Dorado",
+        "description": "Visita al Parque Nacional Thingvellir, el géiser Geysir y la cascada Gullfoss."
+      },
+      "day3": {
+        "title": "Costa Sur – Cascadas",
+        "description": "Descubre dos de las cascadas más icónicas de Islandia: Seljalandsfoss y Skógafoss."
+      },
+      "day4": {
+        "title": "Sólheimasandur & Playas Negras",
+        "description": "Explora el famoso avión estrellado y la playa de arena negra de Reynisfjara."
+      },
+      "day5": {
+        "title": "Laguna Glaciar Jökulsárlón",
+        "description": "Admira los icebergs flotantes y visita la Diamond Beach."
+      },
+      "day6": {
+        "title": "Blue Lagoon & Salida",
+        "description": "Relájate en las aguas termales de Blue Lagoon antes del vuelo de regreso."
+      }
+    },
+    "japan": {
+      "day1": {
+        "title": "Llegada a Tokio",
+        "description": "Primera inmersión en la metrópolis: luces de neón, arquitectura moderna y gastronomía única."
+      },
+      "day2": {
+        "title": "Shibuya & Shinjuku",
+        "description": "Visita al cruce más transitado del mundo y los vibrantes barrios de Shinjuku."
+      },
+      "day3": {
+        "title": "Asakusa & Akihabara",
+        "description": "Explora el templo Sensō-ji y el corazón electrónico del anime y los videojuegos."
+      },
+      "day4": {
+        "title": "Kioto – Tradición & Templos",
+        "description": "Viaje a Kioto para visitar el santuario Fushimi Inari y sus miles de torii rojos."
+      },
+      "day5": {
+        "title": "Bosque de Bambú de Arashiyama",
+        "description": "Descubre el mágico bosque de bambú y los alrededores tradicionales de Kioto."
+      },
+      "day6": {
+        "title": "Nara & Regreso",
+        "description": "Visita al Gran Buda y a los famosos ciervos sagrados antes del regreso."
+      }
+    },
+    "italy": {
+      "day1": {
+        "title": "Llegada a Roma",
+        "description": "Explora la Ciudad Eterna comenzando por Piazza Navona y la Fontana di Trevi."
+      },
+      "day2": {
+        "title": "Coliseo & Foro Romano",
+        "description": "Un viaje al corazón de la Roma antigua y sus monumentos emblemáticos."
+      },
+      "day3": {
+        "title": "Ciudad del Vaticano",
+        "description": "Visita la basílica de San Pedro y los Museos Vaticanos, incluida la Capilla Sixtina."
+      },
+      "day4": {
+        "title": "Florencia – Capital del Renacimiento",
+        "description": "Descubre obras maestras de arte y arquitectura en la histórica Florencia."
+      },
+      "day5": {
+        "title": "Pisa & Toscana",
+        "description": "Excursión a la Torre Inclinada y los paisajes de la Toscana."
+      },
+      "day6": {
+        "title": "Venecia & Salida",
+        "description": "Finaliza tu viaje entre los románticos canales de Venecia."
+      }
+    },
+    "costa_rica": {
+      "day1": {
+        "title": "Llegada a San José",
+        "description": "Instálate y disfruta de un paseo por la capital costarricense."
+      },
+      "day2": {
+        "title": "Volcán Arenal",
+        "description": "Visita al impresionante volcán Arenal y su exuberante entorno."
+      },
+      "day3": {
+        "title": "Aguas Termales & Caminatas",
+        "description": "Relájate en aguas termales naturales y recorre senderos del parque nacional."
+      },
+      "day4": {
+        "title": "Bosque Nuboso de Monteverde",
+        "description": "Descubre uno de los ecosistemas más singulares del mundo."
+      },
+      "day5": {
+        "title": "Tirolesas & Puentes Colgantes",
+        "description": "Día de aventura con canopy, puentes colgantes y vistas espectaculares."
+      },
+      "day6": {
+        "title": "Playa Manuel Antonio",
+        "description": "Relájate en la playa o explora la fauna del Parque Nacional Manuel Antonio."
+      }
+    },
+    "greece": {
+      "day1": {
+        "title": "Llegada a Atenas",
+        "description": "Descubre la Acrópolis y el encanto histórico de la capital griega."
+      },
+      "day2": {
+        "title": "Plaka & Ágora Antigua",
+        "description": "Recorre las pintorescas calles de Plaka y visita la antigua Ágora."
+      },
+      "day3": {
+        "title": "Ferry a Santorini",
+        "description": "Llegada a la impresionante isla de Santorini, famosa por sus atardeceres."
+      },
+      "day4": {
+        "title": "Oia & Cúpulas Azules",
+        "description": "Visita las icónicas iglesias de cúpulas azules y los pueblos sobre el acantilado."
+      },
+      "day5": {
+        "title": "Excursión Volcánica",
+        "description": "Tour en barco al volcán y a las aguas termales."
+      },
+      "day6": {
+        "title": "Playas & Regreso",
+        "description": "Disfruta de las playas de arena negra antes de regresar."
+      }
+    },
+    "peru": {
+      "day1": {
+        "title": "Llegada a Lima",
+        "description": "Explora la capital y disfruta de su famosa gastronomía."
+      },
+      "day2": {
+        "title": "Cusco – Capital Inca",
+        "description": "Vuelo a Cusco y recorrido por su centro histórico."
+      },
+      "day3": {
+        "title": "Valle Sagrado",
+        "description": "Descubre Pisac, Ollantaytambo y auténticos pueblos andinos."
+      },
+      "day4": {
+        "title": "Machu Picchu",
+        "description": "Visita la legendaria ciudadela inca, una de las maravillas del mundo."
+      },
+      "day5": {
+        "title": "Montaña de Siete Colores",
+        "description": "Excursión opcional a la colorida montaña Vinicunca."
+      },
+      "day6": {
+        "title": "Regreso a Lima",
+        "description": "Últimas horas en Perú antes del vuelo."
+      }
+    },
+    "morocco": {
+      "day1": {
+        "title": "Llegada a Marrakech",
+        "description": "Descubre la Medina y la plaza Jemaa el-Fna."
+      },
+      "day2": {
+        "title": "Palacios & Zocos",
+        "description": "Visita el Palacio Bahía y los coloridos zocos."
+      },
+      "day3": {
+        "title": "Montañas del Atlas",
+        "description": "Excursión a las montañas del Atlas y pueblos bereberes."
+      },
+      "day4": {
+        "title": "Desierto de Merzouga",
+        "description": "Paseo en camello y noche en un campamento bajo las estrellas."
+      },
+      "day5": {
+        "title": "Tinghir & Gargantas",
+        "description": "Explora las impresionantes Gargantas del Todra."
+      },
+      "day6": {
+        "title": "Regreso a Marrakech",
+        "description": "Último día para compras o relax antes del regreso."
+      }
+    },
+    "australia": {
+      "day1": {
+        "title": "Llegada a Sídney",
+        "description": "Descubre la Ópera de Sídney y el Harbour Bridge."
+      },
+      "day2": {
+        "title": "Playa Bondi",
+        "description": "Relájate en la famosa playa o recorre el sendero Bondi–Coogee."
+      },
+      "day3": {
+        "title": "Montañas Azules",
+        "description": "Excursión a las Blue Mountains y a las Three Sisters."
+      },
+      "day4": {
+        "title": "Vuelo a Cairns",
+        "description": "Viaje a la región tropical de Queensland."
+      },
+      "day5": {
+        "title": "Gran Barrera de Coral",
+        "description": "Snorkel o buceo en una de las maravillas naturales del mundo."
+      },
+      "day6": {
+        "title": "Selva Tropical & Regreso",
+        "description": "Visita a la selva Daintree antes del regreso."
+      }
+    },
+    "canada": {
+      "day1": {
+        "title": "Llegada a Montreal",
+        "description": "Explora el encantador casco antiguo de Montreal."
+      },
+      "day2": {
+        "title": "Ciudad de Quebec",
+        "description": "Visita el centro histórico y el Château Frontenac."
+      },
+      "day3": {
+        "title": "Vuelo a Calgary",
+        "description": "Inicio del viaje por las Montañas Rocosas canadienses."
+      },
+      "day4": {
+        "title": "Parque Nacional Banff",
+        "description": "Descubre lagos turquesas y picos majestuosos."
+      },
+      "day5": {
+        "title": "Lago Louise",
+        "description": "Admira uno de los lagos más fotografiados del mundo."
+      },
+      "day6": {
+        "title": "Icefields Parkway",
+        "description": "Ruta panorámica por glaciares y paisajes salvajes."
+      }
+    },
+    "thailand": {
+      "day1": {
+        "title": "Llegada a Bangkok",
+        "description": "Visita el Gran Palacio y el templo Wat Pho."
+      },
+      "day2": {
+        "title": "Mercados Flotantes",
+        "description": "Descubre los vibrantes mercados flotantes cerca de Bangkok."
+      },
+      "day3": {
+        "title": "Vuelo a Chiang Mai",
+        "description": "Explora templos y la cultura del norte de Tailandia."
+      },
+      "day4": {
+        "title": "Santuario de Elefantes",
+        "description": "Día ético con elefantes rescatados."
+      },
+      "day5": {
+        "title": "Vuelo a Phuket",
+        "description": "Relájate en las playas del sur del país."
+      },
+      "day6": {
+        "title": "Islas Phi Phi",
+        "description": "Excursión en barco por aguas cristalinas antes del regreso."
+      }
+    },
+    "new_zealand": {
+      "day1": {
+        "title": "Llegada a Auckland",
+        "description": "Explora la ciudad y sube al Monte Eden para disfrutar de las vistas."
+      },
+      "day2": {
+        "title": "Hobbiton",
+        "description": "Visita el mágico set de rodaje de Hobbiton."
+      },
+      "day3": {
+        "title": "Rotorua",
+        "description": "Descubre géiseres, aguas termales y cultura maorí."
+      },
+      "day4": {
+        "title": "Queenstown",
+        "description": "Vuelo al sur para llegar a la capital de la aventura."
+      },
+      "day5": {
+        "title": "Milford Sound",
+        "description": "Navegación entre fiordos y cascadas espectaculares."
+      },
+      "day6": {
+        "title": "Regreso",
+        "description": "Último día para disfrutar antes del vuelo de vuelta."
+      }
+    }
+  },
+
+  "voyage1": {
+    "title": "Indonesia",
+    "texts": [
+      "Indonesia es un archipiélago rico en cultura, playas tropicales y selvas exuberantes. Explora los templos sagrados de Bali, conoce a las comunidades locales y descubre las maravillas naturales de este paraíso insular.",
+      "Desde apacibles arrozales hasta bulliciosos mercados, cada rincón de Indonesia cuenta una historia. Tours a medida, guías expertos y actividades inmersivas transforman cada visita en una aventura inolvidable.",
+      "Descubre la diversidad de las islas indonesias, desde playas vírgenes hasta volcanes y cascadas ocultas. Las experiencias auténticas conectan a los viajeros con la naturaleza y la cultura.",
+      "Complejos turísticos de lujo, servicios a medida y experiencias culturales garantizan que cada viaje a Indonesia sea verdaderamente excepcional."
+    ]
+  },
+  "voyage2": {
+    "title": "Egipto",
+    "texts": [
+      "Desde las pirámides eternas de Guiza hasta las tranquilas orillas del Nilo, Egipto ofrece viajes impregnados de historia y asombro. Cruceros privados, templos ocultos y encuentros con tradiciones ancestrales transforman cada momento en una experiencia extraordinaria.",
+      "Explora desiertos bañados por el sol, pasea por bulliciosos bazares y descubre monumentos sagrados que abarcan milenios. Egipto te invita a vivir un país donde la historia y la cultura cobran vida. Estancias a medida, guías personalizados y aventuras inmersivas hacen que cada viaje sea inolvidable.",
+      "Admira la armonía atemporal entre el vibrante presente de Egipto y su legendario pasado. Desde encuentros íntimos con artesanos locales hasta momentos de paz a bordo de las tradicionales falucas, cada experiencia revela una nueva capa de autenticidad.",
+      "Atraviesa templos majestuosos, navega por el río que nutrió civilizaciones y contempla la luz cambiante del desierto. Egipto cautiva con sus paisajes extraordinarios, rituales atemporales y patrimonio vivo. Alojamientos refinados, servicios personalizados y encuentros íntimos garantizan viajes más allá de lo ordinario."
+    ]
+  },
+  "voyage3": {
+    "title": "Maldivas",
+    "texts": [
+      "Las Maldivas ofrecen aguas cristalinas, playas de arena blanca y villas sobre el agua para una escapada tropical inolvidable.",
+      "Bucea entre coloridos arrecifes de coral, explora islas remotas y disfruta de complejos de lujo en armonía con la naturaleza.",
+      "Cada momento en Maldivas es una mezcla perfecta de aventura, relax y romance.",
+      "Desde cenas privadas en la playa hasta aventuras náuticas, Maldivas ofrece una experiencia única a cada viajero."
+    ]
+  },
+  "voyage4": {
+    "title": "Filipinas",
+    "texts": [
+      "Filipinas cuenta con hermosas islas, gente cálida y una cultura vibrante.",
+      "Explora lagunas escondidas, playas vírgenes y una biodiversidad excepcional en todo el archipiélago.",
+      "Experimenta auténticas tradiciones filipinas y saborea la cocina local mientras admiras paisajes impresionantes.",
+      "Tours a medida y aventuras inmersivas garantizan que cada viaje a Filipinas sea inolvidable."
+    ]
+  },
+  "voyage5": {
+    "title": "Seychelles",
+    "texts": [
+      "Seychelles es un paraíso de aguas turquesas, rocas de granito y fauna exótica.",
+      "Descubre playas aisladas y reservas naturales vírgenes navegando de isla en isla.",
+      "Disfruta de alojamientos de lujo que se integran perfectamente con la belleza natural de las islas.",
+      "Cada viaje a Seychelles ofrece serenidad, aventura y experiencias culturales únicas."
+    ]
+  },
+  "voyage6": {
+    "title": "Islandia",
+    "texts": [
+      "Islandia cautiva con sus glaciares, volcanes y maravillas geotérmicas.",
+      "Recorre rutas panorámicas, admira las auroras boreales y relájate en fuentes termales naturales.",
+      "Desde paisajes espectaculares hasta pueblos pintorescos, Islandia es un destino de contrastes.",
+      "Guías expertos y aventuras a medida garantizan una experiencia inmersiva, segura e inolvidable."
+    ]
+  },
+  "voyage7": {
+    "title": "Japón",
+    "texts": [
+      "Japón es una mezcla fascinante de tradiciones ancestrales y modernidad futurista. Desde los templos tranquilos de Kioto hasta las vibrantes calles de Tokio, cada momento ofrece una inmersión cultural profunda.",
+      "Descubra el arte del té, recorra santuarios centenarios y disfrute de la diversidad gastronómica japonesa, desde comida callejera hasta restaurantes con estrellas Michelin.",
+      "Con montañas sagradas, aguas termales y pueblos históricos, Japón revela una belleza natural preservada y un sentido único de refinamiento.",
+      "Servicios de alta gama, alojamientos elegantes y experiencias locales auténticas hacen que cada viaje por Japón sea inolvidable."
+    ]
+  },
+
+  "voyage8": {
+    "title": "Italia",
+    "texts": [
+      "Italia encanta con su patrimonio artístico, paisajes románticos y gastronomía incomparable. Desde las calles de Roma hasta los canales de Venecia, cada región revela su propio encanto.",
+      "Explore pueblos en lo alto de colinas, viñedos centenarios y ciudades históricas mientras disfruta de sabores locales inolvidables.",
+      "Desde los picos alpinos hasta las impresionantes costas de Amalfi, Italia ofrece una diversidad natural extraordinaria.",
+      "Este viaje combina lujo, cultura y gastronomía para experiencias realmente memorables en toda Italia."
+    ]
+  },
+
+  "voyage9": {
+    "title": "Costa Rica",
+    "texts": [
+      "Costa Rica es un santuario natural donde la biodiversidad y la aventura se encuentran. Selvas exuberantes, volcanes activos y costas salvajes crean un paraíso para los exploradores.",
+      "Encuentre el equilibrio perfecto entre relajación y descubrimiento con excursiones por la selva, encuentros con la fauna y emocionantes actividades acuáticas.",
+      "Desde cascadas escondidas hasta aguas termales y parques nacionales impresionantes, cada día revela nuevas maravillas.",
+      "Lodges ecológicos y experiencias a medida garantizan un viaje único y respetuoso con la naturaleza."
+    ]
+  },
+
+  "voyage10": {
+    "title": "Grecia",
+    "texts": [
+      "Grecia cautiva con su historia antigua, aguas cristalinas y pueblos blancos icónicos. Atenas, Mykonos y Santorini dan la bienvenida a los viajeros con paisajes mágicos.",
+      "Descubra ruinas milenarias, saboree la auténtica cocina mediterránea y explore costas bañadas por el sol.",
+      "Entre templos majestuosos, atardeceres inolvidables y calas escondidas, Grecia ofrece una experiencia de viaje serena y encantadora.",
+      "Alojamientos elegantes, visitas privadas y experiencias culturales exclusivas crean un viaje inolvidable por Grecia."
+    ]
+  },
+
+  "voyage11": {
+    "title": "Perú",
+    "texts": [
+      "Perú fascina con sus civilizaciones antiguas, imponentes montañas andinas y una riqueza cultural excepcional. Machu Picchu sigue siendo uno de los lugares más impresionantes del mundo.",
+      "Explore ciudades coloniales, mercados tradicionales y paisajes diversos que van desde altiplanos hasta la selva amazónica.",
+      "Disfrute de encuentros únicos con comunidades locales que preservan tradiciones centenarias.",
+      "Viajes a medida, guías apasionados y alojamientos únicos convierten este destino en una experiencia cultural y espiritual profunda."
+    ]
+  },
+
+  "voyage12": {
+    "title": "Marruecos",
+    "texts": [
+      "Marruecos le transporta entre desiertos dorados, montañas majestuosas y medinas coloridas. Desde los animados zocos de Marrakech hasta las dunas del Sahara, el país ofrece una atmósfera fascinante.",
+      "Saboree platos tradicionales, descubra artesanía auténtica y admire una arquitectura cargada de historia.",
+      "Entre riads lujosos, oasis escondidos y paisajes desérticos impresionantes, Marruecos ofrece una inmersión cálida e inolvidable.",
+      "Experiencias exclusivas —como cenas en el desierto o paseos en camello al atardecer— hacen que este viaje sea verdaderamente mágico."
+    ]
+  },
+
+  "voyage13": {
+    "title": "Australia",
+    "texts": [
+      "Australia impresiona con sus paisajes únicos: arrecifes de coral, desiertos rojos, selvas tropicales y ciudades modernas vibrantes. Un destino vasto y fascinante.",
+      "Explore la Gran Barrera de Coral, encuentre fauna icónica como canguros y koalas, o aventúrese en el espectacular outback.",
+      "Playas icónicas, cultura aborigen y panoramas impresionantes crean un viaje lleno de diversidad.",
+      "Lodges excepcionales y aventuras personalizadas revelan la belleza de Australia de manera inolvidable."
+    ]
+  },
+
+  "voyage14": {
+    "title": "Canadá",
+    "texts": [
+      "Canadá es un paraíso de naturaleza salvaje, con lagos inmensos, bosques densos y montañas majestuosas. Un sueño para los amantes de los grandes espacios.",
+      "Observe auroras boreales, navegue por aguas cristalinas y explore ciudades acogedoras como Vancouver, Montreal y Quebec.",
+      "Con fauna extraordinaria, parques nacionales y ricas tradiciones culturales, cada día revela una nueva faceta del país.",
+      "Alojamientos cálidos y actividades inmersivas hacen de Canadá una experiencia auténtica y revitalizadora."
+    ]
+  },
+
+  "voyage15": {
+    "title": "Nueva Zelanda",
+    "texts": [
+      "Nueva Zelanda sorprende con sus paisajes dignos de película: fiordos majestuosos, montañas nevadas, playas salvajes y valles verdes interminables.",
+      "Descubra la cultura maorí, recorra escenarios naturales impresionantes y explore ciudades dinámicas como Auckland y Queenstown.",
+      "Le esperan experiencias únicas: cruceros por fiordos, encuentros con fauna marina y vuelos panorámicos espectaculares.",
+      "La hospitalidad local, lodges de alta gama y aventuras personalizadas hacen que este viaje sea verdaderamente inolvidable."
+    ]
+  }
+}

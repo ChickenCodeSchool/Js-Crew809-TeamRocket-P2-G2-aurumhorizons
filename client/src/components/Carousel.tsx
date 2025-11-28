@@ -1,5 +1,6 @@
 import type React from "react";
 import { useCallback, useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import "./Carousel.css";
 
 interface CarouselProps {
@@ -7,6 +8,7 @@ interface CarouselProps {
 }
 
 const Carousel: React.FC<CarouselProps> = ({ images }) => {
+  const { t } = useTranslation();
   const [index, setIndex] = useState<number>(0);
   const [fade, setFade] = useState(true);
 
@@ -34,13 +36,14 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
     return () => clearInterval(interval);
   }, [images.length, next]);
 
-  if (!images || images.length === 0) return <div>No images available</div>;
+  if (!images || images.length === 0)
+    return <div>{t("carousel_no_images")}</div>;
 
   return (
     <div className="carousel">
       <img
         src={images[index]}
-        alt={`slide-${index}`}
+        alt={`${t("carousel_slide_alt")} ${index + 1}`}
         className={`carousel-image ${fade ? "fade-in" : "fade-out"}`}
         // biome-ignore lint/suspicious/noAssignInExpressions: <explanation>
         onError={(e) => (e.currentTarget.src = "/images/placeholder.jpg")}

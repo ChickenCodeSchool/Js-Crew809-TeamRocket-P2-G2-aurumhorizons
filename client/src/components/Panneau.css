@@ -1,34 +1,108 @@
-.body {
+.panneau {
+  height: 100%;
+  overflow-y: auto;
+  padding: 1rem;
   background-color: rgb(252, 248, 237);
-  padding-left: 2rem;
-  article {
-    padding-bottom: 1.5rem;
-  }
+  box-sizing: border-box;
 }
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  padding-left: 2rem;
+  box-sizing: border-box;
+}
+
+.body article {
+  width: 100%;
+  height: 200px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: #fff;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body article .popup-trigger {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: none;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.body article .popup-trigger:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.jours {
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
 #panneautitre {
   font-family: "Cinzel", sans-serif;
   font-size: 1.3rem;
   margin-bottom: 0.8rem;
   color: #c39444;
+  word-break: break-word;
 }
-.jours {
-  font-weight: 500;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.2rem;
-}
+
 .paragraphe {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
+  padding: 0 1rem;
+  overflow: hidden;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
 }
+
 @media screen and (max-width: 1050px) {
   .body {
-    padding: 1em;
-    article {
-      padding: 0;
-    }
+    padding-left: 1em;
+    gap: 15px;
+  }
+
+  .body article {
+    height: 160px;
+  }
+
+  .body article .popup-trigger {
+    padding: 0.8em;
   }
 
   #panneautitre {
     font-size: 1.2em;
+  }
+
+  .jours {
+    font-size: 1rem;
+  }
+
+  .paragraphe {
+    font-size: 0.95rem;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    padding: 0 0.5rem;
   }
 }

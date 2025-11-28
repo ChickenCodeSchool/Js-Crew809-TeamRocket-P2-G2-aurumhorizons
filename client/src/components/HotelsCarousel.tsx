@@ -1,8 +1,9 @@
 import type React from "react";
 import { useCallback, useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import "./HotelsCarousel.css";
 
-interface Hotel {
+export interface Hotel {
   img: string;
   title: string;
   description: string;
@@ -18,6 +19,7 @@ const HotelsCarousel: React.FC<HotelsCarouselProps> = ({
   hotels,
   destinationName,
 }) => {
+  const { t } = useTranslation();
   const [index, setIndex] = useState(0);
   const [fade, setFade] = useState(true);
 
@@ -44,7 +46,8 @@ const HotelsCarousel: React.FC<HotelsCarouselProps> = ({
     }
   }, [hotels.length, next]);
 
-  if (!hotels || hotels.length === 0) return <div>No hotels available</div>;
+  if (!hotels || hotels.length === 0)
+    return <div>{t("hotels_no_hotels_available")}</div>;
 
   const hotel = hotels[index];
 
@@ -52,7 +55,7 @@ const HotelsCarousel: React.FC<HotelsCarouselProps> = ({
     <div className="hotels-section">
       {destinationName && (
         <h2 className="section-title">
-          Our Exclusive Hotels in {destinationName}
+          {t("hotels_section_title", { destination: destinationName })}
         </h2>
       )}
       <div className="hotels-carousel-page">
@@ -65,7 +68,7 @@ const HotelsCarousel: React.FC<HotelsCarouselProps> = ({
             rel="noopener noreferrer"
             className="hotel-link-button"
           >
-            Visit Website
+            {t("hotels_visit_website")}
           </a>
         </div>
         <div className="hotels-carousel-section">
@@ -78,10 +81,10 @@ const HotelsCarousel: React.FC<HotelsCarouselProps> = ({
             }}
           />
           <div className="carousel-buttons">
-            <button type="button" onClick={prev} aria-label="Previous hotel">
+            <button type="button" onClick={prev} aria-label={t("hotels_prev")}>
               ❮
             </button>
-            <button type="button" onClick={next} aria-label="Next hotel">
+            <button type="button" onClick={next} aria-label={t("hotels_next")}>
               ❯
             </button>
           </div>

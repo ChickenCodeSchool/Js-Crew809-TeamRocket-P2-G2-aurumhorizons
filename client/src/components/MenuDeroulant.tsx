@@ -1,6 +1,7 @@
 import type React from "react";
 import "./MenuDeroulant.css";
 import { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 interface Destination {
@@ -9,17 +10,18 @@ interface Destination {
 }
 
 const MenuDeroulant: React.FC = () => {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
   const destinations: Destination[] = [
-    { name: "Indonesia", link: "/voyage/1" },
-    { name: "Egypt", link: "/voyage/2" },
-    { name: "Maldives", link: "/voyage/3" },
-    { name: "Philippines", link: "/voyage/4" },
-    { name: "Seychelles", link: "/voyage/5" },
-    { name: "Iceland", link: "/voyage/6" },
-    { name: "See more...", link: "/see-more" },
+    { name: t("destination_indonesia"), link: "/voyage/1" },
+    { name: t("destination_egypt"), link: "/voyage/2" },
+    { name: t("destination_maldives"), link: "/voyage/3" },
+    { name: t("destination_philippines"), link: "/voyage/4" },
+    { name: t("destination_seychelles"), link: "/voyage/5" },
+    { name: t("destination_iceland"), link: "/voyage/6" },
+    { name: t("destination_see_more"), link: "/see-more" },
   ];
 
   const toggleMenu = () => setIsOpen(!isOpen);
@@ -38,10 +40,9 @@ const MenuDeroulant: React.FC = () => {
 
   return (
     <div className="menu-deroulant" ref={menuRef}>
-      {/* Colonne 1 : Nos expériences */}
       <div className="menu-left">
         <button className="menu-button" onClick={toggleMenu} type="button">
-          Experiences
+          {t("menu_experiences")}
           <span className={`arrow ${isOpen ? "open" : ""}`}>&#9662;</span>
         </button>
 
@@ -60,10 +61,9 @@ const MenuDeroulant: React.FC = () => {
 
       <div className="menu-separator" />
 
-      {/* Colonne 2 : Inspirations */}
       <div className="menu-right">
         <Link to="/inspiration" className="menu-link">
-          Inspirations
+          {t("menu_inspirations")}
         </Link>
       </div>
     </div>

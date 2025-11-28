@@ -1,4 +1,5 @@
-import { type ReactNode, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import video from "../assets/videos/video7.mp4";
 import ExperiencesCards from "../components/ExperiencesCards";
 import MenuDeroulant from "../components/MenuDeroulant";
@@ -13,7 +14,7 @@ import imageForId5 from "../assets/images/imgHomepage/seychelleHomepage.png";
 import "./HomePages.css";
 
 interface Destination {
-  description: ReactNode;
+  description: string;
   tourist_season: string;
   average_price: string;
   continent: string;
@@ -31,12 +32,13 @@ const destinationImageMap: { [key: number]: string } = {
 };
 
 const HomePages: React.FC = () => {
+  const { t } = useTranslation();
   const [dataDestination1, setDataDestination1] = useState<Destination[]>([]);
   const idsToFetch1 = [1, 2, 3, 4, 5, 6];
 
   useEffect(() => {
     const fetchPromises = idsToFetch1.map((id) =>
-      fetch(` http://localhost:3310/api/destinations/${id}.json`)
+      fetch(`http://localhost:3310/api/destinations/${id}.json`)
         .then((res) => res.json())
         .then((data) => data as Destination),
     );
@@ -52,28 +54,33 @@ const HomePages: React.FC = () => {
           <video autoPlay muted loop src={video} />
         </div>
         <div className="texte-video-container">
-          <p className="texte-video">
-            Travel wherever you want with Aurum Horizons
-          </p>
+          <p className="texte-video">{t("home_welcome")}</p>
         </div>
         <div>
           <MenuDeroulant />
         </div>
       </section>
+
       <section className="containercards">
-        {dataDestination1.map((destination: Destination) => {
+        {dataDestination1.map((destination) => {
           const imageUrl = destinationImageMap[destination.id];
 
           return (
             <article key={destination.id} className="cartes">
               <ExperiencesCards
-                name={destination.name}
+                name={t(`destinations.${destination.id}.name`)}
                 image={imageUrl}
-                continent={destination.continent}
-                average_price={destination.average_price}
-                tourist_season={destination.tourist_season}
+                continent={t(`destinations.${destination.id}.continent`)}
+                average_price={t(
+                  `destinations.${destination.id}.average_price`,
+                )}
+                tourist_season={t(
+                  `destinations.${destination.id}.tourist_season`,
+                )}
               />
-              <p className="PhomePage">{destination.description}</p>
+              <p className="PhomePage">
+                {t(`destinations.${destination.id}.description`)}
+              </p>
             </article>
           );
         })}

@@ -1,9 +1,11 @@
 import { type ChangeEvent, useState } from "react";
+import { useTranslation } from "react-i18next";
 import "./UserProfile.css";
 
 type Section = "personal" | "documents" | "quotes" | "trips";
 
 const UserProfile: React.FC = () => {
+  const { t } = useTranslation();
   const [activeSection, setActiveSection] = useState<Section>("personal");
 
   const handleSectionChange = (section: Section): void => {
@@ -26,7 +28,7 @@ const UserProfile: React.FC = () => {
               onClick={() => handleSectionChange("personal")}
               type="button"
             >
-              Personal Information
+              {t("userProfile.personalInfo")}
             </button>
           </li>
 
@@ -36,7 +38,7 @@ const UserProfile: React.FC = () => {
               onClick={() => handleSectionChange("documents")}
               type="button"
             >
-              My Documents
+              {t("userProfile.myDocuments")}
             </button>
           </li>
 
@@ -46,7 +48,7 @@ const UserProfile: React.FC = () => {
               onClick={() => handleSectionChange("quotes")}
               type="button"
             >
-              My Quotes
+              {t("userProfile.myQuotes")}
             </button>
           </li>
 
@@ -56,107 +58,107 @@ const UserProfile: React.FC = () => {
               onClick={() => handleSectionChange("trips")}
               type="button"
             >
-              Upcoming Trips
+              {t("userProfile.upcomingTrips")}
             </button>
           </li>
         </ul>
       </aside>
 
       <main className="content">
-        {activeSection === "personal" ? (
+        {activeSection === "personal" && (
           <section className="section">
-            <h2>Personal Information</h2>
+            <h2>{t("userProfile.personalInfo")}</h2>
             <form className="form-grid">
               <label>
-                First Name
+                {t("userProfile.firstName")}
                 <input type="text" />
               </label>
 
               <label>
-                Last Name
+                {t("userProfile.lastName")}
                 <input type="text" />
               </label>
 
               <label>
-                Title
+                {t("userProfile.title")}
                 <select>
-                  <option value="mr">Mr</option>
-                  <option value="ms">Ms</option>
-                  <option value="mrs">Mrs</option>
+                  <option value="mr">{t("userProfile.mr")}</option>
+                  <option value="ms">{t("userProfile.ms")}</option>
+                  <option value="mrs">{t("userProfile.mrs")}</option>
                 </select>
               </label>
 
               <label>
-                Birth Date
+                {t("userProfile.birthDate")}
                 <input type="date" />
               </label>
 
               <label>
-                Nationality
+                {t("userProfile.nationality")}
                 <input type="text" />
               </label>
 
               <label>
-                Address
+                {t("userProfile.address")}
                 <input type="text" />
               </label>
 
               <label>
-                Email
+                {t("userProfile.email")}
                 <input type="email" />
               </label>
 
               <label>
-                Phone Number
+                {t("userProfile.phoneNumber")}
                 <input type="tel" />
               </label>
 
               <label>
-                Number of Children
+                {t("userProfile.numberOfChildren")}
                 <input type="number" min={0} />
               </label>
             </form>
           </section>
-        ) : null}
+        )}
 
-        {activeSection === "documents" ? (
+        {activeSection === "documents" && (
           <section className="section">
-            <h2>My Documents</h2>
+            <h2>{t("userProfile.myDocuments")}</h2>
             <div className="documents-grid">
               {[
-                "ID Document",
-                "Visa",
-                "Proof of Address",
-                "Bank Account (RIB)",
+                t("userProfile.idDocument"),
+                t("userProfile.visa"),
+                t("userProfile.proofOfAddress"),
+                t("userProfile.bankAccount"),
               ].map((label) => (
                 <div key={label} className="drop-card">
                   <p>{label}</p>
                   <label className="drop-zone">
-                    <span>Drag & Drop or Click to Upload</span>
+                    <span>{t("userProfile.dragDropOrClick")}</span>
                     <input type="file" onChange={handleFileChange} />
                   </label>
                 </div>
               ))}
             </div>
           </section>
-        ) : null}
+        )}
 
-        {activeSection === "quotes" ? (
+        {activeSection === "quotes" && (
           <section className="section">
-            <h2>My Quotes</h2>
+            <h2>{t("userProfile.myQuotes")}</h2>
             <div className="storage-box">
-              <p>Upload and store your quotes here.</p>
+              <p>{t("userProfile.uploadAndStoreQuotes")}</p>
               <input type="file" multiple onChange={handleFileChange} />
             </div>
           </section>
-        ) : null}
+        )}
 
-        {activeSection === "trips" ? (
+        {activeSection === "trips" && (
           <section className="section">
-            <h2>Upcoming Trips</h2>
-            <p>Your planned trips will appear here.</p>
+            <h2>{t("userProfile.upcomingTrips")}</h2>
+            <p>{t("userProfile.plannedTrips")}</p>
           </section>
-        ) : null}
+        )}
       </main>
     </div>
   );
