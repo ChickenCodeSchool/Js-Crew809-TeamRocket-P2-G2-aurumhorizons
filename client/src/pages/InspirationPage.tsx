@@ -2,13 +2,13 @@ import { useState } from "react";
 import "./InspirationPage.css";
 import SeasonParticles from "./SeasonParticles";
 
-type Activity = "Detente" | "Sportive" | "Culturel" | "Exploration";
+type Activity = "Relaxation" | "Sport" | "Cultural" | "Exploration";
 type Season = "Spring" | "Summer" | "Autumn" | "Winter";
 
 const activities: { name: Activity; image: string }[] = [
-  { name: "Detente", image: "/imgInspiration/Detente.jpeg" },
-  { name: "Sportive", image: "/imgInspiration/Sport.jpg" },
-  { name: "Culturel", image: "/imgInspiration/Culturel.jpg" },
+  { name: "Relaxation", image: "/imgInspiration/Detente.jpeg" },
+  { name: "Sport", image: "/imgInspiration/Sport.jpg" },
+  { name: "Cultural", image: "/imgInspiration/Culturel.jpg" },
   { name: "Exploration", image: "/imgInspiration/Exploration.jpg" },
 ];
 
@@ -19,50 +19,52 @@ const seasons: { name: Season; image: string }[] = [
   { name: "Winter", image: "/imgInspiration/hiver.jpg" },
 ];
 
+// You can keep the destination keys in French if they match your folder names.
+// Otherwise I can translate them too.
 const suggestions: Record<Activity, Record<Season, string>> = {
-  Detente: {
-    Spring: "Grece",
+  Relaxation: {
+    Spring: "Greece",
     Summer: "Bali",
-    Autumn: "Italie",
+    Autumn: "Italy",
     Winter: "Maldives",
   },
-  Sportive: {
-    Spring: "Espagne",
+  Sport: {
+    Spring: "Spain",
     Summer: "CostaRica",
     Autumn: "Canada",
-    Winter: "Suisse",
+    Winter: "Switzerland",
   },
-  Culturel: {
+  Cultural: {
     Spring: "France",
-    Summer: "Japon",
-    Autumn: "Egypte",
-    Winter: "Chine",
+    Summer: "Japan",
+    Autumn: "Egypt",
+    Winter: "China",
   },
   Exploration: {
-    Spring: "Islande",
-    Summer: "Afrique",
-    Autumn: "Perou",
-    Winter: "Norvege",
+    Spring: "Iceland",
+    Summer: "Africa",
+    Autumn: "Peru",
+    Winter: "Norway",
   },
 };
 
 const destinationImages: Record<string, string> = {
-  Grece: "/imgDestinations/Grece.jpg",
+  Greece: "/imgDestinations/Grece.jpg",
   Bali: "/imgDestinations/Bali.jpeg",
-  Italie: "/imgDestinations/Italie.jpg",
+  Italy: "/imgDestinations/Italie.jpg",
   Maldives: "/imgDestinations/Maldive.jpg",
-  Espagne: "/imgDestinations/Espagne.jpg",
+  Spain: "/imgDestinations/Espagne.jpg",
   CostaRica: "/imgDestinations/CostaRica.jpg",
   Canada: "/imgDestinations/Canada.jpg",
-  Suisse: "/imgDestinations/Suisse.jpg",
+  Switzerland: "/imgDestinations/Suisse.jpg",
   France: "/imgDestinations/France.jpg",
-  Japon: "/imgDestinations/Japon.jpg",
-  Egypte: "/imgDestinations/Egypte.jpeg",
-  Chine: "/imgDestinations/Chine.jpeg",
-  Islande: "/imgDestinations/Islande.jpg",
-  Afrique: "/imgDestinations/Afrique.jpg",
-  Perou: "/imgDestinations/Perou.jpeg",
-  Norvege: "/imgDestinations/Norvege.jpeg",
+  Japan: "/imgDestinations/Japon.jpg",
+  Egypt: "/imgDestinations/Egypte.jpeg",
+  China: "/imgDestinations/Chine.jpeg",
+  Iceland: "/imgDestinations/Islande.jpg",
+  Africa: "/imgDestinations/Afrique.jpg",
+  Peru: "/imgDestinations/Perou.jpeg",
+  Norway: "/imgDestinations/Norvege.jpeg",
 };
 
 const destinationComments: Record<
@@ -73,192 +75,192 @@ const destinationComments: Record<
     {
       name: "Sophie",
       image: "/imgPersonas/Persona1.jpg",
-      text: "Un voyage incroyable en Grèce, paysages et culture locale au top !",
+      text: "An incredible trip to Greece, amazing landscapes and local culture!",
     },
     {
       name: "Alexandre",
       image: "/imgPersonas/Persona2.jpg",
-      text: "La mer Égée est splendide, j’ai adoré les couchers de soleil.",
+      text: "The Aegean Sea is stunning, I loved the sunsets.",
     },
   ],
   Bali: [
     {
       name: "Marc",
       image: "/imgPersonas/Persona1.jpg",
-      text: "Bali est magique, entre temples et plages paradisiaques.",
+      text: "Bali is magical, with its temples and paradise beaches.",
     },
     {
       name: "Sophie",
       image: "/imgPersonas/Persona2.jpg",
-      text: "La gastronomie balinaise est une vraie découverte !",
+      text: "Balinese cuisine is such a great discovery!",
     },
   ],
   Italie: [
     {
       name: "Alexandre",
       image: "/imgPersonas/Persona1.jpg",
-      text: "Rome et Florence, un vrai musée à ciel ouvert.",
+      text: "Rome and Florence feel like open-air museums.",
     },
     {
       name: "Sophie",
       image: "/imgPersonas/Persona2.jpg",
-      text: "La cuisine italienne est un régal !",
+      text: "Italian food is absolutely delicious!",
     },
   ],
   Maldives: [
     {
       name: "Marc",
       image: "/imgPersonas/Persona1.jpg",
-      text: "Les plages des Maldives sont paradisiaques.",
+      text: "The beaches in the Maldives are pure paradise.",
     },
     {
       name: "Sophie",
       image: "/imgPersonas/Persona2.jpg",
-      text: "Un séjour détente parfait, j’ai adoré le snorkeling.",
+      text: "A perfect relaxing stay, I loved the snorkeling.",
     },
   ],
   Espagne: [
     {
       name: "Alexandre",
       image: "/imgPersonas/Persona1.jpg",
-      text: "Barcelone et Madrid, deux villes pleines de vie.",
+      text: "Barcelona and Madrid are full of life.",
     },
     {
       name: "Marc",
       image: "/imgPersonas/Persona2.jpg",
-      text: "Les tapas espagnols sont délicieux !",
+      text: "Spanish tapas are delicious!",
     },
   ],
   CostaRica: [
     {
       name: "Sophie",
       image: "/imgPersonas/Persona1.jpg",
-      text: "La jungle du Costa Rica est impressionnante.",
+      text: "The Costa Rican jungle is breathtaking.",
     },
     {
       name: "Marc",
       image: "/imgPersonas/Persona2.jpg",
-      text: "Un paradis pour les amateurs de nature et d’aventure.",
+      text: "A paradise for nature and adventure lovers.",
     },
   ],
   Canada: [
     {
       name: "Alexandre",
       image: "/imgPersonas/Persona1.jpg",
-      text: "Les paysages du Canada sont grandioses.",
+      text: "Canada’s landscapes are truly spectacular.",
     },
     {
       name: "Sophie",
       image: "/imgPersonas/Persona2.jpg",
-      text: "J’ai adoré les lacs et les forêts.",
+      text: "I loved the lakes and forests.",
     },
   ],
   Suisse: [
     {
       name: "Marc",
       image: "/imgPersonas/Persona1.jpg",
-      text: "Les Alpes suisses sont magnifiques en hiver.",
+      text: "The Swiss Alps are gorgeous in winter.",
     },
     {
       name: "Alexandre",
       image: "/imgPersonas/Persona2.jpg",
-      text: "Un pays parfait pour le ski et la randonnée.",
+      text: "A perfect country for skiing and hiking.",
     },
   ],
   France: [
     {
       name: "Sophie",
       image: "/imgPersonas/Persona1.jpg",
-      text: "Paris est une ville magique.",
+      text: "Paris is such a magical city.",
     },
     {
       name: "Marc",
       image: "/imgPersonas/Persona2.jpg",
-      text: "La gastronomie française est incomparable.",
+      text: "French cuisine is incomparable.",
     },
   ],
   Japon: [
     {
       name: "Alexandre",
       image: "/imgPersonas/Persona1.jpg",
-      text: "Le Japon est fascinant, entre tradition et modernité.",
+      text: "Japan is fascinating, blending tradition and modernity.",
     },
     {
       name: "Sophie",
       image: "/imgPersonas/Persona2.jpg",
-      text: "Kyoto et Tokyo sont des villes incroyables.",
+      text: "Kyoto and Tokyo are incredible cities.",
     },
   ],
   Egypte: [
     {
       name: "Marc",
       image: "/imgPersonas/Persona1.jpg",
-      text: "Les pyramides d’Égypte sont impressionnantes.",
+      text: "The pyramids of Egypt are impressive.",
     },
     {
       name: "Alexandre",
       image: "/imgPersonas/Persona2.jpg",
-      text: "Un voyage dans l’histoire antique.",
+      text: "A journey through ancient history.",
     },
   ],
   Chine: [
     {
       name: "Sophie",
       image: "/imgPersonas/Persona1.jpg",
-      text: "La Grande Muraille est spectaculaire.",
+      text: "The Great Wall is spectacular.",
     },
     {
       name: "Marc",
       image: "/imgPersonas/Persona2.jpg",
-      text: "Un pays riche en culture et traditions.",
+      text: "A country rich in culture and traditions.",
     },
   ],
   Islande: [
     {
       name: "Alexandre",
       image: "/imgPersonas/Persona1.jpg",
-      text: "Exploration en Islande : geysers, volcans et aurores boréales.",
+      text: "Exploring Iceland: geysers, volcanoes, and northern lights.",
     },
     {
       name: "Marc",
       image: "/imgPersonas/Persona2.jpg",
-      text: "Un pays sauvage et magnifique.",
+      text: "A wild and stunning country.",
     },
   ],
   Afrique: [
     {
       name: "Sophie",
       image: "/imgPersonas/Persona1.jpg",
-      text: "Un safari en Afrique est une expérience unique.",
+      text: "A safari in Africa is a unique experience.",
     },
     {
       name: "Alexandre",
       image: "/imgPersonas/Persona2.jpg",
-      text: "La faune et la flore sont incroyables.",
+      text: "The wildlife and landscapes are incredible.",
     },
   ],
   Perou: [
     {
       name: "Marc",
       image: "/imgPersonas/Persona1.jpg",
-      text: "Le Machu Picchu est une merveille du monde.",
+      text: "Machu Picchu is a true wonder of the world.",
     },
     {
       name: "Sophie",
       image: "/imgPersonas/Persona2.jpg",
-      text: "Un pays riche en histoire et traditions.",
+      text: "A country rich in history and traditions.",
     },
   ],
   Norvege: [
     {
       name: "Alexandre",
       image: "/imgPersonas/Persona1.jpg",
-      text: "Les fjords norvégiens sont spectaculaires.",
+      text: "The Norwegian fjords are spectacular.",
     },
     {
       name: "Marc",
       image: "/imgPersonas/Persona2.jpg",
-      text: "Un pays parfait pour les amoureux de nature.",
+      text: "A perfect destination for nature lovers.",
     },
   ],
 };
@@ -338,43 +340,44 @@ const InspirationPage: React.FC = () => {
         </section>
       )}
 
-      {/* Étape 3 : destination */}
-      {step === 3 && destination && (
-        <section className="inspiration-step">
-          <h2>Destination suggestion</h2>
-          <div className="destination-content">
-            <p>
-              Pour un voyage <strong>{activity}</strong> en{" "}
-              <strong>{season}</strong>, nous te conseillons :{" "}
-              <strong>{destination}</strong>.
-            </p>
+{/* Step 3: destination */}
+{step === 3 && destination && (
+  <section className="inspiration-step">
+    <h2>Destination suggestion</h2>
+    <div className="destination-content">
+      <p>
+        For a <strong>{activity}</strong> trip in{" "}
+        <strong>{season}</strong>, we recommend:{" "}
+        <strong>{destination}</strong>.
+      </p>
 
-            <div className="image-wrapper">
-              <img
-                src={destinationImages[destination]}
-                alt={destination}
-                className="destination-image"
-              />
-            </div>
+      <div className="image-wrapper">
+        <img
+          src={destinationImages[destination]}
+          alt={destination}
+          className="destination-image"
+        />
+      </div>
 
-            <p className="destination-text">
-              <em>Lorem Ipsum is simply dummy text…</em>
-            </p>
+      <p className="destination-text">
+        <em>Lorem Ipsum is simply dummy text…</em>
+      </p>
 
-            <div className="personas-grid">
-              {(destinationComments[destination] || []).map((p) => (
-                <div key={p.name + p.image} className="persona-card">
-                  <img src={p.image} alt={p.name} className="persona-image" />
-                  <h4 className="persona-name">{p.name}</h4>
-                  <p className="persona-comment-text">{p.text}</p>
-                </div>
-              ))}
-            </div>
+      <div className="personas-grid">
+        {(destinationComments[destination] || []).map((p) => (
+          <div key={p.name + p.image} className="persona-card">
+            <img src={p.image} alt={p.name} className="persona-image" />
+            <h4 className="persona-name">{p.name}</h4>
+            <p className="persona-comment-text">{p.text}</p>
           </div>
-        </section>
-      )}
-    </main>
-  );
+        ))}
+      </div>
+    </div>
+  </section>
+)}
+</main>
+);
 };
+
 
 export default InspirationPage;
